@@ -38,3 +38,9 @@ REPLAY_URL=http://127.0.0.1:8767/ python3 web/tests/browser_edges.py
 `paper-findings.json` is the source for the RQ/finding narrative and exact case queries. The exporter requires every named case to resolve to exactly one record with evidence. It sanitizes credentials, URLs, private paths, hosts, email addresses and selected personal-data fields. Benchmark task content remains visible for inspection.
 
 The GitHub Pages workflow publishes only `web/site/`; Python tools, tests and development files are not deployed. Full original JSONL archives, paper PDFs and model weights are excluded.
+
+## Stable display task IDs
+
+`site/data/task-map.json` is the fixed identity map: Shopping Task 001–030, Admin 031–050, Reddit 051–065, SWE-bench 066–085, and TheAgentCompany 086–100. It is checked in and must not be regenerated or renumbered when catalog ordering changes. Repeated runs, models and topologies share the same display ID. The Reddit extension reuses the main-study mapping. The separate RQ4 study uses RQ4 Task 001–006 and source-mapping payload fixtures use Fixture 001–003.
+
+Original task IDs, run IDs, source evidence and existing deep links remain unchanged. Search `Task 051` or `051` for a unified ID; unpadded `27`, `208`, or `xarray-2905` still search original identifiers. Downloads retain the source task ID and add `metadata.display_id`. The static audit rejects unmapped tasks so future additions require an explicit map update.

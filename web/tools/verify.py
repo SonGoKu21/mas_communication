@@ -25,3 +25,14 @@ for path in (site/'data').rglob('*.json'):
     text=path.read_text()
     assert not re.search(r'/Users/|/home/hqn|/data[23]/|\bsk-[A-Za-z0-9_-]{12,}|Bearer\s+[a-zA-Z0-9]|10\.102\.35\.120|202\.117\.43\.5',text),path
 print('PASS: counts, unique IDs, trace references, finding references, source privacy patterns.')
+
+# The checked-in mapping freezes identity independently of catalog order.
+tasks=json.loads((site/'data/task-map.json').read_text())['tasks']
+keys=[(t['scope'],t['domain'],t['task_id']) for t in tasks]
+assert len(keys)==len(set(keys))==len({t['display_id'] for t in tasks})
+main=[t for t in tasks if t['scope']=='main']
+assert {t['display_id'] for t in main}=={f'Task {n:03}' for n in range(1,101)}
+for r in rows:
+    scope='fixture' if r['study']=='bridge' else 'rq4' if r['study'].startswith('rq4-') else 'main'
+    assert (scope,r['domain'],r['task_id']) in keys
+print('PASS: complete, unique, fixed task-ID mapping.')

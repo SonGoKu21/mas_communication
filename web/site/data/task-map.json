@@ -1,0 +1,769 @@
+{
+  "version": 1,
+  "policy": "Frozen display mapping. Preserve existing assignments when adding records. Original task_id and run IDs are unchanged; Reddit extension reuses main-study task identities.",
+  "tasks": [
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-001-q1",
+      "display_id": "Task 001",
+      "order": 1
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-001-q2",
+      "display_id": "Task 002",
+      "order": 2
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-001-q3",
+      "display_id": "Task 003",
+      "order": 3
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-001-q4",
+      "display_id": "Task 004",
+      "order": 4
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-002-q1",
+      "display_id": "Task 005",
+      "order": 5
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-002-q2",
+      "display_id": "Task 006",
+      "order": 6
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-002-q3",
+      "display_id": "Task 007",
+      "order": 7
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-002-q4",
+      "display_id": "Task 008",
+      "order": 8
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-003-q1",
+      "display_id": "Task 009",
+      "order": 9
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-003-q2",
+      "display_id": "Task 010",
+      "order": 10
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-003-q3",
+      "display_id": "Task 011",
+      "order": 11
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-003-q4",
+      "display_id": "Task 012",
+      "order": 12
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-004-q1",
+      "display_id": "Task 013",
+      "order": 13
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-004-q2",
+      "display_id": "Task 014",
+      "order": 14
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-004-q3",
+      "display_id": "Task 015",
+      "order": 15
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-005-q1",
+      "display_id": "Task 016",
+      "order": 16
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-005-q2",
+      "display_id": "Task 017",
+      "order": 17
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-005-q3",
+      "display_id": "Task 018",
+      "order": 18
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-006-q1",
+      "display_id": "Task 019",
+      "order": 19
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-006-q2",
+      "display_id": "Task 020",
+      "order": 20
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-006-q3",
+      "display_id": "Task 021",
+      "order": 21
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-007-q1",
+      "display_id": "Task 022",
+      "order": 22
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-007-q2",
+      "display_id": "Task 023",
+      "order": 23
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-007-q3",
+      "display_id": "Task 024",
+      "order": 24
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-008-q1",
+      "display_id": "Task 025",
+      "order": 25
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-008-q2",
+      "display_id": "Task 026",
+      "order": 26
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-008-q3",
+      "display_id": "Task 027",
+      "order": 27
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-009-q1",
+      "display_id": "Task 028",
+      "order": 28
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-009-q2",
+      "display_id": "Task 029",
+      "order": 29
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-009-q3",
+      "display_id": "Task 030",
+      "order": 30
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "0",
+      "display_id": "Task 031",
+      "order": 31
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "4",
+      "display_id": "Task 032",
+      "order": 32
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "41",
+      "display_id": "Task 033",
+      "order": 33
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "42",
+      "display_id": "Task 034",
+      "order": 34
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "62",
+      "display_id": "Task 035",
+      "order": 35
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "107",
+      "display_id": "Task 036",
+      "order": 36
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "185",
+      "display_id": "Task 037",
+      "order": 37
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "187",
+      "display_id": "Task 038",
+      "order": 38
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "193",
+      "display_id": "Task 039",
+      "order": 39
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "194",
+      "display_id": "Task 040",
+      "order": 40
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "195",
+      "display_id": "Task 041",
+      "order": 41
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "198",
+      "display_id": "Task 042",
+      "order": 42
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "199",
+      "display_id": "Task 043",
+      "order": 43
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "200",
+      "display_id": "Task 044",
+      "order": 44
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "208",
+      "display_id": "Task 045",
+      "order": 45
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "209",
+      "display_id": "Task 046",
+      "order": 46
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "210",
+      "display_id": "Task 047",
+      "order": 47
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "211",
+      "display_id": "Task 048",
+      "order": 48
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "288",
+      "display_id": "Task 049",
+      "order": 49
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Admin",
+      "task_id": "292",
+      "display_id": "Task 050",
+      "order": 50
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "27",
+      "display_id": "Task 051",
+      "order": 51
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "29",
+      "display_id": "Task 052",
+      "order": 52
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "30",
+      "display_id": "Task 053",
+      "order": 53
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "31",
+      "display_id": "Task 054",
+      "order": 54
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "66",
+      "display_id": "Task 055",
+      "order": 55
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "67",
+      "display_id": "Task 056",
+      "order": 56
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "69",
+      "display_id": "Task 057",
+      "order": 57
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "723",
+      "display_id": "Task 058",
+      "order": 58
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "726",
+      "display_id": "Task 059",
+      "order": 59
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "reddit-731",
+      "display_id": "Task 060",
+      "order": 60
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "reddit-732",
+      "display_id": "Task 061",
+      "order": 61
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "reddit-733",
+      "display_id": "Task 062",
+      "order": 62
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "reddit-734",
+      "display_id": "Task 063",
+      "order": 63
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "reddit-735",
+      "display_id": "Task 064",
+      "order": 64
+    },
+    {
+      "scope": "main",
+      "domain": "WebArena Reddit",
+      "task_id": "reddit-736",
+      "display_id": "Task 065",
+      "order": 65
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "astropy__astropy-12907",
+      "display_id": "Task 066",
+      "order": 66
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "astropy__astropy-13453",
+      "display_id": "Task 067",
+      "order": 67
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "astropy__astropy-14096",
+      "display_id": "Task 068",
+      "order": 68
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "astropy__astropy-14309",
+      "display_id": "Task 069",
+      "order": 69
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "django__django-10097",
+      "display_id": "Task 070",
+      "order": 70
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "django__django-10914",
+      "display_id": "Task 071",
+      "order": 71
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "django__django-14089",
+      "display_id": "Task 072",
+      "order": 72
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "django__django-16485",
+      "display_id": "Task 073",
+      "order": 73
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "pallets__flask-5014",
+      "display_id": "Task 074",
+      "order": 74
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "pydata__xarray-2905",
+      "display_id": "Task 075",
+      "order": 75
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "pydata__xarray-3677",
+      "display_id": "Task 076",
+      "order": 76
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "pytest-dev__pytest-5631",
+      "display_id": "Task 077",
+      "order": 77
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "pytest-dev__pytest-7982",
+      "display_id": "Task 078",
+      "order": 78
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "scikit-learn__scikit-learn-10297",
+      "display_id": "Task 079",
+      "order": 79
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "scikit-learn__scikit-learn-13439",
+      "display_id": "Task 080",
+      "order": 80
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "scikit-learn__scikit-learn-13779",
+      "display_id": "Task 081",
+      "order": 81
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "scikit-learn__scikit-learn-14141",
+      "display_id": "Task 082",
+      "order": 82
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "sympy__sympy-11618",
+      "display_id": "Task 083",
+      "order": 83
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "sympy__sympy-16886",
+      "display_id": "Task 084",
+      "order": 84
+    },
+    {
+      "scope": "main",
+      "domain": "SWE-bench",
+      "task_id": "sympy__sympy-22914",
+      "display_id": "Task 085",
+      "order": 85
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "bm-classify-nationality",
+      "display_id": "Task 086",
+      "order": 86
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "ds-calculate-spreadsheet-stats",
+      "display_id": "Task 087",
+      "order": 87
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "ds-find-meeting-spreadsheet",
+      "display_id": "Task 088",
+      "order": 88
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "ds-format-excel-sheets",
+      "display_id": "Task 089",
+      "order": 89
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "ds-predictive-modeling",
+      "display_id": "Task 090",
+      "order": 90
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "finance-budget-variance",
+      "display_id": "Task 091",
+      "order": 91
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "finance-nonqualified-bill-ask-for-reimburse",
+      "display_id": "Task 092",
+      "order": 92
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "pm-send-hello-message",
+      "display_id": "Task 093",
+      "order": 93
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "qa-escalate-emergency",
+      "display_id": "Task 094",
+      "order": 94
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "sde-change-license-easy",
+      "display_id": "Task 095",
+      "order": 95
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "sde-close-an-issue",
+      "display_id": "Task 096",
+      "order": 96
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "sde-find-answer-in-codebase-2",
+      "display_id": "Task 097",
+      "order": 97
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "sde-fix-factual-mistake",
+      "display_id": "Task 098",
+      "order": 98
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "sde-install-go",
+      "display_id": "Task 099",
+      "order": 99
+    },
+    {
+      "scope": "main",
+      "domain": "TheAgentCompany",
+      "task_id": "sde-install-openjdk",
+      "display_id": "Task 100",
+      "order": 100
+    },
+    {
+      "scope": "rq4",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-001-q1to2",
+      "display_id": "RQ4 Task 001",
+      "order": 1001
+    },
+    {
+      "scope": "rq4",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-002-q1to3",
+      "display_id": "RQ4 Task 002",
+      "order": 1002
+    },
+    {
+      "scope": "rq4",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-003-q2to3",
+      "display_id": "RQ4 Task 003",
+      "order": 1003
+    },
+    {
+      "scope": "rq4",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-005-q1to2",
+      "display_id": "RQ4 Task 004",
+      "order": 1004
+    },
+    {
+      "scope": "rq4",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-006-q1to3",
+      "display_id": "RQ4 Task 005",
+      "order": 1005
+    },
+    {
+      "scope": "rq4",
+      "domain": "WebArena Shopping",
+      "task_id": "shopping-007-q2to3",
+      "display_id": "RQ4 Task 006",
+      "order": 1006
+    },
+    {
+      "scope": "fixture",
+      "domain": "Communication fixtures",
+      "task_id": "89",
+      "display_id": "Fixture 001",
+      "order": 2001
+    },
+    {
+      "scope": "fixture",
+      "domain": "Communication fixtures",
+      "task_id": "457",
+      "display_id": "Fixture 002",
+      "order": 2002
+    },
+    {
+      "scope": "fixture",
+      "domain": "Communication fixtures",
+      "task_id": "717",
+      "display_id": "Fixture 003",
+      "order": 2003
+    }
+  ]
+}

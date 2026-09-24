@@ -31,3 +31,7 @@ No live model or benchmark run. Manuscript summary statistics are attributed to 
 Fig. 4, Fig. 5 and Fig. 7 identify specific runs. Malformed/partial examples are explicitly cross-collection illustrations, not the exact earlier pair. Fig. 10 belongs to the earlier guarded-recheck pilot and its exact pair is not bundled; current factorial examples are labeled separately. The pilot and main mechanism study must not be conflated.
 
 Independent review found no blocking data/paper/privacy issues. A case-navigation issue was reproduced with a failing browser assertion, then fixed so named-case selection also navigates the run list to the selected record's page. The full website test suite was rerun after this change.
+
+## Unified task numbering update
+
+Added a fixed 109-entry identity map (100 main tasks, 6 RQ4 tasks, 3 source-mapping fixtures). New browser coverage first reproduced missing unified labels, then verified ordering, shared IDs across configurations and repeats, extension reuse, original-ID preservation and download metadata. Review exposed three-digit original-ID search being shadowed by new IDs; a failing `208` search regression was added and the unified numeric alias limited to 001–100.
