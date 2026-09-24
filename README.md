@@ -41,3 +41,7 @@ python -m pytest -q test_mas_rq4_analysis_20260914.py
 历史恢复记录指出 `mas_faults.causal_trace_report` 缺失，且 SWE 多轮入口与恢复的 SWE 模块存在接口版本差异；相关路径不能声称已完整复现。历史实验完成数和旧测试通过数不作为本次验证。当前验证结果见 `VALIDATION.md`。
 
 论文稿件、图稿、完整结果、模型和第三方 benchmark 仓库均未纳入。未指定开源许可证；根据用户 2026-09-24 的最新决定，仓库保持公开。
+
+## 在线历史回放
+
+[MAS Fault Observatory](https://SonGoKu21.github.io/mas_communication/) 展示历史实验，不执行实时模型调用。界面已按最新论文 revision 7 对齐四个 RQ 与 Finding 1–10；网页、脱敏数据及重建工具位于 `web/`。具体证据范围及案例缺口见 [web/README.md](web/README.md)。

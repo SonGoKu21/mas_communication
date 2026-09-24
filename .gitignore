@@ -29,3 +29,5 @@ models/
 *.docx
 *.zip
 .DS_Store
+# Local browser verification outputs
+web/verification/

@@ -1,0 +1,40 @@
+# MAS Fault Observatory — manuscript revision 7
+
+A static historical replay site aligned with the four RQs and Findings 1–10 in the manuscript supplied on 2026-09-24. The manuscript itself is not published. Its digest and mapping are in `site/data/paper-alignment.json`.
+
+## Preview
+
+```sh
+python3 -m http.server 8767 --bind 127.0.0.1 --directory web/site
+```
+
+Open http://127.0.0.1:8767/ from the repository root. Production is hosted by GitHub Pages at https://SonGoKu21.github.io/mas_communication/ . Relative paths support the project subdirectory.
+
+## Scope
+
+This is archived evidence, with no model calls, GPU, database, live injection or experiment backend. All 26,613 records remain indexed across six separate collections. Additional selected traces cover the latest paper cases. The manifest reports exact coverage; summary-only records are explicitly labeled.
+
+- RQ1 / Findings 1–3: source mapping, propagation versus outcome, observability. Fig. 4 links to Reddit 67 stale replay; malformed/partial examples span different collections and are illustrative.
+- RQ2 / Findings 4–5: injection dependency and task-domain sensitivity. Fig. 5 links to Reddit 67 Flat I2/I4 r1; Admin 208/292 illustrate lookup versus aggregation.
+- RQ3 / Findings 6–7: information-path diversity and deployed model configuration. Fig. 7 links to Admin 41 Qwen3.5-9B Sequential/Hierarchical semantic-corruption r1.
+- RQ4 / Findings 8–10: complementary protection, information-source diversity, finite repeated exposure. Fig. 10 is from an earlier guarded-recheck pilot whose exact pair is not bundled. Main factorial examples are labeled separately.
+
+Summary statistics are transcribed from manuscript revision 7, not recalculated by the browser. Individual examples are not substitutes for aggregate statistical tests. Repetitions are not model sampling seeds; handling-response flags are not verified recovery chains. Independent reacquisition still shares the Shopping backend.
+
+## Rebuild
+
+The original input archives are not tracked. Set `MAS_SOURCE_ROOT` to a workspace containing the original `reports/` inputs, then run:
+
+```sh
+MAS_SOURCE_ROOT=/path/to/source/workspace python3 web/tools/export.py
+python3 -m unittest discover -s web/tests
+python3 web/tools/verify.py
+# With Python Playwright + Chromium installed, and a preview server running:
+python3 web/tests/browser.py
+python3 web/tests/paper_browser.py
+REPLAY_URL=http://127.0.0.1:8767/ python3 web/tests/browser_edges.py
+```
+
+`paper-findings.json` is the source for the RQ/finding narrative and exact case queries. The exporter requires every named case to resolve to exactly one record with evidence. It sanitizes credentials, URLs, private paths, hosts, email addresses and selected personal-data fields. Benchmark task content remains visible for inspection.
+
+The GitHub Pages workflow publishes only `web/site/`; Python tools, tests and development files are not deployed. Full original JSONL archives, paper PDFs and model weights are excluded.
