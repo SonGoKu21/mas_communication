@@ -1,0 +1,227 @@
+{
+  "analysis_id": "rq123-common-six-conditions-20260916-v1",
+  "confirmatory_scope": "Only final frozen confirmation matrices; discovery and pilot runs are excluded.",
+  "expected_models": [
+    "Qwen3.5-9B",
+    "Qwen3.8-27B",
+    "DeepSeek-V4-Flash"
+  ],
+  "expected_topologies": [
+    "sequential",
+    "flat",
+    "hierarchical"
+  ],
+  "expected_total_rows": 18900,
+  "experiments": [
+    {
+      "dataset": "WebArena Reddit",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 945,
+      "label": "Qwen3.8-27B",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_00.jsonl"
+      ]
+    },
+    {
+      "dataset": "WebArena Shopping",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 1890,
+      "label": "Qwen3.8-27B",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_01.jsonl"
+      ]
+    },
+    {
+      "dataset": "WebArena Admin",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 1260,
+      "label": "Qwen3.8-27B",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_02.jsonl"
+      ]
+    },
+    {
+      "dataset": "SWE-bench",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 1260,
+      "label": "Qwen3.8-27B",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_03.jsonl"
+      ]
+    },
+    {
+      "dataset": "TheAgentCompany",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 945,
+      "label": "Qwen3.8-27B",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_04.jsonl"
+      ]
+    },
+    {
+      "dataset": "WebArena Reddit",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 945,
+      "label": "Qwen3.5-9B",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_05.jsonl"
+      ]
+    },
+    {
+      "dataset": "WebArena Shopping",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 1890,
+      "label": "Qwen3.5-9B",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_06.jsonl"
+      ]
+    },
+    {
+      "dataset": "WebArena Admin",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 1260,
+      "label": "Qwen3.5-9B",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_07.jsonl"
+      ]
+    },
+    {
+      "dataset": "SWE-bench",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 1260,
+      "label": "Qwen3.5-9B",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_08.jsonl"
+      ]
+    },
+    {
+      "dataset": "TheAgentCompany",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 945,
+      "label": "Qwen3.5-9B",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_09.jsonl"
+      ]
+    },
+    {
+      "dataset": "WebArena Reddit",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 945,
+      "label": "DeepSeek-V4-Flash",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_10.jsonl"
+      ]
+    },
+    {
+      "dataset": "WebArena Shopping",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 1890,
+      "label": "DeepSeek-V4-Flash",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_11.jsonl"
+      ]
+    },
+    {
+      "dataset": "WebArena Admin",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 1260,
+      "label": "DeepSeek-V4-Flash",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_12.jsonl"
+      ]
+    },
+    {
+      "dataset": "SWE-bench",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 1260,
+      "label": "DeepSeek-V4-Flash",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_13.jsonl"
+      ]
+    },
+    {
+      "dataset": "TheAgentCompany",
+      "expected_repeats": [
+        1,
+        2,
+        3
+      ],
+      "expected_rows": 945,
+      "label": "DeepSeek-V4-Flash",
+      "paths": [
+        "reports/rq123_six_condition_inputs_20260916_v2/experiment_14.jsonl"
+      ]
+    }
+  ],
+  "repeat_interpretation": "three repeated executions; independence is not established by stored traces",
+  "selection_contract": {
+    "clean": "clean",
+    "conditions": [
+      "timeliness_deadline_step4",
+      "non_delivery_step2",
+      "non_delivery_step4",
+      "semantic_corruption_step4",
+      "valid_partial_message_step4",
+      "stale_replay_step4"
+    ],
+    "source_file": "mas_reproduction_20260910/prepare_webarena_admin_repeated_confirmation.py",
+    "source_sha256": "7a559515245860ccc55dc0f02ae687f47f58b2a08e0ee00525cb1634a3e718f4",
+    "note": "Six condition-position cells, not six distinct fault families"
+  }
+}

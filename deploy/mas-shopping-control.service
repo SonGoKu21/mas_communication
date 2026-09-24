@@ -1,0 +1,8 @@
+[Unit]
+Description=MAS Shopping isolated network control proxy
+Requires=mas-shopping-control.socket
+After=mas-shopping-docker.service
+
+[Service]
+ExecStart=/bin/bash "/home/hqn/zjh code/mas/scripts/proxy_shopping.sh" 8877
+Restart=no

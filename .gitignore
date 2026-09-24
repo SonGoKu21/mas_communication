@@ -1,0 +1,31 @@
+# Credentials and machine-local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# Runtime data, model weights and generated outputs
+results/
+logs/
+cache/
+models/
+*.jsonl
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.log
+# Paper and presentation artifacts
+*.tex
+*.pdf
+*.pptx
+*.docx
+*.zip
+.DS_Store

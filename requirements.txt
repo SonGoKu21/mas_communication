@@ -1,0 +1,11 @@
+autogen-core==0.7.5
+autogen-agentchat==0.7.5
+autogen-ext[grpc,openai]==0.7.5
+python-dotenv
+requests
+playwright
+pyarrow
+modelscope
+pytest
+pytest-asyncio
+pytest-socket

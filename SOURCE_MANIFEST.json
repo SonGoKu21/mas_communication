@@ -1,0 +1,1856 @@
+{
+  "prepared": "2026-09-24",
+  "note": "Local snapshots; server equivalence not verified. Source paths relative to original workspace.",
+  "files": [
+    {
+      "path": "run_webarena_reddit_topology_rq2.py",
+      "source": "mas_reproduction_20260910/run_webarena_reddit_topology_rq2.py",
+      "source_sha256": "eddc95d6bbffb6916f1a4cb5632546ec2c676f531a02caf24e15c7dcfca716bf",
+      "packaged_sha256": "eddc95d6bbffb6916f1a4cb5632546ec2c676f531a02caf24e15c7dcfca716bf"
+    },
+    {
+      "path": "server-env.sh",
+      "source": "mas_reproduction_20260910/server-env.sh",
+      "source_sha256": "2812682eea38712721d4d6f3684f3bdd68ab3c4a103d787e1cf3fd0c4e09c570",
+      "packaged_sha256": "2812682eea38712721d4d6f3684f3bdd68ab3c4a103d787e1cf3fd0c4e09c570"
+    },
+    {
+      "path": "pytest.ini",
+      "source": "mas_reproduction_20260910/pytest.ini",
+      "source_sha256": "91fe7f164c097cfa818b8c96aa39dce0f51c0ad402192afed085156719c556f8",
+      "packaged_sha256": "91fe7f164c097cfa818b8c96aa39dce0f51c0ad402192afed085156719c556f8"
+    },
+    {
+      "path": "requirements.txt",
+      "source": "mas_reproduction_20260910/requirements.txt",
+      "source_sha256": "1d066e790e4f2938436e953edd7d06ce19c18496cbc33b00725e4bfe841c35ab",
+      "packaged_sha256": "1d066e790e4f2938436e953edd7d06ce19c18496cbc33b00725e4bfe841c35ab"
+    },
+    {
+      "path": "conda-explicit-linux-64.txt",
+      "source": "mas_reproduction_20260910/conda-explicit-linux-64.txt",
+      "source_sha256": "6ceed2a49ba58e2a6dae18fe2f9f4af65f4609504eec498babd80e1902d88790",
+      "packaged_sha256": "6ceed2a49ba58e2a6dae18fe2f9f4af65f4609504eec498babd80e1902d88790"
+    },
+    {
+      "path": "run_webarena_admin_controlled_fault_matrix.py",
+      "source": "mas_reproduction_20260910/run_webarena_admin_controlled_fault_matrix.py",
+      "source_sha256": "a53d11f1e97caf78994e4de06ad3258c195d8761f57177f0ddb82e767eb87811",
+      "packaged_sha256": "a53d11f1e97caf78994e4de06ad3258c195d8761f57177f0ddb82e767eb87811"
+    },
+    {
+      "path": "restore_sources.py",
+      "source": "mas_reproduction_20260910/restore_sources.py",
+      "source_sha256": "2b82192f031b22c72026e5e7e44544aed3d6c1b5339230a5e08c2016a26b2183",
+      "packaged_sha256": "2b82192f031b22c72026e5e7e44544aed3d6c1b5339230a5e08c2016a26b2183"
+    },
+    {
+      "path": "run_shopping_multimechanism.py",
+      "source": "mas_reproduction_20260910/run_shopping_multimechanism.py",
+      "source_sha256": "6de1409255c228bbaa19068f9d7cf94a76f7539b25f6eeddfd48c8b45e3fdc02",
+      "packaged_sha256": "6de1409255c228bbaa19068f9d7cf94a76f7539b25f6eeddfd48c8b45e3fdc02"
+    },
+    {
+      "path": "run_shopping_mitigation.py",
+      "source": "mas_reproduction_20260910/run_shopping_mitigation.py",
+      "source_sha256": "789851152aa32a762aa3a3a7b78d4f79bee8ca9c489de8bbf73a4862c075b59c",
+      "packaged_sha256": "789851152aa32a762aa3a3a7b78d4f79bee8ca9c489de8bbf73a4862c075b59c"
+    },
+    {
+      "path": "configure-storage.sh",
+      "source": "mas_reproduction_20260910/configure-storage.sh",
+      "source_sha256": "7977d4a4ae2029278f4fed5ab8225d3e59a9ad338ac01b1ea7cda0a1cdcd845c",
+      "packaged_sha256": "7977d4a4ae2029278f4fed5ab8225d3e59a9ad338ac01b1ea7cda0a1cdcd845c"
+    },
+    {
+      "path": "qwen-local-env.sh",
+      "source": "mas_reproduction_20260910/qwen-local-env.sh",
+      "source_sha256": "f2326af542e700138b53648a3d31d05a153ba36134b1d89e1017e12f0daec80f",
+      "packaged_sha256": "f2326af542e700138b53648a3d31d05a153ba36134b1d89e1017e12f0daec80f"
+    },
+    {
+      "path": "run_webarena_architecture_rq2.py",
+      "source": "mas_reproduction_20260910/run_webarena_architecture_rq2.py",
+      "source_sha256": "f1417fd09c840137b3fcf294193ddc0f461cab85b49d45ab91cb4e92ba999f29",
+      "packaged_sha256": "f1417fd09c840137b3fcf294193ddc0f461cab85b49d45ab91cb4e92ba999f29"
+    },
+    {
+      "path": "run_bottom_up_bridge_experiment.py",
+      "source": "mas_reproduction_20260910/run_bottom_up_bridge_experiment.py",
+      "source_sha256": "999c7277e4985d1a1328e1b82775944f693a5543f886499a4ca2440468d678b2",
+      "packaged_sha256": "999c7277e4985d1a1328e1b82775944f693a5543f886499a4ca2440468d678b2"
+    },
+    {
+      "path": "analyze_unified_fse_results.py",
+      "source": "mas_reproduction_20260910/analyze_unified_fse_results.py",
+      "source_sha256": "35e3c13f98f0da0c0113cef177d5723877515b95ac69abb2ab4d432e20663f14",
+      "packaged_sha256": "35e3c13f98f0da0c0113cef177d5723877515b95ac69abb2ab4d432e20663f14"
+    },
+    {
+      "path": "requirements.lock.txt",
+      "source": "mas_reproduction_20260910/requirements.lock.txt",
+      "source_sha256": "36c14908cb6dfd560b7647f78855c786230b3d722fc5bb8357d2cf8f28d856ba",
+      "packaged_sha256": "36c14908cb6dfd560b7647f78855c786230b3d722fc5bb8357d2cf8f28d856ba"
+    },
+    {
+      "path": "run_webarena_reddit_official_admission.py",
+      "source": "mas_reproduction_20260910/run_webarena_reddit_official_admission.py",
+      "source_sha256": "b84b31702dcdc9d466bc844ee2e56023edab2e520e30f7f76a5af6a51de53831",
+      "packaged_sha256": "b84b31702dcdc9d466bc844ee2e56023edab2e520e30f7f76a5af6a51de53831"
+    },
+    {
+      "path": "run_webarena_reddit_stateful_rq1.py",
+      "source": "mas_reproduction_20260910/run_webarena_reddit_stateful_rq1.py",
+      "source_sha256": "c6f914a9112f08badc862d8cc914dbdac6b4a64cb60012f3a16df864f048fec9",
+      "packaged_sha256": "c6f914a9112f08badc862d8cc914dbdac6b4a64cb60012f3a16df864f048fec9"
+    },
+    {
+      "path": "summarize_rq2_cases.py",
+      "source": "mas_reproduction_20260910/summarize_rq2_cases.py",
+      "source_sha256": "b631253798baa9f3ea4df0d6174df0a690467d5b151ac908457c3ee9bfc42f71",
+      "packaged_sha256": "b631253798baa9f3ea4df0d6174df0a690467d5b151ac908457c3ee9bfc42f71"
+    },
+    {
+      "path": "run_netem_task_bridge_experiment.py",
+      "source": "mas_reproduction_20260910/run_netem_task_bridge_experiment.py",
+      "source_sha256": "cea87b97342916ba028be5b62f85df1968364f254ebb35758b1b2568b9fa934c",
+      "packaged_sha256": "cea87b97342916ba028be5b62f85df1968364f254ebb35758b1b2568b9fa934c"
+    },
+    {
+      "path": "prepare_webarena_admin_repeated_confirmation.py",
+      "source": "mas_reproduction_20260910/prepare_webarena_admin_repeated_confirmation.py",
+      "source_sha256": "7a559515245860ccc55dc0f02ae687f47f58b2a08e0ee00525cb1634a3e718f4",
+      "packaged_sha256": "7a559515245860ccc55dc0f02ae687f47f58b2a08e0ee00525cb1634a3e718f4"
+    },
+    {
+      "path": "run_webarena_admin_main_confirmation.py",
+      "source": "mas_reproduction_20260910/run_webarena_admin_main_confirmation.py",
+      "source_sha256": "4bb5e1a40126382f75a74caf69ef8c6e4e641175a65858f6b834c6357dbba061",
+      "packaged_sha256": "4bb5e1a40126382f75a74caf69ef8c6e4e641175a65858f6b834c6357dbba061"
+    },
+    {
+      "path": "deploy/mas-shopping-control.service",
+      "source": "mas_reproduction_20260910/deploy/mas-shopping-control.service",
+      "source_sha256": "36fde55d50d1de6c86a673d39425eb48579e25b452354d5d6bf5fe0b0b1ac321",
+      "packaged_sha256": "36fde55d50d1de6c86a673d39425eb48579e25b452354d5d6bf5fe0b0b1ac321"
+    },
+    {
+      "path": "deploy/shopping-docker.json",
+      "source": "mas_reproduction_20260910/deploy/shopping-docker.json",
+      "source_sha256": "c725e21a28ad92f71262a9350e0cde53407d743eea413aec863f82710a8e075a",
+      "packaged_sha256": "c725e21a28ad92f71262a9350e0cde53407d743eea413aec863f82710a8e075a"
+    },
+    {
+      "path": "deploy/mas-shopping-http.service",
+      "source": "mas_reproduction_20260910/deploy/mas-shopping-http.service",
+      "source_sha256": "da58dd5b41e39d70402df5af47bdcb9895905e1f8f7043367fb33c5f1c574624",
+      "packaged_sha256": "da58dd5b41e39d70402df5af47bdcb9895905e1f8f7043367fb33c5f1c574624"
+    },
+    {
+      "path": "deploy/mas-shopping-docker-override.conf",
+      "source": "mas_reproduction_20260910/deploy/mas-shopping-docker-override.conf",
+      "source_sha256": "d0c847dc8ec993df4774413f03b50ba5972a5b163cb1402d6dd30f6daa73aab9",
+      "packaged_sha256": "d0c847dc8ec993df4774413f03b50ba5972a5b163cb1402d6dd30f6daa73aab9"
+    },
+    {
+      "path": "deploy/mas-shopping-control.socket",
+      "source": "mas_reproduction_20260910/deploy/mas-shopping-control.socket",
+      "source_sha256": "424d2769a3ee6fef44afff37bf5b514dcb58533d584ce6a63f07a12d86fab56e",
+      "packaged_sha256": "424d2769a3ee6fef44afff37bf5b514dcb58533d584ce6a63f07a12d86fab56e"
+    },
+    {
+      "path": "deploy/mas-shopping-http.socket",
+      "source": "mas_reproduction_20260910/deploy/mas-shopping-http.socket",
+      "source_sha256": "f488fa91ed248a22d14bca3da340c7678a39403582f80ef96d491d5c1682dbac",
+      "packaged_sha256": "f488fa91ed248a22d14bca3da340c7678a39403582f80ef96d491d5c1682dbac"
+    },
+    {
+      "path": "tests/test_consequence_axes.py",
+      "source": "mas_reproduction_20260910/tests/test_consequence_axes.py",
+      "source_sha256": "917c230fa247d2c26529a7c219937b589af58d535cbb997b8cc6c98f224eedb0",
+      "packaged_sha256": "917c230fa247d2c26529a7c219937b589af58d535cbb997b8cc6c98f224eedb0"
+    },
+    {
+      "path": "tests/test_bottom_up_bridge.py",
+      "source": "mas_reproduction_20260910/tests/test_bottom_up_bridge.py",
+      "source_sha256": "bf5aeeb15049c45a4d9b6308f4577b4fe9335c2792feb5ae5e88ace2e4a92f9d",
+      "packaged_sha256": "bf5aeeb15049c45a4d9b6308f4577b4fe9335c2792feb5ae5e88ace2e4a92f9d"
+    },
+    {
+      "path": "tests/test_shopping_strict_evaluator.py",
+      "source": "mas_reproduction_20260910/tests/test_shopping_strict_evaluator.py",
+      "source_sha256": "527c40b661f8a464e57e911aeed0790abcd2d08d73165b501d8283559d0b5091",
+      "packaged_sha256": "527c40b661f8a464e57e911aeed0790abcd2d08d73165b501d8283559d0b5091"
+    },
+    {
+      "path": "tests/test_mitigation_acceptance_audit.py",
+      "source": "mas_reproduction_20260910/tests/test_mitigation_acceptance_audit.py",
+      "source_sha256": "ec4d857e0e69ffe1bcd65a1cd6501f258f4e81ff9d52dac2218775289b411f77",
+      "packaged_sha256": "ec4d857e0e69ffe1bcd65a1cd6501f258f4e81ff9d52dac2218775289b411f77"
+    },
+    {
+      "path": "tests/test_webarena_topologies.py",
+      "source": "mas_reproduction_20260910/tests/test_webarena_topologies.py",
+      "source_sha256": "e371b21f9957a2ce44ba5fbe7af5a718cea67cb82d073b4d2f9d77fb5efa994d",
+      "packaged_sha256": "e371b21f9957a2ce44ba5fbe7af5a718cea67cb82d073b4d2f9d77fb5efa994d"
+    },
+    {
+      "path": "tests/test_benchmark_trace_contract.py",
+      "source": "mas_reproduction_20260910/tests/test_benchmark_trace_contract.py",
+      "source_sha256": "6f5f03a0bc73861e225ccaaa0cfdae1452471e8721285ae6af23e49b62a39e36",
+      "packaged_sha256": "6f5f03a0bc73861e225ccaaa0cfdae1452471e8721285ae6af23e49b62a39e36"
+    },
+    {
+      "path": "tests/test_shopping_result_audit.py",
+      "source": "mas_reproduction_20260910/tests/test_shopping_result_audit.py",
+      "source_sha256": "2f4420769f01840d3e013f9b7228c4e03f49db404f215e645319c2e76a7b0bd2",
+      "packaged_sha256": "2f4420769f01840d3e013f9b7228c4e03f49db404f215e645319c2e76a7b0bd2"
+    },
+    {
+      "path": "tests/test_ack_recovery_regression.py",
+      "source": "mas_reproduction_20260910/tests/test_ack_recovery_regression.py",
+      "source_sha256": "f565c72480f00be327eec7c5ad7695d948f24673c106f8ad8d54bd8c5671d330",
+      "packaged_sha256": "f565c72480f00be327eec7c5ad7695d948f24673c106f8ad8d54bd8c5671d330"
+    },
+    {
+      "path": "tests/test_shopping_execution_safety.py",
+      "source": "mas_reproduction_20260910/tests/test_shopping_execution_safety.py",
+      "source_sha256": "559327857715099d7dfdb43ef2d883e90f783ab12aaac6e5255abdedf96bf901",
+      "packaged_sha256": "559327857715099d7dfdb43ef2d883e90f783ab12aaac6e5255abdedf96bf901"
+    },
+    {
+      "path": "tests/test_webarena_clean_baseline_summary.py",
+      "source": "mas_reproduction_20260910/tests/test_webarena_clean_baseline_summary.py",
+      "source_sha256": "68131dfc4f9a55267988e900a87abcb1e7cc85f1794f92668e9114d23154d946",
+      "packaged_sha256": "68131dfc4f9a55267988e900a87abcb1e7cc85f1794f92668e9114d23154d946"
+    },
+    {
+      "path": "tests/test_multimechanism_audit.py",
+      "source": "mas_reproduction_20260910/tests/test_multimechanism_audit.py",
+      "source_sha256": "a676460f2ca7aacc5dffc555b479d3209c6589661dff839670f952ff61d5cb34",
+      "packaged_sha256": "a676460f2ca7aacc5dffc555b479d3209c6589661dff839670f952ff61d5cb34"
+    },
+    {
+      "path": "tests/test_theagentcompany_real.py",
+      "source": "mas_reproduction_20260910/tests/test_theagentcompany_real.py",
+      "source_sha256": "c219cdfa6a7ba5378adeffb8f34dd4e0918556ee5bb0e68b2a077bca243977f9",
+      "packaged_sha256": "c219cdfa6a7ba5378adeffb8f34dd4e0918556ee5bb0e68b2a077bca243977f9"
+    },
+    {
+      "path": "tests/test_deepseek_schedule.py",
+      "source": "mas_reproduction_20260910/tests/test_deepseek_schedule.py",
+      "source_sha256": "7250987043836c7300c605603eb43e657cc04642e30725a360966e15cd94490f",
+      "packaged_sha256": "7250987043836c7300c605603eb43e657cc04642e30725a360966e15cd94490f"
+    },
+    {
+      "path": "tests/test_multimechanism_matrix.py",
+      "source": "mas_reproduction_20260910/tests/test_multimechanism_matrix.py",
+      "source_sha256": "21dc218129b574b4a4b33f7c716d286857de793aa1a9572eae6ff0f062106fcb",
+      "packaged_sha256": "21dc218129b574b4a4b33f7c716d286857de793aa1a9572eae6ff0f062106fcb"
+    },
+    {
+      "path": "tests/test_propagation_evaluator.py",
+      "source": "mas_reproduction_20260910/tests/test_propagation_evaluator.py",
+      "source_sha256": "978ac6d66f5b51753cb5de489975e5335f7465a18304b90ee7fa6744b31f5b81",
+      "packaged_sha256": "978ac6d66f5b51753cb5de489975e5335f7465a18304b90ee7fa6744b31f5b81"
+    },
+    {
+      "path": "tests/test_multimechanism_runner.py",
+      "source": "mas_reproduction_20260910/tests/test_multimechanism_runner.py",
+      "source_sha256": "bec739261c8093bf33bce5c3f61cbdd7ed17b01a02edf4933f7dfa5fda143d4f",
+      "packaged_sha256": "bec739261c8093bf33bce5c3f61cbdd7ed17b01a02edf4933f7dfa5fda143d4f"
+    },
+    {
+      "path": "tests/test_multimechanism_parallel_runner.py",
+      "source": "mas_reproduction_20260910/tests/test_multimechanism_parallel_runner.py",
+      "source_sha256": "6d65c8db8b480108e970808d2dde1b02c205bcaaa55db92ebc927f12d2adf1b4",
+      "packaged_sha256": "6d65c8db8b480108e970808d2dde1b02c205bcaaa55db92ebc927f12d2adf1b4"
+    },
+    {
+      "path": "tests/test_shopping_mitigation.py",
+      "source": "mas_reproduction_20260910/tests/test_shopping_mitigation.py",
+      "source_sha256": "f4dbb3a9aee4050e67b1dc10b20688cfce80e7e06528cb72aef63a4ef41f4969",
+      "packaged_sha256": "f4dbb3a9aee4050e67b1dc10b20688cfce80e7e06528cb72aef63a4ef41f4969"
+    },
+    {
+      "path": "tests/test_webarena_task_selection.py",
+      "source": "mas_reproduction_20260910/tests/test_webarena_task_selection.py",
+      "source_sha256": "695da1a5a3c3aa9266368ec6f5ac83e4005301d470d39a56ed9980b39a2ec5a1",
+      "packaged_sha256": "695da1a5a3c3aa9266368ec6f5ac83e4005301d470d39a56ed9980b39a2ec5a1"
+    },
+    {
+      "path": "tests/test_llm_client.py",
+      "source": "mas_reproduction_20260910/tests/test_llm_client.py",
+      "source_sha256": "60cf3b8dcf814a0f7e8e4d0600ea46d1f2a7264ddfc5654b3f0004347cd3d852",
+      "packaged_sha256": "60cf3b8dcf814a0f7e8e4d0600ea46d1f2a7264ddfc5654b3f0004347cd3d852"
+    },
+    {
+      "path": "tests/test_application_fault_matrix.py",
+      "source": "mas_reproduction_20260910/tests/test_application_fault_matrix.py",
+      "source_sha256": "830cf06e21aa3a78908f54039cac2265984839230dec9638f1e92e44c5c22c30",
+      "packaged_sha256": "830cf06e21aa3a78908f54039cac2265984839230dec9638f1e92e44c5c22c30"
+    },
+    {
+      "path": "tests/test_multistate_admission.py",
+      "source": "mas_reproduction_20260910/tests/test_multistate_admission.py",
+      "source_sha256": "215d4fa9b26812bf90ecd0ba1479f6f09f322a6598a46c4849d4548a7534bb89",
+      "packaged_sha256": "215d4fa9b26812bf90ecd0ba1479f6f09f322a6598a46c4849d4548a7534bb89"
+    },
+    {
+      "path": "tests/test_webarena_admin_tools.py",
+      "source": "mas_reproduction_20260910/tests/test_webarena_admin_tools.py",
+      "source_sha256": "e662e14f269a75fb839bdb9ba02d7049785c5cef447ded349782d3e007c26fa8",
+      "packaged_sha256": "e662e14f269a75fb839bdb9ba02d7049785c5cef447ded349782d3e007c26fa8"
+    },
+    {
+      "path": "tests/test_multimechanism_parallel_probe.py",
+      "source": "mas_reproduction_20260910/tests/test_multimechanism_parallel_probe.py",
+      "source_sha256": "a1f6189173a62b3f5bff07a471f7192ab0515415997c78082dedccd06ee2709d",
+      "packaged_sha256": "a1f6189173a62b3f5bff07a471f7192ab0515415997c78082dedccd06ee2709d"
+    },
+    {
+      "path": "tests/test_benchmark_result_summary.py",
+      "source": "mas_reproduction_20260910/tests/test_benchmark_result_summary.py",
+      "source_sha256": "5f61fe1654eeafdc8ab7defc15e4ec8c5a4b01fb9bf970cf5a4e8d55e691e7e3",
+      "packaged_sha256": "5f61fe1654eeafdc8ab7defc15e4ec8c5a4b01fb9bf970cf5a4e8d55e691e7e3"
+    },
+    {
+      "path": "tests/test_mitigation_matrix.py",
+      "source": "mas_reproduction_20260910/tests/test_mitigation_matrix.py",
+      "source_sha256": "ec0f584c4f1002b4991f8780253a8d275cc8760429bb67826c226b5f92731be0",
+      "packaged_sha256": "ec0f584c4f1002b4991f8780253a8d275cc8760429bb67826c226b5f92731be0"
+    },
+    {
+      "path": "tests/test_webarena_admin_topologies.py",
+      "source": "mas_reproduction_20260910/tests/test_webarena_admin_topologies.py",
+      "source_sha256": "cd3530ede2280e5d9165a8077dba66c53c94b98db4d3ad9498a710271e1d3535",
+      "packaged_sha256": "cd3530ede2280e5d9165a8077dba66c53c94b98db4d3ad9498a710271e1d3535"
+    },
+    {
+      "path": "tests/test_local_inference_config_probe.py",
+      "source": "mas_reproduction_20260910/tests/test_local_inference_config_probe.py",
+      "source_sha256": "f5dfbd1dafe5946bff5740ff74c0d799997a2cf72051d59d1d49bacf04b401ec",
+      "packaged_sha256": "f5dfbd1dafe5946bff5740ff74c0d799997a2cf72051d59d1d49bacf04b401ec"
+    },
+    {
+      "path": "tests/test_multimechanism_faults.py",
+      "source": "mas_reproduction_20260910/tests/test_multimechanism_faults.py",
+      "source_sha256": "4033b1f9ec9057d8934217dc2363fa334d20c7bf39e40c1af5e3ef4818e3aabc",
+      "packaged_sha256": "4033b1f9ec9057d8934217dc2363fa334d20c7bf39e40c1af5e3ef4818e3aabc"
+    },
+    {
+      "path": "tests/test_webarena_admin_main_matrix.py",
+      "source": "mas_reproduction_20260910/tests/test_webarena_admin_main_matrix.py",
+      "source_sha256": "99ffabe448c5315c3937a7c9f778a884b078a7de4f1d33014237983a1d68f5cf",
+      "packaged_sha256": "99ffabe448c5315c3937a7c9f778a884b078a7de4f1d33014237983a1d68f5cf"
+    },
+    {
+      "path": "tests/test_shopping_multimechanism.py",
+      "source": "mas_reproduction_20260910/tests/test_shopping_multimechanism.py",
+      "source_sha256": "d332e8ac5d4c2832ad9ecc6e9ac3e13ecdfc908919882794da06fee6d71349ce",
+      "packaged_sha256": "d332e8ac5d4c2832ad9ecc6e9ac3e13ecdfc908919882794da06fee6d71349ce"
+    },
+    {
+      "path": "tests/test_shopping_live_receipts.py",
+      "source": "mas_reproduction_20260910/tests/test_shopping_live_receipts.py",
+      "source_sha256": "f839a8b079c5b85938f9715103c13e5c8c14dc3996035a4ac1e498cae7d6c928",
+      "packaged_sha256": "f839a8b079c5b85938f9715103c13e5c8c14dc3996035a4ac1e498cae7d6c928"
+    },
+    {
+      "path": "tests/test_multimechanism_formal_stats.py",
+      "source": "mas_reproduction_20260910/tests/test_multimechanism_formal_stats.py",
+      "source_sha256": "bb387389cd2369bacc2369027e4aae77770bbbe721a9c8e513162a848b0036c7",
+      "packaged_sha256": "bb387389cd2369bacc2369027e4aae77770bbbe721a9c8e513162a848b0036c7"
+    },
+    {
+      "path": "tests/test_shopping_action_protocol.py",
+      "source": "mas_reproduction_20260910/tests/test_shopping_action_protocol.py",
+      "source_sha256": "497da4b857d3a793a6f33c0fa1dac71a03c29d16e733639add95d2632f006da1",
+      "packaged_sha256": "497da4b857d3a793a6f33c0fa1dac71a03c29d16e733639add95d2632f006da1"
+    },
+    {
+      "path": "tests/test_multimechanism_eligibility.py",
+      "source": "mas_reproduction_20260910/tests/test_multimechanism_eligibility.py",
+      "source_sha256": "a217df11ee5b9936ed37f641d3e56f443c9f515ceeb1754043e97d7b050fc858",
+      "packaged_sha256": "a217df11ee5b9936ed37f641d3e56f443c9f515ceeb1754043e97d7b050fc858"
+    },
+    {
+      "path": "tests/test_webarena_admin_fault_matrix.py",
+      "source": "mas_reproduction_20260910/tests/test_webarena_admin_fault_matrix.py",
+      "source_sha256": "952288cf9c390f783fb0637f22e6684b12bccb50f22404908e71d4d47bf3e40d",
+      "packaged_sha256": "952288cf9c390f783fb0637f22e6684b12bccb50f22404908e71d4d47bf3e40d"
+    },
+    {
+      "path": "tests/test_mitigation_protocol.py",
+      "source": "mas_reproduction_20260910/tests/test_mitigation_protocol.py",
+      "source_sha256": "f67749070076ec1860eccb518a55b86599224740d72ed35ad7d9cb076d009838",
+      "packaged_sha256": "f67749070076ec1860eccb518a55b86599224740d72ed35ad7d9cb076d009838"
+    },
+    {
+      "path": "tests/test_webarena_shopping_real.py",
+      "source": "mas_reproduction_20260910/tests/test_webarena_shopping_real.py",
+      "source_sha256": "b073904053694143c26aeeabd3066909e44242b558cd0fa20d19ca09b97941a5",
+      "packaged_sha256": "b073904053694143c26aeeabd3066909e44242b558cd0fa20d19ca09b97941a5"
+    },
+    {
+      "path": "tests/test_webarena_admin_main_evaluator.py",
+      "source": "mas_reproduction_20260910/tests/test_webarena_admin_main_evaluator.py",
+      "source_sha256": "8eee79d4af447d16d327f27914642fc46eaab60d19f3d5709c62978d41b9caf7",
+      "packaged_sha256": "8eee79d4af447d16d327f27914642fc46eaab60d19f3d5709c62978d41b9caf7"
+    },
+    {
+      "path": "scripts/run_multimechanism_parallel.py",
+      "source": "mas_reproduction_20260910/scripts/run_multimechanism_parallel.py",
+      "source_sha256": "ab4542a4190954e45357b13e66f7d9c4cb4b22bae90c5e54e5272715046f2980",
+      "packaged_sha256": "ab4542a4190954e45357b13e66f7d9c4cb4b22bae90c5e54e5272715046f2980"
+    },
+    {
+      "path": "scripts/summarize_multimechanism_formal.py",
+      "source": "mas_reproduction_20260910/scripts/summarize_multimechanism_formal.py",
+      "source_sha256": "073695ae409ce37d1e000693088f89e96eef4195c4fba48433b282043eef5426",
+      "packaged_sha256": "073695ae409ce37d1e000693088f89e96eef4195c4fba48433b282043eef5426"
+    },
+    {
+      "path": "scripts/assess_multimechanism_eligibility.py",
+      "source": "mas_reproduction_20260910/scripts/assess_multimechanism_eligibility.py",
+      "source_sha256": "46489eb81805378042dad10dd011afdc849f448c74e507e23616d9d3c149566e",
+      "packaged_sha256": "46489eb81805378042dad10dd011afdc849f448c74e507e23616d9d3c149566e"
+    },
+    {
+      "path": "scripts/audit_shopping_mitigation.py",
+      "source": "mas_reproduction_20260910/scripts/audit_shopping_mitigation.py",
+      "source_sha256": "1bd450dd584d695c89e51d64b34c286d819aa8c4a629294b67c4a3b5c2b8192f",
+      "packaged_sha256": "1bd450dd584d695c89e51d64b34c286d819aa8c4a629294b67c4a3b5c2b8192f"
+    },
+    {
+      "path": "scripts/run_shopping_mitigation_local.sh",
+      "source": "mas_reproduction_20260910/scripts/run_shopping_mitigation_local.sh",
+      "source_sha256": "6051d03bc176be91022af469765af7b17fd8bd1e8beea3e40f3ac7b8f439704f",
+      "packaged_sha256": "6051d03bc176be91022af469765af7b17fd8bd1e8beea3e40f3ac7b8f439704f"
+    },
+    {
+      "path": "scripts/probe_local_inference_config.py",
+      "source": "mas_reproduction_20260910/scripts/probe_local_inference_config.py",
+      "source_sha256": "f52e5968e32d63b0e5c6d71f43e13131c7e19ad46784dddc49a6ba0db2ca378c",
+      "packaged_sha256": "f52e5968e32d63b0e5c6d71f43e13131c7e19ad46784dddc49a6ba0db2ca378c"
+    },
+    {
+      "path": "scripts/run_multimechanism_local.sh",
+      "source": "mas_reproduction_20260910/scripts/run_multimechanism_local.sh",
+      "source_sha256": "5787d72878fe8058c096c20f9c688accc9dc4aa52d4e62b8a470e7c5fdf63b4c",
+      "packaged_sha256": "5787d72878fe8058c096c20f9c688accc9dc4aa52d4e62b8a470e7c5fdf63b4c"
+    },
+    {
+      "path": "scripts/prepare_shopping_multistate_tasks.py",
+      "source": "mas_reproduction_20260910/scripts/prepare_shopping_multistate_tasks.py",
+      "source_sha256": "ebf44a070ebeddf16e6a98a41a7cf3cfb774f81f80f3b0390d188390df7bb3de",
+      "packaged_sha256": "ebf44a070ebeddf16e6a98a41a7cf3cfb774f81f80f3b0390d188390df7bb3de"
+    },
+    {
+      "path": "scripts/probe_multimechanism_parallel.py",
+      "source": "mas_reproduction_20260910/scripts/probe_multimechanism_parallel.py",
+      "source_sha256": "8498e7a132532882f9974a666c55f46411038bd5619faa19eeeb05a9f53d9853",
+      "packaged_sha256": "8498e7a132532882f9974a666c55f46411038bd5619faa19eeeb05a9f53d9853"
+    },
+    {
+      "path": "scripts/run_ack_recovery_regression.py",
+      "source": "mas_reproduction_20260910/scripts/run_ack_recovery_regression.py",
+      "source_sha256": "ae1477ac5a122c5bd4ab7ff7334251a460ae09a669346a1efe55c301055372e7",
+      "packaged_sha256": "ae1477ac5a122c5bd4ab7ff7334251a460ae09a669346a1efe55c301055372e7"
+    },
+    {
+      "path": "scripts/check_local_qwen.py",
+      "source": "mas_reproduction_20260910/scripts/check_local_qwen.py",
+      "source_sha256": "e23efcbdb5f64e97025002b17d012d0fb340ba8450394ab7b34b8331a0a047ab",
+      "packaged_sha256": "e23efcbdb5f64e97025002b17d012d0fb340ba8450394ab7b34b8331a0a047ab"
+    },
+    {
+      "path": "scripts/download_qwen27b.py",
+      "source": "mas_reproduction_20260910/scripts/download_qwen27b.py",
+      "source_sha256": "d93410329d5b04912037e36e044ceece44c7c11e5ff076d38a4e0b07f06932f4",
+      "packaged_sha256": "d93410329d5b04912037e36e044ceece44c7c11e5ff076d38a4e0b07f06932f4"
+    },
+    {
+      "path": "scripts/proxy_shopping.sh",
+      "source": "mas_reproduction_20260910/scripts/proxy_shopping.sh",
+      "source_sha256": "7618b898ac500740fcee250a469347b1b91a2ce998fbb4f6bb42c15260f1bf7d",
+      "packaged_sha256": "7618b898ac500740fcee250a469347b1b91a2ce998fbb4f6bb42c15260f1bf7d"
+    },
+    {
+      "path": "scripts/serve_qwen27b.sh",
+      "source": "mas_reproduction_20260910/scripts/serve_qwen27b.sh",
+      "source_sha256": "06be3f8dc64134cd64649264126459d038bd08a2b0539541cafcfb9a1e494112",
+      "packaged_sha256": "06be3f8dc64134cd64649264126459d038bd08a2b0539541cafcfb9a1e494112"
+    },
+    {
+      "path": "scripts/audit_shopping_multimechanism.py",
+      "source": "mas_reproduction_20260910/scripts/audit_shopping_multimechanism.py",
+      "source_sha256": "9130c3c1d743e8604bab929982e17483254f025c140f1ea334182a3354860b75",
+      "packaged_sha256": "9130c3c1d743e8604bab929982e17483254f025c140f1ea334182a3354860b75"
+    },
+    {
+      "path": "src/mas_faults/topology_designed_faults.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/topology_designed_faults.py",
+      "source_sha256": "cd295d6b8271db1ade8a013549c812d620e89528229669cb3527332d141a43c9",
+      "packaged_sha256": "cd295d6b8271db1ade8a013549c812d620e89528229669cb3527332d141a43c9"
+    },
+    {
+      "path": "src/mas_faults/webarena_task_selection.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_task_selection.py",
+      "source_sha256": "e46ca16d746eecb578af5ebc3807fad826f82fcbcb16401ee5d4d57a8cbd8185",
+      "packaged_sha256": "e46ca16d746eecb578af5ebc3807fad826f82fcbcb16401ee5d4d57a8cbd8185"
+    },
+    {
+      "path": "src/mas_faults/shopping_action_protocol.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/shopping_action_protocol.py",
+      "source_sha256": "349240ef18c04a04e3dd6a4cd33da32bbb63f1b44a9d956f0991f8883ba1137b",
+      "packaged_sha256": "349240ef18c04a04e3dd6a4cd33da32bbb63f1b44a9d956f0991f8883ba1137b"
+    },
+    {
+      "path": "src/mas_faults/webarena_admin_topologies.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_admin_topologies.py",
+      "source_sha256": "0641d1d15fc41527c72b318a082caf29782d25ca7e158a6f1a4ee65891fe1277",
+      "packaged_sha256": "0641d1d15fc41527c72b318a082caf29782d25ca7e158a6f1a4ee65891fe1277"
+    },
+    {
+      "path": "src/mas_faults/webarena_clean_baseline_summary.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_clean_baseline_summary.py",
+      "source_sha256": "be7ece2d99754e8aeda9dbe614dc139b71babae2feeb7bbc49c5f547c35ac37b",
+      "packaged_sha256": "be7ece2d99754e8aeda9dbe614dc139b71babae2feeb7bbc49c5f547c35ac37b"
+    },
+    {
+      "path": "src/mas_faults/swebench_offline_evaluation.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/swebench_offline_evaluation.py",
+      "source_sha256": "f28dc0f3b97d6409157b85b5a0cb7f2cdb78bf5f2aeaf9903ccef5396d155dae",
+      "packaged_sha256": "f28dc0f3b97d6409157b85b5a0cb7f2cdb78bf5f2aeaf9903ccef5396d155dae"
+    },
+    {
+      "path": "src/mas_faults/netem_task_bridge.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/netem_task_bridge.py",
+      "source_sha256": "9bf0528888e817baad839c88d1ff1a970e44df69716b7049823427daed358874",
+      "packaged_sha256": "9bf0528888e817baad839c88d1ff1a970e44df69716b7049823427daed358874"
+    },
+    {
+      "path": "src/mas_faults/swe_bench_team_real.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/swe_bench_team_real.py",
+      "source_sha256": "7e8c0c594e5151f9a32dad7f201a88615c25543e27427b66be2cfedaf07d84f3",
+      "packaged_sha256": "7e8c0c594e5151f9a32dad7f201a88615c25543e27427b66be2cfedaf07d84f3"
+    },
+    {
+      "path": "src/mas_faults/shopping_mitigation.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/shopping_mitigation.py",
+      "source_sha256": "2e46bbb50e544dca629a3640eac491d4bd970df11c44dee2250cfef1bdc91636",
+      "packaged_sha256": "2e46bbb50e544dca629a3640eac491d4bd970df11c44dee2250cfef1bdc91636"
+    },
+    {
+      "path": "src/mas_faults/webarena_admin_real.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_admin_real.py",
+      "source_sha256": "c78f8174e38e1a7469092510adc628fa84449cb5d8747a75d348506603fc8a52",
+      "packaged_sha256": "c78f8174e38e1a7469092510adc628fa84449cb5d8747a75d348506603fc8a52"
+    },
+    {
+      "path": "src/mas_faults/webarena_shopping_confirmation.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_shopping_confirmation.py",
+      "source_sha256": "01b013a940abfec5d23dfa2e7765af784ea27aac1e43f23dc83d737b112a2d10",
+      "packaged_sha256": "01b013a940abfec5d23dfa2e7765af784ea27aac1e43f23dc83d737b112a2d10"
+    },
+    {
+      "path": "src/mas_faults/theagentcompany_communication_real.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/theagentcompany_communication_real.py",
+      "source_sha256": "e2581eac3dc04d56738d24c3f6cae0bfc45f84ab41fd61dbb6d0169aff8f893b",
+      "packaged_sha256": "e2581eac3dc04d56738d24c3f6cae0bfc45f84ab41fd61dbb6d0169aff8f893b"
+    },
+    {
+      "path": "src/mas_faults/webarena_admin_tools.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_admin_tools.py",
+      "source_sha256": "3c3fc6df567a4a8a4ea9a1a26a401c009c3566d60a7256d9ce4fbedab2878178",
+      "packaged_sha256": "3c3fc6df567a4a8a4ea9a1a26a401c009c3566d60a7256d9ce4fbedab2878178"
+    },
+    {
+      "path": "src/mas_faults/webarena_shopping_real.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_shopping_real.py",
+      "source_sha256": "ee777dc1cadf27a9acafce6ea21c3644c6c5449b798bb1b685f45c22c34cdf00",
+      "packaged_sha256": "ee777dc1cadf27a9acafce6ea21c3644c6c5449b798bb1b685f45c22c34cdf00"
+    },
+    {
+      "path": "src/mas_faults/webarena_admin_main_matrix.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_admin_main_matrix.py",
+      "source_sha256": "450bb0112fcb12fd21d0d864b621669e282ca6f40909d9ac8660006dc6dc6665",
+      "packaged_sha256": "450bb0112fcb12fd21d0d864b621669e282ca6f40909d9ac8660006dc6dc6665"
+    },
+    {
+      "path": "src/mas_faults/webarena_admin_controlled.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_admin_controlled.py",
+      "source_sha256": "9d1c662dfff49c95eb9eddc50d3508e789fce1463bf451e76ec12dd598f86a84",
+      "packaged_sha256": "9d1c662dfff49c95eb9eddc50d3508e789fce1463bf451e76ec12dd598f86a84"
+    },
+    {
+      "path": "src/mas_faults/benchmark_result_summary.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/benchmark_result_summary.py",
+      "source_sha256": "1f150df9e774183a6db6b1fc88235377cc53e1377f3992b48cc465be52fe52ca",
+      "packaged_sha256": "1f150df9e774183a6db6b1fc88235377cc53e1377f3992b48cc465be52fe52ca"
+    },
+    {
+      "path": "src/mas_faults/netem_relay.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/netem_relay.py",
+      "source_sha256": "4b7f16c7a72669ffae651223f0faf784d5f6a39e79f94d086e41c68953a42327",
+      "packaged_sha256": "4b7f16c7a72669ffae651223f0faf784d5f6a39e79f94d086e41c68953a42327"
+    },
+    {
+      "path": "src/mas_faults/swe_bench_verified_real.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/swe_bench_verified_real.py",
+      "source_sha256": "456dab40a44dbfad81b364ef4c4544169d9cefc1b43f50a83e688041feff8f2b",
+      "packaged_sha256": "456dab40a44dbfad81b364ef4c4544169d9cefc1b43f50a83e688041feff8f2b"
+    },
+    {
+      "path": "src/mas_faults/multimechanism_faults.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/multimechanism_faults.py",
+      "source_sha256": "9074039ad8963eea3aebee7a713481f0f83b61b3347a9f278ef0f8cbbee15d60",
+      "packaged_sha256": "9074039ad8963eea3aebee7a713481f0f83b61b3347a9f278ef0f8cbbee15d60"
+    },
+    {
+      "path": "src/mas_faults/webarena_admin_main_evaluator.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_admin_main_evaluator.py",
+      "source_sha256": "33dd17a15edc44305229585ae019e07a9425b42f5625949ed0a7db3e1a29e8b4",
+      "packaged_sha256": "33dd17a15edc44305229585ae019e07a9425b42f5625949ed0a7db3e1a29e8b4"
+    },
+    {
+      "path": "src/mas_faults/webarena_admin_confirmation.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_admin_confirmation.py",
+      "source_sha256": "850f1ee3605774349301c25416cc8608b7bfa4537da2a2e13caed8ce72755b37",
+      "packaged_sha256": "850f1ee3605774349301c25416cc8608b7bfa4537da2a2e13caed8ce72755b37"
+    },
+    {
+      "path": "src/mas_faults/webarena_admin_paired_analysis.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_admin_paired_analysis.py",
+      "source_sha256": "73e58946027988563a2dbd442728da6e30f403133b14afce3302a15a0ee3230b",
+      "packaged_sha256": "73e58946027988563a2dbd442728da6e30f403133b14afce3302a15a0ee3230b"
+    },
+    {
+      "path": "src/mas_faults/decision_message_faults.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/decision_message_faults.py",
+      "source_sha256": "94fb5bf9b5c6fff0715df6822e3fb1b67a9fefab76d6ff62a4e4a7a60a1fa4f1",
+      "packaged_sha256": "94fb5bf9b5c6fff0715df6822e3fb1b67a9fefab76d6ff62a4e4a7a60a1fa4f1"
+    },
+    {
+      "path": "src/mas_faults/cross_benchmark_main_confirmation.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/cross_benchmark_main_confirmation.py",
+      "source_sha256": "bf2cd5048f221af03f7f9d9ae9380eb423615b7fd273cd2a1ed45114c0de7c81",
+      "packaged_sha256": "bf2cd5048f221af03f7f9d9ae9380eb423615b7fd273cd2a1ed45114c0de7c81"
+    },
+    {
+      "path": "src/mas_faults/unified_fse_analysis.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/unified_fse_analysis.py",
+      "source_sha256": "3de545d65c782205c663e4d408433f98019cea82479e3db8820cea924ce0c221",
+      "packaged_sha256": "3de545d65c782205c663e4d408433f98019cea82479e3db8820cea924ce0c221"
+    },
+    {
+      "path": "src/mas_faults/theagentcompany_clean_real.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/theagentcompany_clean_real.py",
+      "source_sha256": "daa250fdff043d0b2a3ba02c912d2e82051e2c080e4ef75a28a4f1e121704037",
+      "packaged_sha256": "daa250fdff043d0b2a3ba02c912d2e82051e2c080e4ef75a28a4f1e121704037"
+    },
+    {
+      "path": "src/mas_faults/multimechanism_matrix.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/multimechanism_matrix.py",
+      "source_sha256": "c1f1fb27a9a3cbea945ea87bab0873ede61e0b7b2647fe96c507c4ab996837e7",
+      "packaged_sha256": "c1f1fb27a9a3cbea945ea87bab0873ede61e0b7b2647fe96c507c4ab996837e7"
+    },
+    {
+      "path": "src/mas_faults/llm_client.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/llm_client.py",
+      "source_sha256": "8450d67df6c878f3b31db790bbf8ca6b452699c3cfa02dd9d676890ab61e3471",
+      "packaged_sha256": "8450d67df6c878f3b31db790bbf8ca6b452699c3cfa02dd9d676890ab61e3471"
+    },
+    {
+      "path": "src/mas_faults/swe_stratified_selection.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/swe_stratified_selection.py",
+      "source_sha256": "7150eac02761569857149fc48dd28f609b1bdd746e621598ae5d5e7c552da078",
+      "packaged_sha256": "7150eac02761569857149fc48dd28f609b1bdd746e621598ae5d5e7c552da078"
+    },
+    {
+      "path": "src/mas_faults/cross_benchmark_main_matrix.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/cross_benchmark_main_matrix.py",
+      "source_sha256": "dc2ac35156a663564bcd2a19c165f83f1ae9528e7672862118e80bfb10c2a24c",
+      "packaged_sha256": "dc2ac35156a663564bcd2a19c165f83f1ae9528e7672862118e80bfb10c2a24c"
+    },
+    {
+      "path": "src/mas_faults/mitigation_protocol.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/mitigation_protocol.py",
+      "source_sha256": "5dcd9e1e745345b9a3c40d9db944774a2fdc2127b084b3e3aee461929d86b810",
+      "packaged_sha256": "5dcd9e1e745345b9a3c40d9db944774a2fdc2127b084b3e3aee461929d86b810"
+    },
+    {
+      "path": "src/mas_faults/webarena_admin_fault_matrix.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_admin_fault_matrix.py",
+      "source_sha256": "ab63e32a03c1073b810644df4e5ac67b945f93a24c09207eba28dd50ff340ea6",
+      "packaged_sha256": "ab63e32a03c1073b810644df4e5ac67b945f93a24c09207eba28dd50ff340ea6"
+    },
+    {
+      "path": "src/mas_faults/webarena_reddit_stateful_real.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_reddit_stateful_real.py",
+      "source_sha256": "3d5d384b7e1a7da3e757a2b096e672d6d4d6a0160657cac92d42b588e2eed97b",
+      "packaged_sha256": "3d5d384b7e1a7da3e757a2b096e672d6d4d6a0160657cac92d42b588e2eed97b"
+    },
+    {
+      "path": "src/mas_faults/shopping_multimechanism.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/shopping_multimechanism.py",
+      "source_sha256": "3aa149f2af4f8c9332cfd1eb889f60f25bb0d8a434590d0ccd89c90c0871b03b",
+      "packaged_sha256": "3aa149f2af4f8c9332cfd1eb889f60f25bb0d8a434590d0ccd89c90c0871b03b"
+    },
+    {
+      "path": "src/mas_faults/cross_benchmark_main_runner.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/cross_benchmark_main_runner.py",
+      "source_sha256": "54882121a08b614f0ff31fe5d59bdac1bb4f4f7c4a63897b0ac4c8503e910e1c",
+      "packaged_sha256": "54882121a08b614f0ff31fe5d59bdac1bb4f4f7c4a63897b0ac4c8503e910e1c"
+    },
+    {
+      "path": "src/mas_faults/swe_clean_baseline_summary.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/swe_clean_baseline_summary.py",
+      "source_sha256": "c76b9e057766b0917c43e703398e8e2d7275571302220266e4e727a0ca24e915",
+      "packaged_sha256": "c76b9e057766b0917c43e703398e8e2d7275571302220266e4e727a0ca24e915"
+    },
+    {
+      "path": "src/mas_faults/theagentcompany_autogen_runtime.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/theagentcompany_autogen_runtime.py",
+      "source_sha256": "f6ee3fe874a3f9845d9d47b4414624c2aa6f064b7a23ddedc502215bed6ec5f4",
+      "packaged_sha256": "f6ee3fe874a3f9845d9d47b4414624c2aa6f064b7a23ddedc502215bed6ec5f4"
+    },
+    {
+      "path": "src/mas_faults/bottom_up_bridge.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/bottom_up_bridge.py",
+      "source_sha256": "32d04f448b8a05823bdc0bcdd3fc9917f487d4bdd8c0ef1504cf16e2fab94703",
+      "packaged_sha256": "32d04f448b8a05823bdc0bcdd3fc9917f487d4bdd8c0ef1504cf16e2fab94703"
+    },
+    {
+      "path": "src/mas_faults/swe_bench_hybrid_real.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/swe_bench_hybrid_real.py",
+      "source_sha256": "d3bd6aaea18ce202cdd181e2d2ff22ecf00a8ccea2089d31f17affa8dfd1a0ee",
+      "packaged_sha256": "d3bd6aaea18ce202cdd181e2d2ff22ecf00a8ccea2089d31f17affa8dfd1a0ee"
+    },
+    {
+      "path": "src/mas_faults/deepseek_schedule.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/deepseek_schedule.py",
+      "source_sha256": "165bd241a2b0a9e072e05aa39c6a97102d965c0ffc9b988b91eeae28dc0833e7",
+      "packaged_sha256": "165bd241a2b0a9e072e05aa39c6a97102d965c0ffc9b988b91eeae28dc0833e7"
+    },
+    {
+      "path": "src/mas_faults/swe_bench_flat_real.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/swe_bench_flat_real.py",
+      "source_sha256": "69578783c368196d324d1057c3ceb49164dd8ad73ed24f0e006df8de6d8876f3",
+      "packaged_sha256": "69578783c368196d324d1057c3ceb49164dd8ad73ed24f0e006df8de6d8876f3"
+    },
+    {
+      "path": "src/mas_faults/webarena_reddit_official.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/webarena_reddit_official.py",
+      "source_sha256": "e5975ffc5f85149b01cef9d8e04c15c34b361daff883993008e5e475168ef548",
+      "packaged_sha256": "e5975ffc5f85149b01cef9d8e04c15c34b361daff883993008e5e475168ef548"
+    },
+    {
+      "path": "src/mas_faults/swe_bench_multiround_real.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/swe_bench_multiround_real.py",
+      "source_sha256": "76143ff2ce764c1285f0edb9259a7b67618f40739bc6721928398db738147451",
+      "packaged_sha256": "76143ff2ce764c1285f0edb9259a7b67618f40739bc6721928398db738147451"
+    },
+    {
+      "path": "src/mas_faults/theagentcompany_real.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/theagentcompany_real.py",
+      "source_sha256": "f6743013b9ccc9b2c648da91ff405ca402544e125fea13ca705f4a75177b8c51",
+      "packaged_sha256": "f6743013b9ccc9b2c648da91ff405ca402544e125fea13ca705f4a75177b8c51"
+    },
+    {
+      "path": "src/mas_faults/benchmark_trace_contract.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/benchmark_trace_contract.py",
+      "source_sha256": "fd14a1bae36916f45a91f3f02d1cc6a3e028afa61aeb0ef8d7e80b898dbf7e57",
+      "packaged_sha256": "fd14a1bae36916f45a91f3f02d1cc6a3e028afa61aeb0ef8d7e80b898dbf7e57"
+    },
+    {
+      "path": "src/mas_faults/swe_bench_hierarchical_real.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/swe_bench_hierarchical_real.py",
+      "source_sha256": "f0eab933f8070901b7168a363c0e132b28c8f1287c026c36a006eaa116dcd66b",
+      "packaged_sha256": "f0eab933f8070901b7168a363c0e132b28c8f1287c026c36a006eaa116dcd66b"
+    },
+    {
+      "path": "src/mas_faults/llm/fault_scenarios.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/llm/fault_scenarios.py",
+      "source_sha256": "44a27c57cf22da5c648b4f21b11f746100a204515b6ec322be2120be01ac12ac",
+      "packaged_sha256": "44a27c57cf22da5c648b4f21b11f746100a204515b6ec322be2120be01ac12ac"
+    },
+    {
+      "path": "src/mas_faults/llm/webarena_topologies.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/llm/webarena_topologies.py",
+      "source_sha256": "5fecbf47ba56fdb046c4570b9951da88ab06a8848bf770c35afc7ddc61018fc5",
+      "packaged_sha256": "5fecbf47ba56fdb046c4570b9951da88ab06a8848bf770c35afc7ddc61018fc5"
+    },
+    {
+      "path": "src/mas_faults/llm/application_fault_matrix.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/llm/application_fault_matrix.py",
+      "source_sha256": "606ddbd11189c1313c54038afebee19d8340eeeb45ca68d77c1aa09537cd483c",
+      "packaged_sha256": "606ddbd11189c1313c54038afebee19d8340eeeb45ca68d77c1aa09537cd483c"
+    },
+    {
+      "path": "src/mas_faults/llm/webarena_reddit_topologies.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/llm/webarena_reddit_topologies.py",
+      "source_sha256": "81a3f705763639d2c8ca5920929c7f1818878d7719701f7dde0abe057e30b942",
+      "packaged_sha256": "81a3f705763639d2c8ca5920929c7f1818878d7719701f7dde0abe057e30b942"
+    },
+    {
+      "path": "src/mas_faults/llm/propagation_evaluator.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/llm/propagation_evaluator.py",
+      "source_sha256": "4d6437168344eacbbc243f332fb5aa66b2f2a304dd93e74ae78a66d151daedf7",
+      "packaged_sha256": "4d6437168344eacbbc243f332fb5aa66b2f2a304dd93e74ae78a66d151daedf7"
+    },
+    {
+      "path": "src/mas_faults/llm/shopping_strict_evaluator.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/llm/shopping_strict_evaluator.py",
+      "source_sha256": "0ddbd6425ed4b15407d4e07fa2e0a8d3de3b6c2e0d0e35c4986511f0d751c9b2",
+      "packaged_sha256": "0ddbd6425ed4b15407d4e07fa2e0a8d3de3b6c2e0d0e35c4986511f0d751c9b2"
+    },
+    {
+      "path": "src/mas_faults/llm/topology_experiment_controls.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/llm/topology_experiment_controls.py",
+      "source_sha256": "8e41cce1b5357f75b2f01f21403c17b1b91d00439bd7e0166708df12df2be33d",
+      "packaged_sha256": "8e41cce1b5357f75b2f01f21403c17b1b91d00439bd7e0166708df12df2be33d"
+    },
+    {
+      "path": "src/mas_faults/llm/consequence_axes.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/llm/consequence_axes.py",
+      "source_sha256": "84bf99e43fd19f1c415adfc0cd56e04b2f279a1af006f3c5cdb966ebb5a175b2",
+      "packaged_sha256": "84bf99e43fd19f1c415adfc0cd56e04b2f279a1af006f3c5cdb966ebb5a175b2"
+    },
+    {
+      "path": "src/mas_faults/llm/communication_interceptor.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/llm/communication_interceptor.py",
+      "source_sha256": "7ba746201c9b0cd4f406211816142869e537665bc34d067adad0fa7443378e6a",
+      "packaged_sha256": "7ba746201c9b0cd4f406211816142869e537665bc34d067adad0fa7443378e6a"
+    },
+    {
+      "path": "src/mas_faults/llm/architecture_manifestations.py",
+      "source": "mas_reproduction_20260910/src/mas_faults/llm/architecture_manifestations.py",
+      "source_sha256": "a7eddeab9c798caae842407a3b05e66012ac7a67963bed76fbee8dc47513cfcb",
+      "packaged_sha256": "a7eddeab9c798caae842407a3b05e66012ac7a67963bed76fbee8dc47513cfcb"
+    },
+    {
+      "path": "scripts/smoke/webarena_admin_evaluator_worker.py",
+      "source": "mas_reproduction_20260910/scripts/smoke/webarena_admin_evaluator_worker.py",
+      "source_sha256": "f3ce4d027eee077c72fb92bfbcd0710cadbbecf3d3b5eb711ce47cbf490c2bfd",
+      "packaged_sha256": "f3ce4d027eee077c72fb92bfbcd0710cadbbecf3d3b5eb711ce47cbf490c2bfd"
+    },
+    {
+      "path": "scripts/smoke/run_webarena_admin_tool_smoke.py",
+      "source": "mas_reproduction_20260910/scripts/smoke/run_webarena_admin_tool_smoke.py",
+      "source_sha256": "40a7f8b7a4261b102297235087dd828c187b1b26566a3d2ec21f52264810c017",
+      "packaged_sha256": "40a7f8b7a4261b102297235087dd828c187b1b26566a3d2ec21f52264810c017"
+    },
+    {
+      "path": "scripts/smoke/webarena_admin_browser_worker.py",
+      "source": "mas_reproduction_20260910/scripts/smoke/webarena_admin_browser_worker.py",
+      "source_sha256": "4ef7fae56c04a7b3a8700742589511e5b3e607b8c6447623ffaa4d29353b24f8",
+      "packaged_sha256": "4ef7fae56c04a7b3a8700742589511e5b3e607b8c6447623ffaa4d29353b24f8"
+    },
+    {
+      "path": "mas_rq4_20260914/runner.py",
+      "source": "mas_rq4_20260914/runner.py",
+      "source_sha256": "a03487e8ff209f13a4cd7b402bc1d4d04e962bb9c91d5c42357d671b5eb83d66",
+      "packaged_sha256": "a03487e8ff209f13a4cd7b402bc1d4d04e962bb9c91d5c42357d671b5eb83d66"
+    },
+    {
+      "path": "mas_rq4_20260914/test_exposure.py",
+      "source": "mas_rq4_20260914/test_exposure.py",
+      "source_sha256": "3993beb9457447270a8c02abe9ee2eae10b53824e30017b150edd75bfc9eacf5",
+      "packaged_sha256": "3993beb9457447270a8c02abe9ee2eae10b53824e30017b150edd75bfc9eacf5"
+    },
+    {
+      "path": "mas_rq4_20260914/trial.py",
+      "source": "mas_rq4_20260914/trial.py",
+      "source_sha256": "d10b8ef6899a7ad2ebe85f9e617f42508b2efd9b836af9f741f460e562a7b4b0",
+      "packaged_sha256": "d10b8ef6899a7ad2ebe85f9e617f42508b2efd9b836af9f741f460e562a7b4b0"
+    },
+    {
+      "path": "mas_rq4_20260914/exposure.py",
+      "source": "mas_rq4_20260914/exposure.py",
+      "source_sha256": "cbfd022dfd605464a7c1a9809e700974fa731fc8f2ce94ab5876a82856d34602",
+      "packaged_sha256": "cbfd022dfd605464a7c1a9809e700974fa731fc8f2ce94ab5876a82856d34602"
+    },
+    {
+      "path": "mas_rq4_20260914/prepare_manifest.py",
+      "source": "mas_rq4_20260914/prepare_manifest.py",
+      "source_sha256": "f30345a403b8830c211e40ead6223879c0d0218a7b24be629e95f3476b5c2c6d",
+      "packaged_sha256": "f30345a403b8830c211e40ead6223879c0d0218a7b24be629e95f3476b5c2c6d"
+    },
+    {
+      "path": "mas_rq4_20260914/test_runtime.py",
+      "source": "mas_rq4_20260914/test_runtime.py",
+      "source_sha256": "31853160a7c83742d96afc74bb8175444953e85ee522b7c91a70ec0009c33066",
+      "packaged_sha256": "31853160a7c83742d96afc74bb8175444953e85ee522b7c91a70ec0009c33066"
+    },
+    {
+      "path": "mas_rq4_20260914/design.py",
+      "source": "mas_rq4_20260914/design.py",
+      "source_sha256": "f2b9da378295aa26d410798dba34782324318a09b0ef909d80f4bb964a43f9cb",
+      "packaged_sha256": "f2b9da378295aa26d410798dba34782324318a09b0ef909d80f4bb964a43f9cb"
+    },
+    {
+      "path": "mas_rq4_20260914/runtime.py",
+      "source": "mas_rq4_20260914/runtime.py",
+      "source_sha256": "7946f138b3c9cc4e86c5fbe93bf918e66ecb82945b75e8cbf5b9e3dc32b832bd",
+      "packaged_sha256": "7946f138b3c9cc4e86c5fbe93bf918e66ecb82945b75e8cbf5b9e3dc32b832bd"
+    },
+    {
+      "path": "mas_rq4_20260914/test_contract.py",
+      "source": "mas_rq4_20260914/test_contract.py",
+      "source_sha256": "51135660f51e5b11df7d1ae32940a45e8f161ee03fe74494ed8323933c7ad06c",
+      "packaged_sha256": "51135660f51e5b11df7d1ae32940a45e8f161ee03fe74494ed8323933c7ad06c"
+    },
+    {
+      "path": "mas_rq4_20260914/test_runner.py",
+      "source": "mas_rq4_20260914/test_runner.py",
+      "source_sha256": "84cb1add20304188159776e6e7bdc8fc8761653f744cce2051a0084540f1eba9",
+      "packaged_sha256": "84cb1add20304188159776e6e7bdc8fc8761653f744cce2051a0084540f1eba9"
+    },
+    {
+      "path": "mas_rq4_20260914/contract.py",
+      "source": "mas_rq4_20260914/contract.py",
+      "source_sha256": "3f4b5cd3960e958a4fcfa604a0c29d97c8998910b8cd9409c7ed8a1b7c34bb87",
+      "packaged_sha256": "3f4b5cd3960e958a4fcfa604a0c29d97c8998910b8cd9409c7ed8a1b7c34bb87"
+    },
+    {
+      "path": "mas_rq4_20260914/test_design.py",
+      "source": "mas_rq4_20260914/test_design.py",
+      "source_sha256": "1fdd0dd30e622fba7dc0535b918901b621ae38f80d3c47126f1591d36c1911e8",
+      "packaged_sha256": "1fdd0dd30e622fba7dc0535b918901b621ae38f80d3c47126f1591d36c1911e8"
+    },
+    {
+      "path": "mas_rq4_analysis_20260914.py",
+      "source": "mas_rq4_analysis_20260914.py",
+      "source_sha256": "af24c2cbd7edaeb2efd07b9944ca8c83b52d252fa18feb0c36f787321af9225a",
+      "packaged_sha256": "af24c2cbd7edaeb2efd07b9944ca8c83b52d252fa18feb0c36f787321af9225a"
+    },
+    {
+      "path": "mas_rq4_audit_20260914.py",
+      "source": "mas_rq4_audit_20260914.py",
+      "source_sha256": "85f8e50ddd126cfe58a07758752aac80f7fe834b9c16797a80b4e533515f129e",
+      "packaged_sha256": "85f8e50ddd126cfe58a07758752aac80f7fe834b9c16797a80b4e533515f129e"
+    },
+    {
+      "path": "mas_rq4_continue_20260914.py",
+      "source": "mas_rq4_continue_20260914.py",
+      "source_sha256": "cb4d5610b4b79c9474262d86258c43b22417e65a6ff64decf2f54b96d0c57428",
+      "packaged_sha256": "cb4d5610b4b79c9474262d86258c43b22417e65a6ff64decf2f54b96d0c57428"
+    },
+    {
+      "path": "test_mas_rq4_analysis_20260914.py",
+      "source": "test_mas_rq4_analysis_20260914.py",
+      "source_sha256": "e0426c4ba16520611feff251509221d972566f82cda12f95b908f201dbd34200",
+      "packaged_sha256": "e0426c4ba16520611feff251509221d972566f82cda12f95b908f201dbd34200"
+    },
+    {
+      "path": "reports/domain_pattern_audit.py",
+      "source": "reports/domain_pattern_audit.py",
+      "source_sha256": "b1150434c565984340eb8648304544bb377a395571b6a5544cdd612e7f8c885e",
+      "packaged_sha256": "b1150434c565984340eb8648304544bb377a395571b6a5544cdd612e7f8c885e"
+    },
+    {
+      "path": "reports/rq123_six_condition_inputs_20260916_v2/analysis_config.json",
+      "source": "reports/rq123_six_condition_inputs_20260916_v2/analysis_config.json",
+      "source_sha256": "0bca85e98f44d66a36eb7933a0ca57cf0f228aa318ec90ec62c6d7c97b9a7999",
+      "packaged_sha256": "1afcb620aed0d756eaa63b267b23eac279d59f35d7004ed08b2b900e9ad40950",
+      "change": "Replace original workspace prefix with repository-relative path"
+    },
+    {
+      "path": "reports/rq123_six_condition_analysis_20260916_v1/analysis_config.json",
+      "source": "reports/rq123_six_condition_analysis_20260916_v1/analysis_config.json",
+      "source_sha256": "5eee15973a9913a987c7e6e72ea6c41f721113f6d0b2c0fe63937d91a91812a9",
+      "packaged_sha256": "b4bf2c389a99f41af17f9911f0ec3fded11a5b916c085e249d9b3d9227fb87b2",
+      "change": "Replace original workspace prefix with repository-relative path"
+    },
+    {
+      "path": "analysis/rq123_20260915/analyze_unified_fse_results.py",
+      "source": "RQ123_six_condition_materials_20260915/analysis_code/analyze_unified_fse_results.py",
+      "source_sha256": "35e3c13f98f0da0c0113cef177d5723877515b95ac69abb2ab4d432e20663f14",
+      "packaged_sha256": "35e3c13f98f0da0c0113cef177d5723877515b95ac69abb2ab4d432e20663f14"
+    },
+    {
+      "path": "analysis/rq123_20260915/mas_faults/__init__.py",
+      "source": "RQ123_six_condition_materials_20260915/analysis_code/mas_faults/__init__.py",
+      "source_sha256": "c9a90ae970424f95a349aa48ff9f70c922337bd2398eb5796a99143c439261a1",
+      "packaged_sha256": "c9a90ae970424f95a349aa48ff9f70c922337bd2398eb5796a99143c439261a1"
+    },
+    {
+      "path": "analysis/rq123_20260915/mas_faults/unified_fse_analysis.py",
+      "source": "RQ123_six_condition_materials_20260915/analysis_code/mas_faults/unified_fse_analysis.py",
+      "source_sha256": "8c4b2dd34a3877b542374c79b2c87d1e8c3fc4eab9ced7be288f8fb9a914d96e",
+      "packaged_sha256": "8c4b2dd34a3877b542374c79b2c87d1e8c3fc4eab9ced7be288f8fb9a914d96e"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/run_webarena_reddit_topology_rq2.py",
+      "source": "mas_rq4_20260914/legacy/run_webarena_reddit_topology_rq2.py",
+      "source_sha256": "eddc95d6bbffb6916f1a4cb5632546ec2c676f531a02caf24e15c7dcfca716bf",
+      "packaged_sha256": "eddc95d6bbffb6916f1a4cb5632546ec2c676f531a02caf24e15c7dcfca716bf"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/pytest.ini",
+      "source": "mas_rq4_20260914/legacy/pytest.ini",
+      "source_sha256": "91fe7f164c097cfa818b8c96aa39dce0f51c0ad402192afed085156719c556f8",
+      "packaged_sha256": "91fe7f164c097cfa818b8c96aa39dce0f51c0ad402192afed085156719c556f8"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/requirements.txt",
+      "source": "mas_rq4_20260914/legacy/requirements.txt",
+      "source_sha256": "1d066e790e4f2938436e953edd7d06ce19c18496cbc33b00725e4bfe841c35ab",
+      "packaged_sha256": "1d066e790e4f2938436e953edd7d06ce19c18496cbc33b00725e4bfe841c35ab"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/run_webarena_admin_controlled_fault_matrix.py",
+      "source": "mas_rq4_20260914/legacy/run_webarena_admin_controlled_fault_matrix.py",
+      "source_sha256": "a53d11f1e97caf78994e4de06ad3258c195d8761f57177f0ddb82e767eb87811",
+      "packaged_sha256": "a53d11f1e97caf78994e4de06ad3258c195d8761f57177f0ddb82e767eb87811"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/restore_sources.py",
+      "source": "mas_rq4_20260914/legacy/restore_sources.py",
+      "source_sha256": "2b82192f031b22c72026e5e7e44544aed3d6c1b5339230a5e08c2016a26b2183",
+      "packaged_sha256": "2b82192f031b22c72026e5e7e44544aed3d6c1b5339230a5e08c2016a26b2183"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/run_shopping_multimechanism.py",
+      "source": "mas_rq4_20260914/legacy/run_shopping_multimechanism.py",
+      "source_sha256": "a47b0b4794d8ffdc84394797a719c867ba92d057cfef3068a4c721668d88b6a5",
+      "packaged_sha256": "a47b0b4794d8ffdc84394797a719c867ba92d057cfef3068a4c721668d88b6a5"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/run_shopping_mitigation.py",
+      "source": "mas_rq4_20260914/legacy/run_shopping_mitigation.py",
+      "source_sha256": "789851152aa32a762aa3a3a7b78d4f79bee8ca9c489de8bbf73a4862c075b59c",
+      "packaged_sha256": "789851152aa32a762aa3a3a7b78d4f79bee8ca9c489de8bbf73a4862c075b59c"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/configure-storage.sh",
+      "source": "mas_rq4_20260914/legacy/configure-storage.sh",
+      "source_sha256": "7977d4a4ae2029278f4fed5ab8225d3e59a9ad338ac01b1ea7cda0a1cdcd845c",
+      "packaged_sha256": "7977d4a4ae2029278f4fed5ab8225d3e59a9ad338ac01b1ea7cda0a1cdcd845c"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/run_webarena_architecture_rq2.py",
+      "source": "mas_rq4_20260914/legacy/run_webarena_architecture_rq2.py",
+      "source_sha256": "f1417fd09c840137b3fcf294193ddc0f461cab85b49d45ab91cb4e92ba999f29",
+      "packaged_sha256": "f1417fd09c840137b3fcf294193ddc0f461cab85b49d45ab91cb4e92ba999f29"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/run_bottom_up_bridge_experiment.py",
+      "source": "mas_rq4_20260914/legacy/run_bottom_up_bridge_experiment.py",
+      "source_sha256": "999c7277e4985d1a1328e1b82775944f693a5543f886499a4ca2440468d678b2",
+      "packaged_sha256": "999c7277e4985d1a1328e1b82775944f693a5543f886499a4ca2440468d678b2"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/analyze_unified_fse_results.py",
+      "source": "mas_rq4_20260914/legacy/analyze_unified_fse_results.py",
+      "source_sha256": "35e3c13f98f0da0c0113cef177d5723877515b95ac69abb2ab4d432e20663f14",
+      "packaged_sha256": "35e3c13f98f0da0c0113cef177d5723877515b95ac69abb2ab4d432e20663f14"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/requirements.lock.txt",
+      "source": "mas_rq4_20260914/legacy/requirements.lock.txt",
+      "source_sha256": "36c14908cb6dfd560b7647f78855c786230b3d722fc5bb8357d2cf8f28d856ba",
+      "packaged_sha256": "36c14908cb6dfd560b7647f78855c786230b3d722fc5bb8357d2cf8f28d856ba"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/run_webarena_reddit_official_admission.py",
+      "source": "mas_rq4_20260914/legacy/run_webarena_reddit_official_admission.py",
+      "source_sha256": "b84b31702dcdc9d466bc844ee2e56023edab2e520e30f7f76a5af6a51de53831",
+      "packaged_sha256": "b84b31702dcdc9d466bc844ee2e56023edab2e520e30f7f76a5af6a51de53831"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/run_webarena_reddit_stateful_rq1.py",
+      "source": "mas_rq4_20260914/legacy/run_webarena_reddit_stateful_rq1.py",
+      "source_sha256": "c6f914a9112f08badc862d8cc914dbdac6b4a64cb60012f3a16df864f048fec9",
+      "packaged_sha256": "c6f914a9112f08badc862d8cc914dbdac6b4a64cb60012f3a16df864f048fec9"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/summarize_rq2_cases.py",
+      "source": "mas_rq4_20260914/legacy/summarize_rq2_cases.py",
+      "source_sha256": "b631253798baa9f3ea4df0d6174df0a690467d5b151ac908457c3ee9bfc42f71",
+      "packaged_sha256": "b631253798baa9f3ea4df0d6174df0a690467d5b151ac908457c3ee9bfc42f71"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/run_netem_task_bridge_experiment.py",
+      "source": "mas_rq4_20260914/legacy/run_netem_task_bridge_experiment.py",
+      "source_sha256": "cea87b97342916ba028be5b62f85df1968364f254ebb35758b1b2568b9fa934c",
+      "packaged_sha256": "cea87b97342916ba028be5b62f85df1968364f254ebb35758b1b2568b9fa934c"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/prepare_webarena_admin_repeated_confirmation.py",
+      "source": "mas_rq4_20260914/legacy/prepare_webarena_admin_repeated_confirmation.py",
+      "source_sha256": "7a559515245860ccc55dc0f02ae687f47f58b2a08e0ee00525cb1634a3e718f4",
+      "packaged_sha256": "7a559515245860ccc55dc0f02ae687f47f58b2a08e0ee00525cb1634a3e718f4"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/run_webarena_admin_main_confirmation.py",
+      "source": "mas_rq4_20260914/legacy/run_webarena_admin_main_confirmation.py",
+      "source_sha256": "4bb5e1a40126382f75a74caf69ef8c6e4e641175a65858f6b834c6357dbba061",
+      "packaged_sha256": "4bb5e1a40126382f75a74caf69ef8c6e4e641175a65858f6b834c6357dbba061"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_consequence_axes.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_consequence_axes.py",
+      "source_sha256": "917c230fa247d2c26529a7c219937b589af58d535cbb997b8cc6c98f224eedb0",
+      "packaged_sha256": "917c230fa247d2c26529a7c219937b589af58d535cbb997b8cc6c98f224eedb0"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_bottom_up_bridge.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_bottom_up_bridge.py",
+      "source_sha256": "bf5aeeb15049c45a4d9b6308f4577b4fe9335c2792feb5ae5e88ace2e4a92f9d",
+      "packaged_sha256": "bf5aeeb15049c45a4d9b6308f4577b4fe9335c2792feb5ae5e88ace2e4a92f9d"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_shopping_strict_evaluator.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_shopping_strict_evaluator.py",
+      "source_sha256": "527c40b661f8a464e57e911aeed0790abcd2d08d73165b501d8283559d0b5091",
+      "packaged_sha256": "527c40b661f8a464e57e911aeed0790abcd2d08d73165b501d8283559d0b5091"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_mitigation_acceptance_audit.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_mitigation_acceptance_audit.py",
+      "source_sha256": "ec4d857e0e69ffe1bcd65a1cd6501f258f4e81ff9d52dac2218775289b411f77",
+      "packaged_sha256": "ec4d857e0e69ffe1bcd65a1cd6501f258f4e81ff9d52dac2218775289b411f77"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/conftest.py",
+      "source": "mas_rq4_20260914/legacy/tests/conftest.py",
+      "source_sha256": "dd4941cca5c8f26fb22c2fb4a8d63c047f8e69306351ae13219830db9d853f00",
+      "packaged_sha256": "dd4941cca5c8f26fb22c2fb4a8d63c047f8e69306351ae13219830db9d853f00"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_webarena_topologies.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_webarena_topologies.py",
+      "source_sha256": "e371b21f9957a2ce44ba5fbe7af5a718cea67cb82d073b4d2f9d77fb5efa994d",
+      "packaged_sha256": "e371b21f9957a2ce44ba5fbe7af5a718cea67cb82d073b4d2f9d77fb5efa994d"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_benchmark_trace_contract.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_benchmark_trace_contract.py",
+      "source_sha256": "6f5f03a0bc73861e225ccaaa0cfdae1452471e8721285ae6af23e49b62a39e36",
+      "packaged_sha256": "6f5f03a0bc73861e225ccaaa0cfdae1452471e8721285ae6af23e49b62a39e36"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_deepseek_json_contract.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_deepseek_json_contract.py",
+      "source_sha256": "7e0dc5f7e0bab66d9bfd07f7314857b6c608d070fdb468f21e964084dc8fb526",
+      "packaged_sha256": "7e0dc5f7e0bab66d9bfd07f7314857b6c608d070fdb468f21e964084dc8fb526"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_multimechanism_execution_epoch.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_multimechanism_execution_epoch.py",
+      "source_sha256": "c4e38c5c757b84993bafa3aa5a49f29091e98165acd82f4738793255b04ab04e",
+      "packaged_sha256": "c4e38c5c757b84993bafa3aa5a49f29091e98165acd82f4738793255b04ab04e"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_shopping_result_audit.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_shopping_result_audit.py",
+      "source_sha256": "2f4420769f01840d3e013f9b7228c4e03f49db404f215e645319c2e76a7b0bd2",
+      "packaged_sha256": "2f4420769f01840d3e013f9b7228c4e03f49db404f215e645319c2e76a7b0bd2"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_ack_recovery_regression.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_ack_recovery_regression.py",
+      "source_sha256": "02b8196bf14777af24bd0a1eb9d274a472a6b4f626e2edef893b64175c9f3ede",
+      "packaged_sha256": "02b8196bf14777af24bd0a1eb9d274a472a6b4f626e2edef893b64175c9f3ede"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_shopping_execution_safety.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_shopping_execution_safety.py",
+      "source_sha256": "559327857715099d7dfdb43ef2d883e90f783ab12aaac6e5255abdedf96bf901",
+      "packaged_sha256": "559327857715099d7dfdb43ef2d883e90f783ab12aaac6e5255abdedf96bf901"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_webarena_clean_baseline_summary.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_webarena_clean_baseline_summary.py",
+      "source_sha256": "68131dfc4f9a55267988e900a87abcb1e7cc85f1794f92668e9114d23154d946",
+      "packaged_sha256": "68131dfc4f9a55267988e900a87abcb1e7cc85f1794f92668e9114d23154d946"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_multimechanism_audit.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_multimechanism_audit.py",
+      "source_sha256": "29daf25eddcf3d0ecd04e95e661275bd91128f632e7e0691f3c185bbacf5ab87",
+      "packaged_sha256": "29daf25eddcf3d0ecd04e95e661275bd91128f632e7e0691f3c185bbacf5ab87"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_multimechanism_parallel4.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_multimechanism_parallel4.py",
+      "source_sha256": "81cf39ff1eb6d82f00e86571efdb8bf58dac7deff08458ea7e7be10be810d899",
+      "packaged_sha256": "81cf39ff1eb6d82f00e86571efdb8bf58dac7deff08458ea7e7be10be810d899"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_theagentcompany_real.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_theagentcompany_real.py",
+      "source_sha256": "c219cdfa6a7ba5378adeffb8f34dd4e0918556ee5bb0e68b2a077bca243977f9",
+      "packaged_sha256": "c219cdfa6a7ba5378adeffb8f34dd4e0918556ee5bb0e68b2a077bca243977f9"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_deepseek_schedule.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_deepseek_schedule.py",
+      "source_sha256": "b533ecd36a16aef2639b2a0ff08df9d1d6e98c026a6aafe6f4e120a29f005602",
+      "packaged_sha256": "b533ecd36a16aef2639b2a0ff08df9d1d6e98c026a6aafe6f4e120a29f005602"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_multimechanism_matrix.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_multimechanism_matrix.py",
+      "source_sha256": "21dc218129b574b4a4b33f7c716d286857de793aa1a9572eae6ff0f062106fcb",
+      "packaged_sha256": "21dc218129b574b4a4b33f7c716d286857de793aa1a9572eae6ff0f062106fcb"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_propagation_evaluator.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_propagation_evaluator.py",
+      "source_sha256": "978ac6d66f5b51753cb5de489975e5335f7465a18304b90ee7fa6744b31f5b81",
+      "packaged_sha256": "978ac6d66f5b51753cb5de489975e5335f7465a18304b90ee7fa6744b31f5b81"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_multimechanism_runner.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_multimechanism_runner.py",
+      "source_sha256": "c3a74f9153f88a654bee18511a145490c901ed404110e9d1e984459c4c509f13",
+      "packaged_sha256": "c3a74f9153f88a654bee18511a145490c901ed404110e9d1e984459c4c509f13"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_multimechanism_parallel_runner.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_multimechanism_parallel_runner.py",
+      "source_sha256": "8b2035b980014efbda195faa86f86ae3413c0afe989a9650581ecc6de5076179",
+      "packaged_sha256": "8b2035b980014efbda195faa86f86ae3413c0afe989a9650581ecc6de5076179"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_shopping_mitigation.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_shopping_mitigation.py",
+      "source_sha256": "f4dbb3a9aee4050e67b1dc10b20688cfce80e7e06528cb72aef63a4ef41f4969",
+      "packaged_sha256": "f4dbb3a9aee4050e67b1dc10b20688cfce80e7e06528cb72aef63a4ef41f4969"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_webarena_task_selection.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_webarena_task_selection.py",
+      "source_sha256": "695da1a5a3c3aa9266368ec6f5ac83e4005301d470d39a56ed9980b39a2ec5a1",
+      "packaged_sha256": "695da1a5a3c3aa9266368ec6f5ac83e4005301d470d39a56ed9980b39a2ec5a1"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_llm_client.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_llm_client.py",
+      "source_sha256": "808cf360bde274dfb41c3d312e8f6d93ce99d8d775533f5cbd1a9628b9f9bf21",
+      "packaged_sha256": "808cf360bde274dfb41c3d312e8f6d93ce99d8d775533f5cbd1a9628b9f9bf21"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_recovery_diagnostic.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_recovery_diagnostic.py",
+      "source_sha256": "9e52a256de16de403e12d6057534502dba0be36efee9105b9bd3006055ececf7",
+      "packaged_sha256": "9e52a256de16de403e12d6057534502dba0be36efee9105b9bd3006055ececf7"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_application_fault_matrix.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_application_fault_matrix.py",
+      "source_sha256": "830cf06e21aa3a78908f54039cac2265984839230dec9638f1e92e44c5c22c30",
+      "packaged_sha256": "830cf06e21aa3a78908f54039cac2265984839230dec9638f1e92e44c5c22c30"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_multistate_admission.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_multistate_admission.py",
+      "source_sha256": "215d4fa9b26812bf90ecd0ba1479f6f09f322a6598a46c4849d4548a7534bb89",
+      "packaged_sha256": "215d4fa9b26812bf90ecd0ba1479f6f09f322a6598a46c4849d4548a7534bb89"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_webarena_admin_tools.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_webarena_admin_tools.py",
+      "source_sha256": "e662e14f269a75fb839bdb9ba02d7049785c5cef447ded349782d3e007c26fa8",
+      "packaged_sha256": "e662e14f269a75fb839bdb9ba02d7049785c5cef447ded349782d3e007c26fa8"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_multimechanism_parallel_probe.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_multimechanism_parallel_probe.py",
+      "source_sha256": "9604f2bbd39ce2bb317eec80fb6a517f28cf1de3f2988152719f3bb3db51922c",
+      "packaged_sha256": "9604f2bbd39ce2bb317eec80fb6a517f28cf1de3f2988152719f3bb3db51922c"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_benchmark_result_summary.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_benchmark_result_summary.py",
+      "source_sha256": "5f61fe1654eeafdc8ab7defc15e4ec8c5a4b01fb9bf970cf5a4e8d55e691e7e3",
+      "packaged_sha256": "5f61fe1654eeafdc8ab7defc15e4ec8c5a4b01fb9bf970cf5a4e8d55e691e7e3"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_mitigation_matrix.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_mitigation_matrix.py",
+      "source_sha256": "ec0f584c4f1002b4991f8780253a8d275cc8760429bb67826c226b5f92731be0",
+      "packaged_sha256": "ec0f584c4f1002b4991f8780253a8d275cc8760429bb67826c226b5f92731be0"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_webarena_admin_topologies.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_webarena_admin_topologies.py",
+      "source_sha256": "cd3530ede2280e5d9165a8077dba66c53c94b98db4d3ad9498a710271e1d3535",
+      "packaged_sha256": "cd3530ede2280e5d9165a8077dba66c53c94b98db4d3ad9498a710271e1d3535"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_deepseek_flash_runner.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_deepseek_flash_runner.py",
+      "source_sha256": "6777ffb450e9281c5a74b1abfc4d26c557db7322df46987bc987388b436ae337",
+      "packaged_sha256": "6777ffb450e9281c5a74b1abfc4d26c557db7322df46987bc987388b436ae337"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_local_inference_config_probe.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_local_inference_config_probe.py",
+      "source_sha256": "da0af64e5c82e519919c171d87cf2bc17eb5c31c374be646c5a753a968e0db5a",
+      "packaged_sha256": "da0af64e5c82e519919c171d87cf2bc17eb5c31c374be646c5a753a968e0db5a"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_multimechanism_faults.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_multimechanism_faults.py",
+      "source_sha256": "4033b1f9ec9057d8934217dc2363fa334d20c7bf39e40c1af5e3ef4818e3aabc",
+      "packaged_sha256": "4033b1f9ec9057d8934217dc2363fa334d20c7bf39e40c1af5e3ef4818e3aabc"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_webarena_admin_main_matrix.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_webarena_admin_main_matrix.py",
+      "source_sha256": "99ffabe448c5315c3937a7c9f778a884b078a7de4f1d33014237983a1d68f5cf",
+      "packaged_sha256": "99ffabe448c5315c3937a7c9f778a884b078a7de4f1d33014237983a1d68f5cf"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_shopping_multimechanism.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_shopping_multimechanism.py",
+      "source_sha256": "d332e8ac5d4c2832ad9ecc6e9ac3e13ecdfc908919882794da06fee6d71349ce",
+      "packaged_sha256": "d332e8ac5d4c2832ad9ecc6e9ac3e13ecdfc908919882794da06fee6d71349ce"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_shopping_live_receipts.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_shopping_live_receipts.py",
+      "source_sha256": "f839a8b079c5b85938f9715103c13e5c8c14dc3996035a4ac1e498cae7d6c928",
+      "packaged_sha256": "f839a8b079c5b85938f9715103c13e5c8c14dc3996035a4ac1e498cae7d6c928"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_multimechanism_formal_stats.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_multimechanism_formal_stats.py",
+      "source_sha256": "2f7f9e80125089007b9d972fab351464527d82beb734f0a5fa3212236d626e0d",
+      "packaged_sha256": "2f7f9e80125089007b9d972fab351464527d82beb734f0a5fa3212236d626e0d"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_shopping_action_protocol.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_shopping_action_protocol.py",
+      "source_sha256": "497da4b857d3a793a6f33c0fa1dac71a03c29d16e733639add95d2632f006da1",
+      "packaged_sha256": "497da4b857d3a793a6f33c0fa1dac71a03c29d16e733639add95d2632f006da1"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_multimechanism_eligibility.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_multimechanism_eligibility.py",
+      "source_sha256": "82fb2eb2d332c9cf6c5cf4b732f0e76e120c866477f7b642bb57ccb4a9b6a53b",
+      "packaged_sha256": "82fb2eb2d332c9cf6c5cf4b732f0e76e120c866477f7b642bb57ccb4a9b6a53b"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_webarena_admin_fault_matrix.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_webarena_admin_fault_matrix.py",
+      "source_sha256": "952288cf9c390f783fb0637f22e6684b12bccb50f22404908e71d4d47bf3e40d",
+      "packaged_sha256": "952288cf9c390f783fb0637f22e6684b12bccb50f22404908e71d4d47bf3e40d"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_mitigation_protocol.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_mitigation_protocol.py",
+      "source_sha256": "f67749070076ec1860eccb518a55b86599224740d72ed35ad7d9cb076d009838",
+      "packaged_sha256": "f67749070076ec1860eccb518a55b86599224740d72ed35ad7d9cb076d009838"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_webarena_shopping_real.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_webarena_shopping_real.py",
+      "source_sha256": "b073904053694143c26aeeabd3066909e44242b558cd0fa20d19ca09b97941a5",
+      "packaged_sha256": "b073904053694143c26aeeabd3066909e44242b558cd0fa20d19ca09b97941a5"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_webarena_admin_main_evaluator.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_webarena_admin_main_evaluator.py",
+      "source_sha256": "8eee79d4af447d16d327f27914642fc46eaab60d19f3d5709c62978d41b9caf7",
+      "packaged_sha256": "8eee79d4af447d16d327f27914642fc46eaab60d19f3d5709c62978d41b9caf7"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/tests/test_multimechanism_four_carts.py",
+      "source": "mas_rq4_20260914/legacy/tests/test_multimechanism_four_carts.py",
+      "source_sha256": "7780742405d78d9dabca5f037f1316d42147c1430636752336facd51aa7ad079",
+      "packaged_sha256": "7780742405d78d9dabca5f037f1316d42147c1430636752336facd51aa7ad079"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/run_multimechanism_parallel.py",
+      "source": "mas_rq4_20260914/legacy/scripts/run_multimechanism_parallel.py",
+      "source_sha256": "b5d5affa4eb0c20409534fbd75bd5f4651d5f3a69e073d5b3bba642adfaf150d",
+      "packaged_sha256": "b5d5affa4eb0c20409534fbd75bd5f4651d5f3a69e073d5b3bba642adfaf150d"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/summarize_multimechanism_formal.py",
+      "source": "mas_rq4_20260914/legacy/scripts/summarize_multimechanism_formal.py",
+      "source_sha256": "d5479cdb5fa8c85eed0cef8c21dc69b2977c98beddaa939c231b462f0eadad67",
+      "packaged_sha256": "d5479cdb5fa8c85eed0cef8c21dc69b2977c98beddaa939c231b462f0eadad67"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/assess_multimechanism_eligibility.py",
+      "source": "mas_rq4_20260914/legacy/scripts/assess_multimechanism_eligibility.py",
+      "source_sha256": "638d1464c7a3d83a97442b1dc6724dff239d82093746416a13fd762df2f2e248",
+      "packaged_sha256": "638d1464c7a3d83a97442b1dc6724dff239d82093746416a13fd762df2f2e248"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/audit_shopping_mitigation.py",
+      "source": "mas_rq4_20260914/legacy/scripts/audit_shopping_mitigation.py",
+      "source_sha256": "1bd450dd584d695c89e51d64b34c286d819aa8c4a629294b67c4a3b5c2b8192f",
+      "packaged_sha256": "1bd450dd584d695c89e51d64b34c286d819aa8c4a629294b67c4a3b5c2b8192f"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/deepseek41-runtime-env.sh",
+      "source": "mas_rq4_20260914/legacy/scripts/deepseek41-runtime-env.sh",
+      "source_sha256": "d1189c3a509a0094469cd2c61c05fc4460b09c193330d040d1197bd284e29fc3",
+      "packaged_sha256": "d1189c3a509a0094469cd2c61c05fc4460b09c193330d040d1197bd284e29fc3"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/run_shopping_mitigation_local.sh",
+      "source": "mas_rq4_20260914/legacy/scripts/run_shopping_mitigation_local.sh",
+      "source_sha256": "6051d03bc176be91022af469765af7b17fd8bd1e8beea3e40f3ac7b8f439704f",
+      "packaged_sha256": "6051d03bc176be91022af469765af7b17fd8bd1e8beea3e40f3ac7b8f439704f"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/run_multimechanism_parallel4.py",
+      "source": "mas_rq4_20260914/legacy/scripts/run_multimechanism_parallel4.py",
+      "source_sha256": "bc87a0b5d0ce86ea70c26b7a069a903eb6f033dbd8a9af801ff279bcbc59493a",
+      "packaged_sha256": "bc87a0b5d0ce86ea70c26b7a069a903eb6f033dbd8a9af801ff279bcbc59493a"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/probe_local_inference_config.py",
+      "source": "mas_rq4_20260914/legacy/scripts/probe_local_inference_config.py",
+      "source_sha256": "a4c486ba0eed2c147b6c93cc489fc51b4d49914d05fd77f465b1671c4a06cd8b",
+      "packaged_sha256": "a4c486ba0eed2c147b6c93cc489fc51b4d49914d05fd77f465b1671c4a06cd8b"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/run_multimechanism_local.sh",
+      "source": "mas_rq4_20260914/legacy/scripts/run_multimechanism_local.sh",
+      "source_sha256": "5787d72878fe8058c096c20f9c688accc9dc4aa52d4e62b8a470e7c5fdf63b4c",
+      "packaged_sha256": "5787d72878fe8058c096c20f9c688accc9dc4aa52d4e62b8a470e7c5fdf63b4c"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/prepare_shopping_multistate_tasks.py",
+      "source": "mas_rq4_20260914/legacy/scripts/prepare_shopping_multistate_tasks.py",
+      "source_sha256": "ebf44a070ebeddf16e6a98a41a7cf3cfb774f81f80f3b0390d188390df7bb3de",
+      "packaged_sha256": "ebf44a070ebeddf16e6a98a41a7cf3cfb774f81f80f3b0390d188390df7bb3de"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/probe_multimechanism_parallel.py",
+      "source": "mas_rq4_20260914/legacy/scripts/probe_multimechanism_parallel.py",
+      "source_sha256": "8498e7a132532882f9974a666c55f46411038bd5619faa19eeeb05a9f53d9853",
+      "packaged_sha256": "8498e7a132532882f9974a666c55f46411038bd5619faa19eeeb05a9f53d9853"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/run_ack_recovery_regression.py",
+      "source": "mas_rq4_20260914/legacy/scripts/run_ack_recovery_regression.py",
+      "source_sha256": "0469e5ae451d81f3554e0128feb91dfadf5c85fb31748cd2e126b10378b1cec9",
+      "packaged_sha256": "0469e5ae451d81f3554e0128feb91dfadf5c85fb31748cd2e126b10378b1cec9"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/check_local_qwen.py",
+      "source": "mas_rq4_20260914/legacy/scripts/check_local_qwen.py",
+      "source_sha256": "e23efcbdb5f64e97025002b17d012d0fb340ba8450394ab7b34b8331a0a047ab",
+      "packaged_sha256": "e23efcbdb5f64e97025002b17d012d0fb340ba8450394ab7b34b8331a0a047ab"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/download_qwen27b.py",
+      "source": "mas_rq4_20260914/legacy/scripts/download_qwen27b.py",
+      "source_sha256": "d93410329d5b04912037e36e044ceece44c7c11e5ff076d38a4e0b07f06932f4",
+      "packaged_sha256": "d93410329d5b04912037e36e044ceece44c7c11e5ff076d38a4e0b07f06932f4"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/proxy_shopping.sh",
+      "source": "mas_rq4_20260914/legacy/scripts/proxy_shopping.sh",
+      "source_sha256": "7618b898ac500740fcee250a469347b1b91a2ce998fbb4f6bb42c15260f1bf7d",
+      "packaged_sha256": "7618b898ac500740fcee250a469347b1b91a2ce998fbb4f6bb42c15260f1bf7d"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/serve_qwen27b.sh",
+      "source": "mas_rq4_20260914/legacy/scripts/serve_qwen27b.sh",
+      "source_sha256": "06be3f8dc64134cd64649264126459d038bd08a2b0539541cafcfb9a1e494112",
+      "packaged_sha256": "06be3f8dc64134cd64649264126459d038bd08a2b0539541cafcfb9a1e494112"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/audit_shopping_multimechanism.py",
+      "source": "mas_rq4_20260914/legacy/scripts/audit_shopping_multimechanism.py",
+      "source_sha256": "3a8ffd186c65b1f12d337a1a0f678ef7603cfa6a5375140ab5afb94b5a42cda2",
+      "packaged_sha256": "3a8ffd186c65b1f12d337a1a0f678ef7603cfa6a5375140ab5afb94b5a42cda2"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/probe_multimechanism_four_carts.py",
+      "source": "mas_rq4_20260914/legacy/scripts/probe_multimechanism_four_carts.py",
+      "source_sha256": "0b7ded42e74c7a032a3a9bfc99715e9cd3b54dc62b3eeed5fee4b9c4f8e7ac2a",
+      "packaged_sha256": "0b7ded42e74c7a032a3a9bfc99715e9cd3b54dc62b3eeed5fee4b9c4f8e7ac2a"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/multimechanism_execution_epoch.py",
+      "source": "mas_rq4_20260914/legacy/scripts/multimechanism_execution_epoch.py",
+      "source_sha256": "3a96bd82828242144f928d058ad1dd59b432d7d76d48b4ae3f212cc554815558",
+      "packaged_sha256": "3a96bd82828242144f928d058ad1dd59b432d7d76d48b4ae3f212cc554815558"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/topology_designed_faults.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/topology_designed_faults.py",
+      "source_sha256": "cd295d6b8271db1ade8a013549c812d620e89528229669cb3527332d141a43c9",
+      "packaged_sha256": "cd295d6b8271db1ade8a013549c812d620e89528229669cb3527332d141a43c9"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_task_selection.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_task_selection.py",
+      "source_sha256": "e46ca16d746eecb578af5ebc3807fad826f82fcbcb16401ee5d4d57a8cbd8185",
+      "packaged_sha256": "e46ca16d746eecb578af5ebc3807fad826f82fcbcb16401ee5d4d57a8cbd8185"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/diagnostic_cart_audit.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/diagnostic_cart_audit.py",
+      "source_sha256": "7e2da46f15996c83f0c28841ff9f38003393965365ec1d2a003bead2275dc67e",
+      "packaged_sha256": "7e2da46f15996c83f0c28841ff9f38003393965365ec1d2a003bead2275dc67e"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/shopping_action_protocol.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/shopping_action_protocol.py",
+      "source_sha256": "349240ef18c04a04e3dd6a4cd33da32bbb63f1b44a9d956f0991f8883ba1137b",
+      "packaged_sha256": "349240ef18c04a04e3dd6a4cd33da32bbb63f1b44a9d956f0991f8883ba1137b"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_topologies.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_topologies.py",
+      "source_sha256": "0641d1d15fc41527c72b318a082caf29782d25ca7e158a6f1a4ee65891fe1277",
+      "packaged_sha256": "0641d1d15fc41527c72b318a082caf29782d25ca7e158a6f1a4ee65891fe1277"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_clean_baseline_summary.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_clean_baseline_summary.py",
+      "source_sha256": "be7ece2d99754e8aeda9dbe614dc139b71babae2feeb7bbc49c5f547c35ac37b",
+      "packaged_sha256": "be7ece2d99754e8aeda9dbe614dc139b71babae2feeb7bbc49c5f547c35ac37b"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/swebench_offline_evaluation.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/swebench_offline_evaluation.py",
+      "source_sha256": "f28dc0f3b97d6409157b85b5a0cb7f2cdb78bf5f2aeaf9903ccef5396d155dae",
+      "packaged_sha256": "f28dc0f3b97d6409157b85b5a0cb7f2cdb78bf5f2aeaf9903ccef5396d155dae"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/recovery_diagnostic.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/recovery_diagnostic.py",
+      "source_sha256": "9d753900d80e7188807ba4cfe7a65895801a03fd631d4e0fd1ee8d96d5c7e0e1",
+      "packaged_sha256": "9d753900d80e7188807ba4cfe7a65895801a03fd631d4e0fd1ee8d96d5c7e0e1"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/netem_task_bridge.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/netem_task_bridge.py",
+      "source_sha256": "9bf0528888e817baad839c88d1ff1a970e44df69716b7049823427daed358874",
+      "packaged_sha256": "9bf0528888e817baad839c88d1ff1a970e44df69716b7049823427daed358874"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/swe_bench_team_real.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/swe_bench_team_real.py",
+      "source_sha256": "7e8c0c594e5151f9a32dad7f201a88615c25543e27427b66be2cfedaf07d84f3",
+      "packaged_sha256": "7e8c0c594e5151f9a32dad7f201a88615c25543e27427b66be2cfedaf07d84f3"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/shopping_mitigation.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/shopping_mitigation.py",
+      "source_sha256": "2e46bbb50e544dca629a3640eac491d4bd970df11c44dee2250cfef1bdc91636",
+      "packaged_sha256": "2e46bbb50e544dca629a3640eac491d4bd970df11c44dee2250cfef1bdc91636"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_real.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_real.py",
+      "source_sha256": "c78f8174e38e1a7469092510adc628fa84449cb5d8747a75d348506603fc8a52",
+      "packaged_sha256": "c78f8174e38e1a7469092510adc628fa84449cb5d8747a75d348506603fc8a52"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_shopping_confirmation.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_shopping_confirmation.py",
+      "source_sha256": "01b013a940abfec5d23dfa2e7765af784ea27aac1e43f23dc83d737b112a2d10",
+      "packaged_sha256": "01b013a940abfec5d23dfa2e7765af784ea27aac1e43f23dc83d737b112a2d10"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/theagentcompany_communication_real.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/theagentcompany_communication_real.py",
+      "source_sha256": "e2581eac3dc04d56738d24c3f6cae0bfc45f84ab41fd61dbb6d0169aff8f893b",
+      "packaged_sha256": "e2581eac3dc04d56738d24c3f6cae0bfc45f84ab41fd61dbb6d0169aff8f893b"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_tools.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_tools.py",
+      "source_sha256": "3c3fc6df567a4a8a4ea9a1a26a401c009c3566d60a7256d9ce4fbedab2878178",
+      "packaged_sha256": "3c3fc6df567a4a8a4ea9a1a26a401c009c3566d60a7256d9ce4fbedab2878178"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_shopping_real.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_shopping_real.py",
+      "source_sha256": "ee777dc1cadf27a9acafce6ea21c3644c6c5449b798bb1b685f45c22c34cdf00",
+      "packaged_sha256": "ee777dc1cadf27a9acafce6ea21c3644c6c5449b798bb1b685f45c22c34cdf00"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_main_matrix.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_main_matrix.py",
+      "source_sha256": "450bb0112fcb12fd21d0d864b621669e282ca6f40909d9ac8660006dc6dc6665",
+      "packaged_sha256": "450bb0112fcb12fd21d0d864b621669e282ca6f40909d9ac8660006dc6dc6665"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_controlled.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_controlled.py",
+      "source_sha256": "9d1c662dfff49c95eb9eddc50d3508e789fce1463bf451e76ec12dd598f86a84",
+      "packaged_sha256": "9d1c662dfff49c95eb9eddc50d3508e789fce1463bf451e76ec12dd598f86a84"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/benchmark_result_summary.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/benchmark_result_summary.py",
+      "source_sha256": "1f150df9e774183a6db6b1fc88235377cc53e1377f3992b48cc465be52fe52ca",
+      "packaged_sha256": "1f150df9e774183a6db6b1fc88235377cc53e1377f3992b48cc465be52fe52ca"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/netem_relay.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/netem_relay.py",
+      "source_sha256": "4b7f16c7a72669ffae651223f0faf784d5f6a39e79f94d086e41c68953a42327",
+      "packaged_sha256": "4b7f16c7a72669ffae651223f0faf784d5f6a39e79f94d086e41c68953a42327"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/swe_bench_verified_real.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/swe_bench_verified_real.py",
+      "source_sha256": "456dab40a44dbfad81b364ef4c4544169d9cefc1b43f50a83e688041feff8f2b",
+      "packaged_sha256": "456dab40a44dbfad81b364ef4c4544169d9cefc1b43f50a83e688041feff8f2b"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/multimechanism_faults.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/multimechanism_faults.py",
+      "source_sha256": "9074039ad8963eea3aebee7a713481f0f83b61b3347a9f278ef0f8cbbee15d60",
+      "packaged_sha256": "9074039ad8963eea3aebee7a713481f0f83b61b3347a9f278ef0f8cbbee15d60"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_main_evaluator.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_main_evaluator.py",
+      "source_sha256": "33dd17a15edc44305229585ae019e07a9425b42f5625949ed0a7db3e1a29e8b4",
+      "packaged_sha256": "33dd17a15edc44305229585ae019e07a9425b42f5625949ed0a7db3e1a29e8b4"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_confirmation.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_confirmation.py",
+      "source_sha256": "850f1ee3605774349301c25416cc8608b7bfa4537da2a2e13caed8ce72755b37",
+      "packaged_sha256": "850f1ee3605774349301c25416cc8608b7bfa4537da2a2e13caed8ce72755b37"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_paired_analysis.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_paired_analysis.py",
+      "source_sha256": "73e58946027988563a2dbd442728da6e30f403133b14afce3302a15a0ee3230b",
+      "packaged_sha256": "73e58946027988563a2dbd442728da6e30f403133b14afce3302a15a0ee3230b"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/decision_message_faults.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/decision_message_faults.py",
+      "source_sha256": "94fb5bf9b5c6fff0715df6822e3fb1b67a9fefab76d6ff62a4e4a7a60a1fa4f1",
+      "packaged_sha256": "94fb5bf9b5c6fff0715df6822e3fb1b67a9fefab76d6ff62a4e4a7a60a1fa4f1"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/cross_benchmark_main_confirmation.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/cross_benchmark_main_confirmation.py",
+      "source_sha256": "bf2cd5048f221af03f7f9d9ae9380eb423615b7fd273cd2a1ed45114c0de7c81",
+      "packaged_sha256": "bf2cd5048f221af03f7f9d9ae9380eb423615b7fd273cd2a1ed45114c0de7c81"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/unified_fse_analysis.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/unified_fse_analysis.py",
+      "source_sha256": "3de545d65c782205c663e4d408433f98019cea82479e3db8820cea924ce0c221",
+      "packaged_sha256": "3de545d65c782205c663e4d408433f98019cea82479e3db8820cea924ce0c221"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/theagentcompany_clean_real.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/theagentcompany_clean_real.py",
+      "source_sha256": "daa250fdff043d0b2a3ba02c912d2e82051e2c080e4ef75a28a4f1e121704037",
+      "packaged_sha256": "daa250fdff043d0b2a3ba02c912d2e82051e2c080e4ef75a28a4f1e121704037"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/multimechanism_matrix.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/multimechanism_matrix.py",
+      "source_sha256": "c1f1fb27a9a3cbea945ea87bab0873ede61e0b7b2647fe96c507c4ab996837e7",
+      "packaged_sha256": "c1f1fb27a9a3cbea945ea87bab0873ede61e0b7b2647fe96c507c4ab996837e7"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/llm_client.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/llm_client.py",
+      "source_sha256": "ca1347d15159f71e51bb0dc5044b068e04cd33ec72bf9f7d53017abc7b828255",
+      "packaged_sha256": "ca1347d15159f71e51bb0dc5044b068e04cd33ec72bf9f7d53017abc7b828255"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/swe_stratified_selection.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/swe_stratified_selection.py",
+      "source_sha256": "7150eac02761569857149fc48dd28f609b1bdd746e621598ae5d5e7c552da078",
+      "packaged_sha256": "7150eac02761569857149fc48dd28f609b1bdd746e621598ae5d5e7c552da078"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/cross_benchmark_main_matrix.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/cross_benchmark_main_matrix.py",
+      "source_sha256": "dc2ac35156a663564bcd2a19c165f83f1ae9528e7672862118e80bfb10c2a24c",
+      "packaged_sha256": "dc2ac35156a663564bcd2a19c165f83f1ae9528e7672862118e80bfb10c2a24c"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/mitigation_protocol.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/mitigation_protocol.py",
+      "source_sha256": "5dcd9e1e745345b9a3c40d9db944774a2fdc2127b084b3e3aee461929d86b810",
+      "packaged_sha256": "5dcd9e1e745345b9a3c40d9db944774a2fdc2127b084b3e3aee461929d86b810"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_fault_matrix.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_fault_matrix.py",
+      "source_sha256": "ab63e32a03c1073b810644df4e5ac67b945f93a24c09207eba28dd50ff340ea6",
+      "packaged_sha256": "ab63e32a03c1073b810644df4e5ac67b945f93a24c09207eba28dd50ff340ea6"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_reddit_stateful_real.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_reddit_stateful_real.py",
+      "source_sha256": "3d5d384b7e1a7da3e757a2b096e672d6d4d6a0160657cac92d42b588e2eed97b",
+      "packaged_sha256": "3d5d384b7e1a7da3e757a2b096e672d6d4d6a0160657cac92d42b588e2eed97b"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/shopping_multimechanism.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/shopping_multimechanism.py",
+      "source_sha256": "bfd4c60113e572d6bc77e258a7775313f98c8c5f31eb312dc2558b04ffae0b5d",
+      "packaged_sha256": "bfd4c60113e572d6bc77e258a7775313f98c8c5f31eb312dc2558b04ffae0b5d"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/cross_benchmark_main_runner.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/cross_benchmark_main_runner.py",
+      "source_sha256": "54882121a08b614f0ff31fe5d59bdac1bb4f4f7c4a63897b0ac4c8503e910e1c",
+      "packaged_sha256": "54882121a08b614f0ff31fe5d59bdac1bb4f4f7c4a63897b0ac4c8503e910e1c"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/swe_clean_baseline_summary.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/swe_clean_baseline_summary.py",
+      "source_sha256": "c76b9e057766b0917c43e703398e8e2d7275571302220266e4e727a0ca24e915",
+      "packaged_sha256": "c76b9e057766b0917c43e703398e8e2d7275571302220266e4e727a0ca24e915"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/theagentcompany_autogen_runtime.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/theagentcompany_autogen_runtime.py",
+      "source_sha256": "f6ee3fe874a3f9845d9d47b4414624c2aa6f064b7a23ddedc502215bed6ec5f4",
+      "packaged_sha256": "f6ee3fe874a3f9845d9d47b4414624c2aa6f064b7a23ddedc502215bed6ec5f4"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/bottom_up_bridge.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/bottom_up_bridge.py",
+      "source_sha256": "32d04f448b8a05823bdc0bcdd3fc9917f487d4bdd8c0ef1504cf16e2fab94703",
+      "packaged_sha256": "32d04f448b8a05823bdc0bcdd3fc9917f487d4bdd8c0ef1504cf16e2fab94703"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/swe_bench_hybrid_real.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/swe_bench_hybrid_real.py",
+      "source_sha256": "d3bd6aaea18ce202cdd181e2d2ff22ecf00a8ccea2089d31f17affa8dfd1a0ee",
+      "packaged_sha256": "d3bd6aaea18ce202cdd181e2d2ff22ecf00a8ccea2089d31f17affa8dfd1a0ee"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/deepseek_schedule.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/deepseek_schedule.py",
+      "source_sha256": "b2cada9b5a3074aef87561001bc214df0cc158182138e7d3be6b5e662c5218ef",
+      "packaged_sha256": "b2cada9b5a3074aef87561001bc214df0cc158182138e7d3be6b5e662c5218ef"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/swe_bench_flat_real.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/swe_bench_flat_real.py",
+      "source_sha256": "69578783c368196d324d1057c3ceb49164dd8ad73ed24f0e006df8de6d8876f3",
+      "packaged_sha256": "69578783c368196d324d1057c3ceb49164dd8ad73ed24f0e006df8de6d8876f3"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_reddit_official.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_reddit_official.py",
+      "source_sha256": "e5975ffc5f85149b01cef9d8e04c15c34b361daff883993008e5e475168ef548",
+      "packaged_sha256": "e5975ffc5f85149b01cef9d8e04c15c34b361daff883993008e5e475168ef548"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/swe_bench_multiround_real.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/swe_bench_multiround_real.py",
+      "source_sha256": "76143ff2ce764c1285f0edb9259a7b67618f40739bc6721928398db738147451",
+      "packaged_sha256": "76143ff2ce764c1285f0edb9259a7b67618f40739bc6721928398db738147451"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/theagentcompany_real.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/theagentcompany_real.py",
+      "source_sha256": "f6743013b9ccc9b2c648da91ff405ca402544e125fea13ca705f4a75177b8c51",
+      "packaged_sha256": "f6743013b9ccc9b2c648da91ff405ca402544e125fea13ca705f4a75177b8c51"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/benchmark_trace_contract.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/benchmark_trace_contract.py",
+      "source_sha256": "fd14a1bae36916f45a91f3f02d1cc6a3e028afa61aeb0ef8d7e80b898dbf7e57",
+      "packaged_sha256": "fd14a1bae36916f45a91f3f02d1cc6a3e028afa61aeb0ef8d7e80b898dbf7e57"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/swe_bench_hierarchical_real.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/swe_bench_hierarchical_real.py",
+      "source_sha256": "f0eab933f8070901b7168a363c0e132b28c8f1287c026c36a006eaa116dcd66b",
+      "packaged_sha256": "f0eab933f8070901b7168a363c0e132b28c8f1287c026c36a006eaa116dcd66b"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/llm/fault_scenarios.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/llm/fault_scenarios.py",
+      "source_sha256": "44a27c57cf22da5c648b4f21b11f746100a204515b6ec322be2120be01ac12ac",
+      "packaged_sha256": "44a27c57cf22da5c648b4f21b11f746100a204515b6ec322be2120be01ac12ac"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/llm/webarena_topologies.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/llm/webarena_topologies.py",
+      "source_sha256": "5fecbf47ba56fdb046c4570b9951da88ab06a8848bf770c35afc7ddc61018fc5",
+      "packaged_sha256": "5fecbf47ba56fdb046c4570b9951da88ab06a8848bf770c35afc7ddc61018fc5"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/llm/application_fault_matrix.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/llm/application_fault_matrix.py",
+      "source_sha256": "606ddbd11189c1313c54038afebee19d8340eeeb45ca68d77c1aa09537cd483c",
+      "packaged_sha256": "606ddbd11189c1313c54038afebee19d8340eeeb45ca68d77c1aa09537cd483c"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/llm/webarena_reddit_topologies.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/llm/webarena_reddit_topologies.py",
+      "source_sha256": "81a3f705763639d2c8ca5920929c7f1818878d7719701f7dde0abe057e30b942",
+      "packaged_sha256": "81a3f705763639d2c8ca5920929c7f1818878d7719701f7dde0abe057e30b942"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/llm/propagation_evaluator.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/llm/propagation_evaluator.py",
+      "source_sha256": "4d6437168344eacbbc243f332fb5aa66b2f2a304dd93e74ae78a66d151daedf7",
+      "packaged_sha256": "4d6437168344eacbbc243f332fb5aa66b2f2a304dd93e74ae78a66d151daedf7"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/llm/shopping_strict_evaluator.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/llm/shopping_strict_evaluator.py",
+      "source_sha256": "0ddbd6425ed4b15407d4e07fa2e0a8d3de3b6c2e0d0e35c4986511f0d751c9b2",
+      "packaged_sha256": "0ddbd6425ed4b15407d4e07fa2e0a8d3de3b6c2e0d0e35c4986511f0d751c9b2"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/llm/topology_experiment_controls.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/llm/topology_experiment_controls.py",
+      "source_sha256": "8e41cce1b5357f75b2f01f21403c17b1b91d00439bd7e0166708df12df2be33d",
+      "packaged_sha256": "8e41cce1b5357f75b2f01f21403c17b1b91d00439bd7e0166708df12df2be33d"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/llm/consequence_axes.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/llm/consequence_axes.py",
+      "source_sha256": "84bf99e43fd19f1c415adfc0cd56e04b2f279a1af006f3c5cdb966ebb5a175b2",
+      "packaged_sha256": "84bf99e43fd19f1c415adfc0cd56e04b2f279a1af006f3c5cdb966ebb5a175b2"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/llm/communication_interceptor.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/llm/communication_interceptor.py",
+      "source_sha256": "7ba746201c9b0cd4f406211816142869e537665bc34d067adad0fa7443378e6a",
+      "packaged_sha256": "7ba746201c9b0cd4f406211816142869e537665bc34d067adad0fa7443378e6a"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/src/mas_faults/llm/architecture_manifestations.py",
+      "source": "mas_rq4_20260914/legacy/src/mas_faults/llm/architecture_manifestations.py",
+      "source_sha256": "a7eddeab9c798caae842407a3b05e66012ac7a67963bed76fbee8dc47513cfcb",
+      "packaged_sha256": "a7eddeab9c798caae842407a3b05e66012ac7a67963bed76fbee8dc47513cfcb"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/smoke/webarena_admin_evaluator_worker.py",
+      "source": "mas_rq4_20260914/legacy/scripts/smoke/webarena_admin_evaluator_worker.py",
+      "source_sha256": "f3ce4d027eee077c72fb92bfbcd0710cadbbecf3d3b5eb711ce47cbf490c2bfd",
+      "packaged_sha256": "f3ce4d027eee077c72fb92bfbcd0710cadbbecf3d3b5eb711ce47cbf490c2bfd"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/smoke/run_webarena_admin_tool_smoke.py",
+      "source": "mas_rq4_20260914/legacy/scripts/smoke/run_webarena_admin_tool_smoke.py",
+      "source_sha256": "40a7f8b7a4261b102297235087dd828c187b1b26566a3d2ec21f52264810c017",
+      "packaged_sha256": "40a7f8b7a4261b102297235087dd828c187b1b26566a3d2ec21f52264810c017"
+    },
+    {
+      "path": "mas_rq4_20260914/legacy/scripts/smoke/webarena_admin_browser_worker.py",
+      "source": "mas_rq4_20260914/legacy/scripts/smoke/webarena_admin_browser_worker.py",
+      "source_sha256": "4ef7fae56c04a7b3a8700742589511e5b3e607b8c6447623ffaa4d29353b24f8",
+      "packaged_sha256": "4ef7fae56c04a7b3a8700742589511e5b3e607b8c6447623ffaa4d29353b24f8"
+    }
+  ]
+}
