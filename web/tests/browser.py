@@ -15,6 +15,7 @@ with sync_playwright() as p:
     page.on('request',lambda r:external.append(r.url) if not r.url.startswith(BASE) else None)
     page.goto(BASE)
     expect(page.locator('.finding')).to_have_count(10,timeout=30000)
+    page.locator('[data-view=findings]').click()
     expect(page.locator('#coverage')).to_contain_text('26,613')
     page.screenshot(path=str(OUT/'desktop-findings.png'),full_page=True)
     for i in range(10):

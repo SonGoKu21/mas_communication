@@ -1,0 +1,93 @@
+{
+  "paper_sha256": "1ba801f993afb81eac07e6429f99f76fa70613c586cf0520d20fd850dfc54721",
+  "revision": 7,
+  "figures": {
+    "2": {
+      "pdf_page": 5,
+      "clip_points": [
+        60,
+        84,
+        426,
+        233
+      ]
+    },
+    "3": {
+      "pdf_page": 9,
+      "clip_points": [
+        45,
+        80,
+        443,
+        221
+      ]
+    },
+    "4": {
+      "pdf_page": 10,
+      "clip_points": [
+        180,
+        492,
+        443,
+        593
+      ]
+    },
+    "5": {
+      "pdf_page": 12,
+      "clip_points": [
+        180,
+        324,
+        443,
+        450
+      ]
+    },
+    "6": {
+      "pdf_page": 14,
+      "clip_points": [
+        44,
+        82,
+        443,
+        199
+      ]
+    },
+    "7": {
+      "pdf_page": 14,
+      "clip_points": [
+        180,
+        428,
+        443,
+        516
+      ]
+    },
+    "8": {
+      "pdf_page": 16,
+      "clip_points": [
+        44,
+        82,
+        443,
+        279
+      ]
+    },
+    "9": {
+      "pdf_page": 16,
+      "clip_points": [
+        45,
+        347,
+        442,
+        435
+      ]
+    },
+    "10": {
+      "pdf_page": 17,
+      "clip_points": [
+        165,
+        270,
+        442,
+        373
+      ],
+      "exclude_text_points": [
+        165,
+        270,
+        168,
+        294
+      ]
+    }
+  }
+}

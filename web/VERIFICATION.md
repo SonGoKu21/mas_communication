@@ -35,3 +35,9 @@ Independent review found no blocking data/paper/privacy issues. A case-navigatio
 ## Unified task numbering update
 
 Added a fixed 109-entry identity map (100 main tasks, 6 RQ4 tasks, 3 source-mapping fixtures). New browser coverage first reproduced missing unified labels, then verified ordering, shared IDs across configurations and repeats, extension reuse, original-ID preservation and download metadata. Review exposed three-digit original-ID search being shadowed by new IDs; a failing `208` search regression was added and the unified numeric alias limited to 001–100.
+
+## Research Home update — 2026-09-25
+
+Home is now the default view, with four RQs, ten findings sourced from the same finding dataset, and nine manuscript figures (2–10). The full manuscript PDF is excluded. Figure crops and source digest are recorded in `site/figures/source.json`; extraction is reproducible with `tools/extract_figures.py`. The Fig. 10 pilot scope caveat remains explicit.
+
+Ten exporter unit tests, the full data audit, and all five browser scripts passed. Home coverage includes figure loading and enlargement, evidence navigation, mobile overflow, and delayed-catalog navigation. Independent review identified early navigation before initialization and a tight Fig. 10 crop; both were corrected and verified. Desktop/mobile Home screenshots and figure crops were visually inspected.

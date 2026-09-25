@@ -44,3 +44,9 @@ The GitHub Pages workflow publishes only `web/site/`; Python tools, tests and de
 `site/data/task-map.json` is the fixed identity map: Shopping Task 001–030, Admin 031–050, Reddit 051–065, SWE-bench 066–085, and TheAgentCompany 086–100. It is checked in and must not be regenerated or renumbered when catalog ordering changes. Repeated runs, models and topologies share the same display ID. The Reddit extension reuses the main-study mapping. The separate RQ4 study uses RQ4 Task 001–006 and source-mapping payload fixtures use Fixture 001–003.
 
 Original task IDs, run IDs, source evidence and existing deep links remain unchanged. Search `Task 051` or `051` for a unified ID; unpadded `27`, `208`, or `xarray-2905` still search original identifiers. Downloads retain the source task ID and add `metadata.display_id`. The static audit rejects unmapped tasks so future additions require an explicit map update.
+
+## Research Home page
+
+Home introduces the study and separates the 18,900-run main matrix, 3,780 source-mapping tests and 1,098 protection-study runs. Four RQ sections reuse the canonical ten finding summaries, with Figures 2–10 extracted from the reviewed manuscript. Extra topology/case/model figures expand on demand; each figure can be enlarged. Evidence links connect to the existing Findings view, run explorer, task map and provenance.
+
+`site/figures/source.json` records the manuscript digest, page numbers and reviewed crop rectangles. With PyMuPDF installed, `python3 web/tools/extract_figures.py /path/to/manuscript.pdf` rebuilds the images from that exact manuscript. The PDF itself is not included. Figure 10's earlier-pilot limitation remains visible.

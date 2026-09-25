@@ -7,6 +7,7 @@ with sync_playwright() as p:
     page=browser.new_page(viewport={'width':1280,'height':900})
     page.goto(os.environ.get('REPLAY_URL','http://127.0.0.1:8768/site/'))
     expect(page.locator('.finding')).to_have_count(10,timeout=30000)
+    page.locator('[data-view=findings]').click()
     page.locator('.finding').nth(7).get_by_role('button').first.click()
     expect(page.locator('#detail')).to_be_visible()
     first=page.locator('#detail .muted').first.inner_text()

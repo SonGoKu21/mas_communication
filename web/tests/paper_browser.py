@@ -9,6 +9,7 @@ with sync_playwright() as p:
     page.on('pageerror',lambda e:errors.append(str(e)))
     page.goto(BASE)
     expect(page.locator('.finding')).to_have_count(10,timeout=30000)
+    page.locator('[data-view=findings]').click()
     expected={1:[1,2,3],2:[4,5],3:[6,7],4:[8,9,10]}
     for rq,nums in expected.items():
         group=page.locator(f'[data-rq="{rq}"]')
