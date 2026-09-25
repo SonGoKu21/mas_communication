@@ -50,3 +50,7 @@ Original task IDs, run IDs, source evidence and existing deep links remain uncha
 Home introduces the study and separates the 18,900-run main matrix, 3,780 source-mapping tests and 1,098 protection-study runs. Four RQ sections reuse the canonical ten finding summaries, with Figures 2–10 extracted from the reviewed manuscript. Extra topology/case/model figures expand on demand; each figure can be enlarged. Evidence links connect to the existing Findings view, run explorer, task map and provenance.
 
 `site/figures/source.json` records the manuscript digest, page numbers and reviewed crop rectangles. With PyMuPDF installed, `python3 web/tools/extract_figures.py /path/to/manuscript.pdf` rebuilds the images from that exact manuscript. The PDF itself is not included. Figure 10's earlier-pilot limitation remains visible.
+
+## Extended methodology
+
+`site/methodology.html` expands the author-supplied methods text with a 29-entry taxonomy, injection boundaries, six evaluated condition-position cells, A/M/O/B evidence criteria, an archived Admin 41 clean/fault walkthrough, and reproduction boundaries. Build it with `python3 web/tools/build_methodology.py`; `content/taxonomy.json` retains the manuscript citation keys. Worked excerpts are extracted from existing sanitized evidence, not manually reconstructed. Code links pin the reviewed historical repository snapshot. The supplement distinguishes framework coverage, implemented operators and evaluated conditions.

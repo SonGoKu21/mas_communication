@@ -1,0 +1,176 @@
+[
+  {
+    "layer": "P",
+    "name": "P-F1 Bit-level corruption",
+    "description": "Isolated or burst errors in communicated bits.",
+    "references": "stone2000checksum"
+  },
+  {
+    "layer": "P",
+    "name": "P-F2 Link/endpoint interruption",
+    "description": "NIC, cable, or power disruption removes a path.",
+    "references": "rfc1122, linuxbonding"
+  },
+  {
+    "layer": "P",
+    "name": "P-F3 Physical-medium interference",
+    "description": "Interference degrades reception and delivery timing.",
+    "references": "rfc3819, balakrishnan1997wireless"
+  },
+  {
+    "layer": "P",
+    "name": "P-F4 Timing instability",
+    "description": "Clock drift affects communication timing decisions.",
+    "references": "rfc5905"
+  },
+  {
+    "layer": "P",
+    "name": "P-F5 Communication-state corruption",
+    "description": "Hardware errors affect communication buffers or runtime state.",
+    "references": "carreira1998xception, linuxedac"
+  },
+  {
+    "layer": "D",
+    "name": "D-F1 Frame loss/local drop",
+    "description": "Frames are not delivered across a local link.",
+    "references": "rfc3366, rfc3819"
+  },
+  {
+    "layer": "D",
+    "name": "D-F2 Frame corruption/integrity failure",
+    "description": "Damaged frames fail integrity checks or escape detection.",
+    "references": "rfc3366, stone2000checksum"
+  },
+  {
+    "layer": "D",
+    "name": "D-F3 Duplicate/reordered delivery",
+    "description": "Frame order or multiplicity changes.",
+    "references": "hemminger2005netem, netemmanual"
+  },
+  {
+    "layer": "D",
+    "name": "D-F4 MTU/fragmentation failure",
+    "description": "Size handling or reassembly disrupts delivery.",
+    "references": "rfc2923"
+  },
+  {
+    "layer": "D",
+    "name": "D-F5 Contention/link instability",
+    "description": "Contention or flapping delays or interrupts service.",
+    "references": "rfc3819, balakrishnan1997wireless"
+  },
+  {
+    "layer": "N",
+    "name": "N-F1 Packet loss",
+    "description": "Independent or burst loss affects a packet path.",
+    "references": "rfc1122, hemminger2005netem"
+  },
+  {
+    "layer": "N",
+    "name": "N-F2 Path performance degradation",
+    "description": "Delay, jitter, bandwidth limits, or congestion slow delivery.",
+    "references": "rfc5681, hemminger2005netem"
+  },
+  {
+    "layer": "N",
+    "name": "N-F3 Ordering/multiplicity anomaly",
+    "description": "Packets arrive out of order or more than once.",
+    "references": "hemminger2005netem, netemmanual"
+  },
+  {
+    "layer": "N",
+    "name": "N-F4 Reachability/routing failure",
+    "description": "Partitioning, asymmetry, or filtering blocks a path.",
+    "references": "rfc1122, nftreject"
+  },
+  {
+    "layer": "N",
+    "name": "N-F5 Endpoint resolution failure",
+    "description": "Name resolution prevents endpoint discovery.",
+    "references": "rfc1035, rfc2308"
+  },
+  {
+    "layer": "T",
+    "name": "T-F1 Connection/session interruption",
+    "description": "Reset or interruption breaks an active exchange.",
+    "references": "rfc9293"
+  },
+  {
+    "layer": "T",
+    "name": "T-F2 Deadline/expiration failure",
+    "description": "A delivery or validity budget expires.",
+    "references": "rfc5482, grpcdeadlines"
+  },
+  {
+    "layer": "T",
+    "name": "T-F3 Retry/retransmission anomaly",
+    "description": "Repeated attempts amplify load or logical work.",
+    "references": "rfc9293, grpcretry"
+  },
+  {
+    "layer": "T",
+    "name": "T-F4 Stream completeness failure",
+    "description": "An exchange ends before complete content arrives.",
+    "references": "rfc9293, rfc9112"
+  },
+  {
+    "layer": "T",
+    "name": "T-F5 Transport pressure/stall",
+    "description": "Backlog or flow-control pressure prevents progress.",
+    "references": "rfc5681, rfc9293"
+  },
+  {
+    "layer": "A",
+    "name": "Timeliness",
+    "description": "A logical message arrives late or misses its deadline.",
+    "references": "grpcdeadlines, heorhiadi2016gremlin"
+  },
+  {
+    "layer": "A",
+    "name": "Availability",
+    "description": "A required logical message is not delivered.",
+    "references": "heorhiadi2016gremlin, zhou2021microservice"
+  },
+  {
+    "layer": "A",
+    "name": "Semantic integrity",
+    "description": "A processable message carries changed or misassociated meaning.",
+    "references": "tan2026agentchaos, he2025red"
+  },
+  {
+    "layer": "A",
+    "name": "Parseability/completeness",
+    "description": "A message cannot be parsed or lacks required content/evidence.",
+    "references": "anthropic2024mcp, zhang2026format"
+  },
+  {
+    "layer": "A",
+    "name": "Multiplicity/idempotency",
+    "description": "A logical request or delivery is repeated.",
+    "references": "grpcretry, heorhiadi2016gremlin"
+  },
+  {
+    "layer": "A",
+    "name": "Ordering/freshness",
+    "description": "The receiver observes displaced, out-of-order, or stale state.",
+    "references": "rfc9293, tan2026agentchaos"
+  },
+  {
+    "layer": "A",
+    "name": "Contract validity",
+    "description": "Structured keys, types, schema, or relations violate the expected contract.",
+    "references": "anthropic2024mcp, google2025a2a, zhang2026format"
+  },
+  {
+    "layer": "M",
+    "name": "System-level consequences",
+    "description": "Execution or coordination degrades, e.g., failed delegation or workflow timeout.",
+    "references": "cemri2025mast, zhu2025multiagentbench, zhang2025failureattribution"
+  },
+  {
+    "layer": "M",
+    "name": "Semantic-level consequences",
+    "description": "Accepted evidence, plans, beliefs, or decisions degrade.",
+    "references": "cemri2025mast, he2025red, 2025arXiv251204129L"
+  }
+]

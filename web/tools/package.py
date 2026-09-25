@@ -14,6 +14,8 @@ source=root.parent/'mas_fault_static_source.zip'
 with zipfile.ZipFile(source,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
     for directory in ['tools','tests']:
         for p in sorted((root/directory).glob('*.py')): z.write(p,p.relative_to(root))
+    for p in (root/'content').glob('*.json'):
+        z.write(p,p.relative_to(root))
     for p in (site/'figures').glob('*'):
         if p.is_file(): z.write(p,p.relative_to(root))
     for p in site.iterdir():

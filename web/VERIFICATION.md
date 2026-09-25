@@ -41,3 +41,9 @@ Added a fixed 109-entry identity map (100 main tasks, 6 RQ4 tasks, 3 source-mapp
 Home is now the default view, with four RQs, ten findings sourced from the same finding dataset, and nine manuscript figures (2–10). The full manuscript PDF is excluded. Figure crops and source digest are recorded in `site/figures/source.json`; extraction is reproducible with `tools/extract_figures.py`. The Fig. 10 pilot scope caveat remains explicit.
 
 Ten exporter unit tests, the full data audit, and all five browser scripts passed. Home coverage includes figure loading and enlargement, evidence navigation, mobile overflow, and delayed-catalog navigation. Independent review identified early navigation before initialization and a tight Fig. 10 crop; both were corrected and verified. Desktop/mobile Home screenshots and figure crops were visually inspected.
+
+## Extended methodology — 2026-09-25
+
+Added a standalone, static methods supplement. The 29 taxonomy rows are extracted from the author-supplied methods table; exact worked-example projections are generated from existing sanitized Admin 41 clean/fault records (unified Task 033). Framework scope, operator support and evaluated condition-position cells are explicitly separated. Historical label semantics and archive completeness are disclosed.
+
+The new methodology browser check first failed on the missing navigation link, then passed for navigation, all six sections, taxonomy count, exact fault-run routing and mobile width. Home, paper and numbering browser regressions, ten exporter tests and the full data audit also passed. Desktop/mobile screenshots were inspected. Repeated builds produced identical HTML. Independent review confirmed matched case data, pinned source paths and scope caveats with no blocking issues.
