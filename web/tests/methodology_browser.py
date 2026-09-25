@@ -10,6 +10,13 @@ with sync_playwright() as p:
  for section in ['taxonomy','boundaries','operators','evaluation','walkthrough','protocol']:
   expect(page.locator('#'+section)).to_be_visible()
  assert page.locator('#taxonomy tbody tr').count()==29
+ expect(page.locator('#references h2')).to_have_text('References')
+ assert page.locator('#references li').count()==34
+ page.locator('#taxonomy summary').click()
+ citation=page.locator('#taxonomy tbody a').first
+ target=citation.get_attribute('href');citation.click()
+ expect(page.locator(target)).to_be_in_viewport()
+ assert 'stone2000checksum' not in page.locator('#taxonomy tbody').inner_text()
  expect(page.locator('#protocol')).to_contain_text('18,900')
  expect(page.locator('#walkthrough')).to_contain_text('hollister, Joust Bag')
  page.get_by_role('link',name='Open fault run',exact=True).click()

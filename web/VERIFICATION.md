@@ -47,3 +47,7 @@ Ten exporter unit tests, the full data audit, and all five browser scripts passe
 Added a standalone, static methods supplement. The 29 taxonomy rows are extracted from the author-supplied methods table; exact worked-example projections are generated from existing sanitized Admin 41 clean/fault records (unified Task 033). Framework scope, operator support and evaluated condition-position cells are explicitly separated. Historical label semantics and archive completeness are disclosed.
 
 The new methodology browser check first failed on the missing navigation link, then passed for navigation, all six sections, taxonomy count, exact fault-run routing and mobile width. Home, paper and numbering browser regressions, ten exporter tests and the full data audit also passed. Desktop/mobile screenshots were inspected. Repeated builds produced identical HTML. Independent review confirmed matched case data, pinned source paths and scope caveats with no blocking issues.
+
+## Complete methodology references — 2026-09-25
+
+Replaced raw BibTeX keys with numbered citation anchors and 34 complete bibliography entries extracted from the author-supplied references.bib. Includes source/DOI links and a selected BibTeX download; the manuscript archive itself is excluded. Added missing source links for the ACL communication-attack paper and the NetEm paper copy. Citation-target, bibliography-count, mobile-width and exact case-navigation browser checks passed; full data audit passed. Bibliography rendering inspected.

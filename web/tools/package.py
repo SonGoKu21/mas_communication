@@ -23,6 +23,7 @@ with zipfile.ZipFile(source,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
     for name in ['README.md','LEDGER.md','VERIFICATION.md','paper-findings.json']: z.write(root/name,name)
     z.write(site/'data/paper-alignment.json','site/data/paper-alignment.json')
     z.write(site/'data/task-map.json','site/data/task-map.json')
+    z.write(site/'data/methodology-references.bib','site/data/methodology-references.bib')
 with zipfile.ZipFile(upload) as z:
     assert z.testzip() is None
     assert 'index.html' in z.namelist()

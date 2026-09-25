@@ -54,3 +54,5 @@ Home introduces the study and separates the 18,900-run main matrix, 3,780 source
 ## Extended methodology
 
 `site/methodology.html` expands the author-supplied methods text with a 29-entry taxonomy, injection boundaries, six evaluated condition-position cells, A/M/O/B evidence criteria, an archived Admin 41 clean/fault walkthrough, and reproduction boundaries. Build it with `python3 web/tools/build_methodology.py`; `content/taxonomy.json` retains the manuscript citation keys. Worked excerpts are extracted from existing sanitized evidence, not manually reconstructed. Code links pin the reviewed historical repository snapshot. The supplement distinguishes framework coverage, implemented operators and evaluated conditions.
+
+Methodology citations now resolve to 34 complete entries from the supplied manuscript bibliography, stored in `content/references.json`. `site/data/methodology-references.bib` contains the cited subset for download. Reference numbers are local to this page, not manuscript numbering.
