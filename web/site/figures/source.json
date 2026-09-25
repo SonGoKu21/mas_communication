@@ -3,13 +3,16 @@
   "revision": 7,
   "figures": {
     "2": {
-      "pdf_page": 5,
+      "pdf_page": 1,
       "clip_points": [
-        60,
-        84,
-        426,
-        233
-      ]
+        0,
+        0,
+        951,
+        328
+      ],
+      "scale": 3,
+      "external_source": "layered_propagation.pdf",
+      "source_sha256": "1d266e5561dc706e9acacf978fe3a961327c6adffc1c3a0bfa7e486dc7eece0e"
     },
     "3": {
       "pdf_page": 9,
