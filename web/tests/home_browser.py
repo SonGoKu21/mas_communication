@@ -7,6 +7,9 @@ with sync_playwright() as p:
  expect(page.locator('#homeView h1')).to_contain_text('When Agents Miscommunicate')
  expect(page.locator('#homeView .home-finding')).to_have_count(10,timeout=30000)
  assert page.locator('#homeView img').count()>=7
+ expect(page.locator('.case-explanation')).to_have_count(4)
+ expect(page.locator('img[src*="fig-2-layered-"]')).to_have_count(1)
+ expect(page.locator('[aria-label="Figure 10 case explanation"]')).to_contain_text('exact paired runs are not bundled')
  for d in page.locator('#homeView details').all():d.evaluate('(d)=>d.open=true')
  for img in page.locator('#homeView img').all():
   img.scroll_into_view_if_needed();expect(img).to_be_visible();assert img.evaluate('(i)=>i.complete && i.naturalWidth>0')
