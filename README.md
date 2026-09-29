@@ -1,21 +1,38 @@
 # MAS Communication Fault Experiments
 
-LLM 多智能体系统通信故障实验代码、实验配置与分析脚本。此仓库是 2026-09-24 整理的本地代码快照，不包含论文、模型权重、原始实验日志或真实凭据。
+Code, experiment configurations, analysis scripts, and archived evidence for a study of communication faults in LLM-based multi-agent systems.
 
-## 内容
+## Explore the evidence
 
-- `src/mas_faults/`：故障注入、工作流、证据验证与缓解实现。
-- `run_*.py`、`scripts/`：实验入口、审计、并行运行与推理探针。
-- `tests/`：恢复工作副本的离线测试。
-- `mas_rq4_20260914/` 与 `mas_rq4_*.py`：后续 RQ4 实验及分析代码，作为独立版本保留。
-- `analysis/rq123_20260915/`：RQ1–3 历史分析代码快照；其中的 `mas_faults` 只服务于该分析快照，不覆盖主源码。
-- `reports/domain_pattern_audit.py`、`reports/*/analysis_config.json`：分域分析及矩阵配置。
-- `deploy/`、`*-env.sh`：历史部署模板，运行前需调整机器目录、端口及设备分配。
-- `SOURCE_MANIFEST.json`：逐文件来源、原始和打包后 SHA-256。
+The [MAS Fault Observatory](web/site/index.html) presents four research questions, ten findings, illustrated cases, and an explorer of historical runs. It contains **26,613 indexed records**, including **6,800 records with detailed evidence**. The website makes no live model calls.
 
-## 环境与离线测试
+See the [extended methodology](web/site/methodology.html), [website documentation](web/README.md), and [review guide](REVIEW_README.md) for methods, evidence coverage, and local browsing instructions. The anonymous repository viewer may require enabling JavaScript for interactive features.
 
-历史部署使用 Python 3.11。`requirements.lock.txt` 和 `conda-explicit-linux-64.txt` 是 Linux 部署快照，不适合直接当作 macOS 通用环境安装。
+To run the website locally, serve the repository root:
+
+```bash
+python3 -m http.server 8000
+# Open http://localhost:8000/web/site/
+```
+
+## Repository contents
+
+| Location | Contents |
+| --- | --- |
+| `src/mas_faults/` | Fault injection, workflows, evidence validation, and mitigation implementations. |
+| `run_*.py`, `scripts/` | Experiment entry points, audits, parallel execution utilities, and inference probes. |
+| `tests/` | Offline tests for the main code snapshot. |
+| `mas_rq4_20260914/`, `mas_rq4_*.py` | RQ4 experiment and analysis code, retained as a separate version. |
+| `analysis/rq123_20260915/` | Historical RQ1–3 analysis snapshot. Its `mas_faults` module serves that snapshot only. |
+| `reports/domain_pattern_audit.py`, `reports/*/analysis_config.json` | Domain-level analysis and experiment-matrix configurations. |
+| `web/` | Static website, sanitized evidence, and export and verification tools. |
+| `deploy/`, `*-env.sh` | Deployment templates requiring local paths, ports, and device assignments. |
+| `SOURCE_MANIFEST.json` | Source provenance and original and packaged file hashes. |
+| `PACKAGE_SHA256.json` | SHA-256 checksums for the anonymous artifact snapshot. |
+
+## Environment and offline tests
+
+The historical deployment used Python 3.11. `requirements.lock.txt` and `conda-explicit-linux-64.txt` describe the Linux deployment environment; they are not general-purpose macOS installation specifications.
 
 ```bash
 python3 -m venv .venv
@@ -24,24 +41,29 @@ pip install -r requirements.txt
 export PYTHONPATH="$PWD/src:$PWD"
 python -m pytest -q
 python -m pytest -q test_mas_rq4_analysis_20260914.py
-# RQ4 使用自己的 legacy 源码，在独立 Python 进程验证
+# Validate RQ4 with its own legacy source in a separate Python process.
 (cd mas_rq4_20260914 && PYTHONPATH="$PWD/legacy/src:$PWD/legacy:$PWD" python -m pytest -q -o pythonpath='' test_contract.py test_design.py test_exposure.py test_runner.py test_runtime.py)
 ```
 
-默认测试禁用网络 socket（允许 Unix socket）。离线测试不能代替真实模型和站点验证。不要直接运行历史部署或批量实验脚本；先配置自己的服务与数据目录。模型认证通过环境变量设置，仓库中的 `local-no-secret` 和测试用 token 均为占位值。
+Tests disable network sockets by default while allowing Unix sockets. Offline tests do not replace validation against live model and benchmark services. Configure service endpoints and data directories before running deployment or batch-experiment scripts. Model credentials are supplied through environment variables; `local-no-secret` and test tokens are placeholders.
 
-## 分析输入
+To validate the exported evidence:
 
-分析配置的输入路径已改成相对仓库根目录的路径；从仓库根目录执行。JSONL 原始数据未上传，需自行放入配置指定的位置后运行。`domain_pattern_audit.py` 使用 `reports/rq123_six_condition_inputs_20260916_v2/analysis_config.json`。缺少原始数据时不能重算论文统计。
+```bash
+python3 -m unittest discover -s web/tests -v
+python3 web/tools/verify.py
+```
 
-## 复现边界
+## Analysis inputs
 
-主代码取自 `mas_reproduction_20260910` 本地恢复工作副本；后续 RQ4 和分析快照单独保留，没有未经验证地混合覆盖不同版本。本次未核验与服务器最新代码是否一致。
+Input paths in analysis configurations are relative to the repository root. Run analysis scripts from that directory. Raw experimental JSONL files are not included and must be supplied at the configured locations to recompute aggregate results.
 
-历史恢复记录指出 `mas_faults.causal_trace_report` 缺失，且 SWE 多轮入口与恢复的 SWE 模块存在接口版本差异；相关路径不能声称已完整复现。历史实验完成数和旧测试通过数不作为本次验证。当前验证结果见 `VALIDATION.md`。
+`domain_pattern_audit.py` uses `reports/rq123_six_condition_inputs_20260916_v2/analysis_config.json`. The published evidence supports case inspection but does not, by itself, support recomputation of every reported aggregate.
 
-论文稿件、图稿、完整结果、模型和第三方 benchmark 仓库均未纳入。未指定开源许可证；根据用户 2026-09-24 的最新决定，仓库保持公开。
+## Reproduction scope
 
-## 在线历史回放
+The main implementation comes from the `mas_reproduction_20260910` code snapshot. Later RQ4 and analysis snapshots are retained separately to preserve their version boundaries. Equivalence to the latest server implementation has not been established.
 
-[MAS Fault Observatory](web/site/index.html) 展示历史实验，不执行实时模型调用。界面已按最新论文 revision 7 对齐四个 RQ 与 Finding 1–10；网页、脱敏数据及重建工具位于 `web/`。具体证据范围及案例缺口见 [web/README.md](web/README.md)。
+The historical recovery record identifies a missing `mas_faults.causal_trace_report` module and interface differences between the SWE multi-turn entry point and the recovered SWE modules. Those execution paths have not been fully reproduced. See [VALIDATION.md](VALIDATION.md) for verification results and limitations; historical run counts and test results are not current validation.
+
+The artifact includes selected research figures and sanitized evidence. It excludes the manuscript, raw experiment logs, model weights, third-party benchmark repositories, and real credentials. No open-source license has been specified.
