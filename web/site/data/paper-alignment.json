@@ -1,0 +1,27 @@
+{
+  "revision": 7,
+  "supplied": "2026-09-24",
+  "sha256": "1ba801f993afb81eac07e6429f99f76fa70613c586cf0520d20fd850dfc54721",
+  "pdf_published": false,
+  "rq_findings": {
+    "1": [
+      1,
+      2,
+      3
+    ],
+    "2": [
+      4,
+      5
+    ],
+    "3": [
+      6,
+      7
+    ],
+    "4": [
+      8,
+      9,
+      10
+    ]
+  },
+  "figure_10": "Earlier guarded-recheck pilot; exact pair not bundled. Main factorial examples are separate."
+}

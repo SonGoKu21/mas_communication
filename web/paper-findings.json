@@ -1,0 +1,313 @@
+[
+  {
+    "id": "finding-1",
+    "number": 1,
+    "rq": 1,
+    "title": "Lower-stack source identity is not preserved at the application boundary.",
+    "tag": "RQ1 · FINDING 1",
+    "text": "Some packet-level disturbances are absorbed; different lower-stack conditions can produce the same visible timeliness or availability fault. The mapping study contains 3,780 fixture executions.",
+    "caveat": "Fixture measurements are separate from MAS task outcomes.",
+    "filters": {
+      "study": "bridge"
+    },
+    "cases": []
+  },
+  {
+    "id": "finding-2",
+    "number": 2,
+    "rq": 1,
+    "title": "MAS propagation and final task outcome are different variables.",
+    "tag": "RQ1 · FINDING 2",
+    "text": "Among 15,882 applied faults, 14,192 have a recorded MAS consequence and 12,735 fail the endpoint. The 1,457 successful runs with a recorded consequence demonstrate that propagation and endpoint failure differ.",
+    "caveat": "B denotes a recorded handling response, not a verified recovery chain. The linked evidence subset contains successful runs with a recorded consequence.",
+    "filters": {
+      "study": "rq123"
+    },
+    "cases": [],
+    "special": "propagation"
+  },
+  {
+    "id": "finding-3",
+    "number": 3,
+    "rq": 1,
+    "title": "Fault observability changes how the workflow handles evidence.",
+    "tag": "RQ1 · FINDING 3",
+    "text": "Fault observability can change evidence handling. Inspect archived malformed and valid-partial examples, and the silent stale-replay case in Fig. 4. A well-formed carrier may still violate the current task or evidence contract.",
+    "caveat": "The malformed and partial links span the extension and common matrix and are illustrative, not the exact historical pair or a new paired test. The paper does not claim that incomplete evidence caused a wrong numeric answer. Fig. 4 concerns stale evidence for a different task.",
+    "filters": {
+      "domain": "WebArena Reddit",
+      "task_id": "27",
+      "model": "DeepSeek-V4-Flash",
+      "topology": "flat"
+    },
+    "cases": [
+      {
+        "label": "Malformed · Reddit 27",
+        "query": {
+          "study": "extension",
+          "domain": "WebArena Reddit",
+          "model": "DeepSeek-V4-Flash",
+          "task_id": "27",
+          "topology": "flat",
+          "condition": "malformed_message_step4",
+          "repetition": 1
+        }
+      },
+      {
+        "label": "Valid partial · Reddit 27",
+        "query": {
+          "study": "rq123",
+          "domain": "WebArena Reddit",
+          "model": "DeepSeek-V4-Flash",
+          "task_id": "27",
+          "topology": "flat",
+          "condition": "valid_partial_message_step4",
+          "repetition": 1
+        }
+      },
+      {
+        "label": "Fig. 4 · Silent stale replay",
+        "query": {
+          "study": "rq123",
+          "domain": "WebArena Reddit",
+          "model": "DeepSeek-V4-Flash",
+          "task_id": "67",
+          "topology": "sequential",
+          "condition": "stale_replay_step4",
+          "repetition": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "finding-4",
+    "number": 4,
+    "rq": 2,
+    "title": "Fault sensitivity follows the communication dependency disrupted by the injection position.",
+    "tag": "RQ2 · FINDING 4",
+    "text": "I2 request loss can prevent evidence generation; I4 handoff loss may leave existing evidence reachable on another path. Aggregate non-delivery failure is 89.5% at I2 and 73.3% at I4, a 16.2-point gap.",
+    "caveat": "Fig. 5 uses the same task, model, Flat workflow and repetition. Its direct branch forwards pre-interception evidence; it does not reacquire an independent observation.",
+    "filters": {
+      "study": "rq123",
+      "domain": "WebArena Reddit",
+      "model": "DeepSeek-V4-Flash",
+      "task_id": "67",
+      "topology": "flat"
+    },
+    "cases": [
+      {
+        "label": "Fig. 5 · I2 request loss",
+        "query": {
+          "study": "rq123",
+          "domain": "WebArena Reddit",
+          "model": "DeepSeek-V4-Flash",
+          "task_id": "67",
+          "topology": "flat",
+          "condition": "non_delivery_step2",
+          "repetition": 1
+        }
+      },
+      {
+        "label": "Fig. 5 · I4 handoff loss",
+        "query": {
+          "study": "rq123",
+          "domain": "WebArena Reddit",
+          "model": "DeepSeek-V4-Flash",
+          "task_id": "67",
+          "topology": "flat",
+          "condition": "non_delivery_step4",
+          "repetition": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "finding-5",
+    "number": 5,
+    "rq": 2,
+    "title": "Cross-domain sensitivity is shaped by information dependency, recovery opportunity, and evaluation contract.",
+    "tag": "RQ2 · FINDING 5",
+    "text": "Clean-conditional loss ranges from 55.2% in Admin to 90.5% in Shopping. The paper discusses recoverable intermediate state, the role of the affected request, and task-specific evidence requirements.",
+    "caveat": "Cross-domain profiles are descriptive, not paired causal effects. Admin lookup and aggregation cases illustrate later filtering opportunities; they do not prove a universal task-complexity ranking.",
+    "filters": {
+      "study": "rq123"
+    },
+    "cases": [
+      {
+        "label": "Admin 208 · Lookup after request loss",
+        "query": {
+          "study": "rq123",
+          "domain": "WebArena Admin",
+          "model": "DeepSeek-V4-Flash",
+          "task_id": "208",
+          "topology": "flat",
+          "condition": "non_delivery_step2",
+          "repetition": 1
+        }
+      },
+      {
+        "label": "Admin 292 · Aggregation after request loss",
+        "query": {
+          "study": "rq123",
+          "domain": "WebArena Admin",
+          "model": "DeepSeek-V4-Flash",
+          "task_id": "292",
+          "topology": "flat",
+          "condition": "non_delivery_step2",
+          "repetition": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "finding-6",
+    "number": 6,
+    "rq": 3,
+    "title": "Fault tolerance depends on information-path diversity rather than hierarchy depth.",
+    "tag": "RQ3 · FINDING 6",
+    "text": "Flat fault success is 53.0%, versus 3.3% for Sequential and 3.2% for Hierarchical. In Fig. 7, both latter workflows accept the same corrupted top-two answer for a top-one search-term request.",
+    "caveat": "The figure is one shared-failure case, not an explanation of every aggregate failure. An additional Supervisor does not add an independent information source; workflow roles and prompts also differ.",
+    "filters": {
+      "study": "rq123",
+      "domain": "WebArena Admin",
+      "task_id": "41",
+      "model": "Qwen3.5-9B",
+      "condition": "semantic_corruption_step4"
+    },
+    "cases": [
+      {
+        "label": "Fig. 7 · Sequential",
+        "query": {
+          "study": "rq123",
+          "domain": "WebArena Admin",
+          "model": "Qwen3.5-9B",
+          "task_id": "41",
+          "topology": "sequential",
+          "condition": "semantic_corruption_step4",
+          "repetition": 1
+        }
+      },
+      {
+        "label": "Fig. 7 · Hierarchical",
+        "query": {
+          "study": "rq123",
+          "domain": "WebArena Admin",
+          "model": "Qwen3.5-9B",
+          "task_id": "41",
+          "topology": "hierarchical",
+          "condition": "semantic_corruption_step4",
+          "repetition": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "finding-7",
+    "number": 7,
+    "rq": 3,
+    "title": "Model configuration affects fault tolerance but does not remove communication-fault sensitivity.",
+    "tag": "RQ3 · FINDING 7",
+    "text": "All three deployed configurations retain high clean-conditional loss: Flash 75.2%, Qwen3.8-27B 78.8%, and Qwen3.5-9B 84.4%. Their ordering varies by workload.",
+    "caveat": "These are deployed configurations, not a controlled model-size ablation. SWE/TAC fault trials replay frozen evidence rather than rerun end-to-end repair. Individual cases do not reproduce the aggregate paired tests.",
+    "filters": {
+      "study": "rq123"
+    },
+    "cases": [
+      {
+        "label": "SWE example · Flash",
+        "query": {
+          "study": "rq123",
+          "task_id": "pydata__xarray-2905",
+          "topology": "flat",
+          "condition": "semantic_corruption_step4",
+          "model": "DeepSeek-V4-Flash",
+          "repetition": 1
+        }
+      },
+      {
+        "label": "SWE example · Qwen 27B",
+        "query": {
+          "study": "rq123",
+          "task_id": "pydata__xarray-2905",
+          "topology": "flat",
+          "condition": "semantic_corruption_step4",
+          "model": "Qwen3.8-27B",
+          "repetition": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "finding-8",
+    "number": 8,
+    "rq": 4,
+    "title": "Execution-side and information-side protection address different failure surfaces.",
+    "tag": "RQ4 · FINDING 8",
+    "text": "Action-only protects non-delivery and duplicate delivery; Semantic-only protects valid-partial and identity-corruption evidence. Combined succeeds in all 180 tested fault runs; stale replay shows no incremental gain.",
+    "caveat": "The main factorial study has 864 runs. Fig. 10 uses a separate earlier guarded-recheck pilot; its exact pair is not bundled here. The links below are explicitly main-study examples, not substitutes for that figure.",
+    "filters": {
+      "study": "rq4-main"
+    },
+    "cases": [
+      {
+        "label": "Main study · Duplicate delivery / Baseline",
+        "query": {
+          "study": "rq4-main",
+          "task_id": "shopping-001-q1to2",
+          "topology": "sequential",
+          "condition": "duplicate_action_delivery",
+          "variant": "baseline",
+          "repetition": 1
+        }
+      },
+      {
+        "label": "Main study · Duplicate delivery / Action-only",
+        "query": {
+          "study": "rq4-main",
+          "task_id": "shopping-001-q1to2",
+          "topology": "sequential",
+          "condition": "duplicate_action_delivery",
+          "variant": "action_only",
+          "repetition": 1
+        }
+      },
+      {
+        "label": "Main study · Partial evidence / Semantic-only",
+        "query": {
+          "study": "rq4-main",
+          "task_id": "shopping-001-q1to2",
+          "topology": "sequential",
+          "condition": "valid_partial",
+          "variant": "semantic_only",
+          "repetition": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "finding-9",
+    "number": 9,
+    "rq": 4,
+    "title": "Not all redundancy provides the same fault tolerance.",
+    "tag": "RQ4 · FINDING 9",
+    "text": "Under identity corruption, single-path and copied-forwarding each fail all 15 runs; fresh observation succeeds in 15/15. An intact alternate edge can bypass a delivery fault, while copying already-corrupted evidence preserves its error.",
+    "caveat": "Independent acquisition here means a fresh observation through a separate path; it still shares the Shopping backend. This is not a guarantee for arbitrary second observers.",
+    "filters": {
+      "study": "rq4-path"
+    },
+    "cases": []
+  },
+  {
+    "id": "finding-10",
+    "number": 10,
+    "rq": 4,
+    "title": "The execution–information dependency split persists under repeated fault exposure.",
+    "tag": "RQ4 · FINDING 10",
+    "text": "In the finite-exposure study, Action-only and Combined succeed in 18/18 non-delivery runs; Semantic-only and Combined succeed in 18/18 identity-corruption runs.",
+    "caveat": "A second exposure occurs only if follow-up communication reaches it. Two configured events do not establish tolerance of persistent faults.",
+    "filters": {
+      "study": "rq4-stress"
+    },
+    "cases": []
+  }
+]

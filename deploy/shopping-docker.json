@@ -1,0 +1,17 @@
+{
+  "data-root": "/data3/hqn/mas/docker-engine/data",
+  "exec-root": "/run/mas-shopping-docker/exec",
+  "pidfile": "/run/mas-shopping-docker/dockerd.pid",
+  "hosts": ["unix:///run/mas-shopping-docker/docker.sock"],
+  "storage-driver": "overlay2",
+  "features": {"containerd-snapshotter": false},
+  "bridge": "none",
+  "iptables": false,
+  "ip6tables": false,
+  "ip-forward": false,
+  "ip-masq": false,
+  "max-concurrent-downloads": 3,
+  "max-download-attempts": 2,
+  "log-driver": "json-file",
+  "log-opts": {"max-size": "20m", "max-file": "3"}
+}
