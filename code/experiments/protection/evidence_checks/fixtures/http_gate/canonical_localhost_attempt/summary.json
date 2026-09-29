@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "http_gate_only": true,
+  "execution_eligible": false,
+  "started_at": "2026-09-27T16:17:55.757559+00:00",
+  "completed_at": "2026-09-27T16:18:07.679917+00:00",
+  "model_calls": 0,
+  "max_http_concurrency": 4,
+  "product_get_passed": 6,
+  "product_get_total": 6,
+  "quantity_transition_passed": 6,
+  "quantity_transition_total": 6,
+  "four_lane_isolation_status": "passed",
+  "new_guest_carts": 10,
+  "all_ten_carts_distinct": true,
+  "http_attempts": 152,
+  "http_receipt_count": 152,
+  "http_method_counts": {
+    "GET": 122,
+    "POST": 30
+  },
+  "http_status_counts": {
+    "200": 152
+  },
+  "all_responses_hashed": true,
+  "origin_mapping": {
+    "from": "http://127.0.0.1:17770",
+    "to": "http://localhost:7770"
+  },
+  "network_connections": 16,
+  "denied_network_destinations": [],
+  "source_unchanged": true,
+  "source_hashes": {
+    "archived-input/shopping_action_protocol.py": "349240ef18c04a04e3dd6a4cd33da32bbb63f1b44a9d956f0991f8883ba1137b",
+    "archived-input/webarena_shopping_real.py": "ee777dc1cadf27a9acafce6ea21c3644c6c5449b798bb1b685f45c22c34cdf00",
+    "archived-input/shopping_mitigation.py": "2e46bbb50e544dca629a3640eac491d4bd970df11c44dee2250cfef1bdc91636"
+  },
+  "retained_failures": [],
+  "not_tested": [
+    "LLM/runtime behavior",
+    "formal strategy equivalence",
+    "donor injection",
+    "formal admission",
+    "backend independence",
+    "global service isolation under unbounded load"
+  ],
+  "scope": "Only newly created test guest carts. No checkout, service reset, global lock modification, source edits, or model calls."
+}

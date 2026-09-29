@@ -1,0 +1,101 @@
+{
+  "status": "recovered_from_archived_runs_not_live_admitted",
+  "source": "archived-input/New project/reports/rq4_flash1098_20260914_v1/main_runs.jsonl",
+  "source_sha256": "cf4ad028559d5e8259e800c92ce6d6cc3ebefeee4af0198d105a3e58f0fa8383",
+  "execution_eligible": false,
+  "tasks": [
+    {
+      "task_id": "shopping-001-q1to2",
+      "product_title": "Pre-baked Gingerbread House Kit Value Pack, 17 oz., Pack of 2, Total 34 oz.",
+      "product_url": "http://127.0.0.1:17770/pre-baked-gingerbread-house-kit-value-pack-17-oz-pack-of-2-total-34-oz.html",
+      "quantity": 2,
+      "initial_quantity": 1,
+      "task_family": "quantity_increase",
+      "product_cluster": "http://127.0.0.1:17770/pre-baked-gingerbread-house-kit-value-pack-17-oz-pack-of-2-total-34-oz.html"
+    },
+    {
+      "task_id": "shopping-002-q1to3",
+      "product_title": "V8 +Energy, Healthy Energy Drink, Steady Energy from Black and Green Tea, Pomegranate Blueberry, 8 Ounce Can ,Pack of 24",
+      "product_url": "http://127.0.0.1:17770/v8-energy-healthy-energy-drink-steady-energy-from-black-and-green-tea-pomegranate-blueberry-8-ounce-can-pack-of-24.html",
+      "quantity": 3,
+      "initial_quantity": 1,
+      "task_family": "quantity_increase",
+      "product_cluster": "http://127.0.0.1:17770/v8-energy-healthy-energy-drink-steady-energy-from-black-and-green-tea-pomegranate-blueberry-8-ounce-can-pack-of-24.html"
+    },
+    {
+      "task_id": "shopping-003-q2to3",
+      "product_title": "Elmwood Inn Fine Teas, Orange Vanilla Caffeine-free Fruit Infusion, 16-Ounce Pouch",
+      "product_url": "http://127.0.0.1:17770/elmwood-inn-fine-teas-orange-vanilla-caffeine-free-fruit-infusion-16-ounce-pouch.html",
+      "quantity": 3,
+      "initial_quantity": 2,
+      "task_family": "quantity_increase",
+      "product_cluster": "http://127.0.0.1:17770/elmwood-inn-fine-teas-orange-vanilla-caffeine-free-fruit-infusion-16-ounce-pouch.html"
+    },
+    {
+      "task_id": "shopping-005-q1to2",
+      "product_title": "So Delicious Dairy Free CocoWhip Light, Vegan, Non-GMO Project Verified, 9 oz. Tub",
+      "product_url": "http://127.0.0.1:17770/so-delicious-dairy-free-cocowhip-light-vegan-non-gmo-project-verified-9-oz-tub.html",
+      "quantity": 2,
+      "initial_quantity": 1,
+      "task_family": "quantity_increase",
+      "product_cluster": "http://127.0.0.1:17770/so-delicious-dairy-free-cocowhip-light-vegan-non-gmo-project-verified-9-oz-tub.html"
+    },
+    {
+      "task_id": "shopping-006-q1to3",
+      "product_title": "Cheongeun Sweet Potato Starch Powder 500g, 2ea(Sweet Potato 55%, Corn 45%)",
+      "product_url": "http://127.0.0.1:17770/cheongeun-sweet-potato-starch-powder-500g-2ea-sweet-potato-55-corn-45.html",
+      "quantity": 3,
+      "initial_quantity": 1,
+      "task_family": "quantity_increase",
+      "product_cluster": "http://127.0.0.1:17770/cheongeun-sweet-potato-starch-powder-500g-2ea-sweet-potato-55-corn-45.html"
+    },
+    {
+      "task_id": "shopping-007-q2to3",
+      "product_title": "Q Mixers Premium Ginger Ale: Real Ingredients & Less Sweet, 6.7 Fl Oz (24 Bottles)",
+      "product_url": "http://127.0.0.1:17770/q-mixers-premium-ginger-ale-real-ingredients-less-sweet-6-7-fl-oz-24-bottles.html",
+      "quantity": 3,
+      "initial_quantity": 2,
+      "task_family": "quantity_increase",
+      "product_cluster": "http://127.0.0.1:17770/q-mixers-premium-ginger-ale-real-ingredients-less-sweet-6-7-fl-oz-24-bottles.html"
+    }
+  ],
+  "provenance": [
+    {
+      "task_id": "shopping-001-q1to2",
+      "first_source_line": 1,
+      "first_run_id": "mm-f532082a29f6498daec8863b356f87a6",
+      "source_task_sha256": "a56a57fd5e51f13a01384f001a94b19cb8e439d1fc31903f446818d0ec37ba55"
+    },
+    {
+      "task_id": "shopping-002-q1to3",
+      "first_source_line": 25,
+      "first_run_id": "mm-aa8a4f245c124a51ac44138e8388c5b8",
+      "source_task_sha256": "9edc012326c584c22d724521d167fe8e2a050c80d23edf7c9dda8e3b659e798e"
+    },
+    {
+      "task_id": "shopping-003-q2to3",
+      "first_source_line": 49,
+      "first_run_id": "mm-aa53380b44e547b98923ed354d9e4674",
+      "source_task_sha256": "5fb2cddd708d4f496b50a7f47541a21cd2dd3ac2e3f70a473c539c11a83dca0c"
+    },
+    {
+      "task_id": "shopping-005-q1to2",
+      "first_source_line": 73,
+      "first_run_id": "mm-bc0c917c0802408b8de4be53514ff801",
+      "source_task_sha256": "5e2e9b7ea35d9cb4c2fcdcc811460aff68c4f3534b5f51e0831235261d5b61ce"
+    },
+    {
+      "task_id": "shopping-006-q1to3",
+      "first_source_line": 97,
+      "first_run_id": "mm-c4619f0256274071801eb339b898623b",
+      "source_task_sha256": "c310aa28d95cf62b0328a30724f3d83d220543d7127618ecc3847bda3003448d"
+    },
+    {
+      "task_id": "shopping-007-q2to3",
+      "first_source_line": 121,
+      "first_run_id": "mm-13228c96cdcc4f288b24090126d39988",
+      "source_task_sha256": "d8fe695b32cbc2fcb9c5274ec46003acbd90ea2c219c05a78d073e503881e0aa"
+    }
+  ],
+  "note": "Exact historical task dictionaries. Current product availability, environment host, and cart isolation are unverified. No historical SKU/product ID has been inserted into policy inputs."
+}

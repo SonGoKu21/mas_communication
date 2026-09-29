@@ -1,0 +1,18 @@
+{
+  "run_shopping_multimechanism.py": "470e2994a501140ab22a186303ce03094c97de4b6893f6d982671dc5c9b8e586",
+  "scripts/run_multimechanism_parallel.py": "b5d5affa4eb0c20409534fbd75bd5f4651d5f3a69e073d5b3bba642adfaf150d",
+  "src/mas_faults/benchmark_trace_contract.py": "fd14a1bae36916f45a91f3f02d1cc6a3e028afa61aeb0ef8d7e80b898dbf7e57",
+  "src/mas_faults/deepseek_schedule.py": "b2cada9b5a3074aef87561001bc214df0cc158182138e7d3be6b5e662c5218ef",
+  "src/mas_faults/diagnostic_cart_audit.py": "7e2da46f15996c83f0c28841ff9f38003393965365ec1d2a003bead2275dc67e",
+  "src/mas_faults/llm_client.py": "9ae0b071604216cbadfae8a8f2bacffc109e95cace16a5df20a61405346a98e0",
+  "src/mas_faults/mitigation_protocol.py": "5dcd9e1e745345b9a3c40d9db944774a2fdc2127b084b3e3aee461929d86b810",
+  "src/mas_faults/multimechanism_faults.py": "9074039ad8963eea3aebee7a713481f0f83b61b3347a9f278ef0f8cbbee15d60",
+  "src/mas_faults/multimechanism_matrix.py": "c1f1fb27a9a3cbea945ea87bab0873ede61e0b7b2647fe96c507c4ab996837e7",
+  "src/mas_faults/recovery_diagnostic.py": "9d753900d80e7188807ba4cfe7a65895801a03fd631d4e0fd1ee8d96d5c7e0e1",
+  "src/mas_faults/shopping_action_protocol.py": "349240ef18c04a04e3dd6a4cd33da32bbb63f1b44a9d956f0991f8883ba1137b",
+  "src/mas_faults/shopping_mitigation.py": "2e46bbb50e544dca629a3640eac491d4bd970df11c44dee2250cfef1bdc91636",
+  "src/mas_faults/shopping_multimechanism.py": "bfd4c60113e572d6bc77e258a7775313f98c8c5f31eb312dc2558b04ffae0b5d",
+  "src/mas_faults/webarena_shopping_real.py": "ee777dc1cadf27a9acafce6ea21c3644c6c5449b798bb1b685f45c22c34cdf00",
+  "src/mas_faults/webarena_task_selection.py": "e46ca16d746eecb578af5ebc3807fad826f82fcbcb16401ee5d4d57a8cbd8185",
+  "tests/test_shopping_multimechanism.py": "d332e8ac5d4c2832ad9ecc6e9ac3e13ecdfc908919882794da06fee6d71349ce"
+}

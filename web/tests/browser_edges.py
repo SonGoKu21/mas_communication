@@ -5,10 +5,10 @@ from playwright.sync_api import sync_playwright, expect
 with sync_playwright() as p:
     browser=p.chromium.launch()
     page=browser.new_page(viewport={'width':1280,'height':900})
-    page.goto(os.environ.get('REPLAY_URL','http://127.0.0.1:8768/site/'))
-    expect(page.locator('.finding')).to_have_count(10,timeout=30000)
+    page.goto(os.environ.get('REPLAY_URL','http://127.0.0.1:8767/'))
+    expect(page.locator('.finding')).to_have_count(7,timeout=30000)
     page.locator('[data-view=findings]').click()
-    page.locator('.finding').nth(7).get_by_role('button').first.click()
+    page.locator('.finding').nth(6).get_by_role('button').first.click()
     expect(page.locator('#detail')).to_be_visible()
     first=page.locator('#detail .muted').first.inner_text()
     page.route('**/data/runs/*.json',lambda route:route.fulfill(status=404,body='Missing'))

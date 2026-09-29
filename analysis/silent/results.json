@@ -1,0 +1,4225 @@
+{
+  "inputs": {
+    "confirmation_records.json": "8bdfa5b712c438405347b64d4027b491073cecc9a12ab4b2e55ee116f1a2a6c3"
+  },
+  "raw_manifest_verification": [],
+  "raw_rows_recomputed": 18900,
+  "scope": "Only historical 18900 source rows; excludes P0 normalized and all new P1/P2/P3 runs",
+  "definition": "known failed outcome AND receiver_detected is exactly False AND recovery_detected is exactly False AND final decision accept AND no truthy fault_detection_evidence; original applied fault eligibility is receiver_detected boolean",
+  "original_definition_note": "Historical code uses not final_task_success; all raw outcomes are audited for boolean coverage rather than treating missing outcome as failure. B in derived data coerces missing recovery flags; silent is recomputed from raw exact-false instead.",
+  "excluded_forum_task28_rows": 0,
+  "scenario_removed_applied_n": {
+    "all_original_applied": 0,
+    "exclude_Admin": 2922,
+    "exclude_Shopping": 4860,
+    "exclude_forum_task28": 0,
+    "clean_success_only": 1368,
+    "all_known_failure_scope": 3147,
+    "all_known_failure_eligible": 7547
+  },
+  "scenarios": {
+    "all_original_applied": {
+      "applied_n": 15882,
+      "known_outcome_n": 15882,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 11022,
+      "original_eligible_silent": 1722,
+      "original_silent_per_eligible_applied": 0.1562329885683179,
+      "all_known_failure_n": 12735,
+      "eligible_failure_n": 8335,
+      "silent_n": 1722,
+      "silent_per_eligible_failure": 0.2065986802639472,
+      "failure_detection_missing_n": 4400,
+      "failure_detection_coverage": 0.6544954848841774,
+      "detected_failure_n": 6581,
+      "undetected_failure_n": 1754,
+      "observed_silent_per_all_known_failures_lower_bound": 0.13521790341578327,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.4807224185316058,
+      "eligible_failure_tasks": 70,
+      "all_failure_tasks": 100,
+      "recovery_flag_nonboolean_failure_n": 0
+    },
+    "exclude_Admin": {
+      "applied_n": 12960,
+      "known_outcome_n": 12960,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 8100,
+      "original_eligible_silent": 1662,
+      "original_silent_per_eligible_applied": 0.2051851851851852,
+      "all_known_failure_n": 10922,
+      "eligible_failure_n": 6522,
+      "silent_n": 1662,
+      "silent_per_eligible_failure": 0.2548298068077277,
+      "failure_detection_missing_n": 4400,
+      "failure_detection_coverage": 0.5971433803332723,
+      "detected_failure_n": 4838,
+      "undetected_failure_n": 1684,
+      "observed_silent_per_all_known_failures_lower_bound": 0.15216993224684125,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.555026551913569,
+      "eligible_failure_tasks": 50,
+      "all_failure_tasks": 80,
+      "recovery_flag_nonboolean_failure_n": 0
+    },
+    "exclude_Shopping": {
+      "applied_n": 11022,
+      "known_outcome_n": 11022,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 11022,
+      "original_eligible_silent": 1722,
+      "original_silent_per_eligible_applied": 0.1562329885683179,
+      "all_known_failure_n": 8335,
+      "eligible_failure_n": 8335,
+      "silent_n": 1722,
+      "silent_per_eligible_failure": 0.2065986802639472,
+      "failure_detection_missing_n": 0,
+      "failure_detection_coverage": 1.0,
+      "detected_failure_n": 6581,
+      "undetected_failure_n": 1754,
+      "observed_silent_per_all_known_failures_lower_bound": 0.2065986802639472,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.2065986802639472,
+      "eligible_failure_tasks": 70,
+      "all_failure_tasks": 70,
+      "recovery_flag_nonboolean_failure_n": 0
+    },
+    "exclude_forum_task28": {
+      "applied_n": 15882,
+      "known_outcome_n": 15882,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 11022,
+      "original_eligible_silent": 1722,
+      "original_silent_per_eligible_applied": 0.1562329885683179,
+      "all_known_failure_n": 12735,
+      "eligible_failure_n": 8335,
+      "silent_n": 1722,
+      "silent_per_eligible_failure": 0.2065986802639472,
+      "failure_detection_missing_n": 4400,
+      "failure_detection_coverage": 0.6544954848841774,
+      "detected_failure_n": 6581,
+      "undetected_failure_n": 1754,
+      "observed_silent_per_all_known_failures_lower_bound": 0.13521790341578327,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.4807224185316058,
+      "eligible_failure_tasks": 70,
+      "all_failure_tasks": 100,
+      "recovery_flag_nonboolean_failure_n": 0
+    },
+    "clean_success_only": {
+      "applied_n": 14514,
+      "known_outcome_n": 14514,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 9654,
+      "original_eligible_silent": 1650,
+      "original_silent_per_eligible_applied": 0.1709136109384711,
+      "all_known_failure_n": 11508,
+      "eligible_failure_n": 7108,
+      "silent_n": 1650,
+      "silent_per_eligible_failure": 0.2321328081035453,
+      "failure_detection_missing_n": 4400,
+      "failure_detection_coverage": 0.6176572818908586,
+      "detected_failure_n": 5435,
+      "undetected_failure_n": 1673,
+      "observed_silent_per_all_known_failures_lower_bound": 0.14337851929092804,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.5257212374000695,
+      "eligible_failure_tasks": 69,
+      "all_failure_tasks": 99,
+      "recovery_flag_nonboolean_failure_n": 0
+    },
+    "all_known_failure_scope": {
+      "applied_n": 12735,
+      "known_outcome_n": 12735,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 8335,
+      "original_eligible_silent": 1722,
+      "original_silent_per_eligible_applied": 0.2065986802639472,
+      "all_known_failure_n": 12735,
+      "eligible_failure_n": 8335,
+      "silent_n": 1722,
+      "silent_per_eligible_failure": 0.2065986802639472,
+      "failure_detection_missing_n": 4400,
+      "failure_detection_coverage": 0.6544954848841774,
+      "detected_failure_n": 6581,
+      "undetected_failure_n": 1754,
+      "observed_silent_per_all_known_failures_lower_bound": 0.13521790341578327,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.4807224185316058,
+      "eligible_failure_tasks": 70,
+      "all_failure_tasks": 100,
+      "recovery_flag_nonboolean_failure_n": 0
+    },
+    "all_known_failure_eligible": {
+      "applied_n": 8335,
+      "known_outcome_n": 8335,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 8335,
+      "original_eligible_silent": 1722,
+      "original_silent_per_eligible_applied": 0.2065986802639472,
+      "all_known_failure_n": 8335,
+      "eligible_failure_n": 8335,
+      "silent_n": 1722,
+      "silent_per_eligible_failure": 0.2065986802639472,
+      "failure_detection_missing_n": 0,
+      "failure_detection_coverage": 1.0,
+      "detected_failure_n": 6581,
+      "undetected_failure_n": 1754,
+      "observed_silent_per_all_known_failures_lower_bound": 0.2065986802639472,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.2065986802639472,
+      "eligible_failure_tasks": 70,
+      "all_failure_tasks": 70,
+      "recovery_flag_nonboolean_failure_n": 0
+    }
+  },
+  "by_domain": {
+    "SWE-bench": {
+      "applied_n": 3240,
+      "known_outcome_n": 3240,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 3240,
+      "original_eligible_silent": 522,
+      "original_silent_per_eligible_applied": 0.16111111111111112,
+      "all_known_failure_n": 2525,
+      "eligible_failure_n": 2525,
+      "silent_n": 522,
+      "silent_per_eligible_failure": 0.20673267326732672,
+      "failure_detection_missing_n": 0,
+      "failure_detection_coverage": 1.0,
+      "detected_failure_n": 2003,
+      "undetected_failure_n": 522,
+      "observed_silent_per_all_known_failures_lower_bound": 0.20673267326732672,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.20673267326732672,
+      "eligible_failure_tasks": 20,
+      "all_failure_tasks": 20,
+      "recovery_flag_nonboolean_failure_n": 0
+    },
+    "TheAgentCompany": {
+      "applied_n": 2430,
+      "known_outcome_n": 2430,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 2430,
+      "original_eligible_silent": 373,
+      "original_silent_per_eligible_applied": 0.1534979423868313,
+      "all_known_failure_n": 1971,
+      "eligible_failure_n": 1971,
+      "silent_n": 373,
+      "silent_per_eligible_failure": 0.18924403855910704,
+      "failure_detection_missing_n": 0,
+      "failure_detection_coverage": 1.0,
+      "detected_failure_n": 1598,
+      "undetected_failure_n": 373,
+      "observed_silent_per_all_known_failures_lower_bound": 0.18924403855910704,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.18924403855910704,
+      "eligible_failure_tasks": 15,
+      "all_failure_tasks": 15,
+      "recovery_flag_nonboolean_failure_n": 0
+    },
+    "WebArena Admin": {
+      "applied_n": 2922,
+      "known_outcome_n": 2922,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 2922,
+      "original_eligible_silent": 60,
+      "original_silent_per_eligible_applied": 0.02053388090349076,
+      "all_known_failure_n": 1813,
+      "eligible_failure_n": 1813,
+      "silent_n": 60,
+      "silent_per_eligible_failure": 0.03309431880860452,
+      "failure_detection_missing_n": 0,
+      "failure_detection_coverage": 1.0,
+      "detected_failure_n": 1743,
+      "undetected_failure_n": 70,
+      "observed_silent_per_all_known_failures_lower_bound": 0.03309431880860452,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.03309431880860452,
+      "eligible_failure_tasks": 20,
+      "all_failure_tasks": 20,
+      "recovery_flag_nonboolean_failure_n": 0
+    },
+    "WebArena Reddit": {
+      "applied_n": 2430,
+      "known_outcome_n": 2430,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 2430,
+      "original_eligible_silent": 767,
+      "original_silent_per_eligible_applied": 0.31563786008230454,
+      "all_known_failure_n": 2026,
+      "eligible_failure_n": 2026,
+      "silent_n": 767,
+      "silent_per_eligible_failure": 0.37857847976307996,
+      "failure_detection_missing_n": 0,
+      "failure_detection_coverage": 1.0,
+      "detected_failure_n": 1237,
+      "undetected_failure_n": 789,
+      "observed_silent_per_all_known_failures_lower_bound": 0.37857847976307996,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.37857847976307996,
+      "eligible_failure_tasks": 15,
+      "all_failure_tasks": 15,
+      "recovery_flag_nonboolean_failure_n": 0
+    },
+    "WebArena Shopping": {
+      "applied_n": 4860,
+      "known_outcome_n": 4860,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 0,
+      "original_eligible_silent": 0,
+      "original_silent_per_eligible_applied": null,
+      "all_known_failure_n": 4400,
+      "eligible_failure_n": 0,
+      "silent_n": 0,
+      "silent_per_eligible_failure": null,
+      "failure_detection_missing_n": 4400,
+      "failure_detection_coverage": 0.0,
+      "detected_failure_n": 0,
+      "undetected_failure_n": 0,
+      "observed_silent_per_all_known_failures_lower_bound": 0.0,
+      "all_known_failures_silent_partial_identification_upper_bound": 1.0,
+      "eligible_failure_tasks": 0,
+      "all_failure_tasks": 30,
+      "recovery_flag_nonboolean_failure_n": 0
+    }
+  },
+  "leave_one_domain_out": {
+    "SWE-bench": {
+      "applied_n": 12642,
+      "known_outcome_n": 12642,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 7782,
+      "original_eligible_silent": 1200,
+      "original_silent_per_eligible_applied": 0.15420200462606015,
+      "all_known_failure_n": 10210,
+      "eligible_failure_n": 5810,
+      "silent_n": 1200,
+      "silent_per_eligible_failure": 0.20654044750430292,
+      "failure_detection_missing_n": 4400,
+      "failure_detection_coverage": 0.5690499510284035,
+      "detected_failure_n": 4578,
+      "undetected_failure_n": 1232,
+      "observed_silent_per_all_known_failures_lower_bound": 0.11753183153770813,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.5484818805093046,
+      "eligible_failure_tasks": 50,
+      "all_failure_tasks": 80,
+      "recovery_flag_nonboolean_failure_n": 0
+    },
+    "TheAgentCompany": {
+      "applied_n": 13452,
+      "known_outcome_n": 13452,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 8592,
+      "original_eligible_silent": 1349,
+      "original_silent_per_eligible_applied": 0.15700651769087523,
+      "all_known_failure_n": 10764,
+      "eligible_failure_n": 6364,
+      "silent_n": 1349,
+      "silent_per_eligible_failure": 0.21197360150848524,
+      "failure_detection_missing_n": 4400,
+      "failure_detection_coverage": 0.5912300260126347,
+      "detected_failure_n": 4983,
+      "undetected_failure_n": 1381,
+      "observed_silent_per_all_known_failures_lower_bound": 0.1253251579338536,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.5340951319212188,
+      "eligible_failure_tasks": 55,
+      "all_failure_tasks": 85,
+      "recovery_flag_nonboolean_failure_n": 0
+    },
+    "WebArena Admin": {
+      "applied_n": 12960,
+      "known_outcome_n": 12960,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 8100,
+      "original_eligible_silent": 1662,
+      "original_silent_per_eligible_applied": 0.2051851851851852,
+      "all_known_failure_n": 10922,
+      "eligible_failure_n": 6522,
+      "silent_n": 1662,
+      "silent_per_eligible_failure": 0.2548298068077277,
+      "failure_detection_missing_n": 4400,
+      "failure_detection_coverage": 0.5971433803332723,
+      "detected_failure_n": 4838,
+      "undetected_failure_n": 1684,
+      "observed_silent_per_all_known_failures_lower_bound": 0.15216993224684125,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.555026551913569,
+      "eligible_failure_tasks": 50,
+      "all_failure_tasks": 80,
+      "recovery_flag_nonboolean_failure_n": 0
+    },
+    "WebArena Reddit": {
+      "applied_n": 13452,
+      "known_outcome_n": 13452,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 8592,
+      "original_eligible_silent": 955,
+      "original_silent_per_eligible_applied": 0.11114990689013035,
+      "all_known_failure_n": 10709,
+      "eligible_failure_n": 6309,
+      "silent_n": 955,
+      "silent_per_eligible_failure": 0.15137105721984467,
+      "failure_detection_missing_n": 4400,
+      "failure_detection_coverage": 0.5891306377813055,
+      "detected_failure_n": 5344,
+      "undetected_failure_n": 965,
+      "observed_silent_per_all_known_failures_lower_bound": 0.08917732748155757,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.5000466897002521,
+      "eligible_failure_tasks": 55,
+      "all_failure_tasks": 85,
+      "recovery_flag_nonboolean_failure_n": 0
+    },
+    "WebArena Shopping": {
+      "applied_n": 11022,
+      "known_outcome_n": 11022,
+      "unknown_outcome_n": 0,
+      "original_detection_eligible_n": 11022,
+      "original_eligible_silent": 1722,
+      "original_silent_per_eligible_applied": 0.1562329885683179,
+      "all_known_failure_n": 8335,
+      "eligible_failure_n": 8335,
+      "silent_n": 1722,
+      "silent_per_eligible_failure": 0.2065986802639472,
+      "failure_detection_missing_n": 0,
+      "failure_detection_coverage": 1.0,
+      "detected_failure_n": 6581,
+      "undetected_failure_n": 1754,
+      "observed_silent_per_all_known_failures_lower_bound": 0.2065986802639472,
+      "all_known_failures_silent_partial_identification_upper_bound": 0.2065986802639472,
+      "eligible_failure_tasks": 70,
+      "all_failure_tasks": 70,
+      "recovery_flag_nonboolean_failure_n": 0
+    }
+  },
+  "concentration": {
+    "universe": "all domain-task identities with >=1 detection-eligible known failure; includes zero-silent tasks",
+    "task_n": 70,
+    "top20_slots": 14,
+    "cutoff_silent_n": 45,
+    "strictly_above_cutoff_n": 13,
+    "cutoff_tie_n": 1,
+    "cutoff_tie_fraction": 1.0,
+    "silent_total": 1722,
+    "top20_fractional_tie_contribution": 0.4442508710801394,
+    "top20_inclusive_tie_task_n": 14,
+    "top20_inclusive_tie_contribution": 0.4442508710801394,
+    "rows": [
+      {
+        "domain": "WebArena Reddit",
+        "task": "67",
+        "eligible_failure_n": 136,
+        "silent_n": 61
+      },
+      {
+        "domain": "WebArena Reddit",
+        "task": "reddit-735",
+        "eligible_failure_n": 138,
+        "silent_n": 61
+      },
+      {
+        "domain": "WebArena Reddit",
+        "task": "reddit-736",
+        "eligible_failure_n": 144,
+        "silent_n": 61
+      },
+      {
+        "domain": "WebArena Reddit",
+        "task": "reddit-732",
+        "eligible_failure_n": 138,
+        "silent_n": 60
+      },
+      {
+        "domain": "WebArena Reddit",
+        "task": "69",
+        "eligible_failure_n": 134,
+        "silent_n": 59
+      },
+      {
+        "domain": "WebArena Reddit",
+        "task": "reddit-731",
+        "eligible_failure_n": 138,
+        "silent_n": 57
+      },
+      {
+        "domain": "WebArena Reddit",
+        "task": "29",
+        "eligible_failure_n": 135,
+        "silent_n": 54
+      },
+      {
+        "domain": "WebArena Reddit",
+        "task": "31",
+        "eligible_failure_n": 135,
+        "silent_n": 54
+      },
+      {
+        "domain": "WebArena Reddit",
+        "task": "reddit-733",
+        "eligible_failure_n": 135,
+        "silent_n": 52
+      },
+      {
+        "domain": "WebArena Reddit",
+        "task": "30",
+        "eligible_failure_n": 135,
+        "silent_n": 51
+      },
+      {
+        "domain": "WebArena Reddit",
+        "task": "reddit-734",
+        "eligible_failure_n": 135,
+        "silent_n": 51
+      },
+      {
+        "domain": "WebArena Reddit",
+        "task": "27",
+        "eligible_failure_n": 135,
+        "silent_n": 50
+      },
+      {
+        "domain": "WebArena Reddit",
+        "task": "66",
+        "eligible_failure_n": 133,
+        "silent_n": 49
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "sde-fix-factual-mistake",
+        "eligible_failure_n": 132,
+        "silent_n": 45
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "sde-close-an-issue",
+        "eligible_failure_n": 132,
+        "silent_n": 41
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "astropy__astropy-12907",
+        "eligible_failure_n": 129,
+        "silent_n": 36
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "ds-format-excel-sheets",
+        "eligible_failure_n": 129,
+        "silent_n": 36
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "pm-send-hello-message",
+        "eligible_failure_n": 129,
+        "silent_n": 36
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "qa-escalate-emergency",
+        "eligible_failure_n": 129,
+        "silent_n": 36
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "sde-change-license-easy",
+        "eligible_failure_n": 131,
+        "silent_n": 33
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "astropy__astropy-13453",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "astropy__astropy-14096",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "astropy__astropy-14309",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "django__django-10097",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "django__django-10914",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "django__django-14089",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "django__django-16485",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "pallets__flask-5014",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "pydata__xarray-3677",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "pytest-dev__pytest-5631",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "pytest-dev__pytest-7982",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "scikit-learn__scikit-learn-10297",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "scikit-learn__scikit-learn-13439",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "scikit-learn__scikit-learn-13779",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "scikit-learn__scikit-learn-14141",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "sympy__sympy-11618",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "sympy__sympy-16886",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "sympy__sympy-22914",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "ds-predictive-modeling",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "sde-install-go",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "sde-install-openjdk",
+        "eligible_failure_n": 126,
+        "silent_n": 27
+      },
+      {
+        "domain": "WebArena Reddit",
+        "task": "723",
+        "eligible_failure_n": 128,
+        "silent_n": 27
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "ds-find-meeting-spreadsheet",
+        "eligible_failure_n": 126,
+        "silent_n": 21
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "200",
+        "eligible_failure_n": 140,
+        "silent_n": 21
+      },
+      {
+        "domain": "WebArena Reddit",
+        "task": "726",
+        "eligible_failure_n": 127,
+        "silent_n": 20
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "bm-classify-nationality",
+        "eligible_failure_n": 143,
+        "silent_n": 18
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "ds-calculate-spreadsheet-stats",
+        "eligible_failure_n": 129,
+        "silent_n": 14
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "finance-nonqualified-bill-ask-for-reimburse",
+        "eligible_failure_n": 133,
+        "silent_n": 12
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "288",
+        "eligible_failure_n": 121,
+        "silent_n": 8
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "41",
+        "eligible_failure_n": 85,
+        "silent_n": 8
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "62",
+        "eligible_failure_n": 149,
+        "silent_n": 7
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "292",
+        "eligible_failure_n": 102,
+        "silent_n": 5
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "185",
+        "eligible_failure_n": 135,
+        "silent_n": 4
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "195",
+        "eligible_failure_n": 92,
+        "silent_n": 2
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "210",
+        "eligible_failure_n": 68,
+        "silent_n": 2
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "187",
+        "eligible_failure_n": 68,
+        "silent_n": 1
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "211",
+        "eligible_failure_n": 68,
+        "silent_n": 1
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "42",
+        "eligible_failure_n": 84,
+        "silent_n": 1
+      },
+      {
+        "domain": "SWE-bench",
+        "task": "pydata__xarray-2905",
+        "eligible_failure_n": 128,
+        "silent_n": 0
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "finance-budget-variance",
+        "eligible_failure_n": 124,
+        "silent_n": 0
+      },
+      {
+        "domain": "TheAgentCompany",
+        "task": "sde-find-answer-in-codebase-2",
+        "eligible_failure_n": 156,
+        "silent_n": 0
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "0",
+        "eligible_failure_n": 112,
+        "silent_n": 0
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "107",
+        "eligible_failure_n": 67,
+        "silent_n": 0
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "193",
+        "eligible_failure_n": 70,
+        "silent_n": 0
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "194",
+        "eligible_failure_n": 79,
+        "silent_n": 0
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "198",
+        "eligible_failure_n": 75,
+        "silent_n": 0
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "199",
+        "eligible_failure_n": 57,
+        "silent_n": 0
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "208",
+        "eligible_failure_n": 71,
+        "silent_n": 0
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "209",
+        "eligible_failure_n": 64,
+        "silent_n": 0
+      },
+      {
+        "domain": "WebArena Admin",
+        "task": "4",
+        "eligible_failure_n": 106,
+        "silent_n": 0
+      }
+    ]
+  },
+  "concentration_by_domain": {
+    "SWE-bench": {
+      "universe": "all domain-task identities with >=1 detection-eligible known failure; includes zero-silent tasks",
+      "task_n": 20,
+      "top20_slots": 4,
+      "cutoff_silent_n": 27,
+      "strictly_above_cutoff_n": 1,
+      "cutoff_tie_n": 18,
+      "cutoff_tie_fraction": 0.16666666666666666,
+      "silent_total": 522,
+      "top20_fractional_tie_contribution": 0.22413793103448276,
+      "top20_inclusive_tie_task_n": 19,
+      "top20_inclusive_tie_contribution": 1.0,
+      "rows": [
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-12907",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-13453",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14096",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14309",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10097",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-14089",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-16485",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pallets__flask-5014",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-3677",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-5631",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-7982",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-10297",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13439",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13779",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-14141",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-11618",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-16886",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-22914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-2905",
+          "eligible_failure_n": 128,
+          "silent_n": 0
+        }
+      ]
+    },
+    "TheAgentCompany": {
+      "universe": "all domain-task identities with >=1 detection-eligible known failure; includes zero-silent tasks",
+      "task_n": 15,
+      "top20_slots": 3,
+      "cutoff_silent_n": 36,
+      "strictly_above_cutoff_n": 2,
+      "cutoff_tie_n": 3,
+      "cutoff_tie_fraction": 0.3333333333333333,
+      "silent_total": 373,
+      "top20_fractional_tie_contribution": 0.32707774798927614,
+      "top20_inclusive_tie_task_n": 5,
+      "top20_inclusive_tie_contribution": 0.5201072386058981,
+      "rows": [
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-fix-factual-mistake",
+          "eligible_failure_n": 132,
+          "silent_n": 45
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-close-an-issue",
+          "eligible_failure_n": 132,
+          "silent_n": 41
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-format-excel-sheets",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "pm-send-hello-message",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "qa-escalate-emergency",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-change-license-easy",
+          "eligible_failure_n": 131,
+          "silent_n": 33
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-predictive-modeling",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-go",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-openjdk",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-find-meeting-spreadsheet",
+          "eligible_failure_n": 126,
+          "silent_n": 21
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "bm-classify-nationality",
+          "eligible_failure_n": 143,
+          "silent_n": 18
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-calculate-spreadsheet-stats",
+          "eligible_failure_n": 129,
+          "silent_n": 14
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-nonqualified-bill-ask-for-reimburse",
+          "eligible_failure_n": 133,
+          "silent_n": 12
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-budget-variance",
+          "eligible_failure_n": 124,
+          "silent_n": 0
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-find-answer-in-codebase-2",
+          "eligible_failure_n": 156,
+          "silent_n": 0
+        }
+      ]
+    },
+    "WebArena Admin": {
+      "universe": "all domain-task identities with >=1 detection-eligible known failure; includes zero-silent tasks",
+      "task_n": 20,
+      "top20_slots": 4,
+      "cutoff_silent_n": 7,
+      "strictly_above_cutoff_n": 3,
+      "cutoff_tie_n": 1,
+      "cutoff_tie_fraction": 1.0,
+      "silent_total": 60,
+      "top20_fractional_tie_contribution": 0.7333333333333333,
+      "top20_inclusive_tie_task_n": 4,
+      "top20_inclusive_tie_contribution": 0.7333333333333333,
+      "rows": [
+        {
+          "domain": "WebArena Admin",
+          "task": "200",
+          "eligible_failure_n": 140,
+          "silent_n": 21
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "288",
+          "eligible_failure_n": 121,
+          "silent_n": 8
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "41",
+          "eligible_failure_n": 85,
+          "silent_n": 8
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "62",
+          "eligible_failure_n": 149,
+          "silent_n": 7
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "292",
+          "eligible_failure_n": 102,
+          "silent_n": 5
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "185",
+          "eligible_failure_n": 135,
+          "silent_n": 4
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "195",
+          "eligible_failure_n": 92,
+          "silent_n": 2
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "210",
+          "eligible_failure_n": 68,
+          "silent_n": 2
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "187",
+          "eligible_failure_n": 68,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "211",
+          "eligible_failure_n": 68,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "42",
+          "eligible_failure_n": 84,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "0",
+          "eligible_failure_n": 112,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "107",
+          "eligible_failure_n": 67,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "193",
+          "eligible_failure_n": 70,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "194",
+          "eligible_failure_n": 79,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "198",
+          "eligible_failure_n": 75,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "199",
+          "eligible_failure_n": 57,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "208",
+          "eligible_failure_n": 71,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "209",
+          "eligible_failure_n": 64,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "4",
+          "eligible_failure_n": 106,
+          "silent_n": 0
+        }
+      ]
+    },
+    "WebArena Reddit": {
+      "universe": "all domain-task identities with >=1 detection-eligible known failure; includes zero-silent tasks",
+      "task_n": 15,
+      "top20_slots": 3,
+      "cutoff_silent_n": 61,
+      "strictly_above_cutoff_n": 0,
+      "cutoff_tie_n": 3,
+      "cutoff_tie_fraction": 1.0,
+      "silent_total": 767,
+      "top20_fractional_tie_contribution": 0.23859191655801826,
+      "top20_inclusive_tie_task_n": 3,
+      "top20_inclusive_tie_contribution": 0.23859191655801826,
+      "rows": [
+        {
+          "domain": "WebArena Reddit",
+          "task": "67",
+          "eligible_failure_n": 136,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-735",
+          "eligible_failure_n": 138,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-736",
+          "eligible_failure_n": 144,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-732",
+          "eligible_failure_n": 138,
+          "silent_n": 60
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "69",
+          "eligible_failure_n": 134,
+          "silent_n": 59
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-731",
+          "eligible_failure_n": 138,
+          "silent_n": 57
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "29",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "31",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-733",
+          "eligible_failure_n": 135,
+          "silent_n": 52
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "30",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-734",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "27",
+          "eligible_failure_n": 135,
+          "silent_n": 50
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "66",
+          "eligible_failure_n": 133,
+          "silent_n": 49
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "723",
+          "eligible_failure_n": 128,
+          "silent_n": 27
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "726",
+          "eligible_failure_n": 127,
+          "silent_n": 20
+        }
+      ]
+    },
+    "WebArena Shopping": {
+      "task_n": 0,
+      "rows": []
+    }
+  },
+  "concentration_by_scenario": {
+    "all_original_applied": {
+      "universe": "all domain-task identities with >=1 detection-eligible known failure; includes zero-silent tasks",
+      "task_n": 70,
+      "top20_slots": 14,
+      "cutoff_silent_n": 45,
+      "strictly_above_cutoff_n": 13,
+      "cutoff_tie_n": 1,
+      "cutoff_tie_fraction": 1.0,
+      "silent_total": 1722,
+      "top20_fractional_tie_contribution": 0.4442508710801394,
+      "top20_inclusive_tie_task_n": 14,
+      "top20_inclusive_tie_contribution": 0.4442508710801394,
+      "rows": [
+        {
+          "domain": "WebArena Reddit",
+          "task": "67",
+          "eligible_failure_n": 136,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-735",
+          "eligible_failure_n": 138,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-736",
+          "eligible_failure_n": 144,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-732",
+          "eligible_failure_n": 138,
+          "silent_n": 60
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "69",
+          "eligible_failure_n": 134,
+          "silent_n": 59
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-731",
+          "eligible_failure_n": 138,
+          "silent_n": 57
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "29",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "31",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-733",
+          "eligible_failure_n": 135,
+          "silent_n": 52
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "30",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-734",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "27",
+          "eligible_failure_n": 135,
+          "silent_n": 50
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "66",
+          "eligible_failure_n": 133,
+          "silent_n": 49
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-fix-factual-mistake",
+          "eligible_failure_n": 132,
+          "silent_n": 45
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-close-an-issue",
+          "eligible_failure_n": 132,
+          "silent_n": 41
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-12907",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-format-excel-sheets",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "pm-send-hello-message",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "qa-escalate-emergency",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-change-license-easy",
+          "eligible_failure_n": 131,
+          "silent_n": 33
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-13453",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14096",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14309",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10097",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-14089",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-16485",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pallets__flask-5014",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-3677",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-5631",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-7982",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-10297",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13439",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13779",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-14141",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-11618",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-16886",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-22914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-predictive-modeling",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-go",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-openjdk",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "723",
+          "eligible_failure_n": 128,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-find-meeting-spreadsheet",
+          "eligible_failure_n": 126,
+          "silent_n": 21
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "200",
+          "eligible_failure_n": 140,
+          "silent_n": 21
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "726",
+          "eligible_failure_n": 127,
+          "silent_n": 20
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "bm-classify-nationality",
+          "eligible_failure_n": 143,
+          "silent_n": 18
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-calculate-spreadsheet-stats",
+          "eligible_failure_n": 129,
+          "silent_n": 14
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-nonqualified-bill-ask-for-reimburse",
+          "eligible_failure_n": 133,
+          "silent_n": 12
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "288",
+          "eligible_failure_n": 121,
+          "silent_n": 8
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "41",
+          "eligible_failure_n": 85,
+          "silent_n": 8
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "62",
+          "eligible_failure_n": 149,
+          "silent_n": 7
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "292",
+          "eligible_failure_n": 102,
+          "silent_n": 5
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "185",
+          "eligible_failure_n": 135,
+          "silent_n": 4
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "195",
+          "eligible_failure_n": 92,
+          "silent_n": 2
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "210",
+          "eligible_failure_n": 68,
+          "silent_n": 2
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "187",
+          "eligible_failure_n": 68,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "211",
+          "eligible_failure_n": 68,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "42",
+          "eligible_failure_n": 84,
+          "silent_n": 1
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-2905",
+          "eligible_failure_n": 128,
+          "silent_n": 0
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-budget-variance",
+          "eligible_failure_n": 124,
+          "silent_n": 0
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-find-answer-in-codebase-2",
+          "eligible_failure_n": 156,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "0",
+          "eligible_failure_n": 112,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "107",
+          "eligible_failure_n": 67,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "193",
+          "eligible_failure_n": 70,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "194",
+          "eligible_failure_n": 79,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "198",
+          "eligible_failure_n": 75,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "199",
+          "eligible_failure_n": 57,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "208",
+          "eligible_failure_n": 71,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "209",
+          "eligible_failure_n": 64,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "4",
+          "eligible_failure_n": 106,
+          "silent_n": 0
+        }
+      ]
+    },
+    "exclude_Admin": {
+      "universe": "all domain-task identities with >=1 detection-eligible known failure; includes zero-silent tasks",
+      "task_n": 50,
+      "top20_slots": 10,
+      "cutoff_silent_n": 51,
+      "strictly_above_cutoff_n": 9,
+      "cutoff_tie_n": 2,
+      "cutoff_tie_fraction": 0.5,
+      "silent_total": 1662,
+      "top20_fractional_tie_contribution": 0.34296028880866425,
+      "top20_inclusive_tie_task_n": 11,
+      "top20_inclusive_tie_contribution": 0.37364620938628157,
+      "rows": [
+        {
+          "domain": "WebArena Reddit",
+          "task": "67",
+          "eligible_failure_n": 136,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-735",
+          "eligible_failure_n": 138,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-736",
+          "eligible_failure_n": 144,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-732",
+          "eligible_failure_n": 138,
+          "silent_n": 60
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "69",
+          "eligible_failure_n": 134,
+          "silent_n": 59
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-731",
+          "eligible_failure_n": 138,
+          "silent_n": 57
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "29",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "31",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-733",
+          "eligible_failure_n": 135,
+          "silent_n": 52
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "30",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-734",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "27",
+          "eligible_failure_n": 135,
+          "silent_n": 50
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "66",
+          "eligible_failure_n": 133,
+          "silent_n": 49
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-fix-factual-mistake",
+          "eligible_failure_n": 132,
+          "silent_n": 45
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-close-an-issue",
+          "eligible_failure_n": 132,
+          "silent_n": 41
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-12907",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-format-excel-sheets",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "pm-send-hello-message",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "qa-escalate-emergency",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-change-license-easy",
+          "eligible_failure_n": 131,
+          "silent_n": 33
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-13453",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14096",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14309",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10097",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-14089",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-16485",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pallets__flask-5014",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-3677",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-5631",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-7982",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-10297",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13439",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13779",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-14141",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-11618",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-16886",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-22914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-predictive-modeling",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-go",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-openjdk",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "723",
+          "eligible_failure_n": 128,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-find-meeting-spreadsheet",
+          "eligible_failure_n": 126,
+          "silent_n": 21
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "726",
+          "eligible_failure_n": 127,
+          "silent_n": 20
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "bm-classify-nationality",
+          "eligible_failure_n": 143,
+          "silent_n": 18
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-calculate-spreadsheet-stats",
+          "eligible_failure_n": 129,
+          "silent_n": 14
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-nonqualified-bill-ask-for-reimburse",
+          "eligible_failure_n": 133,
+          "silent_n": 12
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-2905",
+          "eligible_failure_n": 128,
+          "silent_n": 0
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-budget-variance",
+          "eligible_failure_n": 124,
+          "silent_n": 0
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-find-answer-in-codebase-2",
+          "eligible_failure_n": 156,
+          "silent_n": 0
+        }
+      ]
+    },
+    "exclude_Shopping": {
+      "universe": "all domain-task identities with >=1 detection-eligible known failure; includes zero-silent tasks",
+      "task_n": 70,
+      "top20_slots": 14,
+      "cutoff_silent_n": 45,
+      "strictly_above_cutoff_n": 13,
+      "cutoff_tie_n": 1,
+      "cutoff_tie_fraction": 1.0,
+      "silent_total": 1722,
+      "top20_fractional_tie_contribution": 0.4442508710801394,
+      "top20_inclusive_tie_task_n": 14,
+      "top20_inclusive_tie_contribution": 0.4442508710801394,
+      "rows": [
+        {
+          "domain": "WebArena Reddit",
+          "task": "67",
+          "eligible_failure_n": 136,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-735",
+          "eligible_failure_n": 138,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-736",
+          "eligible_failure_n": 144,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-732",
+          "eligible_failure_n": 138,
+          "silent_n": 60
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "69",
+          "eligible_failure_n": 134,
+          "silent_n": 59
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-731",
+          "eligible_failure_n": 138,
+          "silent_n": 57
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "29",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "31",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-733",
+          "eligible_failure_n": 135,
+          "silent_n": 52
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "30",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-734",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "27",
+          "eligible_failure_n": 135,
+          "silent_n": 50
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "66",
+          "eligible_failure_n": 133,
+          "silent_n": 49
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-fix-factual-mistake",
+          "eligible_failure_n": 132,
+          "silent_n": 45
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-close-an-issue",
+          "eligible_failure_n": 132,
+          "silent_n": 41
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-12907",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-format-excel-sheets",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "pm-send-hello-message",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "qa-escalate-emergency",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-change-license-easy",
+          "eligible_failure_n": 131,
+          "silent_n": 33
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-13453",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14096",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14309",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10097",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-14089",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-16485",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pallets__flask-5014",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-3677",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-5631",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-7982",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-10297",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13439",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13779",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-14141",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-11618",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-16886",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-22914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-predictive-modeling",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-go",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-openjdk",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "723",
+          "eligible_failure_n": 128,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-find-meeting-spreadsheet",
+          "eligible_failure_n": 126,
+          "silent_n": 21
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "200",
+          "eligible_failure_n": 140,
+          "silent_n": 21
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "726",
+          "eligible_failure_n": 127,
+          "silent_n": 20
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "bm-classify-nationality",
+          "eligible_failure_n": 143,
+          "silent_n": 18
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-calculate-spreadsheet-stats",
+          "eligible_failure_n": 129,
+          "silent_n": 14
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-nonqualified-bill-ask-for-reimburse",
+          "eligible_failure_n": 133,
+          "silent_n": 12
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "288",
+          "eligible_failure_n": 121,
+          "silent_n": 8
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "41",
+          "eligible_failure_n": 85,
+          "silent_n": 8
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "62",
+          "eligible_failure_n": 149,
+          "silent_n": 7
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "292",
+          "eligible_failure_n": 102,
+          "silent_n": 5
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "185",
+          "eligible_failure_n": 135,
+          "silent_n": 4
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "195",
+          "eligible_failure_n": 92,
+          "silent_n": 2
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "210",
+          "eligible_failure_n": 68,
+          "silent_n": 2
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "187",
+          "eligible_failure_n": 68,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "211",
+          "eligible_failure_n": 68,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "42",
+          "eligible_failure_n": 84,
+          "silent_n": 1
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-2905",
+          "eligible_failure_n": 128,
+          "silent_n": 0
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-budget-variance",
+          "eligible_failure_n": 124,
+          "silent_n": 0
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-find-answer-in-codebase-2",
+          "eligible_failure_n": 156,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "0",
+          "eligible_failure_n": 112,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "107",
+          "eligible_failure_n": 67,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "193",
+          "eligible_failure_n": 70,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "194",
+          "eligible_failure_n": 79,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "198",
+          "eligible_failure_n": 75,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "199",
+          "eligible_failure_n": 57,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "208",
+          "eligible_failure_n": 71,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "209",
+          "eligible_failure_n": 64,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "4",
+          "eligible_failure_n": 106,
+          "silent_n": 0
+        }
+      ]
+    },
+    "exclude_forum_task28": {
+      "universe": "all domain-task identities with >=1 detection-eligible known failure; includes zero-silent tasks",
+      "task_n": 70,
+      "top20_slots": 14,
+      "cutoff_silent_n": 45,
+      "strictly_above_cutoff_n": 13,
+      "cutoff_tie_n": 1,
+      "cutoff_tie_fraction": 1.0,
+      "silent_total": 1722,
+      "top20_fractional_tie_contribution": 0.4442508710801394,
+      "top20_inclusive_tie_task_n": 14,
+      "top20_inclusive_tie_contribution": 0.4442508710801394,
+      "rows": [
+        {
+          "domain": "WebArena Reddit",
+          "task": "67",
+          "eligible_failure_n": 136,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-735",
+          "eligible_failure_n": 138,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-736",
+          "eligible_failure_n": 144,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-732",
+          "eligible_failure_n": 138,
+          "silent_n": 60
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "69",
+          "eligible_failure_n": 134,
+          "silent_n": 59
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-731",
+          "eligible_failure_n": 138,
+          "silent_n": 57
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "29",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "31",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-733",
+          "eligible_failure_n": 135,
+          "silent_n": 52
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "30",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-734",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "27",
+          "eligible_failure_n": 135,
+          "silent_n": 50
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "66",
+          "eligible_failure_n": 133,
+          "silent_n": 49
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-fix-factual-mistake",
+          "eligible_failure_n": 132,
+          "silent_n": 45
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-close-an-issue",
+          "eligible_failure_n": 132,
+          "silent_n": 41
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-12907",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-format-excel-sheets",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "pm-send-hello-message",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "qa-escalate-emergency",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-change-license-easy",
+          "eligible_failure_n": 131,
+          "silent_n": 33
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-13453",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14096",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14309",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10097",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-14089",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-16485",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pallets__flask-5014",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-3677",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-5631",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-7982",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-10297",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13439",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13779",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-14141",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-11618",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-16886",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-22914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-predictive-modeling",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-go",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-openjdk",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "723",
+          "eligible_failure_n": 128,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-find-meeting-spreadsheet",
+          "eligible_failure_n": 126,
+          "silent_n": 21
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "200",
+          "eligible_failure_n": 140,
+          "silent_n": 21
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "726",
+          "eligible_failure_n": 127,
+          "silent_n": 20
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "bm-classify-nationality",
+          "eligible_failure_n": 143,
+          "silent_n": 18
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-calculate-spreadsheet-stats",
+          "eligible_failure_n": 129,
+          "silent_n": 14
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-nonqualified-bill-ask-for-reimburse",
+          "eligible_failure_n": 133,
+          "silent_n": 12
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "288",
+          "eligible_failure_n": 121,
+          "silent_n": 8
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "41",
+          "eligible_failure_n": 85,
+          "silent_n": 8
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "62",
+          "eligible_failure_n": 149,
+          "silent_n": 7
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "292",
+          "eligible_failure_n": 102,
+          "silent_n": 5
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "185",
+          "eligible_failure_n": 135,
+          "silent_n": 4
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "195",
+          "eligible_failure_n": 92,
+          "silent_n": 2
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "210",
+          "eligible_failure_n": 68,
+          "silent_n": 2
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "187",
+          "eligible_failure_n": 68,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "211",
+          "eligible_failure_n": 68,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "42",
+          "eligible_failure_n": 84,
+          "silent_n": 1
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-2905",
+          "eligible_failure_n": 128,
+          "silent_n": 0
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-budget-variance",
+          "eligible_failure_n": 124,
+          "silent_n": 0
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-find-answer-in-codebase-2",
+          "eligible_failure_n": 156,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "0",
+          "eligible_failure_n": 112,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "107",
+          "eligible_failure_n": 67,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "193",
+          "eligible_failure_n": 70,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "194",
+          "eligible_failure_n": 79,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "198",
+          "eligible_failure_n": 75,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "199",
+          "eligible_failure_n": 57,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "208",
+          "eligible_failure_n": 71,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "209",
+          "eligible_failure_n": 64,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "4",
+          "eligible_failure_n": 106,
+          "silent_n": 0
+        }
+      ]
+    },
+    "clean_success_only": {
+      "universe": "all domain-task identities with >=1 detection-eligible known failure; includes zero-silent tasks",
+      "task_n": 69,
+      "top20_slots": 14,
+      "cutoff_silent_n": 43,
+      "strictly_above_cutoff_n": 13,
+      "cutoff_tie_n": 1,
+      "cutoff_tie_fraction": 1.0,
+      "silent_total": 1650,
+      "top20_fractional_tie_contribution": 0.4503030303030303,
+      "top20_inclusive_tie_task_n": 14,
+      "top20_inclusive_tie_contribution": 0.4503030303030303,
+      "rows": [
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-735",
+          "eligible_failure_n": 138,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-732",
+          "eligible_failure_n": 138,
+          "silent_n": 60
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "69",
+          "eligible_failure_n": 134,
+          "silent_n": 59
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "67",
+          "eligible_failure_n": 118,
+          "silent_n": 57
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-731",
+          "eligible_failure_n": 138,
+          "silent_n": 57
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "29",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "31",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-733",
+          "eligible_failure_n": 135,
+          "silent_n": 52
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "30",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-734",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "27",
+          "eligible_failure_n": 135,
+          "silent_n": 50
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "66",
+          "eligible_failure_n": 133,
+          "silent_n": 49
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-fix-factual-mistake",
+          "eligible_failure_n": 132,
+          "silent_n": 45
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-736",
+          "eligible_failure_n": 108,
+          "silent_n": 43
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-close-an-issue",
+          "eligible_failure_n": 132,
+          "silent_n": 41
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-12907",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-format-excel-sheets",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "qa-escalate-emergency",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "pm-send-hello-message",
+          "eligible_failure_n": 109,
+          "silent_n": 32
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-change-license-easy",
+          "eligible_failure_n": 111,
+          "silent_n": 29
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-13453",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14096",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14309",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10097",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-14089",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pallets__flask-5014",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-5631",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-7982",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-10297",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13439",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13779",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-14141",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-11618",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-22914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-predictive-modeling",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-go",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-openjdk",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "723",
+          "eligible_failure_n": 128,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-3677",
+          "eligible_failure_n": 114,
+          "silent_n": 25
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10914",
+          "eligible_failure_n": 108,
+          "silent_n": 24
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-16485",
+          "eligible_failure_n": 108,
+          "silent_n": 24
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-find-meeting-spreadsheet",
+          "eligible_failure_n": 84,
+          "silent_n": 21
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-16886",
+          "eligible_failure_n": 88,
+          "silent_n": 20
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "726",
+          "eligible_failure_n": 127,
+          "silent_n": 20
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "bm-classify-nationality",
+          "eligible_failure_n": 91,
+          "silent_n": 18
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-calculate-spreadsheet-stats",
+          "eligible_failure_n": 87,
+          "silent_n": 12
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-nonqualified-bill-ask-for-reimburse",
+          "eligible_failure_n": 61,
+          "silent_n": 12
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "200",
+          "eligible_failure_n": 50,
+          "silent_n": 10
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "41",
+          "eligible_failure_n": 85,
+          "silent_n": 8
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "288",
+          "eligible_failure_n": 85,
+          "silent_n": 7
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "292",
+          "eligible_failure_n": 78,
+          "silent_n": 5
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "210",
+          "eligible_failure_n": 68,
+          "silent_n": 2
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "187",
+          "eligible_failure_n": 37,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "211",
+          "eligible_failure_n": 68,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "42",
+          "eligible_failure_n": 84,
+          "silent_n": 1
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-2905",
+          "eligible_failure_n": 44,
+          "silent_n": 0
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-budget-variance",
+          "eligible_failure_n": 1,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "0",
+          "eligible_failure_n": 112,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "107",
+          "eligible_failure_n": 67,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "185",
+          "eligible_failure_n": 45,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "193",
+          "eligible_failure_n": 61,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "194",
+          "eligible_failure_n": 70,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "195",
+          "eligible_failure_n": 27,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "198",
+          "eligible_failure_n": 75,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "199",
+          "eligible_failure_n": 48,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "208",
+          "eligible_failure_n": 68,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "209",
+          "eligible_failure_n": 64,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "4",
+          "eligible_failure_n": 106,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "62",
+          "eligible_failure_n": 39,
+          "silent_n": 0
+        }
+      ]
+    },
+    "all_known_failure_scope": {
+      "universe": "all domain-task identities with >=1 detection-eligible known failure; includes zero-silent tasks",
+      "task_n": 70,
+      "top20_slots": 14,
+      "cutoff_silent_n": 45,
+      "strictly_above_cutoff_n": 13,
+      "cutoff_tie_n": 1,
+      "cutoff_tie_fraction": 1.0,
+      "silent_total": 1722,
+      "top20_fractional_tie_contribution": 0.4442508710801394,
+      "top20_inclusive_tie_task_n": 14,
+      "top20_inclusive_tie_contribution": 0.4442508710801394,
+      "rows": [
+        {
+          "domain": "WebArena Reddit",
+          "task": "67",
+          "eligible_failure_n": 136,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-735",
+          "eligible_failure_n": 138,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-736",
+          "eligible_failure_n": 144,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-732",
+          "eligible_failure_n": 138,
+          "silent_n": 60
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "69",
+          "eligible_failure_n": 134,
+          "silent_n": 59
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-731",
+          "eligible_failure_n": 138,
+          "silent_n": 57
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "29",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "31",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-733",
+          "eligible_failure_n": 135,
+          "silent_n": 52
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "30",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-734",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "27",
+          "eligible_failure_n": 135,
+          "silent_n": 50
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "66",
+          "eligible_failure_n": 133,
+          "silent_n": 49
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-fix-factual-mistake",
+          "eligible_failure_n": 132,
+          "silent_n": 45
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-close-an-issue",
+          "eligible_failure_n": 132,
+          "silent_n": 41
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-12907",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-format-excel-sheets",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "pm-send-hello-message",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "qa-escalate-emergency",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-change-license-easy",
+          "eligible_failure_n": 131,
+          "silent_n": 33
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-13453",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14096",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14309",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10097",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-14089",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-16485",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pallets__flask-5014",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-3677",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-5631",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-7982",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-10297",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13439",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13779",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-14141",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-11618",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-16886",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-22914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-predictive-modeling",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-go",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-openjdk",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "723",
+          "eligible_failure_n": 128,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-find-meeting-spreadsheet",
+          "eligible_failure_n": 126,
+          "silent_n": 21
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "200",
+          "eligible_failure_n": 140,
+          "silent_n": 21
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "726",
+          "eligible_failure_n": 127,
+          "silent_n": 20
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "bm-classify-nationality",
+          "eligible_failure_n": 143,
+          "silent_n": 18
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-calculate-spreadsheet-stats",
+          "eligible_failure_n": 129,
+          "silent_n": 14
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-nonqualified-bill-ask-for-reimburse",
+          "eligible_failure_n": 133,
+          "silent_n": 12
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "288",
+          "eligible_failure_n": 121,
+          "silent_n": 8
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "41",
+          "eligible_failure_n": 85,
+          "silent_n": 8
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "62",
+          "eligible_failure_n": 149,
+          "silent_n": 7
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "292",
+          "eligible_failure_n": 102,
+          "silent_n": 5
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "185",
+          "eligible_failure_n": 135,
+          "silent_n": 4
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "195",
+          "eligible_failure_n": 92,
+          "silent_n": 2
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "210",
+          "eligible_failure_n": 68,
+          "silent_n": 2
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "187",
+          "eligible_failure_n": 68,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "211",
+          "eligible_failure_n": 68,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "42",
+          "eligible_failure_n": 84,
+          "silent_n": 1
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-2905",
+          "eligible_failure_n": 128,
+          "silent_n": 0
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-budget-variance",
+          "eligible_failure_n": 124,
+          "silent_n": 0
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-find-answer-in-codebase-2",
+          "eligible_failure_n": 156,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "0",
+          "eligible_failure_n": 112,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "107",
+          "eligible_failure_n": 67,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "193",
+          "eligible_failure_n": 70,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "194",
+          "eligible_failure_n": 79,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "198",
+          "eligible_failure_n": 75,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "199",
+          "eligible_failure_n": 57,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "208",
+          "eligible_failure_n": 71,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "209",
+          "eligible_failure_n": 64,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "4",
+          "eligible_failure_n": 106,
+          "silent_n": 0
+        }
+      ]
+    },
+    "all_known_failure_eligible": {
+      "universe": "all domain-task identities with >=1 detection-eligible known failure; includes zero-silent tasks",
+      "task_n": 70,
+      "top20_slots": 14,
+      "cutoff_silent_n": 45,
+      "strictly_above_cutoff_n": 13,
+      "cutoff_tie_n": 1,
+      "cutoff_tie_fraction": 1.0,
+      "silent_total": 1722,
+      "top20_fractional_tie_contribution": 0.4442508710801394,
+      "top20_inclusive_tie_task_n": 14,
+      "top20_inclusive_tie_contribution": 0.4442508710801394,
+      "rows": [
+        {
+          "domain": "WebArena Reddit",
+          "task": "67",
+          "eligible_failure_n": 136,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-735",
+          "eligible_failure_n": 138,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-736",
+          "eligible_failure_n": 144,
+          "silent_n": 61
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-732",
+          "eligible_failure_n": 138,
+          "silent_n": 60
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "69",
+          "eligible_failure_n": 134,
+          "silent_n": 59
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-731",
+          "eligible_failure_n": 138,
+          "silent_n": 57
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "29",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "31",
+          "eligible_failure_n": 135,
+          "silent_n": 54
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-733",
+          "eligible_failure_n": 135,
+          "silent_n": 52
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "30",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "reddit-734",
+          "eligible_failure_n": 135,
+          "silent_n": 51
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "27",
+          "eligible_failure_n": 135,
+          "silent_n": 50
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "66",
+          "eligible_failure_n": 133,
+          "silent_n": 49
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-fix-factual-mistake",
+          "eligible_failure_n": 132,
+          "silent_n": 45
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-close-an-issue",
+          "eligible_failure_n": 132,
+          "silent_n": 41
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-12907",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-format-excel-sheets",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "pm-send-hello-message",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "qa-escalate-emergency",
+          "eligible_failure_n": 129,
+          "silent_n": 36
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-change-license-easy",
+          "eligible_failure_n": 131,
+          "silent_n": 33
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-13453",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14096",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "astropy__astropy-14309",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10097",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-10914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-14089",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "django__django-16485",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pallets__flask-5014",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-3677",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-5631",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pytest-dev__pytest-7982",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-10297",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13439",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-13779",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "scikit-learn__scikit-learn-14141",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-11618",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-16886",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "sympy__sympy-22914",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-predictive-modeling",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-go",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-install-openjdk",
+          "eligible_failure_n": 126,
+          "silent_n": 27
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "723",
+          "eligible_failure_n": 128,
+          "silent_n": 27
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-find-meeting-spreadsheet",
+          "eligible_failure_n": 126,
+          "silent_n": 21
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "200",
+          "eligible_failure_n": 140,
+          "silent_n": 21
+        },
+        {
+          "domain": "WebArena Reddit",
+          "task": "726",
+          "eligible_failure_n": 127,
+          "silent_n": 20
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "bm-classify-nationality",
+          "eligible_failure_n": 143,
+          "silent_n": 18
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "ds-calculate-spreadsheet-stats",
+          "eligible_failure_n": 129,
+          "silent_n": 14
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-nonqualified-bill-ask-for-reimburse",
+          "eligible_failure_n": 133,
+          "silent_n": 12
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "288",
+          "eligible_failure_n": 121,
+          "silent_n": 8
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "41",
+          "eligible_failure_n": 85,
+          "silent_n": 8
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "62",
+          "eligible_failure_n": 149,
+          "silent_n": 7
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "292",
+          "eligible_failure_n": 102,
+          "silent_n": 5
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "185",
+          "eligible_failure_n": 135,
+          "silent_n": 4
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "195",
+          "eligible_failure_n": 92,
+          "silent_n": 2
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "210",
+          "eligible_failure_n": 68,
+          "silent_n": 2
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "187",
+          "eligible_failure_n": 68,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "211",
+          "eligible_failure_n": 68,
+          "silent_n": 1
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "42",
+          "eligible_failure_n": 84,
+          "silent_n": 1
+        },
+        {
+          "domain": "SWE-bench",
+          "task": "pydata__xarray-2905",
+          "eligible_failure_n": 128,
+          "silent_n": 0
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "finance-budget-variance",
+          "eligible_failure_n": 124,
+          "silent_n": 0
+        },
+        {
+          "domain": "TheAgentCompany",
+          "task": "sde-find-answer-in-codebase-2",
+          "eligible_failure_n": 156,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "0",
+          "eligible_failure_n": 112,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "107",
+          "eligible_failure_n": 67,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "193",
+          "eligible_failure_n": 70,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "194",
+          "eligible_failure_n": 79,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "198",
+          "eligible_failure_n": 75,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "199",
+          "eligible_failure_n": 57,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "208",
+          "eligible_failure_n": 71,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "209",
+          "eligible_failure_n": 64,
+          "silent_n": 0
+        },
+        {
+          "domain": "WebArena Admin",
+          "task": "4",
+          "eligible_failure_n": 106,
+          "silent_n": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,12 +1,25 @@
-# Packaging validation — 2026-09-24
+# Release validation
 
-Environment: macOS, Python 3.13.3; isolated virtualenv. Historical Linux/Python 3.11 runtime was not revalidated.
+Validated on 2026-09-29 in an independent publication checkout. No live model or benchmark experiment was run.
 
-- All Python sources parsed; all 308 imported source hashes verified. Only analysis-config paths were changed.
-- Credential-pattern matches reviewed: local placeholders and synthetic test credentials; no real API tokens or private keys found. This is a bounded review, not a security certification.
-- Main snapshot + RQ4 analysis: `python -m pytest -q tests test_mas_rq4_analysis_20260914.py`: **1450 passed, 1 failed, 85 subtests passed** (49.32s).
-- Failure: `tests/test_local_inference_config_probe.py::test_crossover_exact_requests_warmup_excluded_cost_included`. Serial/parallel case order differed. The test appends to a shared list from concurrent worker threads and compares list ordering, suggesting an ordering-sensitive test. No source/test behavior changed. Further diagnosis is required before claiming a full pass.
-- RQ4 tests isolated with their own legacy source (README command): **20 passed, 48 subtests passed** (0.47s).
-- No live models, server experiments, full benchmark replay or analysis-data recomputation performed.
+| Check | Result |
+|---|---|
+| Shared experiment code | 1,397 tests passed; 85 subtests passed |
+| Historical protection runtime | 20 tests passed; 48 subtests passed |
+| Targeted evidence checks | 45 tests passed; 53 subtests passed |
+| Recovery boundary | 38 tests passed; 44 subtests passed |
+| Reddit recovery | 20 tests passed |
+| Position inference policy | 5 tests passed |
+| Position Admin semantics | 21 tests passed; 6 subtests passed; 3 optional original-archive checks skipped |
+| Position Qwen runtime | 9 tests passed |
+| Paired-analysis unit checks | 14 tests passed |
+| Static export unit checks | 10 tests passed |
+| Website catalog | 26,613 unique indexed records; 6,800 detailed exports; case and task references valid |
+| Browser checks | Home, methodology, paper cases, replay, comparison, downloads, stable numbering, error recovery and mobile layout passed |
+| Privacy paths | No flagged personal home paths, numbered storage mounts or non-example machine IPs in tracked text |
 
-Initial combined collection revealed omitted RQ4 legacy dependencies; the original legacy sources were included and RQ4 tests rerun separately. Do not mix both dated module versions in one Python process.
+Offline analyses reproduced the 1,408-unit common fault cohort, independently recounted 1,296 model/topology contrasts and 324 failure-overlap groups, reproduced 135 matched position cells including the Admin table, and reconciled silent failures and protection resource accounting. Figure 7 is distributed as manuscript-reported plot values and is not included in the claim of per-execution recomputation.
+
+Figures 2–11 were extracted from the bound manuscript digest and visually checked. Source links in the methodology resolve to files in this release. A separate code review checked portability, dependency closure and evidence references.
+
+Full live reproduction requires external benchmark assets and configured services. Historical gate fixtures are offline test data, not current service admission. The original local experiment sources and previous staging checkout were not edited by release curation.

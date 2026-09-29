@@ -1,0 +1,424 @@
+{
+  "source_sha256": "86ec83c6528348c429b2420b1becdea3ecba51270b8f10c83e696243a5885416",
+  "groups": [
+    {
+      "scope": "clean",
+      "topology": "flat",
+      "arm": "baseline",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 0,
+      "acceptance_error_events": 0,
+      "dedicated_readbacks": 0,
+      "damaged_deliveries": 0,
+      "mean_http": 13.0,
+      "mean_model": 8.0
+    },
+    {
+      "scope": "clean",
+      "topology": "flat",
+      "arm": "combined",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 0,
+      "acceptance_error_events": 0,
+      "dedicated_readbacks": 0,
+      "damaged_deliveries": 0,
+      "mean_http": 13.0,
+      "mean_model": 8.0
+    },
+    {
+      "scope": "clean",
+      "topology": "sequential",
+      "arm": "baseline",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 0,
+      "acceptance_error_events": 0,
+      "dedicated_readbacks": 0,
+      "damaged_deliveries": 0,
+      "mean_http": 11.0,
+      "mean_model": 7.0
+    },
+    {
+      "scope": "clean",
+      "topology": "sequential",
+      "arm": "combined",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 0,
+      "acceptance_error_events": 0,
+      "dedicated_readbacks": 0,
+      "damaged_deliveries": 0,
+      "mean_http": 11.0,
+      "mean_model": 7.0
+    },
+    {
+      "scope": "persistent_handoff",
+      "topology": "flat",
+      "arm": "baseline",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 18,
+      "acceptance_error_events": 18,
+      "dedicated_readbacks": 0,
+      "damaged_deliveries": 18,
+      "mean_http": 13.0,
+      "mean_model": 8.0
+    },
+    {
+      "scope": "persistent_handoff",
+      "topology": "flat",
+      "arm": "combined",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 0,
+      "acceptance_error_events": 0,
+      "dedicated_readbacks": 18,
+      "damaged_deliveries": 36,
+      "mean_http": 15.0,
+      "mean_model": 8.0
+    },
+    {
+      "scope": "persistent_handoff",
+      "topology": "sequential",
+      "arm": "baseline",
+      "n": 18,
+      "success": 0,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 18,
+      "acceptance_error_events": 36,
+      "dedicated_readbacks": 0,
+      "damaged_deliveries": 18,
+      "mean_http": 11.0,
+      "mean_model": 7.0
+    },
+    {
+      "scope": "persistent_handoff",
+      "topology": "sequential",
+      "arm": "combined",
+      "n": 18,
+      "success": 0,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 0,
+      "acceptance_error_events": 0,
+      "dedicated_readbacks": 18,
+      "damaged_deliveries": 54,
+      "mean_http": 15.0,
+      "mean_model": 8.0
+    },
+    {
+      "scope": "shared_workflow_evidence",
+      "topology": "flat",
+      "arm": "baseline",
+      "n": 18,
+      "success": 0,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 18,
+      "acceptance_error_events": 36,
+      "dedicated_readbacks": 0,
+      "damaged_deliveries": 36,
+      "mean_http": 13.0,
+      "mean_model": 8.0
+    },
+    {
+      "scope": "shared_workflow_evidence",
+      "topology": "flat",
+      "arm": "combined",
+      "n": 18,
+      "success": 0,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 0,
+      "acceptance_error_events": 0,
+      "dedicated_readbacks": 18,
+      "damaged_deliveries": 72,
+      "mean_http": 17.0,
+      "mean_model": 9.0
+    },
+    {
+      "scope": "shared_workflow_evidence",
+      "topology": "sequential",
+      "arm": "baseline",
+      "n": 18,
+      "success": 0,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 18,
+      "acceptance_error_events": 36,
+      "dedicated_readbacks": 0,
+      "damaged_deliveries": 18,
+      "mean_http": 11.0,
+      "mean_model": 7.0
+    },
+    {
+      "scope": "shared_workflow_evidence",
+      "topology": "sequential",
+      "arm": "combined",
+      "n": 18,
+      "success": 0,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 0,
+      "acceptance_error_events": 0,
+      "dedicated_readbacks": 18,
+      "damaged_deliveries": 54,
+      "mean_http": 15.0,
+      "mean_model": 8.0
+    },
+    {
+      "scope": "single_handoff",
+      "topology": "flat",
+      "arm": "baseline",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 18,
+      "acceptance_error_events": 18,
+      "dedicated_readbacks": 0,
+      "damaged_deliveries": 18,
+      "mean_http": 13.0,
+      "mean_model": 8.0
+    },
+    {
+      "scope": "single_handoff",
+      "topology": "flat",
+      "arm": "combined",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 0,
+      "acceptance_error_events": 0,
+      "dedicated_readbacks": 18,
+      "damaged_deliveries": 18,
+      "mean_http": 15.0,
+      "mean_model": 8.0
+    },
+    {
+      "scope": "single_handoff",
+      "topology": "sequential",
+      "arm": "baseline",
+      "n": 18,
+      "success": 0,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 18,
+      "acceptance_error_events": 36,
+      "dedicated_readbacks": 0,
+      "damaged_deliveries": 18,
+      "mean_http": 11.0,
+      "mean_model": 7.0
+    },
+    {
+      "scope": "single_handoff",
+      "topology": "sequential",
+      "arm": "combined",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "runs_with_acceptance_error": 0,
+      "acceptance_error_events": 0,
+      "dedicated_readbacks": 18,
+      "damaged_deliveries": 18,
+      "mean_http": 13.0,
+      "mean_model": 7.0
+    }
+  ],
+  "paired_scope_effects": [
+    {
+      "topology": "sequential",
+      "arm": "baseline",
+      "left": "single_handoff",
+      "right": "persistent_handoff",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "00": 18
+      }
+    },
+    {
+      "topology": "sequential",
+      "arm": "baseline",
+      "left": "single_handoff",
+      "right": "shared_workflow_evidence",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "00": 18
+      }
+    },
+    {
+      "topology": "sequential",
+      "arm": "baseline",
+      "left": "persistent_handoff",
+      "right": "shared_workflow_evidence",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "00": 18
+      }
+    },
+    {
+      "topology": "sequential",
+      "arm": "combined",
+      "left": "single_handoff",
+      "right": "persistent_handoff",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": -100.0,
+      "ci95": [
+        -100.0,
+        -100.0
+      ],
+      "transitions": {
+        "10": 18
+      }
+    },
+    {
+      "topology": "sequential",
+      "arm": "combined",
+      "left": "single_handoff",
+      "right": "shared_workflow_evidence",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": -100.0,
+      "ci95": [
+        -100.0,
+        -100.0
+      ],
+      "transitions": {
+        "10": 18
+      }
+    },
+    {
+      "topology": "sequential",
+      "arm": "combined",
+      "left": "persistent_handoff",
+      "right": "shared_workflow_evidence",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "00": 18
+      }
+    },
+    {
+      "topology": "flat",
+      "arm": "baseline",
+      "left": "single_handoff",
+      "right": "persistent_handoff",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "topology": "flat",
+      "arm": "baseline",
+      "left": "single_handoff",
+      "right": "shared_workflow_evidence",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": -100.0,
+      "ci95": [
+        -100.0,
+        -100.0
+      ],
+      "transitions": {
+        "10": 18
+      }
+    },
+    {
+      "topology": "flat",
+      "arm": "baseline",
+      "left": "persistent_handoff",
+      "right": "shared_workflow_evidence",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": -100.0,
+      "ci95": [
+        -100.0,
+        -100.0
+      ],
+      "transitions": {
+        "10": 18
+      }
+    },
+    {
+      "topology": "flat",
+      "arm": "combined",
+      "left": "single_handoff",
+      "right": "persistent_handoff",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "topology": "flat",
+      "arm": "combined",
+      "left": "single_handoff",
+      "right": "shared_workflow_evidence",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": -100.0,
+      "ci95": [
+        -100.0,
+        -100.0
+      ],
+      "transitions": {
+        "10": 18
+      }
+    },
+    {
+      "topology": "flat",
+      "arm": "combined",
+      "left": "persistent_handoff",
+      "right": "shared_workflow_evidence",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": -100.0,
+      "ci95": [
+        -100.0,
+        -100.0
+      ],
+      "transitions": {
+        "10": 18
+      }
+    }
+  ],
+  "method": "10000 product cluster bootstrap; right minus left; no multiplicity correction"
+}

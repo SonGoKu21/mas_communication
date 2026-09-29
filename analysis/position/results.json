@@ -1,0 +1,1220 @@
+{
+  "definition": "Matched clean-success units with all three faults applied and known outcomes.",
+  "cells": [
+    {
+      "domain": "admin",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 54,
+      "successes": 47,
+      "success_pct": 87.03703703703704
+    },
+    {
+      "domain": "admin",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 54,
+      "successes": 41,
+      "success_pct": 75.92592592592592
+    },
+    {
+      "domain": "admin",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 54,
+      "successes": 51,
+      "success_pct": 94.44444444444444
+    },
+    {
+      "domain": "admin",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 56,
+      "successes": 53,
+      "success_pct": 94.64285714285714
+    },
+    {
+      "domain": "admin",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 56,
+      "successes": 35,
+      "success_pct": 62.5
+    },
+    {
+      "domain": "admin",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 56,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "admin",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 54,
+      "successes": 49,
+      "success_pct": 90.74074074074075
+    },
+    {
+      "domain": "admin",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 54,
+      "successes": 39,
+      "success_pct": 72.22222222222223
+    },
+    {
+      "domain": "admin",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 54,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "admin",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 49,
+      "successes": 27,
+      "success_pct": 55.10204081632653
+    },
+    {
+      "domain": "admin",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 49,
+      "successes": 17,
+      "success_pct": 34.69387755102041
+    },
+    {
+      "domain": "admin",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 49,
+      "successes": 49,
+      "success_pct": 100.0
+    },
+    {
+      "domain": "admin",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 49,
+      "successes": 27,
+      "success_pct": 55.10204081632653
+    },
+    {
+      "domain": "admin",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 49,
+      "successes": 17,
+      "success_pct": 34.69387755102041
+    },
+    {
+      "domain": "admin",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 49,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "admin",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 48,
+      "successes": 27,
+      "success_pct": 56.25
+    },
+    {
+      "domain": "admin",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 48,
+      "successes": 17,
+      "success_pct": 35.416666666666664
+    },
+    {
+      "domain": "admin",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 48,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "admin",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 28,
+      "successes": 21,
+      "success_pct": 75.0
+    },
+    {
+      "domain": "admin",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 28,
+      "successes": 22,
+      "success_pct": 78.57142857142857
+    },
+    {
+      "domain": "admin",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 28,
+      "successes": 27,
+      "success_pct": 96.42857142857143
+    },
+    {
+      "domain": "admin",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 28,
+      "successes": 21,
+      "success_pct": 75.0
+    },
+    {
+      "domain": "admin",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 28,
+      "successes": 21,
+      "success_pct": 75.0
+    },
+    {
+      "domain": "admin",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 28,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "admin",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 29,
+      "successes": 21,
+      "success_pct": 72.41379310344827
+    },
+    {
+      "domain": "admin",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 29,
+      "successes": 22,
+      "success_pct": 75.86206896551724
+    },
+    {
+      "domain": "admin",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 29,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 41,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 41,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 41,
+      "successes": 38,
+      "success_pct": 92.6829268292683
+    },
+    {
+      "domain": "reddit",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 45,
+      "successes": 45,
+      "success_pct": 100.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 45,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 45,
+      "successes": 42,
+      "success_pct": 93.33333333333333
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 40,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 40,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 40,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 39,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 39,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "reddit",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 39,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 90,
+      "successes": 1,
+      "success_pct": 1.1111111111111112
+    },
+    {
+      "domain": "shopping",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 90,
+      "successes": 48,
+      "success_pct": 53.333333333333336
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "shopping",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 90,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 57,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 57,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 57,
+      "successes": 45,
+      "success_pct": 78.94736842105263
+    },
+    {
+      "domain": "swe",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 54,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 54,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 54,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 57,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 57,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 57,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 56,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 56,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 56,
+      "successes": 56,
+      "success_pct": 100.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 48,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 48,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 48,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 54,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 54,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 54,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 60,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 60,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 60,
+      "successes": 60,
+      "success_pct": 100.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 60,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 60,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 60,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 60,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 60,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "swe",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 60,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 28,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 28,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "deepseek",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 28,
+      "successes": 12,
+      "success_pct": 42.857142857142854
+    },
+    {
+      "domain": "tac",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 39,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 39,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "deepseek",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 39,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 28,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 28,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "deepseek",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 28,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 30,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 30,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen27",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 30,
+      "successes": 30,
+      "success_pct": 100.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 31,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 31,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen27",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 31,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 24,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 24,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen27",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 24,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step2",
+      "n": 34,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step3",
+      "n": 34,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen9",
+      "topology": "flat",
+      "condition": "non_delivery_step4",
+      "n": 34,
+      "successes": 34,
+      "success_pct": 100.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step2",
+      "n": 33,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step3",
+      "n": 33,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen9",
+      "topology": "hierarchical",
+      "condition": "non_delivery_step4",
+      "n": 33,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step2",
+      "n": 33,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step3",
+      "n": 33,
+      "successes": 0,
+      "success_pct": 0.0
+    },
+    {
+      "domain": "tac",
+      "model": "qwen9",
+      "topology": "sequential",
+      "condition": "non_delivery_step4",
+      "n": 33,
+      "successes": 0,
+      "success_pct": 0.0
+    }
+  ]
+}

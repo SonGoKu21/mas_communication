@@ -5,7 +5,7 @@ from playwright.sync_api import sync_playwright,expect
 BASE=os.environ.get('REPLAY_URL','http://127.0.0.1:8767/')
 with sync_playwright() as p:
     b=p.chromium.launch();page=b.new_page(viewport={'width':1440,'height':1000});page.goto(BASE)
-    expect(page.locator('.finding')).to_have_count(10,timeout=30000)
+    expect(page.locator('.finding')).to_have_count(7,timeout=30000)
     page.locator('[data-view=runs]').click()
     expect(page.locator('.run strong').first).to_have_text('Task 001')
     page.locator('#search').fill('Task 001')

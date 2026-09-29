@@ -1,25 +1,11 @@
-# Configuring the public artifact
+# Public configuration
 
-The repository contains generic deployment examples, not a configuration for an existing server.
+Run code commands from `code/` with `PYTHONPATH=src:.`. Experiment-specific runtimes use their own module paths as documented in the reproduction guide.
 
-- `MAS_CODE_ROOT`: repository location. Shell entry points derive this from their own location unless overridden.
-- `MAS_DATA_ROOT`: absolute directory for datasets, models, results, and caches. Set this explicitly before storage setup or model-download scripts.
-- `MAS_PYTHON`: Python executable for local shell runners (default: `python3` from the active environment).
-- `MAS_VLLM`: vLLM executable (default: `vllm`). `MAS_VLLM_ACTIVATE` optionally selects an activation script; `MAS_LIBSTDCXX` optionally selects a compatibility library.
-- `MAS_CREDENTIALS_FILE`: private environment file required by the legacy DeepSeek runtime template. Keep this outside the repository.
+Provide credentials through environment variables or an untracked `.env` file. Never put credentials in experiment specifications or commits. The repository uses loopback endpoints, documentation addresses and generic `/opt/mas` or `/var/lib/mas` placeholders for external resources. Replace them through the relevant command-line arguments or environment configuration.
 
-For example, choose your own storage directory, then run:
+The Reddit recovery adapter requires `WEBARENA_ROOT` and the WebArena evaluator environment variables: `PLAYWRIGHT_BROWSERS_PATH`, `SHOPPING`, `SHOPPING_ADMIN`, `REDDIT`, `GITLAB`, `MAP`, `WIKIPEDIA`, and `HOMEPAGE`. Set `MAS_REDDIT_OUTPUT` to the intended output directory.
 
-```bash
-export MAS_DATA_ROOT="/absolute/path/to/experiment-data"
-bash configure-storage.sh
-source server-env.sh
-```
+The fixtures under protection experiments are offline test inputs. Their historical admission metadata does not authorize a new execution. Live runs require a freshly validated local environment and matching source/configuration hashes.
 
-Storage setup refuses relative data paths and refuses to replace existing directories or unrelated symlinks.
-
-Remaining `/opt/mas` and `/var/lib/mas` paths are generic installation templates. Adapt deployment units and pass the Python entry points' path arguments for your environment. `192.0.2.10` is a documentation-only address: replace benchmark URLs with your own endpoints before live execution. Loopback addresses denote explicitly local services.
-
-Run `python3 scripts/audit_public_paths.py` before publishing. This scans tracked text, including legacy copies, for personal home directories, numbered storage mounts, and non-example IP addresses. It is a targeted configuration audit, not a guarantee that arbitrary files contain no identifying information.
-
-Changes to the current tree do not remove older Git commits. Anonymous review snapshots should be generated from the current cleaned tree and pinned to the intended commit.
+Set `MAS_P3_OUTPUT` to the canonical output directory for the recovery-boundary experiment and pass the same path as `--output`. Resume uses the same directory and source/configuration hashes. The default is `code/results/recovery_boundary/`; experiment source directories cannot be used as outputs.
