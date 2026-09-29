@@ -1,0 +1,53 @@
+{
+  "inputs": {
+    "clean_results_sha256": "3925c72ff8f7ff5f28d98ba6d1a283e398106940793963a315622e6227a65151",
+    "fault_results_sha256": "b58591f52adf99a4cca6c285d6afa8838dc9570258a0b5bf7e2e0be6204426bf"
+  },
+  "method": "paired semantic_only minus baseline; 10000 task-cluster resamples, seed20260928; no multiplicity correction",
+  "contrasts": [
+    {
+      "condition": "clean",
+      "n": 27,
+      "tasks": 9,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 21,
+        "00": 6
+      }
+    },
+    {
+      "condition": "valid_partial",
+      "n": 27,
+      "tasks": 9,
+      "difference_pp": 33.33333333333333,
+      "ci95": [
+        0.0,
+        66.66666666666666
+      ],
+      "transitions": {
+        "11": 12,
+        "01": 9,
+        "00": 6
+      }
+    },
+    {
+      "condition": "semantic_corruption",
+      "n": 27,
+      "tasks": 9,
+      "difference_pp": 44.44444444444444,
+      "ci95": [
+        11.11111111111111,
+        77.77777777777779
+      ],
+      "transitions": {
+        "00": 6,
+        "11": 9,
+        "01": 12
+      }
+    }
+  ]
+}

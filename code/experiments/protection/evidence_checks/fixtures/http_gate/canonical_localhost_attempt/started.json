@@ -1,0 +1,140 @@
+{
+  "started_at": "2026-09-27T16:17:55.757559+00:00",
+  "source_sha256": "9327ce127e0fca36070db73cfb935907b14dd4407c94a5b989fe2dc34b03dbb1",
+  "script_sha256": "952b2ce1f20aa0c4dd1d1fd33bddcfa2b7c72bc127503212edec08f22b63be5e",
+  "python": "archived-input/python",
+  "source_hashes": {
+    "archived-input/shopping_action_protocol.py": "349240ef18c04a04e3dd6a4cd33da32bbb63f1b44a9d956f0991f8883ba1137b",
+    "archived-input/webarena_shopping_real.py": "ee777dc1cadf27a9acafce6ea21c3644c6c5449b798bb1b685f45c22c34cdf00",
+    "archived-input/shopping_mitigation.py": "2e46bbb50e544dca629a3640eac491d4bd970df11c44dee2250cfef1bdc91636"
+  },
+  "origin_mapping": {
+    "from": "http://127.0.0.1:17770",
+    "to": "http://localhost:7770"
+  },
+  "tasks": [
+    {
+      "original": {
+        "task_id": "shopping-001-q1to2",
+        "product_title": "Pre-baked Gingerbread House Kit Value Pack, 17 oz., Pack of 2, Total 34 oz.",
+        "product_url": "http://127.0.0.1:17770/pre-baked-gingerbread-house-kit-value-pack-17-oz-pack-of-2-total-34-oz.html",
+        "quantity": 2,
+        "initial_quantity": 1,
+        "task_family": "quantity_increase",
+        "product_cluster": "http://127.0.0.1:17770/pre-baked-gingerbread-house-kit-value-pack-17-oz-pack-of-2-total-34-oz.html"
+      },
+      "mapped": {
+        "task_id": "shopping-001-q1to2",
+        "product_title": "Pre-baked Gingerbread House Kit Value Pack, 17 oz., Pack of 2, Total 34 oz.",
+        "product_url": "http://localhost:7770/pre-baked-gingerbread-house-kit-value-pack-17-oz-pack-of-2-total-34-oz.html",
+        "quantity": 2,
+        "initial_quantity": 1,
+        "task_family": "quantity_increase",
+        "product_cluster": "http://localhost:7770/pre-baked-gingerbread-house-kit-value-pack-17-oz-pack-of-2-total-34-oz.html"
+      }
+    },
+    {
+      "original": {
+        "task_id": "shopping-002-q1to3",
+        "product_title": "V8 +Energy, Healthy Energy Drink, Steady Energy from Black and Green Tea, Pomegranate Blueberry, 8 Ounce Can ,Pack of 24",
+        "product_url": "http://127.0.0.1:17770/v8-energy-healthy-energy-drink-steady-energy-from-black-and-green-tea-pomegranate-blueberry-8-ounce-can-pack-of-24.html",
+        "quantity": 3,
+        "initial_quantity": 1,
+        "task_family": "quantity_increase",
+        "product_cluster": "http://127.0.0.1:17770/v8-energy-healthy-energy-drink-steady-energy-from-black-and-green-tea-pomegranate-blueberry-8-ounce-can-pack-of-24.html"
+      },
+      "mapped": {
+        "task_id": "shopping-002-q1to3",
+        "product_title": "V8 +Energy, Healthy Energy Drink, Steady Energy from Black and Green Tea, Pomegranate Blueberry, 8 Ounce Can ,Pack of 24",
+        "product_url": "http://localhost:7770/v8-energy-healthy-energy-drink-steady-energy-from-black-and-green-tea-pomegranate-blueberry-8-ounce-can-pack-of-24.html",
+        "quantity": 3,
+        "initial_quantity": 1,
+        "task_family": "quantity_increase",
+        "product_cluster": "http://localhost:7770/v8-energy-healthy-energy-drink-steady-energy-from-black-and-green-tea-pomegranate-blueberry-8-ounce-can-pack-of-24.html"
+      }
+    },
+    {
+      "original": {
+        "task_id": "shopping-003-q2to3",
+        "product_title": "Elmwood Inn Fine Teas, Orange Vanilla Caffeine-free Fruit Infusion, 16-Ounce Pouch",
+        "product_url": "http://127.0.0.1:17770/elmwood-inn-fine-teas-orange-vanilla-caffeine-free-fruit-infusion-16-ounce-pouch.html",
+        "quantity": 3,
+        "initial_quantity": 2,
+        "task_family": "quantity_increase",
+        "product_cluster": "http://127.0.0.1:17770/elmwood-inn-fine-teas-orange-vanilla-caffeine-free-fruit-infusion-16-ounce-pouch.html"
+      },
+      "mapped": {
+        "task_id": "shopping-003-q2to3",
+        "product_title": "Elmwood Inn Fine Teas, Orange Vanilla Caffeine-free Fruit Infusion, 16-Ounce Pouch",
+        "product_url": "http://localhost:7770/elmwood-inn-fine-teas-orange-vanilla-caffeine-free-fruit-infusion-16-ounce-pouch.html",
+        "quantity": 3,
+        "initial_quantity": 2,
+        "task_family": "quantity_increase",
+        "product_cluster": "http://localhost:7770/elmwood-inn-fine-teas-orange-vanilla-caffeine-free-fruit-infusion-16-ounce-pouch.html"
+      }
+    },
+    {
+      "original": {
+        "task_id": "shopping-005-q1to2",
+        "product_title": "So Delicious Dairy Free CocoWhip Light, Vegan, Non-GMO Project Verified, 9 oz. Tub",
+        "product_url": "http://127.0.0.1:17770/so-delicious-dairy-free-cocowhip-light-vegan-non-gmo-project-verified-9-oz-tub.html",
+        "quantity": 2,
+        "initial_quantity": 1,
+        "task_family": "quantity_increase",
+        "product_cluster": "http://127.0.0.1:17770/so-delicious-dairy-free-cocowhip-light-vegan-non-gmo-project-verified-9-oz-tub.html"
+      },
+      "mapped": {
+        "task_id": "shopping-005-q1to2",
+        "product_title": "So Delicious Dairy Free CocoWhip Light, Vegan, Non-GMO Project Verified, 9 oz. Tub",
+        "product_url": "http://localhost:7770/so-delicious-dairy-free-cocowhip-light-vegan-non-gmo-project-verified-9-oz-tub.html",
+        "quantity": 2,
+        "initial_quantity": 1,
+        "task_family": "quantity_increase",
+        "product_cluster": "http://localhost:7770/so-delicious-dairy-free-cocowhip-light-vegan-non-gmo-project-verified-9-oz-tub.html"
+      }
+    },
+    {
+      "original": {
+        "task_id": "shopping-006-q1to3",
+        "product_title": "Cheongeun Sweet Potato Starch Powder 500g, 2ea(Sweet Potato 55%, Corn 45%)",
+        "product_url": "http://127.0.0.1:17770/cheongeun-sweet-potato-starch-powder-500g-2ea-sweet-potato-55-corn-45.html",
+        "quantity": 3,
+        "initial_quantity": 1,
+        "task_family": "quantity_increase",
+        "product_cluster": "http://127.0.0.1:17770/cheongeun-sweet-potato-starch-powder-500g-2ea-sweet-potato-55-corn-45.html"
+      },
+      "mapped": {
+        "task_id": "shopping-006-q1to3",
+        "product_title": "Cheongeun Sweet Potato Starch Powder 500g, 2ea(Sweet Potato 55%, Corn 45%)",
+        "product_url": "http://localhost:7770/cheongeun-sweet-potato-starch-powder-500g-2ea-sweet-potato-55-corn-45.html",
+        "quantity": 3,
+        "initial_quantity": 1,
+        "task_family": "quantity_increase",
+        "product_cluster": "http://localhost:7770/cheongeun-sweet-potato-starch-powder-500g-2ea-sweet-potato-55-corn-45.html"
+      }
+    },
+    {
+      "original": {
+        "task_id": "shopping-007-q2to3",
+        "product_title": "Q Mixers Premium Ginger Ale: Real Ingredients & Less Sweet, 6.7 Fl Oz (24 Bottles)",
+        "product_url": "http://127.0.0.1:17770/q-mixers-premium-ginger-ale-real-ingredients-less-sweet-6-7-fl-oz-24-bottles.html",
+        "quantity": 3,
+        "initial_quantity": 2,
+        "task_family": "quantity_increase",
+        "product_cluster": "http://127.0.0.1:17770/q-mixers-premium-ginger-ale-real-ingredients-less-sweet-6-7-fl-oz-24-bottles.html"
+      },
+      "mapped": {
+        "task_id": "shopping-007-q2to3",
+        "product_title": "Q Mixers Premium Ginger Ale: Real Ingredients & Less Sweet, 6.7 Fl Oz (24 Bottles)",
+        "product_url": "http://localhost:7770/q-mixers-premium-ginger-ale-real-ingredients-less-sweet-6-7-fl-oz-24-bottles.html",
+        "quantity": 3,
+        "initial_quantity": 2,
+        "task_family": "quantity_increase",
+        "product_cluster": "http://localhost:7770/q-mixers-premium-ginger-ale-real-ingredients-less-sweet-6-7-fl-oz-24-bottles.html"
+      }
+    }
+  ],
+  "max_concurrency": 4,
+  "model_calls": 0,
+  "execution_eligible": false
+}

@@ -1,0 +1,7 @@
+condition,applied,detection_eligible,eligible_failures,silent,silent_per_eligible_run_pct,silent_per_eligible_failure_pct,failures_missing_detection
+non_delivery_step2,2682,1872,1591,37,1.98,2.33,810
+non_delivery_step4,2640,1830,1259,0,0.0,0.0,677
+semantic_corruption_step4,2640,1830,1356,357,19.51,26.33,809
+stale_replay_step4,2640,1830,1297,130,7.1,10.02,743
+timeliness_deadline_step4,2640,1830,1259,0,0.0,0.0,678
+valid_partial_message_step4,2640,1830,1573,1198,65.46,76.16,683

@@ -1,0 +1,947 @@
+{
+  "source_sha256": "7f3419db566b351524e19789c631ff2ce69d953b1bf5030e42d00e3b8d44c5a0",
+  "groups": [
+    {
+      "condition": "clean",
+      "topology": "flat",
+      "variant": "always_readback",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 18,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 15.0,
+      "mean_model": 8.0,
+      "tokens": 94485
+    },
+    {
+      "condition": "clean",
+      "topology": "flat",
+      "variant": "baseline",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 0,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 13.0,
+      "mean_model": 8.0,
+      "tokens": 93566
+    },
+    {
+      "condition": "clean",
+      "topology": "flat",
+      "variant": "check_only",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 0,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 13.0,
+      "mean_model": 8.0,
+      "tokens": 93553
+    },
+    {
+      "condition": "clean",
+      "topology": "flat",
+      "variant": "guarded_readback",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 0,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 13.0,
+      "mean_model": 8.0,
+      "tokens": 93413
+    },
+    {
+      "condition": "clean",
+      "topology": "sequential",
+      "variant": "always_readback",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 18,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 13.0,
+      "mean_model": 7.0,
+      "tokens": 80774
+    },
+    {
+      "condition": "clean",
+      "topology": "sequential",
+      "variant": "baseline",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 0,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 11.0,
+      "mean_model": 7.0,
+      "tokens": 79875
+    },
+    {
+      "condition": "clean",
+      "topology": "sequential",
+      "variant": "check_only",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 0,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 11.0,
+      "mean_model": 7.0,
+      "tokens": 80445
+    },
+    {
+      "condition": "clean",
+      "topology": "sequential",
+      "variant": "guarded_readback",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 0,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 11.0,
+      "mean_model": 7.0,
+      "tokens": 80304
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "variant": "always_readback",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 18,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 15.0,
+      "mean_model": 8.0,
+      "tokens": 94579
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "variant": "baseline",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 0,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 18,
+      "mean_http": 13.0,
+      "mean_model": 8.0,
+      "tokens": 94006
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "variant": "check_only",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 0,
+      "common_recovery": 0,
+      "first_contract_reject": 18,
+      "acceptance_errors": 0,
+      "mean_http": 13.0,
+      "mean_model": 8.0,
+      "tokens": 86004
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "variant": "guarded_readback",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 18,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 15.0,
+      "mean_model": 8.0,
+      "tokens": 94122
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "variant": "always_readback",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 18,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 13.0,
+      "mean_model": 7.0,
+      "tokens": 81000
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "variant": "baseline",
+      "n": 18,
+      "success": 0,
+      "environment_success": 18,
+      "dedicated_readback": 0,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 36,
+      "mean_http": 11.0,
+      "mean_model": 7.0,
+      "tokens": 79869
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "variant": "check_only",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 0,
+      "common_recovery": 18,
+      "first_contract_reject": 18,
+      "acceptance_errors": 0,
+      "mean_http": 13.0,
+      "mean_model": 8.0,
+      "tokens": 79145
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "variant": "guarded_readback",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 18,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 13.0,
+      "mean_model": 7.0,
+      "tokens": 81217
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "flat",
+      "variant": "always_readback",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 18,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 15.0,
+      "mean_model": 8.0,
+      "tokens": 94391
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "flat",
+      "variant": "baseline",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 0,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 17,
+      "mean_http": 13.0,
+      "mean_model": 8.0,
+      "tokens": 91400
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "flat",
+      "variant": "check_only",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 0,
+      "common_recovery": 0,
+      "first_contract_reject": 18,
+      "acceptance_errors": 0,
+      "mean_http": 13.0,
+      "mean_model": 8.0,
+      "tokens": 86026
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "flat",
+      "variant": "guarded_readback",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 18,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 15.0,
+      "mean_model": 8.0,
+      "tokens": 94344
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "sequential",
+      "variant": "always_readback",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 18,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 13.0,
+      "mean_model": 7.0,
+      "tokens": 81260
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "sequential",
+      "variant": "baseline",
+      "n": 18,
+      "success": 2,
+      "environment_success": 18,
+      "dedicated_readback": 0,
+      "common_recovery": 2,
+      "first_contract_reject": 0,
+      "acceptance_errors": 32,
+      "mean_http": 11.222222222222221,
+      "mean_model": 7.111111111111111,
+      "tokens": 76211
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "sequential",
+      "variant": "check_only",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 0,
+      "common_recovery": 18,
+      "first_contract_reject": 18,
+      "acceptance_errors": 0,
+      "mean_http": 13.0,
+      "mean_model": 8.0,
+      "tokens": 79144
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "sequential",
+      "variant": "guarded_readback",
+      "n": 18,
+      "success": 18,
+      "environment_success": 18,
+      "dedicated_readback": 18,
+      "common_recovery": 0,
+      "first_contract_reject": 0,
+      "acceptance_errors": 0,
+      "mean_http": 13.0,
+      "mean_model": 7.0,
+      "tokens": 81018
+    }
+  ],
+  "paired_success": [
+    {
+      "condition": "clean",
+      "topology": "flat",
+      "left": "baseline",
+      "right": "check_only",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "clean",
+      "topology": "flat",
+      "left": "baseline",
+      "right": "always_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "clean",
+      "topology": "flat",
+      "left": "baseline",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "clean",
+      "topology": "flat",
+      "left": "check_only",
+      "right": "always_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "clean",
+      "topology": "flat",
+      "left": "check_only",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "clean",
+      "topology": "flat",
+      "left": "always_readback",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "clean",
+      "topology": "sequential",
+      "left": "baseline",
+      "right": "check_only",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "clean",
+      "topology": "sequential",
+      "left": "baseline",
+      "right": "always_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "clean",
+      "topology": "sequential",
+      "left": "baseline",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "clean",
+      "topology": "sequential",
+      "left": "check_only",
+      "right": "always_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "clean",
+      "topology": "sequential",
+      "left": "check_only",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "clean",
+      "topology": "sequential",
+      "left": "always_readback",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "left": "baseline",
+      "right": "check_only",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "left": "baseline",
+      "right": "always_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "left": "baseline",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "left": "check_only",
+      "right": "always_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "left": "check_only",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "left": "always_readback",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "left": "baseline",
+      "right": "check_only",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 100.0,
+      "ci95": [
+        100.0,
+        100.0
+      ],
+      "transitions": {
+        "01": 18
+      }
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "left": "baseline",
+      "right": "always_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 100.0,
+      "ci95": [
+        100.0,
+        100.0
+      ],
+      "transitions": {
+        "01": 18
+      }
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "left": "baseline",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 100.0,
+      "ci95": [
+        100.0,
+        100.0
+      ],
+      "transitions": {
+        "01": 18
+      }
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "left": "check_only",
+      "right": "always_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "left": "check_only",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "left": "always_readback",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "flat",
+      "left": "baseline",
+      "right": "check_only",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "flat",
+      "left": "baseline",
+      "right": "always_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "flat",
+      "left": "baseline",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "flat",
+      "left": "check_only",
+      "right": "always_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "flat",
+      "left": "check_only",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "flat",
+      "left": "always_readback",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "sequential",
+      "left": "baseline",
+      "right": "check_only",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 88.88888888888889,
+      "ci95": [
+        77.77777777777779,
+        100.0
+      ],
+      "transitions": {
+        "01": 16,
+        "11": 2
+      }
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "sequential",
+      "left": "baseline",
+      "right": "always_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 88.88888888888889,
+      "ci95": [
+        77.77777777777779,
+        100.0
+      ],
+      "transitions": {
+        "01": 16,
+        "11": 2
+      }
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "sequential",
+      "left": "baseline",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 88.88888888888889,
+      "ci95": [
+        77.77777777777779,
+        100.0
+      ],
+      "transitions": {
+        "01": 16,
+        "11": 2
+      }
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "sequential",
+      "left": "check_only",
+      "right": "always_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "sequential",
+      "left": "check_only",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    },
+    {
+      "condition": "valid_partial",
+      "topology": "sequential",
+      "left": "always_readback",
+      "right": "guarded_readback",
+      "n": 18,
+      "clusters": 6,
+      "difference_pp": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "transitions": {
+        "11": 18
+      }
+    }
+  ],
+  "bootstrap": "10000 product-cluster resamples; descriptive intervals; no multiplicity adjustment"
+}

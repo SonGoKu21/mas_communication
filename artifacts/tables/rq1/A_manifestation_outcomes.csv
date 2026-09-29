@@ -1,0 +1,11 @@
+A_label,n,final_fail,success,failure_pct
+A12,810,743,67,91.73
+A12_timing_or_session_mismatch,1830,1297,533,70.87
+A2,810,678,132,83.7
+A2_message_timeout,1830,1259,571,68.8
+A5,1620,1487,133,91.79
+A5_message_omission,3702,2850,852,76.99
+A6,810,809,1,99.88
+A6_message_semantic_corruption,1830,1356,474,74.1
+A8,810,683,127,84.32
+A8_message_truncation,1830,1573,257,85.96

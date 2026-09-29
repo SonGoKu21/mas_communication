@@ -1,0 +1,7 @@
+condition,n,MAS_consequence,final_fail,success,consequence_pct,failure_pct
+non_delivery_step2,2682,2401,2401,281,89.52,89.52
+non_delivery_step4,2640,2507,1936,704,94.96,73.33
+semantic_corruption_step4,2640,2214,2165,475,83.86,82.01
+stale_replay_step4,2640,2049,2040,600,77.61,77.27
+timeliness_deadline_step4,2640,2508,1937,703,95.0,73.37
+valid_partial_message_step4,2640,2513,2256,384,95.19,85.45

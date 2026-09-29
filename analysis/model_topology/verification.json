@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "input_sha256": "3f6518df84d83a8f0749f3049c55a0d74a12db1e2335e868b540b5284979949d",
+  "input_rows": 16200,
+  "unique_rows": 16200,
+  "unknown_rows": 3,
+  "unit_count": 1500,
+  "contrasts_independently_recounted": 1296,
+  "failure_overlap_groups_independently_recounted": 324,
+  "cohort_sizes": {
+    "common_applied": 1408,
+    "all_known": 1497,
+    "clean_success_common_applied": 1053
+  },
+  "model_or_server_calls": 0
+}

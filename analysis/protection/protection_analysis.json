@@ -1,0 +1,5945 @@
+{
+  "sources": {
+    "P1": {
+      "main_path": "artifacts/tables/p1_analysis_rows.jsonl",
+      "main_sha256": "d7e8bb880976b74e416b745c2917226c63759efa155c447de7e56b700f1bacc8",
+      "audit_path": "artifacts/tables/p1_audit.json",
+      "audit_sha256": "1a946b152e686b173f23cd8a4d77fa48eccd0fb08a74a5fceb863d77a9420b5a",
+      "rows": 432
+    },
+    "P3": {
+      "main_path": "artifacts/tables/p3_analysis_rows.jsonl",
+      "main_sha256": "c55062021933a6c8fe22dd84a2441fcce85b851ab4c44d6eaca8ea8176c3b175",
+      "audit_path": "artifacts/tables/p3_audit.json",
+      "audit_sha256": "ad6c6d9a547e8eb4846e4ec053da19b72f04aee3d581f445e64c6a6a44ea7306",
+      "rows": 288
+    }
+  },
+  "state_labels": [
+    "success_without_recorded_error",
+    "success_with_incorrect_acceptance",
+    "failure_with_incorrect_acceptance",
+    "failure_without_recorded_error"
+  ],
+  "definitions": {
+    "wrong_acceptance": "evidence_acceptance_errors > 0; zero means no recorded error, missing/invalid remains unknown",
+    "pair_identity": [
+      "task_id",
+      "topology",
+      "repeat_index",
+      "condition",
+      "exposure_scheme_for_P3"
+    ],
+    "HTTP_cost": "all recorded physical HTTP receipts including independent evaluation; separately checked workflow+evaluation accounting",
+    "model_cost": "recorded model requests/calls; excludes tokens/dollar pricing",
+    "ratio_numerator": "total arm minus baseline resources over all known paired outcomes, not just rescued cases",
+    "rescued": "baseline failure and protected success, observed paired classification not individual causal effect",
+    "net": "rescued minus harmed",
+    "confidence_interval": "10000 paired product-cluster percentile bootstrap, 6 product clusters; resample whole product across its tasks/repeats in the group; no p-values",
+    "undefined_ratio": "point estimate null if denominator <= 0; CI withheld if any bootstrap denominator <= 0; no conditional-positive CI",
+    "inference_limits": "exploratory, six clusters, zero-width intervals not population certainty; no cross-P1/P3 randomized comparison"
+  },
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20260928
+  },
+  "states": [
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "sequential",
+      "variant": "baseline",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "sequential",
+      "variant": "check_only",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "sequential",
+      "variant": "always_readback",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "sequential",
+      "variant": "guarded_readback",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "flat",
+      "variant": "baseline",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "flat",
+      "variant": "check_only",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "flat",
+      "variant": "always_readback",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "flat",
+      "variant": "guarded_readback",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "pooled",
+      "variant": "baseline",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 36,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "pooled",
+      "variant": "check_only",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 36,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "pooled",
+      "variant": "always_readback",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 36,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 36
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "pooled",
+      "variant": "guarded_readback",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 36,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          1.0,
+          1.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "variant": "baseline",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 18,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 36,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "variant": "check_only",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 18,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "variant": "always_readback",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "variant": "guarded_readback",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          1.0,
+          1.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "variant": "baseline",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 18,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 18,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "variant": "check_only",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "variant": "always_readback",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "variant": "guarded_readback",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.5,
+          0.5
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.5,
+          0.5
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "pooled",
+      "variant": "baseline",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 18,
+        "failure_with_incorrect_acceptance": 18,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 54,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "pooled",
+      "variant": "check_only",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 36,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 36,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 18,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "pooled",
+      "variant": "always_readback",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 36,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 36,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 36
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "pooled",
+      "variant": "guarded_readback",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 36,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 36,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 36
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.2222222222222222
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.7777777777777778,
+          1.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "sequential",
+      "variant": "baseline",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 2,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 16,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 32,
+      "runs_with_recorded_detection_events": 2,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 2,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "sequential",
+      "variant": "check_only",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 18,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "sequential",
+      "variant": "always_readback",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "sequential",
+      "variant": "guarded_readback",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.16666666666666666
+        ],
+        "success_with_incorrect_acceptance": [
+          0.8333333333333334,
+          1.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "flat",
+      "variant": "baseline",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 1,
+        "success_with_incorrect_acceptance": 17,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 17,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "flat",
+      "variant": "check_only",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "flat",
+      "variant": "always_readback",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "flat",
+      "variant": "guarded_readback",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.19444444444444445
+        ],
+        "success_with_incorrect_acceptance": [
+          0.4166666666666667,
+          0.5
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.3888888888888889,
+          0.5
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "pooled",
+      "variant": "baseline",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 3,
+        "success_with_incorrect_acceptance": 17,
+        "failure_with_incorrect_acceptance": 16,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 49,
+      "runs_with_recorded_detection_events": 2,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 2,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "pooled",
+      "variant": "check_only",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 36,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 36,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 18,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "pooled",
+      "variant": "always_readback",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 36,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 36,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 36
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "pooled",
+      "variant": "guarded_readback",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 36,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 36,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 36
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "clean",
+      "topology": "sequential",
+      "variant": "baseline",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "clean",
+      "topology": "sequential",
+      "variant": "combined",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "clean",
+      "topology": "flat",
+      "variant": "baseline",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "clean",
+      "topology": "flat",
+      "variant": "combined",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "clean",
+      "topology": "pooled",
+      "variant": "baseline",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 36,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "clean",
+      "topology": "pooled",
+      "variant": "combined",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 36,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          1.0,
+          1.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "persistent_handoff",
+      "topology": "sequential",
+      "variant": "baseline",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 18,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 36,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          1.0,
+          1.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "persistent_handoff",
+      "topology": "sequential",
+      "variant": "combined",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 18
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 18,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          1.0,
+          1.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "persistent_handoff",
+      "topology": "flat",
+      "variant": "baseline",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 18,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 18,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "persistent_handoff",
+      "topology": "flat",
+      "variant": "combined",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.5,
+          0.5
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.5,
+          0.5
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "persistent_handoff",
+      "topology": "pooled",
+      "variant": "baseline",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 18,
+        "failure_with_incorrect_acceptance": 18,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 54,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.5,
+          0.5
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.5,
+          0.5
+        ]
+      },
+      "experiment": "P3",
+      "scope": "persistent_handoff",
+      "topology": "pooled",
+      "variant": "combined",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 18
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 36,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 18,
+      "runs_with_recorded_dedicated_recovery": 36
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          1.0,
+          1.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "shared_workflow_evidence",
+      "topology": "sequential",
+      "variant": "baseline",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 18,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 36,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          1.0,
+          1.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "shared_workflow_evidence",
+      "topology": "sequential",
+      "variant": "combined",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 18
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 18,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          1.0,
+          1.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "shared_workflow_evidence",
+      "topology": "flat",
+      "variant": "baseline",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 18,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 36,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          1.0,
+          1.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "shared_workflow_evidence",
+      "topology": "flat",
+      "variant": "combined",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 18
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 18,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          1.0,
+          1.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "shared_workflow_evidence",
+      "topology": "pooled",
+      "variant": "baseline",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 36,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 72,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          1.0,
+          1.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "shared_workflow_evidence",
+      "topology": "pooled",
+      "variant": "combined",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 36
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 36,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 36,
+      "runs_with_recorded_dedicated_recovery": 36
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          1.0,
+          1.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "single_handoff",
+      "topology": "sequential",
+      "variant": "baseline",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 18,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 36,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "single_handoff",
+      "topology": "sequential",
+      "variant": "combined",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          1.0,
+          1.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "single_handoff",
+      "topology": "flat",
+      "variant": "baseline",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 18,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 18,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "single_handoff",
+      "topology": "flat",
+      "variant": "combined",
+      "n": 18,
+      "counts": {
+        "success_without_recorded_error": 18,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 18,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 18
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          0.0,
+          0.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.5,
+          0.5
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.5,
+          0.5
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "single_handoff",
+      "topology": "pooled",
+      "variant": "baseline",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 0,
+        "success_with_incorrect_acceptance": 18,
+        "failure_with_incorrect_acceptance": 18,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 54,
+      "runs_with_recorded_detection_events": 0,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 0
+    },
+    {
+      "state_rate_cluster_ci95": {
+        "success_without_recorded_error": [
+          1.0,
+          1.0
+        ],
+        "success_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_with_incorrect_acceptance": [
+          0.0,
+          0.0
+        ],
+        "failure_without_recorded_error": [
+          0.0,
+          0.0
+        ]
+      },
+      "experiment": "P3",
+      "scope": "single_handoff",
+      "topology": "pooled",
+      "variant": "combined",
+      "n": 36,
+      "counts": {
+        "success_without_recorded_error": 36,
+        "success_with_incorrect_acceptance": 0,
+        "failure_with_incorrect_acceptance": 0,
+        "failure_without_recorded_error": 0
+      },
+      "outcome_unknown": 0,
+      "error_acceptance_unknown": 0,
+      "recorded_error_acceptance_events": 0,
+      "runs_with_recorded_detection_events": 36,
+      "detection_field_missing": 0,
+      "runs_with_recorded_common_recovery": 0,
+      "runs_with_recorded_dedicated_recovery": 36
+    }
+  ],
+  "comparisons": [
+    {
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "sequential",
+      "baseline": "baseline",
+      "arm": "check_only",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 0,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 0.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 234,
+      "arm_total_http": 234,
+      "baseline_total_models": 126,
+      "arm_total_models": 126,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 0
+    },
+    {
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "sequential",
+      "baseline": "baseline",
+      "arm": "always_readback",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 36,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 234,
+      "arm_total_http": 270,
+      "baseline_total_models": 126,
+      "arm_total_models": 126,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 36
+    },
+    {
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "sequential",
+      "baseline": "baseline",
+      "arm": "guarded_readback",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 0,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 0.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 234,
+      "arm_total_http": 234,
+      "baseline_total_models": 126,
+      "arm_total_models": 126,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 0
+    },
+    {
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "flat",
+      "baseline": "baseline",
+      "arm": "check_only",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 0,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 0.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 270,
+      "arm_total_http": 270,
+      "baseline_total_models": 144,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 0
+    },
+    {
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "flat",
+      "baseline": "baseline",
+      "arm": "always_readback",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 36,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 270,
+      "arm_total_http": 306,
+      "baseline_total_models": 144,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 36
+    },
+    {
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "flat",
+      "baseline": "baseline",
+      "arm": "guarded_readback",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 0,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 0.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 270,
+      "arm_total_http": 270,
+      "baseline_total_models": 144,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 0
+    },
+    {
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "pooled",
+      "baseline": "baseline",
+      "arm": "check_only",
+      "n_paired": 36,
+      "n_known_pairs": 36,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 0,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 0.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 504,
+      "arm_total_http": 504,
+      "baseline_total_models": 270,
+      "arm_total_models": 270,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 36
+        }
+      ],
+      "baseline_evaluation_http": 72,
+      "arm_evaluation_http": 72,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 0
+    },
+    {
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "pooled",
+      "baseline": "baseline",
+      "arm": "always_readback",
+      "n_paired": 36,
+      "n_known_pairs": 36,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 72,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 504,
+      "arm_total_http": 576,
+      "baseline_total_models": 270,
+      "arm_total_models": 270,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 72,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 72,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 36
+        }
+      ],
+      "baseline_evaluation_http": 72,
+      "arm_evaluation_http": 72,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 72
+    },
+    {
+      "experiment": "P1",
+      "scope": "clean",
+      "topology": "pooled",
+      "baseline": "baseline",
+      "arm": "guarded_readback",
+      "n_paired": 36,
+      "n_known_pairs": 36,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 0,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 0.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 504,
+      "arm_total_http": 504,
+      "baseline_total_models": 270,
+      "arm_total_models": 270,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 36
+        }
+      ],
+      "baseline_evaluation_http": 72,
+      "arm_evaluation_http": 72,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 0
+    },
+    {
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "baseline": "baseline",
+      "arm": "check_only",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 18,
+      "rescued": 18,
+      "harmed": 0,
+      "success_rate_difference": 1.0,
+      "success_rate_difference_cluster_ci95": [
+        1.0,
+        1.0
+      ],
+      "total_http_difference": 36,
+      "total_model_call_difference": 18,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 1.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        1.0,
+        1.0
+      ],
+      "baseline_total_http": 234,
+      "arm_total_http": 270,
+      "baseline_total_models": 126,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 36,
+        "denominator": 18,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 18,
+        "denominator": 18,
+        "estimate": 1.0,
+        "status": "defined",
+        "cluster_ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 36,
+        "denominator": 18,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 18,
+        "denominator": 18,
+        "estimate": 1.0,
+        "status": "defined",
+        "cluster_ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 36
+    },
+    {
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "baseline": "baseline",
+      "arm": "always_readback",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 18,
+      "rescued": 18,
+      "harmed": 0,
+      "success_rate_difference": 1.0,
+      "success_rate_difference_cluster_ci95": [
+        1.0,
+        1.0
+      ],
+      "total_http_difference": 36,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 234,
+      "arm_total_http": 270,
+      "baseline_total_models": 126,
+      "arm_total_models": 126,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 36,
+        "denominator": 18,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 18,
+        "estimate": 0.0,
+        "status": "defined",
+        "cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 36,
+        "denominator": 18,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 18,
+        "estimate": 0.0,
+        "status": "defined",
+        "cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 36
+    },
+    {
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "sequential",
+      "baseline": "baseline",
+      "arm": "guarded_readback",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 18,
+      "rescued": 18,
+      "harmed": 0,
+      "success_rate_difference": 1.0,
+      "success_rate_difference_cluster_ci95": [
+        1.0,
+        1.0
+      ],
+      "total_http_difference": 36,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 234,
+      "arm_total_http": 270,
+      "baseline_total_models": 126,
+      "arm_total_models": 126,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 36,
+        "denominator": 18,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 18,
+        "estimate": 0.0,
+        "status": "defined",
+        "cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 36,
+        "denominator": 18,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 18,
+        "estimate": 0.0,
+        "status": "defined",
+        "cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 36
+    },
+    {
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "baseline": "baseline",
+      "arm": "check_only",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 0,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 0.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 270,
+      "arm_total_http": 270,
+      "baseline_total_models": 144,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 0
+    },
+    {
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "baseline": "baseline",
+      "arm": "always_readback",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 36,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 270,
+      "arm_total_http": 306,
+      "baseline_total_models": 144,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 36
+    },
+    {
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "flat",
+      "baseline": "baseline",
+      "arm": "guarded_readback",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 36,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 270,
+      "arm_total_http": 306,
+      "baseline_total_models": 144,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 36
+    },
+    {
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "pooled",
+      "baseline": "baseline",
+      "arm": "check_only",
+      "n_paired": 36,
+      "n_known_pairs": 36,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 18,
+      "rescued": 18,
+      "harmed": 0,
+      "success_rate_difference": 0.5,
+      "success_rate_difference_cluster_ci95": [
+        0.5,
+        0.5
+      ],
+      "total_http_difference": 36,
+      "total_model_call_difference": 18,
+      "http_difference_per_pair": 1.0,
+      "model_difference_per_pair": 0.5,
+      "http_difference_per_pair_cluster_ci95": [
+        1.0,
+        1.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.5,
+        0.5
+      ],
+      "baseline_total_http": 504,
+      "arm_total_http": 540,
+      "baseline_total_models": 270,
+      "arm_total_models": 288,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 36,
+        "denominator": 18,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 18,
+        "denominator": 18,
+        "estimate": 1.0,
+        "status": "defined",
+        "cluster_ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 36,
+        "denominator": 18,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 18,
+        "denominator": 18,
+        "estimate": 1.0,
+        "status": "defined",
+        "cluster_ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        },
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 72,
+      "arm_evaluation_http": 72,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 36
+    },
+    {
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "pooled",
+      "baseline": "baseline",
+      "arm": "always_readback",
+      "n_paired": 36,
+      "n_known_pairs": 36,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 18,
+      "rescued": 18,
+      "harmed": 0,
+      "success_rate_difference": 0.5,
+      "success_rate_difference_cluster_ci95": [
+        0.5,
+        0.5
+      ],
+      "total_http_difference": 72,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 504,
+      "arm_total_http": 576,
+      "baseline_total_models": 270,
+      "arm_total_models": 270,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 72,
+        "denominator": 18,
+        "estimate": 4.0,
+        "status": "defined",
+        "cluster_ci95": [
+          4.0,
+          4.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 18,
+        "estimate": 0.0,
+        "status": "defined",
+        "cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 72,
+        "denominator": 18,
+        "estimate": 4.0,
+        "status": "defined",
+        "cluster_ci95": [
+          4.0,
+          4.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 18,
+        "estimate": 0.0,
+        "status": "defined",
+        "cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        },
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 72,
+      "arm_evaluation_http": 72,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 72
+    },
+    {
+      "experiment": "P1",
+      "scope": "contract_consistent_identity_corruption",
+      "topology": "pooled",
+      "baseline": "baseline",
+      "arm": "guarded_readback",
+      "n_paired": 36,
+      "n_known_pairs": 36,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 18,
+      "rescued": 18,
+      "harmed": 0,
+      "success_rate_difference": 0.5,
+      "success_rate_difference_cluster_ci95": [
+        0.5,
+        0.5
+      ],
+      "total_http_difference": 72,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 504,
+      "arm_total_http": 576,
+      "baseline_total_models": 270,
+      "arm_total_models": 270,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 72,
+        "denominator": 18,
+        "estimate": 4.0,
+        "status": "defined",
+        "cluster_ci95": [
+          4.0,
+          4.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 18,
+        "estimate": 0.0,
+        "status": "defined",
+        "cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 72,
+        "denominator": 18,
+        "estimate": 4.0,
+        "status": "defined",
+        "cluster_ci95": [
+          4.0,
+          4.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 18,
+        "estimate": 0.0,
+        "status": "defined",
+        "cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        },
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 72,
+      "arm_evaluation_http": 72,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 72
+    },
+    {
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "sequential",
+      "baseline": "baseline",
+      "arm": "check_only",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 16,
+      "rescued": 16,
+      "harmed": 0,
+      "success_rate_difference": 0.8888888888888888,
+      "success_rate_difference_cluster_ci95": [
+        0.7777777777777778,
+        1.0
+      ],
+      "total_http_difference": 32,
+      "total_model_call_difference": 16,
+      "http_difference_per_pair": 1.7777777777777777,
+      "model_difference_per_pair": 0.8888888888888888,
+      "http_difference_per_pair_cluster_ci95": [
+        1.5555555555555556,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.7777777777777778,
+        1.0
+      ],
+      "baseline_total_http": 238,
+      "arm_total_http": 270,
+      "baseline_total_models": 128,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 32,
+        "denominator": 16,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 16,
+        "denominator": 16,
+        "estimate": 1.0,
+        "status": "defined",
+        "cluster_ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 32,
+        "denominator": 16,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 16,
+        "denominator": 16,
+        "estimate": 1.0,
+        "status": "defined",
+        "cluster_ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 16
+        },
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 2
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 32
+    },
+    {
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "sequential",
+      "baseline": "baseline",
+      "arm": "always_readback",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 16,
+      "rescued": 16,
+      "harmed": 0,
+      "success_rate_difference": 0.8888888888888888,
+      "success_rate_difference_cluster_ci95": [
+        0.7777777777777778,
+        1.0
+      ],
+      "total_http_difference": 32,
+      "total_model_call_difference": -2,
+      "http_difference_per_pair": 1.7777777777777777,
+      "model_difference_per_pair": -0.1111111111111111,
+      "http_difference_per_pair_cluster_ci95": [
+        1.5555555555555556,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        -0.2222222222222222,
+        0.0
+      ],
+      "baseline_total_http": 238,
+      "arm_total_http": 270,
+      "baseline_total_models": 128,
+      "arm_total_models": 126,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 32,
+        "denominator": 16,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": -2,
+        "denominator": 16,
+        "estimate": -0.125,
+        "status": "defined",
+        "cluster_ci95": [
+          -0.2857142857142857,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 32,
+        "denominator": 16,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": -2,
+        "denominator": 16,
+        "estimate": -0.125,
+        "status": "defined",
+        "cluster_ci95": [
+          -0.2857142857142857,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 16
+        },
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 2
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 32
+    },
+    {
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "sequential",
+      "baseline": "baseline",
+      "arm": "guarded_readback",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 16,
+      "rescued": 16,
+      "harmed": 0,
+      "success_rate_difference": 0.8888888888888888,
+      "success_rate_difference_cluster_ci95": [
+        0.7777777777777778,
+        1.0
+      ],
+      "total_http_difference": 32,
+      "total_model_call_difference": -2,
+      "http_difference_per_pair": 1.7777777777777777,
+      "model_difference_per_pair": -0.1111111111111111,
+      "http_difference_per_pair_cluster_ci95": [
+        1.5555555555555556,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        -0.2222222222222222,
+        0.0
+      ],
+      "baseline_total_http": 238,
+      "arm_total_http": 270,
+      "baseline_total_models": 128,
+      "arm_total_models": 126,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 32,
+        "denominator": 16,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": -2,
+        "denominator": 16,
+        "estimate": -0.125,
+        "status": "defined",
+        "cluster_ci95": [
+          -0.2857142857142857,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 32,
+        "denominator": 16,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": -2,
+        "denominator": 16,
+        "estimate": -0.125,
+        "status": "defined",
+        "cluster_ci95": [
+          -0.2857142857142857,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 16
+        },
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 2
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 32
+    },
+    {
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "flat",
+      "baseline": "baseline",
+      "arm": "check_only",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 0,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 0.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 270,
+      "arm_total_http": 270,
+      "baseline_total_models": 144,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 17
+        },
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 1
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 0
+    },
+    {
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "flat",
+      "baseline": "baseline",
+      "arm": "always_readback",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 36,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 270,
+      "arm_total_http": 306,
+      "baseline_total_models": 144,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 17
+        },
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 1
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 36
+    },
+    {
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "flat",
+      "baseline": "baseline",
+      "arm": "guarded_readback",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 36,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 270,
+      "arm_total_http": 306,
+      "baseline_total_models": 144,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 17
+        },
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 1
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 36
+    },
+    {
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "pooled",
+      "baseline": "baseline",
+      "arm": "check_only",
+      "n_paired": 36,
+      "n_known_pairs": 36,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 16,
+      "rescued": 16,
+      "harmed": 0,
+      "success_rate_difference": 0.4444444444444444,
+      "success_rate_difference_cluster_ci95": [
+        0.3888888888888889,
+        0.5
+      ],
+      "total_http_difference": 32,
+      "total_model_call_difference": 16,
+      "http_difference_per_pair": 0.8888888888888888,
+      "model_difference_per_pair": 0.4444444444444444,
+      "http_difference_per_pair_cluster_ci95": [
+        0.7777777777777778,
+        1.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.3888888888888889,
+        0.5
+      ],
+      "baseline_total_http": 508,
+      "arm_total_http": 540,
+      "baseline_total_models": 272,
+      "arm_total_models": 288,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 32,
+        "denominator": 16,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 16,
+        "denominator": 16,
+        "estimate": 1.0,
+        "status": "defined",
+        "cluster_ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 32,
+        "denominator": 16,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 16,
+        "denominator": 16,
+        "estimate": 1.0,
+        "status": "defined",
+        "cluster_ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 16
+        },
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 17
+        },
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 3
+        }
+      ],
+      "baseline_evaluation_http": 72,
+      "arm_evaluation_http": 72,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 32
+    },
+    {
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "pooled",
+      "baseline": "baseline",
+      "arm": "always_readback",
+      "n_paired": 36,
+      "n_known_pairs": 36,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 16,
+      "rescued": 16,
+      "harmed": 0,
+      "success_rate_difference": 0.4444444444444444,
+      "success_rate_difference_cluster_ci95": [
+        0.3888888888888889,
+        0.5
+      ],
+      "total_http_difference": 68,
+      "total_model_call_difference": -2,
+      "http_difference_per_pair": 1.8888888888888888,
+      "model_difference_per_pair": -0.05555555555555555,
+      "http_difference_per_pair_cluster_ci95": [
+        1.7777777777777777,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        -0.1111111111111111,
+        0.0
+      ],
+      "baseline_total_http": 508,
+      "arm_total_http": 576,
+      "baseline_total_models": 272,
+      "arm_total_models": 270,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 68,
+        "denominator": 16,
+        "estimate": 4.25,
+        "status": "defined",
+        "cluster_ci95": [
+          4.0,
+          4.571428571428571
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": -2,
+        "denominator": 16,
+        "estimate": -0.125,
+        "status": "defined",
+        "cluster_ci95": [
+          -0.2857142857142857,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 68,
+        "denominator": 16,
+        "estimate": 4.25,
+        "status": "defined",
+        "cluster_ci95": [
+          4.0,
+          4.571428571428571
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": -2,
+        "denominator": 16,
+        "estimate": -0.125,
+        "status": "defined",
+        "cluster_ci95": [
+          -0.2857142857142857,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 16
+        },
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 17
+        },
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 3
+        }
+      ],
+      "baseline_evaluation_http": 72,
+      "arm_evaluation_http": 72,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 68
+    },
+    {
+      "experiment": "P1",
+      "scope": "valid_partial",
+      "topology": "pooled",
+      "baseline": "baseline",
+      "arm": "guarded_readback",
+      "n_paired": 36,
+      "n_known_pairs": 36,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 16,
+      "rescued": 16,
+      "harmed": 0,
+      "success_rate_difference": 0.4444444444444444,
+      "success_rate_difference_cluster_ci95": [
+        0.3888888888888889,
+        0.5
+      ],
+      "total_http_difference": 68,
+      "total_model_call_difference": -2,
+      "http_difference_per_pair": 1.8888888888888888,
+      "model_difference_per_pair": -0.05555555555555555,
+      "http_difference_per_pair_cluster_ci95": [
+        1.7777777777777777,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        -0.1111111111111111,
+        0.0
+      ],
+      "baseline_total_http": 508,
+      "arm_total_http": 576,
+      "baseline_total_models": 272,
+      "arm_total_models": 270,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 68,
+        "denominator": 16,
+        "estimate": 4.25,
+        "status": "defined",
+        "cluster_ci95": [
+          4.0,
+          4.571428571428571
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": -2,
+        "denominator": 16,
+        "estimate": -0.125,
+        "status": "defined",
+        "cluster_ci95": [
+          -0.2857142857142857,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 68,
+        "denominator": 16,
+        "estimate": 4.25,
+        "status": "defined",
+        "cluster_ci95": [
+          4.0,
+          4.571428571428571
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": -2,
+        "denominator": 16,
+        "estimate": -0.125,
+        "status": "defined",
+        "cluster_ci95": [
+          -0.2857142857142857,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 16
+        },
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 17
+        },
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 3
+        }
+      ],
+      "baseline_evaluation_http": 72,
+      "arm_evaluation_http": 72,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 68
+    },
+    {
+      "experiment": "P3",
+      "scope": "clean",
+      "topology": "sequential",
+      "baseline": "baseline",
+      "arm": "combined",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 0,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 0.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 234,
+      "arm_total_http": 234,
+      "baseline_total_models": 126,
+      "arm_total_models": 126,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 0
+    },
+    {
+      "experiment": "P3",
+      "scope": "clean",
+      "topology": "flat",
+      "baseline": "baseline",
+      "arm": "combined",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 0,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 0.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 270,
+      "arm_total_http": 270,
+      "baseline_total_models": 144,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 0
+    },
+    {
+      "experiment": "P3",
+      "scope": "clean",
+      "topology": "pooled",
+      "baseline": "baseline",
+      "arm": "combined",
+      "n_paired": 36,
+      "n_known_pairs": 36,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 0,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 0.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 504,
+      "arm_total_http": 504,
+      "baseline_total_models": 270,
+      "arm_total_models": 270,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_without_recorded_error",
+          "arm": "success_without_recorded_error",
+          "n": 36
+        }
+      ],
+      "baseline_evaluation_http": 72,
+      "arm_evaluation_http": 72,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 0
+    },
+    {
+      "experiment": "P3",
+      "scope": "persistent_handoff",
+      "topology": "sequential",
+      "baseline": "baseline",
+      "arm": "combined",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 72,
+      "total_model_call_difference": 18,
+      "http_difference_per_pair": 4.0,
+      "model_difference_per_pair": 1.0,
+      "http_difference_per_pair_cluster_ci95": [
+        4.0,
+        4.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        1.0,
+        1.0
+      ],
+      "baseline_total_http": 234,
+      "arm_total_http": 306,
+      "baseline_total_models": 126,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 72,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 18,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 72,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 18,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "failure_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 72
+    },
+    {
+      "experiment": "P3",
+      "scope": "persistent_handoff",
+      "topology": "flat",
+      "baseline": "baseline",
+      "arm": "combined",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 36,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 270,
+      "arm_total_http": 306,
+      "baseline_total_models": 144,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 36
+    },
+    {
+      "experiment": "P3",
+      "scope": "persistent_handoff",
+      "topology": "pooled",
+      "baseline": "baseline",
+      "arm": "combined",
+      "n_paired": 36,
+      "n_known_pairs": 36,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 108,
+      "total_model_call_difference": 18,
+      "http_difference_per_pair": 3.0,
+      "model_difference_per_pair": 0.5,
+      "http_difference_per_pair_cluster_ci95": [
+        3.0,
+        3.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.5,
+        0.5
+      ],
+      "baseline_total_http": 504,
+      "arm_total_http": 612,
+      "baseline_total_models": 270,
+      "arm_total_models": 288,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 108,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 18,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 108,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 18,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "failure_without_recorded_error",
+          "n": 18
+        },
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 72,
+      "arm_evaluation_http": 72,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 108
+    },
+    {
+      "experiment": "P3",
+      "scope": "shared_workflow_evidence",
+      "topology": "sequential",
+      "baseline": "baseline",
+      "arm": "combined",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 72,
+      "total_model_call_difference": 18,
+      "http_difference_per_pair": 4.0,
+      "model_difference_per_pair": 1.0,
+      "http_difference_per_pair_cluster_ci95": [
+        4.0,
+        4.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        1.0,
+        1.0
+      ],
+      "baseline_total_http": 234,
+      "arm_total_http": 306,
+      "baseline_total_models": 126,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 72,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 18,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 72,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 18,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "failure_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 72
+    },
+    {
+      "experiment": "P3",
+      "scope": "shared_workflow_evidence",
+      "topology": "flat",
+      "baseline": "baseline",
+      "arm": "combined",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 72,
+      "total_model_call_difference": 18,
+      "http_difference_per_pair": 4.0,
+      "model_difference_per_pair": 1.0,
+      "http_difference_per_pair_cluster_ci95": [
+        4.0,
+        4.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        1.0,
+        1.0
+      ],
+      "baseline_total_http": 270,
+      "arm_total_http": 342,
+      "baseline_total_models": 144,
+      "arm_total_models": 162,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 72,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 18,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 72,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 18,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "failure_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 72
+    },
+    {
+      "experiment": "P3",
+      "scope": "shared_workflow_evidence",
+      "topology": "pooled",
+      "baseline": "baseline",
+      "arm": "combined",
+      "n_paired": 36,
+      "n_known_pairs": 36,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 144,
+      "total_model_call_difference": 36,
+      "http_difference_per_pair": 4.0,
+      "model_difference_per_pair": 1.0,
+      "http_difference_per_pair_cluster_ci95": [
+        4.0,
+        4.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        1.0,
+        1.0
+      ],
+      "baseline_total_http": 504,
+      "arm_total_http": 648,
+      "baseline_total_models": 270,
+      "arm_total_models": 306,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 144,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 144,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "failure_without_recorded_error",
+          "n": 36
+        }
+      ],
+      "baseline_evaluation_http": 72,
+      "arm_evaluation_http": 72,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 144
+    },
+    {
+      "experiment": "P3",
+      "scope": "single_handoff",
+      "topology": "sequential",
+      "baseline": "baseline",
+      "arm": "combined",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 18,
+      "rescued": 18,
+      "harmed": 0,
+      "success_rate_difference": 1.0,
+      "success_rate_difference_cluster_ci95": [
+        1.0,
+        1.0
+      ],
+      "total_http_difference": 36,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 234,
+      "arm_total_http": 270,
+      "baseline_total_models": 126,
+      "arm_total_models": 126,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 36,
+        "denominator": 18,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 18,
+        "estimate": 0.0,
+        "status": "defined",
+        "cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 36,
+        "denominator": 18,
+        "estimate": 2.0,
+        "status": "defined",
+        "cluster_ci95": [
+          2.0,
+          2.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 18,
+        "estimate": 0.0,
+        "status": "defined",
+        "cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 36
+    },
+    {
+      "experiment": "P3",
+      "scope": "single_handoff",
+      "topology": "flat",
+      "baseline": "baseline",
+      "arm": "combined",
+      "n_paired": 18,
+      "n_known_pairs": 18,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 0,
+      "rescued": 0,
+      "harmed": 0,
+      "success_rate_difference": 0.0,
+      "success_rate_difference_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "total_http_difference": 36,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 270,
+      "arm_total_http": 306,
+      "baseline_total_models": 144,
+      "arm_total_models": 144,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 36,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 0,
+        "estimate": null,
+        "status": "undefined_zero_denominator",
+        "cluster_ci95": null,
+        "bootstrap_positive_denominator_fraction": 0.0,
+        "ci_status": "not_reported_nonpositive_denominator",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 36,
+      "arm_evaluation_http": 36,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 36
+    },
+    {
+      "experiment": "P3",
+      "scope": "single_handoff",
+      "topology": "pooled",
+      "baseline": "baseline",
+      "arm": "combined",
+      "n_paired": 36,
+      "n_known_pairs": 36,
+      "n_unknown_outcome_pairs": 0,
+      "product_clusters": 6,
+      "net_additional_successes": 18,
+      "rescued": 18,
+      "harmed": 0,
+      "success_rate_difference": 0.5,
+      "success_rate_difference_cluster_ci95": [
+        0.5,
+        0.5
+      ],
+      "total_http_difference": 72,
+      "total_model_call_difference": 0,
+      "http_difference_per_pair": 2.0,
+      "model_difference_per_pair": 0.0,
+      "http_difference_per_pair_cluster_ci95": [
+        2.0,
+        2.0
+      ],
+      "model_difference_per_pair_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "baseline_total_http": 504,
+      "arm_total_http": 576,
+      "baseline_total_models": 270,
+      "arm_total_models": 270,
+      "http_per_net_additional_success": {
+        "numerator_total_increment": 72,
+        "denominator": 18,
+        "estimate": 4.0,
+        "status": "defined",
+        "cluster_ci95": [
+          4.0,
+          4.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_net_additional_success": {
+        "numerator_total_increment": 0,
+        "denominator": 18,
+        "estimate": 0.0,
+        "status": "defined",
+        "cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "http_per_rescued": {
+        "numerator_total_increment": 72,
+        "denominator": 18,
+        "estimate": 4.0,
+        "status": "defined",
+        "cluster_ci95": [
+          4.0,
+          4.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "model_calls_per_rescued": {
+        "numerator_total_increment": 0,
+        "denominator": 18,
+        "estimate": 0.0,
+        "status": "defined",
+        "cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_positive_denominator_fraction": 1.0,
+        "ci_status": "percentile_all_resamples_positive",
+        "interpretation": "incremental resource units; negative numerator means fewer calls; never a dollar cost"
+      },
+      "joint_state_transitions": [
+        {
+          "baseline": "failure_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        },
+        {
+          "baseline": "success_with_incorrect_acceptance",
+          "arm": "success_without_recorded_error",
+          "n": 18
+        }
+      ],
+      "baseline_evaluation_http": 72,
+      "arm_evaluation_http": 72,
+      "evaluation_http_difference": 0,
+      "workflow_only_http_difference": 72
+    }
+  ],
+  "self_checks": {
+    "unique_source_jobs": true,
+    "audit_sha_bound": true,
+    "all_pairs_complete": true,
+    "cost_accounting_reconciled": true,
+    "rescued_minus_harmed_equals_net": true,
+    "transition_counts_cover_pairs": true
+  }
+}

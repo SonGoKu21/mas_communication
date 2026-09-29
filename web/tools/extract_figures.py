@@ -27,5 +27,5 @@ with pymupdf.open(args.pdf) as doc:
             # Remove only a neighboring paragraph fragment outside the diagram.
             page.add_redact_annot(pymupdf.Rect(entry['exclude_text_points']),fill=(1,1,1))
             page.apply_redactions(images=0,graphics=0)
-        page.get_pixmap(matrix=pymupdf.Matrix(5,5),clip=pymupdf.Rect(entry['clip_points']),alpha=False).save(out/entry.get('output_file',f'fig-{number}.png'))
+        page.get_pixmap(matrix=pymupdf.Matrix(entry.get("scale",5),entry.get("scale",5)),clip=pymupdf.Rect(entry['clip_points']),alpha=False).save(out/entry.get('output_file',f'fig-{number}.png'))
 print('Extracted reviewed figure regions; manuscript PDF not copied.')

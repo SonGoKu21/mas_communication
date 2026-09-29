@@ -31,3 +31,6 @@ models/
 .DS_Store
 # Local browser verification outputs
 web/verification/
+
+# Published de-identified analysis projections
+!artifacts/tables/*_analysis_rows.jsonl
