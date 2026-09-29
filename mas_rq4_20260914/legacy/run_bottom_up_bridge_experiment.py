@@ -30,7 +30,7 @@ DEFAULT_TASK_IDS = (
 )
 DEFAULT_TOPOLOGIES = ("sequential", "flat")
 DEFAULT_TASK_MANIFEST = Path(
-    "/data2/system5/mas/manifests/webarena_shopping_rq1_30_tasks_v2_preflight.json"
+    "/var/lib/mas/manifests/webarena_shopping_rq1_30_tasks_v2_preflight.json"
 )
 
 

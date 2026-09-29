@@ -22,9 +22,9 @@ modelscope==1.40.0
 modelscope-hub==0.4.2
 openai==3.11.0
 opentelemetry-api==1.44.0
-packaging @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_packaging_1785888127/work
+packaging==26.3
 pillow==12.3.0
-pip @ file:///home/conda/feedstock_root/build_artifacts/pip_1785914405025/work
+pip==26.2.1
 playwright==1.62.0
 pluggy==1.6.0
 protobuf==5.29.6

@@ -4,5 +4,5 @@ Requires=mas-shopping-http.socket
 After=mas-shopping-docker.service
 
 [Service]
-ExecStart=/bin/bash "/home/hqn/zjh code/mas/scripts/proxy_shopping.sh" 80
+ExecStart=/bin/bash "/opt/mas/scripts/proxy_shopping.sh" 80
 Restart=no

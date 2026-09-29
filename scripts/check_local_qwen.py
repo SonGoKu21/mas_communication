@@ -1,5 +1,6 @@
 """Real local inference smoke check; not a WebArena benchmark result."""
 import json
+import os
 import time
 import urllib.request
 from datetime import datetime, timezone
@@ -19,7 +20,7 @@ def main():
         models = json.load(response)
     if info.model not in {item["id"] for item in models["data"]}:
         raise RuntimeError("requested model not advertised")
-    output = Path("/data3/hqn/mas/artifacts") / f"qwen38_27b_smoke_{time.time_ns()}.json"
+    output = (Path(os.environ["MAS_DATA_ROOT"]) / "artifacts") / f"qwen38_27b_smoke_{time.time_ns()}.json"
     checks = [
         ("Return exactly this JSON object and nothing else: {\"status\":\"ready\",\"value\":2}",
          {"status": "ready", "value": 2}),

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
-cd '/home/hqn/zjh code/mas'
+cd "${MAS_CODE_ROOT:-$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)}"
 source ./server-env.sh
-source /opt/miniconda3/envs/mcal/vllm-runtime/bin/activate
+if [[ -n "${MAS_VLLM_ACTIVATE:-}" ]]; then source "$MAS_VLLM_ACTIVATE"; fi
 export VLLM_USE_MODELSCOPE=true
 export CUDA_VISIBLE_DEVICES="${MAS_CUDA_DEVICES:-4,5,6,7}"
 export OMP_NUM_THREADS=4
@@ -13,10 +13,10 @@ export FLASHINFER_WORKSPACE_BASE="$MAS_DATA_ROOT/cache"
 export TRITON_CACHE_DIR="$MAS_DATA_ROOT/cache/triton"
 export CUDA_CACHE_PATH="$MAS_DATA_ROOT/cache/cuda"
 # Conda SQLite/ICU requires a newer C++ ABI than the host's system library.
-export LD_PRELOAD="/opt/miniconda3/envs/mcal/lib/libstdc++.so.6${LD_PRELOAD:+:$LD_PRELOAD}"
-test -f /data3/hqn/mas/artifacts/qwen38_27b_download_manifest_20260910_verified.json
-exec /opt/miniconda3/envs/mcal/vllm-runtime/bin/vllm serve \
-  /data3/hqn/mas/models/Qwen3.8-27B \
+if [[ -n "${MAS_LIBSTDCXX:-}" ]]; then export LD_PRELOAD="$MAS_LIBSTDCXX${LD_PRELOAD:+:$LD_PRELOAD}"; fi
+test -f "$MAS_DATA_ROOT/artifacts/qwen38_27b_download_manifest_20260910_verified.json"
+exec "${MAS_VLLM:-vllm}" serve \
+  "$MAS_DATA_ROOT/models/Qwen3.8-27B" \
   --served-model-name Qwen/Qwen3.8-27B \
   --host 127.0.0.1 --port 18001 \
   --tensor-parallel-size 4 \

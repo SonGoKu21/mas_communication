@@ -685,7 +685,7 @@ def parse_args() -> argparse.Namespace:
         "--manifest",
         type=Path,
         default=Path(
-            "/data2/system5/mas/task_manifests/"
+            "/var/lib/mas/task_manifests/"
             "webarena_shopping_admin_readonly_30_20260813.json"
         ),
     )
@@ -693,17 +693,17 @@ def parse_args() -> argparse.Namespace:
         "--config-dir",
         type=Path,
         default=Path(
-            "/data2/system5/mas/task_configs/"
+            "/var/lib/mas/task_configs/"
             "webarena_shopping_admin_verified_20260814"
         ),
     )
     parser.add_argument(
         "--webarena-root",
         type=Path,
-        default=Path("/data2/system5/mas/third_party/webarena"),
+        default=Path("/var/lib/mas/third_party/webarena"),
     )
     parser.add_argument(
-        "--shopping-admin-url", default="http://10.102.35.120:7780/admin"
+        "--shopping-admin-url", default="http://192.0.2.10:7780/admin"
     )
     return parser.parse_args()
 

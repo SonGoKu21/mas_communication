@@ -91,9 +91,9 @@ def main() -> None:
     parser.add_argument("--task-id", action="append", type=int, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--resume", action="store_true")
-    parser.add_argument("--config-dir", type=Path, default=Path("/data2/system5/mas/third_party/webarena/config_files"))
-    parser.add_argument("--webarena-root", type=Path, default=Path("/data2/system5/mas/third_party/webarena"))
-    parser.add_argument("--reddit-url", default="http://10.102.35.120:7771")
+    parser.add_argument("--config-dir", type=Path, default=Path("/var/lib/mas/third_party/webarena/config_files"))
+    parser.add_argument("--webarena-root", type=Path, default=Path("/var/lib/mas/third_party/webarena"))
+    parser.add_argument("--reddit-url", default="http://192.0.2.10:7771")
     parser.add_argument("--max-steps", type=int, default=20)
     parser.add_argument("--max-observation-chars", type=int, default=12000)
     parser.add_argument("--run-index", type=int, default=1)
@@ -109,7 +109,7 @@ def main() -> None:
     completed = {str(row["task_id"]) for row in rows}
     tasks = load_reddit_tasks(args.config_dir, args.task_id)
     client = get_llm_client(mock_llm=False)
-    env = browser_environment("http://10.102.35.120:7780")
+    env = browser_environment("http://192.0.2.10:7780")
     env["REDDIT"] = args.reddit_url
     evaluator = EvaluatorWorkerClient(webarena_root=str(args.webarena_root), env=env)
     paused_for_peak = False

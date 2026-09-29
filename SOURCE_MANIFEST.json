@@ -12,7 +12,7 @@
       "path": "server-env.sh",
       "source": "mas_reproduction_20260910/server-env.sh",
       "source_sha256": "2812682eea38712721d4d6f3684f3bdd68ab3c4a103d787e1cf3fd0c4e09c570",
-      "packaged_sha256": "2812682eea38712721d4d6f3684f3bdd68ab3c4a103d787e1cf3fd0c4e09c570"
+      "packaged_sha256": "ffd39b5861b2a2b22841113ff4d74d171c07542589d75986e6543048fd54092f"
     },
     {
       "path": "pytest.ini",
@@ -36,7 +36,7 @@
       "path": "run_webarena_admin_controlled_fault_matrix.py",
       "source": "mas_reproduction_20260910/run_webarena_admin_controlled_fault_matrix.py",
       "source_sha256": "a53d11f1e97caf78994e4de06ad3258c195d8761f57177f0ddb82e767eb87811",
-      "packaged_sha256": "a53d11f1e97caf78994e4de06ad3258c195d8761f57177f0ddb82e767eb87811"
+      "packaged_sha256": "9533fcf58d18c43905c7f7bb3a5b93683ffc796e421a32705229f112f5c4391a"
     },
     {
       "path": "restore_sources.py",
@@ -60,7 +60,7 @@
       "path": "configure-storage.sh",
       "source": "mas_reproduction_20260910/configure-storage.sh",
       "source_sha256": "7977d4a4ae2029278f4fed5ab8225d3e59a9ad338ac01b1ea7cda0a1cdcd845c",
-      "packaged_sha256": "7977d4a4ae2029278f4fed5ab8225d3e59a9ad338ac01b1ea7cda0a1cdcd845c"
+      "packaged_sha256": "7ea3a77349f495a5cff2b9271efb4279a9e0c9cb8b3b79ff3c604a88b43ca63e"
     },
     {
       "path": "qwen-local-env.sh",
@@ -78,7 +78,7 @@
       "path": "run_bottom_up_bridge_experiment.py",
       "source": "mas_reproduction_20260910/run_bottom_up_bridge_experiment.py",
       "source_sha256": "999c7277e4985d1a1328e1b82775944f693a5543f886499a4ca2440468d678b2",
-      "packaged_sha256": "999c7277e4985d1a1328e1b82775944f693a5543f886499a4ca2440468d678b2"
+      "packaged_sha256": "b4997c826d2b97b8bf9f51d81032bc14b196fd997f18af02706756f3392e20f3"
     },
     {
       "path": "analyze_unified_fse_results.py",
@@ -90,13 +90,13 @@
       "path": "requirements.lock.txt",
       "source": "mas_reproduction_20260910/requirements.lock.txt",
       "source_sha256": "36c14908cb6dfd560b7647f78855c786230b3d722fc5bb8357d2cf8f28d856ba",
-      "packaged_sha256": "36c14908cb6dfd560b7647f78855c786230b3d722fc5bb8357d2cf8f28d856ba"
+      "packaged_sha256": "e0e408cf5cf54c20fb6a6436ff8332adea6aa00a01200200642432d47b7891b4"
     },
     {
       "path": "run_webarena_reddit_official_admission.py",
       "source": "mas_reproduction_20260910/run_webarena_reddit_official_admission.py",
       "source_sha256": "b84b31702dcdc9d466bc844ee2e56023edab2e520e30f7f76a5af6a51de53831",
-      "packaged_sha256": "b84b31702dcdc9d466bc844ee2e56023edab2e520e30f7f76a5af6a51de53831"
+      "packaged_sha256": "5ca564cb3140eaad8a96c1cec692b5628e021aece3946bbf9cdf8ac69c125a8b"
     },
     {
       "path": "run_webarena_reddit_stateful_rq1.py",
@@ -114,7 +114,7 @@
       "path": "run_netem_task_bridge_experiment.py",
       "source": "mas_reproduction_20260910/run_netem_task_bridge_experiment.py",
       "source_sha256": "cea87b97342916ba028be5b62f85df1968364f254ebb35758b1b2568b9fa934c",
-      "packaged_sha256": "cea87b97342916ba028be5b62f85df1968364f254ebb35758b1b2568b9fa934c"
+      "packaged_sha256": "9166bddd5ae3cdf0eb4c896bdf804f20c98ca7fe371ffc11ff9ebec70beabf09"
     },
     {
       "path": "prepare_webarena_admin_repeated_confirmation.py",
@@ -126,31 +126,31 @@
       "path": "run_webarena_admin_main_confirmation.py",
       "source": "mas_reproduction_20260910/run_webarena_admin_main_confirmation.py",
       "source_sha256": "4bb5e1a40126382f75a74caf69ef8c6e4e641175a65858f6b834c6357dbba061",
-      "packaged_sha256": "4bb5e1a40126382f75a74caf69ef8c6e4e641175a65858f6b834c6357dbba061"
+      "packaged_sha256": "8f82a8bef1a3781475da664d81ce44e18085a5f9cb629feff69e0179f8367be1"
     },
     {
       "path": "deploy/mas-shopping-control.service",
       "source": "mas_reproduction_20260910/deploy/mas-shopping-control.service",
       "source_sha256": "36fde55d50d1de6c86a673d39425eb48579e25b452354d5d6bf5fe0b0b1ac321",
-      "packaged_sha256": "36fde55d50d1de6c86a673d39425eb48579e25b452354d5d6bf5fe0b0b1ac321"
+      "packaged_sha256": "b510b0d2ecc60bb7941752c870aebd139c19e880ae63387f47ac93a0985b9ae5"
     },
     {
       "path": "deploy/shopping-docker.json",
       "source": "mas_reproduction_20260910/deploy/shopping-docker.json",
       "source_sha256": "c725e21a28ad92f71262a9350e0cde53407d743eea413aec863f82710a8e075a",
-      "packaged_sha256": "c725e21a28ad92f71262a9350e0cde53407d743eea413aec863f82710a8e075a"
+      "packaged_sha256": "40a2377f9d2325f7742f30a78a7c35cc00fe69c1b36fbfdf1a8f31c282edb946"
     },
     {
       "path": "deploy/mas-shopping-http.service",
       "source": "mas_reproduction_20260910/deploy/mas-shopping-http.service",
       "source_sha256": "da58dd5b41e39d70402df5af47bdcb9895905e1f8f7043367fb33c5f1c574624",
-      "packaged_sha256": "da58dd5b41e39d70402df5af47bdcb9895905e1f8f7043367fb33c5f1c574624"
+      "packaged_sha256": "269550df3167ea7dd6a90d64fdbb3579302854ebb70f94df1e5656ef1fc1fbce"
     },
     {
       "path": "deploy/mas-shopping-docker-override.conf",
       "source": "mas_reproduction_20260910/deploy/mas-shopping-docker-override.conf",
       "source_sha256": "d0c847dc8ec993df4774413f03b50ba5972a5b163cb1402d6dd30f6daa73aab9",
-      "packaged_sha256": "d0c847dc8ec993df4774413f03b50ba5972a5b163cb1402d6dd30f6daa73aab9"
+      "packaged_sha256": "c759e51a4fa57e9ccfd31e17b753394d3259cf82bcc8e07a7f62bb75fb6c004b"
     },
     {
       "path": "deploy/mas-shopping-control.socket",
@@ -426,7 +426,7 @@
       "path": "scripts/run_shopping_mitigation_local.sh",
       "source": "mas_reproduction_20260910/scripts/run_shopping_mitigation_local.sh",
       "source_sha256": "6051d03bc176be91022af469765af7b17fd8bd1e8beea3e40f3ac7b8f439704f",
-      "packaged_sha256": "6051d03bc176be91022af469765af7b17fd8bd1e8beea3e40f3ac7b8f439704f"
+      "packaged_sha256": "d7766244693cc37ba597c72338f88628d10a6037e263087ae9e4cbcc54898bc0"
     },
     {
       "path": "scripts/probe_local_inference_config.py",
@@ -438,7 +438,7 @@
       "path": "scripts/run_multimechanism_local.sh",
       "source": "mas_reproduction_20260910/scripts/run_multimechanism_local.sh",
       "source_sha256": "5787d72878fe8058c096c20f9c688accc9dc4aa52d4e62b8a470e7c5fdf63b4c",
-      "packaged_sha256": "5787d72878fe8058c096c20f9c688accc9dc4aa52d4e62b8a470e7c5fdf63b4c"
+      "packaged_sha256": "c8db21b28527f2e38f6fb1cf9a2d56eced7a7e9fbea8fc80597e0629e75d8172"
     },
     {
       "path": "scripts/prepare_shopping_multistate_tasks.py",
@@ -462,13 +462,13 @@
       "path": "scripts/check_local_qwen.py",
       "source": "mas_reproduction_20260910/scripts/check_local_qwen.py",
       "source_sha256": "e23efcbdb5f64e97025002b17d012d0fb340ba8450394ab7b34b8331a0a047ab",
-      "packaged_sha256": "e23efcbdb5f64e97025002b17d012d0fb340ba8450394ab7b34b8331a0a047ab"
+      "packaged_sha256": "03b8380deeca6fb4760084615d45111c129eb34ad5210ce8d756d3373e23481b"
     },
     {
       "path": "scripts/download_qwen27b.py",
       "source": "mas_reproduction_20260910/scripts/download_qwen27b.py",
       "source_sha256": "d93410329d5b04912037e36e044ceece44c7c11e5ff076d38a4e0b07f06932f4",
-      "packaged_sha256": "d93410329d5b04912037e36e044ceece44c7c11e5ff076d38a4e0b07f06932f4"
+      "packaged_sha256": "cadb7c7aed7a688db381aa17df6741a3b4634b0595e3aa36a96b46d49c87b845"
     },
     {
       "path": "scripts/proxy_shopping.sh",
@@ -480,7 +480,7 @@
       "path": "scripts/serve_qwen27b.sh",
       "source": "mas_reproduction_20260910/scripts/serve_qwen27b.sh",
       "source_sha256": "06be3f8dc64134cd64649264126459d038bd08a2b0539541cafcfb9a1e494112",
-      "packaged_sha256": "06be3f8dc64134cd64649264126459d038bd08a2b0539541cafcfb9a1e494112"
+      "packaged_sha256": "45e90bc051170365a76508405a62f87bfe46fcf6b00bf6a1e4b9273b65bc7ff9"
     },
     {
       "path": "scripts/audit_shopping_multimechanism.py",
@@ -528,7 +528,7 @@
       "path": "src/mas_faults/netem_task_bridge.py",
       "source": "mas_reproduction_20260910/src/mas_faults/netem_task_bridge.py",
       "source_sha256": "9bf0528888e817baad839c88d1ff1a970e44df69716b7049823427daed358874",
-      "packaged_sha256": "9bf0528888e817baad839c88d1ff1a970e44df69716b7049823427daed358874"
+      "packaged_sha256": "e25e9bf8441dd9e7c49b727b89d1d3c8bb89a41799fc63e55f040dccde424e75"
     },
     {
       "path": "src/mas_faults/swe_bench_team_real.py",
@@ -546,7 +546,7 @@
       "path": "src/mas_faults/webarena_admin_real.py",
       "source": "mas_reproduction_20260910/src/mas_faults/webarena_admin_real.py",
       "source_sha256": "c78f8174e38e1a7469092510adc628fa84449cb5d8747a75d348506603fc8a52",
-      "packaged_sha256": "c78f8174e38e1a7469092510adc628fa84449cb5d8747a75d348506603fc8a52"
+      "packaged_sha256": "ddb4f17ae4eb557bc67f1867dd654bb397d167239dfb2c41da62218a50dce62c"
     },
     {
       "path": "src/mas_faults/webarena_shopping_confirmation.py",
@@ -558,7 +558,7 @@
       "path": "src/mas_faults/theagentcompany_communication_real.py",
       "source": "mas_reproduction_20260910/src/mas_faults/theagentcompany_communication_real.py",
       "source_sha256": "e2581eac3dc04d56738d24c3f6cae0bfc45f84ab41fd61dbb6d0169aff8f893b",
-      "packaged_sha256": "e2581eac3dc04d56738d24c3f6cae0bfc45f84ab41fd61dbb6d0169aff8f893b"
+      "packaged_sha256": "6f3b80fc70d5bc80db9214ced791647bb073b9c3aab6061bf32c049530d6c537"
     },
     {
       "path": "src/mas_faults/webarena_admin_tools.py",
@@ -582,7 +582,7 @@
       "path": "src/mas_faults/webarena_admin_controlled.py",
       "source": "mas_reproduction_20260910/src/mas_faults/webarena_admin_controlled.py",
       "source_sha256": "9d1c662dfff49c95eb9eddc50d3508e789fce1463bf451e76ec12dd598f86a84",
-      "packaged_sha256": "9d1c662dfff49c95eb9eddc50d3508e789fce1463bf451e76ec12dd598f86a84"
+      "packaged_sha256": "54d9015d16d3633f0ee249bdf2744cb04f59d999d4c5514d9d16986ad96776ab"
     },
     {
       "path": "src/mas_faults/benchmark_result_summary.py",
@@ -648,7 +648,7 @@
       "path": "src/mas_faults/theagentcompany_clean_real.py",
       "source": "mas_reproduction_20260910/src/mas_faults/theagentcompany_clean_real.py",
       "source_sha256": "daa250fdff043d0b2a3ba02c912d2e82051e2c080e4ef75a28a4f1e121704037",
-      "packaged_sha256": "daa250fdff043d0b2a3ba02c912d2e82051e2c080e4ef75a28a4f1e121704037"
+      "packaged_sha256": "d5e6970430c6ae04fa03963a76797706a3de66a8a5f5ff8c3aa12b95b67c1798"
     },
     {
       "path": "src/mas_faults/multimechanism_matrix.py",
@@ -834,19 +834,19 @@
       "path": "scripts/smoke/webarena_admin_evaluator_worker.py",
       "source": "mas_reproduction_20260910/scripts/smoke/webarena_admin_evaluator_worker.py",
       "source_sha256": "f3ce4d027eee077c72fb92bfbcd0710cadbbecf3d3b5eb711ce47cbf490c2bfd",
-      "packaged_sha256": "f3ce4d027eee077c72fb92bfbcd0710cadbbecf3d3b5eb711ce47cbf490c2bfd"
+      "packaged_sha256": "3b8e03d6c4e2b88d6bb79ec8903bf23ef5be80aa5897d7327e6aaee7cdfbdfe6"
     },
     {
       "path": "scripts/smoke/run_webarena_admin_tool_smoke.py",
       "source": "mas_reproduction_20260910/scripts/smoke/run_webarena_admin_tool_smoke.py",
       "source_sha256": "40a7f8b7a4261b102297235087dd828c187b1b26566a3d2ec21f52264810c017",
-      "packaged_sha256": "40a7f8b7a4261b102297235087dd828c187b1b26566a3d2ec21f52264810c017"
+      "packaged_sha256": "d032c9652c3907d39e7681888df3f07d882a16904a2722b7b639162b470f7ae1"
     },
     {
       "path": "scripts/smoke/webarena_admin_browser_worker.py",
       "source": "mas_reproduction_20260910/scripts/smoke/webarena_admin_browser_worker.py",
       "source_sha256": "4ef7fae56c04a7b3a8700742589511e5b3e607b8c6447623ffaa4d29353b24f8",
-      "packaged_sha256": "4ef7fae56c04a7b3a8700742589511e5b3e607b8c6447623ffaa4d29353b24f8"
+      "packaged_sha256": "bf3fc036654780b3ba06794411d53f12e793b662581eab5e08c38144652dd83e"
     },
     {
       "path": "mas_rq4_20260914/runner.py",
@@ -936,7 +936,7 @@
       "path": "mas_rq4_continue_20260914.py",
       "source": "mas_rq4_continue_20260914.py",
       "source_sha256": "cb4d5610b4b79c9474262d86258c43b22417e65a6ff64decf2f54b96d0c57428",
-      "packaged_sha256": "cb4d5610b4b79c9474262d86258c43b22417e65a6ff64decf2f54b96d0c57428"
+      "packaged_sha256": "ba87c91e9d0e1c766731afa19959621f35aa9ce769f5dfa15b4a01e3f5fea4d4"
     },
     {
       "path": "test_mas_rq4_analysis_20260914.py",
@@ -1004,7 +1004,7 @@
       "path": "mas_rq4_20260914/legacy/run_webarena_admin_controlled_fault_matrix.py",
       "source": "mas_rq4_20260914/legacy/run_webarena_admin_controlled_fault_matrix.py",
       "source_sha256": "a53d11f1e97caf78994e4de06ad3258c195d8761f57177f0ddb82e767eb87811",
-      "packaged_sha256": "a53d11f1e97caf78994e4de06ad3258c195d8761f57177f0ddb82e767eb87811"
+      "packaged_sha256": "9533fcf58d18c43905c7f7bb3a5b93683ffc796e421a32705229f112f5c4391a"
     },
     {
       "path": "mas_rq4_20260914/legacy/restore_sources.py",
@@ -1028,7 +1028,7 @@
       "path": "mas_rq4_20260914/legacy/configure-storage.sh",
       "source": "mas_rq4_20260914/legacy/configure-storage.sh",
       "source_sha256": "7977d4a4ae2029278f4fed5ab8225d3e59a9ad338ac01b1ea7cda0a1cdcd845c",
-      "packaged_sha256": "7977d4a4ae2029278f4fed5ab8225d3e59a9ad338ac01b1ea7cda0a1cdcd845c"
+      "packaged_sha256": "7ea3a77349f495a5cff2b9271efb4279a9e0c9cb8b3b79ff3c604a88b43ca63e"
     },
     {
       "path": "mas_rq4_20260914/legacy/run_webarena_architecture_rq2.py",
@@ -1040,7 +1040,7 @@
       "path": "mas_rq4_20260914/legacy/run_bottom_up_bridge_experiment.py",
       "source": "mas_rq4_20260914/legacy/run_bottom_up_bridge_experiment.py",
       "source_sha256": "999c7277e4985d1a1328e1b82775944f693a5543f886499a4ca2440468d678b2",
-      "packaged_sha256": "999c7277e4985d1a1328e1b82775944f693a5543f886499a4ca2440468d678b2"
+      "packaged_sha256": "b4997c826d2b97b8bf9f51d81032bc14b196fd997f18af02706756f3392e20f3"
     },
     {
       "path": "mas_rq4_20260914/legacy/analyze_unified_fse_results.py",
@@ -1052,13 +1052,13 @@
       "path": "mas_rq4_20260914/legacy/requirements.lock.txt",
       "source": "mas_rq4_20260914/legacy/requirements.lock.txt",
       "source_sha256": "36c14908cb6dfd560b7647f78855c786230b3d722fc5bb8357d2cf8f28d856ba",
-      "packaged_sha256": "36c14908cb6dfd560b7647f78855c786230b3d722fc5bb8357d2cf8f28d856ba"
+      "packaged_sha256": "e0e408cf5cf54c20fb6a6436ff8332adea6aa00a01200200642432d47b7891b4"
     },
     {
       "path": "mas_rq4_20260914/legacy/run_webarena_reddit_official_admission.py",
       "source": "mas_rq4_20260914/legacy/run_webarena_reddit_official_admission.py",
       "source_sha256": "b84b31702dcdc9d466bc844ee2e56023edab2e520e30f7f76a5af6a51de53831",
-      "packaged_sha256": "b84b31702dcdc9d466bc844ee2e56023edab2e520e30f7f76a5af6a51de53831"
+      "packaged_sha256": "5ca564cb3140eaad8a96c1cec692b5628e021aece3946bbf9cdf8ac69c125a8b"
     },
     {
       "path": "mas_rq4_20260914/legacy/run_webarena_reddit_stateful_rq1.py",
@@ -1076,7 +1076,7 @@
       "path": "mas_rq4_20260914/legacy/run_netem_task_bridge_experiment.py",
       "source": "mas_rq4_20260914/legacy/run_netem_task_bridge_experiment.py",
       "source_sha256": "cea87b97342916ba028be5b62f85df1968364f254ebb35758b1b2568b9fa934c",
-      "packaged_sha256": "cea87b97342916ba028be5b62f85df1968364f254ebb35758b1b2568b9fa934c"
+      "packaged_sha256": "9166bddd5ae3cdf0eb4c896bdf804f20c98ca7fe371ffc11ff9ebec70beabf09"
     },
     {
       "path": "mas_rq4_20260914/legacy/prepare_webarena_admin_repeated_confirmation.py",
@@ -1088,7 +1088,7 @@
       "path": "mas_rq4_20260914/legacy/run_webarena_admin_main_confirmation.py",
       "source": "mas_rq4_20260914/legacy/run_webarena_admin_main_confirmation.py",
       "source_sha256": "4bb5e1a40126382f75a74caf69ef8c6e4e641175a65858f6b834c6357dbba061",
-      "packaged_sha256": "4bb5e1a40126382f75a74caf69ef8c6e4e641175a65858f6b834c6357dbba061"
+      "packaged_sha256": "8f82a8bef1a3781475da664d81ce44e18085a5f9cb629feff69e0179f8367be1"
     },
     {
       "path": "mas_rq4_20260914/legacy/tests/test_consequence_axes.py",
@@ -1394,13 +1394,13 @@
       "path": "mas_rq4_20260914/legacy/scripts/deepseek41-runtime-env.sh",
       "source": "mas_rq4_20260914/legacy/scripts/deepseek41-runtime-env.sh",
       "source_sha256": "d1189c3a509a0094469cd2c61c05fc4460b09c193330d040d1197bd284e29fc3",
-      "packaged_sha256": "d1189c3a509a0094469cd2c61c05fc4460b09c193330d040d1197bd284e29fc3"
+      "packaged_sha256": "408e77afe48fdd298f2549fc329c3453c4236c308e9e24724c7fc2b17e3fd793"
     },
     {
       "path": "mas_rq4_20260914/legacy/scripts/run_shopping_mitigation_local.sh",
       "source": "mas_rq4_20260914/legacy/scripts/run_shopping_mitigation_local.sh",
       "source_sha256": "6051d03bc176be91022af469765af7b17fd8bd1e8beea3e40f3ac7b8f439704f",
-      "packaged_sha256": "6051d03bc176be91022af469765af7b17fd8bd1e8beea3e40f3ac7b8f439704f"
+      "packaged_sha256": "d7766244693cc37ba597c72338f88628d10a6037e263087ae9e4cbcc54898bc0"
     },
     {
       "path": "mas_rq4_20260914/legacy/scripts/run_multimechanism_parallel4.py",
@@ -1418,7 +1418,7 @@
       "path": "mas_rq4_20260914/legacy/scripts/run_multimechanism_local.sh",
       "source": "mas_rq4_20260914/legacy/scripts/run_multimechanism_local.sh",
       "source_sha256": "5787d72878fe8058c096c20f9c688accc9dc4aa52d4e62b8a470e7c5fdf63b4c",
-      "packaged_sha256": "5787d72878fe8058c096c20f9c688accc9dc4aa52d4e62b8a470e7c5fdf63b4c"
+      "packaged_sha256": "c8db21b28527f2e38f6fb1cf9a2d56eced7a7e9fbea8fc80597e0629e75d8172"
     },
     {
       "path": "mas_rq4_20260914/legacy/scripts/prepare_shopping_multistate_tasks.py",
@@ -1442,13 +1442,13 @@
       "path": "mas_rq4_20260914/legacy/scripts/check_local_qwen.py",
       "source": "mas_rq4_20260914/legacy/scripts/check_local_qwen.py",
       "source_sha256": "e23efcbdb5f64e97025002b17d012d0fb340ba8450394ab7b34b8331a0a047ab",
-      "packaged_sha256": "e23efcbdb5f64e97025002b17d012d0fb340ba8450394ab7b34b8331a0a047ab"
+      "packaged_sha256": "03b8380deeca6fb4760084615d45111c129eb34ad5210ce8d756d3373e23481b"
     },
     {
       "path": "mas_rq4_20260914/legacy/scripts/download_qwen27b.py",
       "source": "mas_rq4_20260914/legacy/scripts/download_qwen27b.py",
       "source_sha256": "d93410329d5b04912037e36e044ceece44c7c11e5ff076d38a4e0b07f06932f4",
-      "packaged_sha256": "d93410329d5b04912037e36e044ceece44c7c11e5ff076d38a4e0b07f06932f4"
+      "packaged_sha256": "cadb7c7aed7a688db381aa17df6741a3b4634b0595e3aa36a96b46d49c87b845"
     },
     {
       "path": "mas_rq4_20260914/legacy/scripts/proxy_shopping.sh",
@@ -1460,7 +1460,7 @@
       "path": "mas_rq4_20260914/legacy/scripts/serve_qwen27b.sh",
       "source": "mas_rq4_20260914/legacy/scripts/serve_qwen27b.sh",
       "source_sha256": "06be3f8dc64134cd64649264126459d038bd08a2b0539541cafcfb9a1e494112",
-      "packaged_sha256": "06be3f8dc64134cd64649264126459d038bd08a2b0539541cafcfb9a1e494112"
+      "packaged_sha256": "45e90bc051170365a76508405a62f87bfe46fcf6b00bf6a1e4b9273b65bc7ff9"
     },
     {
       "path": "mas_rq4_20260914/legacy/scripts/audit_shopping_multimechanism.py",
@@ -1532,7 +1532,7 @@
       "path": "mas_rq4_20260914/legacy/src/mas_faults/netem_task_bridge.py",
       "source": "mas_rq4_20260914/legacy/src/mas_faults/netem_task_bridge.py",
       "source_sha256": "9bf0528888e817baad839c88d1ff1a970e44df69716b7049823427daed358874",
-      "packaged_sha256": "9bf0528888e817baad839c88d1ff1a970e44df69716b7049823427daed358874"
+      "packaged_sha256": "e25e9bf8441dd9e7c49b727b89d1d3c8bb89a41799fc63e55f040dccde424e75"
     },
     {
       "path": "mas_rq4_20260914/legacy/src/mas_faults/swe_bench_team_real.py",
@@ -1550,7 +1550,7 @@
       "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_real.py",
       "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_real.py",
       "source_sha256": "c78f8174e38e1a7469092510adc628fa84449cb5d8747a75d348506603fc8a52",
-      "packaged_sha256": "c78f8174e38e1a7469092510adc628fa84449cb5d8747a75d348506603fc8a52"
+      "packaged_sha256": "ddb4f17ae4eb557bc67f1867dd654bb397d167239dfb2c41da62218a50dce62c"
     },
     {
       "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_shopping_confirmation.py",
@@ -1562,7 +1562,7 @@
       "path": "mas_rq4_20260914/legacy/src/mas_faults/theagentcompany_communication_real.py",
       "source": "mas_rq4_20260914/legacy/src/mas_faults/theagentcompany_communication_real.py",
       "source_sha256": "e2581eac3dc04d56738d24c3f6cae0bfc45f84ab41fd61dbb6d0169aff8f893b",
-      "packaged_sha256": "e2581eac3dc04d56738d24c3f6cae0bfc45f84ab41fd61dbb6d0169aff8f893b"
+      "packaged_sha256": "6f3b80fc70d5bc80db9214ced791647bb073b9c3aab6061bf32c049530d6c537"
     },
     {
       "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_tools.py",
@@ -1586,7 +1586,7 @@
       "path": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_controlled.py",
       "source": "mas_rq4_20260914/legacy/src/mas_faults/webarena_admin_controlled.py",
       "source_sha256": "9d1c662dfff49c95eb9eddc50d3508e789fce1463bf451e76ec12dd598f86a84",
-      "packaged_sha256": "9d1c662dfff49c95eb9eddc50d3508e789fce1463bf451e76ec12dd598f86a84"
+      "packaged_sha256": "54d9015d16d3633f0ee249bdf2744cb04f59d999d4c5514d9d16986ad96776ab"
     },
     {
       "path": "mas_rq4_20260914/legacy/src/mas_faults/benchmark_result_summary.py",
@@ -1652,7 +1652,7 @@
       "path": "mas_rq4_20260914/legacy/src/mas_faults/theagentcompany_clean_real.py",
       "source": "mas_rq4_20260914/legacy/src/mas_faults/theagentcompany_clean_real.py",
       "source_sha256": "daa250fdff043d0b2a3ba02c912d2e82051e2c080e4ef75a28a4f1e121704037",
-      "packaged_sha256": "daa250fdff043d0b2a3ba02c912d2e82051e2c080e4ef75a28a4f1e121704037"
+      "packaged_sha256": "d5e6970430c6ae04fa03963a76797706a3de66a8a5f5ff8c3aa12b95b67c1798"
     },
     {
       "path": "mas_rq4_20260914/legacy/src/mas_faults/multimechanism_matrix.py",
@@ -1838,19 +1838,20 @@
       "path": "mas_rq4_20260914/legacy/scripts/smoke/webarena_admin_evaluator_worker.py",
       "source": "mas_rq4_20260914/legacy/scripts/smoke/webarena_admin_evaluator_worker.py",
       "source_sha256": "f3ce4d027eee077c72fb92bfbcd0710cadbbecf3d3b5eb711ce47cbf490c2bfd",
-      "packaged_sha256": "f3ce4d027eee077c72fb92bfbcd0710cadbbecf3d3b5eb711ce47cbf490c2bfd"
+      "packaged_sha256": "3b8e03d6c4e2b88d6bb79ec8903bf23ef5be80aa5897d7327e6aaee7cdfbdfe6"
     },
     {
       "path": "mas_rq4_20260914/legacy/scripts/smoke/run_webarena_admin_tool_smoke.py",
       "source": "mas_rq4_20260914/legacy/scripts/smoke/run_webarena_admin_tool_smoke.py",
       "source_sha256": "40a7f8b7a4261b102297235087dd828c187b1b26566a3d2ec21f52264810c017",
-      "packaged_sha256": "40a7f8b7a4261b102297235087dd828c187b1b26566a3d2ec21f52264810c017"
+      "packaged_sha256": "d032c9652c3907d39e7681888df3f07d882a16904a2722b7b639162b470f7ae1"
     },
     {
       "path": "mas_rq4_20260914/legacy/scripts/smoke/webarena_admin_browser_worker.py",
       "source": "mas_rq4_20260914/legacy/scripts/smoke/webarena_admin_browser_worker.py",
       "source_sha256": "4ef7fae56c04a7b3a8700742589511e5b3e607b8c6447623ffaa4d29353b24f8",
-      "packaged_sha256": "4ef7fae56c04a7b3a8700742589511e5b3e607b8c6447623ffaa4d29353b24f8"
+      "packaged_sha256": "bf3fc036654780b3ba06794411d53f12e793b662581eab5e08c38144652dd83e"
     }
-  ]
+  ],
+  "public_configuration_note": "Machine-specific paths and network addresses have been replaced with portable settings or documentation examples. Source hashes identify the imported snapshot; packaged hashes describe current files."
 }

@@ -300,14 +300,14 @@ def write_matrix_outputs(
 
 def browser_environment(shopping_admin_url: str) -> dict[str, str]:
     return {
-        "PLAYWRIGHT_BROWSERS_PATH": "/data2/system5/mas/playwright-browsers-1.32",
-        "SHOPPING": "http://10.102.35.120:7770",
+        "PLAYWRIGHT_BROWSERS_PATH": "/var/lib/mas/playwright-browsers-1.32",
+        "SHOPPING": "http://192.0.2.10:7770",
         "SHOPPING_ADMIN": shopping_admin_url,
-        "REDDIT": "http://10.102.35.120:7771",
-        "GITLAB": "http://10.102.35.120:8929",
-        "MAP": "http://10.102.35.120:7772",
-        "WIKIPEDIA": "http://10.102.35.120:8888",
-        "HOMEPAGE": "http://10.102.35.120:4399",
+        "REDDIT": "http://192.0.2.10:7771",
+        "GITLAB": "http://192.0.2.10:8929",
+        "MAP": "http://192.0.2.10:7772",
+        "WIKIPEDIA": "http://192.0.2.10:8888",
+        "HOMEPAGE": "http://192.0.2.10:4399",
     }
 
 
@@ -412,15 +412,15 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--manifest",
         type=Path,
-        default=Path("/data2/system5/mas/task_manifests/webarena_shopping_admin_readonly_30_20260813.json"),
+        default=Path("/var/lib/mas/task_manifests/webarena_shopping_admin_readonly_30_20260813.json"),
     )
     parser.add_argument(
         "--config-dir",
         type=Path,
-        default=Path("/data2/system5/mas/task_configs/webarena_shopping_admin_verified_20260814"),
+        default=Path("/var/lib/mas/task_configs/webarena_shopping_admin_verified_20260814"),
     )
-    parser.add_argument("--webarena-root", type=Path, default=Path("/data2/system5/mas/third_party/webarena"))
-    parser.add_argument("--shopping-admin-url", default="http://10.102.35.120:7780/admin")
+    parser.add_argument("--webarena-root", type=Path, default=Path("/var/lib/mas/third_party/webarena"))
+    parser.add_argument("--shopping-admin-url", default="http://192.0.2.10:7780/admin")
     return parser.parse_args()
 
 

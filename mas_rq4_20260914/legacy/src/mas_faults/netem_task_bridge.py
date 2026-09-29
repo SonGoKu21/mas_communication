@@ -281,7 +281,7 @@ class DockerNetemController:
         self,
         *,
         container_name: str,
-        repo_root: Path | str = Path("/home/systemai_5/code/mas"),
+        repo_root: Path | str = Path("/opt/mas"),
         host_port: int = 18090,
         image: str = "mas-autogen-netem:latest",
     ) -> None:

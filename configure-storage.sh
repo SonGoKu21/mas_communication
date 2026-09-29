@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
-code='/home/hqn/zjh code/mas'
-data='/data3/hqn/mas'
+code="${MAS_CODE_ROOT:-$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)}"
+data="${MAS_DATA_ROOT:?Set MAS_DATA_ROOT to an absolute storage directory}"
+[[ "$data" = /* ]] || { printf "MAS_DATA_ROOT must be absolute\n" >&2; exit 1; }
 for name in models datasets results logs artifacts; do
     mkdir -p "$data/$name"
     target="$code/$name"

@@ -12,7 +12,7 @@ from modelscope.hub.api import HubApi
 
 
 def main():
-    root = Path(os.environ.get("MAS_DATA_ROOT", "/data3/hqn/mas"))
+    root = Path(os.environ["MAS_DATA_ROOT"])
     model_id = "Qwen/Qwen3.8-27B"
     target = root / "models" / "Qwen3.8-27B"
     endpoint = "https://www.modelscope.cn"

@@ -25,7 +25,7 @@ def execute(command: list[str], *, timeout: int = 900) -> subprocess.CompletedPr
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="运行真实 TheAgentCompany clean baseline")
-    parser.add_argument("--workspace-root", default="/data2/system5/mas/benchmarks/TheAgentCompany-gitcode")
+    parser.add_argument("--workspace-root", default="/var/lib/mas/benchmarks/TheAgentCompany-gitcode")
     parser.add_argument("--task", default="sde-install-go")
     parser.add_argument("--output-dir", required=True)
     parser.add_argument("--base-url", default="http://127.0.0.1:8004")
