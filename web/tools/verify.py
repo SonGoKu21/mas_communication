@@ -23,7 +23,7 @@ for r in rows:
         assert isinstance(d['events'],list)
 for path in (site/'data').rglob('*.json'):
     text=path.read_text()
-    assert not re.search(r'/Users/|/home/hqn|/data[23]/|\bsk-[A-Za-z0-9_-]{12,}|Bearer\s+[a-zA-Z0-9]|10\.102\.35\.120|202\.117\.43\.5',text),path
+    assert not re.search(r'/Users/|/home/|/data\d+/|\bsk-[A-Za-z0-9_-]{12,}|Bearer\s+[a-zA-Z0-9]',text),path
 print('PASS: counts, unique IDs, trace references, finding references, source privacy patterns.')
 
 # The checked-in mapping freezes identity independently of catalog order.

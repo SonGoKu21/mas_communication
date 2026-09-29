@@ -16,8 +16,8 @@ class ExportTests(unittest.TestCase):
         self.assertIn('22', value)
 
     def test_strings(self):
-        value = module.sanitize('http://user:pw@10.102.35.120/a?token=abc /home/hqn/key.txt person@example.com Bearer abcdef')
-        for bad in ['10.102.35.120','hqn','example.com','abcdef','token=']:
+        value = module.sanitize('http://user:pw@192.0.2.10/a?token=abc /home/example-user/key.txt person@example.com Bearer abcdef')
+        for bad in ['192.0.2.10','example-user','example.com','abcdef','token=']:
             self.assertNotIn(bad,value)
 
     def test_id(self):

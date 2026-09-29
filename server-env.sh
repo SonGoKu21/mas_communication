@@ -1,9 +1,9 @@
-# Source this file after activating /opt/miniconda3/envs/mcal.
-export MAS_CODE_ROOT='/home/hqn/zjh code/mas'
-export MAS_DATA_ROOT='/data3/hqn/mas'
+# Source this file after activating your Python environment.
+export MAS_CODE_ROOT="${MAS_CODE_ROOT:-$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)}"
+export MAS_DATA_ROOT="${MAS_DATA_ROOT:?Set MAS_DATA_ROOT to your storage directory}"
 export MODELSCOPE_CACHE="$MAS_DATA_ROOT/cache/modelscope"
 export PIP_CACHE_DIR="$MAS_DATA_ROOT/cache/pip"
-export PIP_INDEX_URL='https://pypi.tuna.tsinghua.edu.cn/simple'
+export PIP_INDEX_URL="${PIP_INDEX_URL:-https://pypi.org/simple}"
 export CONDA_PKGS_DIRS="$MAS_DATA_ROOT/cache/conda/pkgs"
 export PLAYWRIGHT_BROWSERS_PATH="$MAS_DATA_ROOT/browser"
 export XDG_CACHE_HOME="$MAS_DATA_ROOT/cache/xdg"

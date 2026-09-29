@@ -30,6 +30,8 @@ python3 -m http.server 8000
 | `SOURCE_MANIFEST.json` | Source provenance and original and packaged file hashes. |
 | `PACKAGE_SHA256.json` | SHA-256 checksums for the anonymous artifact snapshot. |
 
+See [PUBLIC_CONFIGURATION.md](PUBLIC_CONFIGURATION.md) for environment variables and deployment placeholders.
+
 ## Environment and offline tests
 
 The historical deployment used Python 3.11. `requirements.lock.txt` and `conda-explicit-linux-64.txt` describe the Linux deployment environment; they are not general-purpose macOS installation specifications.

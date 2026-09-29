@@ -709,7 +709,7 @@ def main() -> None:
     parser.add_argument(
         "--webarena-root",
         type=Path,
-        default=Path("/data2/system5/mas/third_party/webarena"),
+        default=Path("/var/lib/mas/third_party/webarena"),
     )
     parser.add_argument("--browser-only", action="store_true")
     args = parser.parse_args()

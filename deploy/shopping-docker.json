@@ -1,5 +1,5 @@
 {
-  "data-root": "/data3/hqn/mas/docker-engine/data",
+  "data-root": "/var/lib/mas/docker-engine/data",
   "exec-root": "/run/mas-shopping-docker/exec",
   "pidfile": "/run/mas-shopping-docker/dockerd.pid",
   "hosts": ["unix:///run/mas-shopping-docker/docker.sock"],

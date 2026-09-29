@@ -58,9 +58,9 @@ class EvaluatorWorkerClient:
         self,
         *,
         process: Any | None = None,
-        python_executable: str = "/data2/system5/mas/venvs/webarena/bin/python",
-        worker_script: str = "/home/systemai_5/code/mas/scripts/smoke/webarena_admin_evaluator_worker.py",
-        webarena_root: str = "/data2/system5/mas/third_party/webarena",
+        python_executable: str = "/var/lib/mas/venvs/webarena/bin/python",
+        worker_script: str = "/opt/mas/scripts/smoke/webarena_admin_evaluator_worker.py",
+        webarena_root: str = "/var/lib/mas/third_party/webarena",
         env: dict[str, str] | None = None,
     ) -> None:
         if process is None:

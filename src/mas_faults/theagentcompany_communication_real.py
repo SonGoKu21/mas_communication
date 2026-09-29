@@ -453,7 +453,7 @@ def summarize_runs(rows: list[dict[str, Any]]) -> dict[str, Any]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run real TheAgentCompany communication-fault experiments.")
-    parser.add_argument("--workspace-root", default="/data2/system5/mas/benchmarks/TheAgentCompany-gitcode")
+    parser.add_argument("--workspace-root", default="/var/lib/mas/benchmarks/TheAgentCompany-gitcode")
     parser.add_argument("--tasks", nargs="+", default=["sde-install-openjdk"])
     parser.add_argument("--conditions", nargs="+", default=["clean", "a1_moderate_delay", "a1_deadline_delay", "a5_omission", "a8_truncation"])
     parser.add_argument("--repeats", type=int, default=1)

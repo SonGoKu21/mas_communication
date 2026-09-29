@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # Source this file without shell tracing. Credentials stay outside the code tree.
-export MAS_CODE_ROOT='/data3/hqn/mas/code/deepseek41_multimechanism_20260912_v2'
-export MAS_DATA_ROOT='/data3/hqn/mas'
+export MAS_CODE_ROOT="${MAS_CODE_ROOT:-$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)}"
+export MAS_DATA_ROOT="${MAS_DATA_ROOT:?Set MAS_DATA_ROOT to your storage directory}"
 export PYTHONPATH="$MAS_CODE_ROOT/src:$MAS_CODE_ROOT"
 export TMPDIR="$MAS_DATA_ROOT/tmp"
 export XDG_CACHE_HOME="$MAS_DATA_ROOT/cache"
 export PYTHONDONTWRITEBYTECODE='1'
-source /data3/hqn/mas/private_config/deepseek-flash-env.sh
+source "${MAS_CREDENTIALS_FILE:?Set MAS_CREDENTIALS_FILE to your private environment file}"
 export LLM_MODEL='deepseek-flash'
 export LLM_DISABLE_THINKING='1'
 export LLM_MAX_TOKENS='2048'
