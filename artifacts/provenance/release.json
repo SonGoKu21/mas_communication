@@ -1,5 +1,5 @@
 {
-  "paper_sha256": "155c18dfb7c88c8ad78f217bac71e7e07e79e2ebf0e0b696415afa0c118bb465",
+  "paper_sha256": "67572ac56040b38ec5f6b02e7965c15e190fe7335bf67ab9623b161b0f7e672c",
   "paper_included": false,
   "data_projections": [
     "confirmation_records.json: original detection/recovery/decision fields checked before projection",

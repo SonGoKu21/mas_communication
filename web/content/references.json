@@ -1,6 +1,6 @@
 {
-  "source": "references.bib from author-supplied manuscript archive",
-  "source_sha256": "0f4d63c12d0bca070b054157aaf6a42edea77a58616b295aea65a69d18d3c23c",
+  "source": "Taxonomy references checked against the study manuscript",
+  "source_sha256": "67572ac56040b38ec5f6b02e7965c15e190fe7335bf67ab9623b161b0f7e672c",
   "references": [
     {
       "key": "avizienis2004dependability",
@@ -81,19 +81,6 @@
       "url": "https://www.rfc-editor.org/info/rfc3819"
     },
     {
-      "key": "balakrishnan1997wireless",
-      "authors": "Hari Balakrishnan and Venkata N. Padmanabhan and Srinivasan Seshan and Randy H. Katz",
-      "title": "A Comparison of Mechanisms for Improving TCP Performance over Wireless Links",
-      "year": "1997",
-      "venue": "IEEE/ACM Transactions on Networking",
-      "volume": "5",
-      "number": "6",
-      "pages": "756–769",
-      "note": "",
-      "doi": "10.1109/90.650137",
-      "url": "https://doi.org/10.1109/90.650137"
-    },
-    {
       "key": "rfc5905",
       "authors": "David L. Mills and Jim Martin and Jack Burbank and William Kasch",
       "title": "Network Time Protocol Version 4: Protocol and Algorithms Specification",
@@ -159,19 +146,6 @@
       "url": "https://citeseerx.ist.psu.edu/document?doi=9180aa7b7978c62363e4af3a9053371775fbcbdc&repid=rep1&type=pdf"
     },
     {
-      "key": "netemmanual",
-      "authors": "iproute2 Project",
-      "title": "tc-netem(8): Network Emulator",
-      "year": "n.d.",
-      "venue": "",
-      "volume": "",
-      "number": "",
-      "pages": "",
-      "note": "Accessed 2026-09-12",
-      "doi": "",
-      "url": "https://raw.githubusercontent.com/iproute2/iproute2/main/man/man8/tc-netem.8"
-    },
-    {
       "key": "rfc2923",
       "authors": "Kevin Lahey",
       "title": "TCP Problems with Path MTU Discovery",
@@ -198,19 +172,6 @@
       "url": "https://www.rfc-editor.org/info/rfc5681"
     },
     {
-      "key": "nftreject",
-      "authors": "Netfilter Project",
-      "title": "Rejecting Traffic",
-      "year": "n.d.",
-      "venue": "",
-      "volume": "",
-      "number": "",
-      "pages": "",
-      "note": "Accessed 2026-09-12",
-      "doi": "",
-      "url": "https://wiki.nftables.org/wiki-nftables/index.php/Rejecting_traffic"
-    },
-    {
       "key": "rfc1035",
       "authors": "Paul Mockapetris",
       "title": "Domain Names—Implementation and Specification",
@@ -222,19 +183,6 @@
       "note": "",
       "doi": "10.17487/RFC1035",
       "url": "https://www.rfc-editor.org/info/rfc1035"
-    },
-    {
-      "key": "rfc2308",
-      "authors": "Mark Andrews",
-      "title": "Negative Caching of DNS Queries (DNS NCACHE)",
-      "year": "1998",
-      "venue": "RFC Editor",
-      "volume": "",
-      "number": "2308",
-      "pages": "",
-      "note": "",
-      "doi": "10.17487/RFC2308",
-      "url": "https://www.rfc-editor.org/info/rfc2308"
     },
     {
       "key": "rfc9293",

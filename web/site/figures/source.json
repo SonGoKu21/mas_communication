@@ -1,104 +1,114 @@
 {
-  "paper_sha256": "155c18dfb7c88c8ad78f217bac71e7e07e79e2ebf0e0b696415afa0c118bb465",
-  "revision": 11,
+  "paper_sha256": "67572ac56040b38ec5f6b02e7965c15e190fe7335bf67ab9623b161b0f7e672c",
+  "revision": "FSE-2027-2026-10-01",
   "figures": {
+    "1": {
+      "pdf_page": 2,
+      "clip_points": [
+        44,
+        83,
+        442,
+        190
+      ],
+      "scale": 4
+    },
     "2": {
       "pdf_page": 4,
       "clip_points": [
-        45,
-        80,
-        442,
-        215
+        60,
+        83,
+        426,
+        212
       ],
       "scale": 4
     },
     "3": {
       "pdf_page": 9,
       "clip_points": [
-        45,
-        81,
+        44,
+        83,
         442,
-        213
+        210
       ],
       "scale": 4
     },
     "4": {
       "pdf_page": 10,
       "clip_points": [
-        45,
-        82,
+        44,
+        83,
         442,
-        232
+        231
       ],
       "scale": 4
     },
     "5": {
       "pdf_page": 11,
       "clip_points": [
-        179,
-        365,
+        178,
+        230,
         442,
-        454
+        312
       ],
       "scale": 4
     },
     "6": {
       "pdf_page": 12,
       "clip_points": [
-        179,
-        310,
+        178,
+        380,
         442,
-        440
+        504
       ],
       "scale": 4
     },
     "7": {
       "pdf_page": 13,
       "clip_points": [
-        242,
-        454,
+        241,
+        153,
         442,
-        590
+        290
       ],
       "scale": 4
     },
     "8": {
       "pdf_page": 14,
       "clip_points": [
-        45,
-        81,
-        442,
-        216
+        60,
+        83,
+        426,
+        217
       ],
       "scale": 4
     },
     "9": {
-      "pdf_page": 15,
+      "pdf_page": 14,
       "clip_points": [
-        179,
-        217,
+        178,
+        396,
         442,
-        372
+        548
       ],
       "scale": 4
     },
     "10": {
       "pdf_page": 16,
       "clip_points": [
-        45,
-        81,
+        44,
+        83,
         442,
-        170
+        169
       ],
       "scale": 4
     },
     "11": {
-      "pdf_page": 17,
+      "pdf_page": 16,
       "clip_points": [
-        144,
-        275,
+        143,
+        468,
         442,
-        386
+        574
       ],
       "scale": 4
     }

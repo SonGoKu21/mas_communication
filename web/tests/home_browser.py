@@ -4,13 +4,13 @@ BASE=os.environ.get('REPLAY_URL','http://127.0.0.1:8767/')
 with sync_playwright() as p:
  b=p.chromium.launch();page=b.new_page(viewport={'width':1440,'height':1000});page.goto(BASE)
  expect(page.locator('#homeView')).to_be_visible()
- expect(page.locator('#homeView h1')).to_contain_text('When Agents Miscommunicate')
+ expect(page.locator('#homeView h1')).to_contain_text('Broken Telephone')
  expect(page.locator('#homeView .home-finding')).to_have_count(7,timeout=30000)
  assert page.locator('#homeView img').count()>=7
  expect(page.locator('.case-explanation')).to_have_count(4)
- expect(page.locator('img[src="figures/fig-2.png"]')).to_have_count(1)
+ expect(page.locator('img[src="figures/fig-2.png?v=20261001"]')).to_have_count(1)
  expect(page.locator('[aria-label="Figure 11 case explanation"]')).to_contain_text('cart action')
- expect(page.locator('#home-rq-3 img[src="figures/fig-9.png"]')).to_be_visible()
+ expect(page.locator('#home-rq-3 img[src="figures/fig-9.png?v=20261001"]')).to_be_visible()
  expect(page.locator('[aria-label="Figure 9 case explanation"]')).to_be_visible()
  for d in page.locator('#homeView details').all():d.evaluate('(d)=>d.open=true')
  for img in page.locator('#homeView img').all():

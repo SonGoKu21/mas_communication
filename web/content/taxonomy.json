@@ -15,7 +15,7 @@
     "layer": "P",
     "name": "P-F3 Physical-medium interference",
     "description": "Interference degrades reception and delivery timing.",
-    "references": "rfc3819, balakrishnan1997wireless"
+    "references": "rfc3819"
   },
   {
     "layer": "P",
@@ -45,7 +45,7 @@
     "layer": "D",
     "name": "D-F3 Duplicate/reordered delivery",
     "description": "Frame order or multiplicity changes.",
-    "references": "hemminger2005netem, netemmanual"
+    "references": "hemminger2005netem"
   },
   {
     "layer": "D",
@@ -57,7 +57,7 @@
     "layer": "D",
     "name": "D-F5 Contention/link instability",
     "description": "Contention or flapping delays or interrupts service.",
-    "references": "rfc3819, balakrishnan1997wireless"
+    "references": "rfc3819"
   },
   {
     "layer": "N",
@@ -75,19 +75,19 @@
     "layer": "N",
     "name": "N-F3 Ordering/multiplicity anomaly",
     "description": "Packets arrive out of order or more than once.",
-    "references": "hemminger2005netem, netemmanual"
+    "references": "hemminger2005netem"
   },
   {
     "layer": "N",
     "name": "N-F4 Reachability/routing failure",
     "description": "Partitioning, asymmetry, or filtering blocks a path.",
-    "references": "rfc1122, nftreject"
+    "references": "rfc1122"
   },
   {
     "layer": "N",
     "name": "N-F5 Endpoint resolution failure",
     "description": "Name resolution prevents endpoint discovery.",
-    "references": "rfc1035, rfc2308"
+    "references": "rfc1035"
   },
   {
     "layer": "T",

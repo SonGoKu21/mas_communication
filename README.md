@@ -1,6 +1,6 @@
-# When Agents Miscommunicate
+# Broken Telephone
 
-Research artifact for **An Empirical Study of Communication Fault Propagation in LLM-Based Multi-Agent Systems**.
+Research artifact for **A Systematic Empirical Study of Communication Faults in LLM-Based Multi-Agent Systems**.
 
 The artifact connects seven findings to experiment implementations, de-identified analysis inputs, and a static historical evidence explorer. The manuscript is not included.
 
