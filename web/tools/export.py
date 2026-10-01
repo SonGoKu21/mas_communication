@@ -137,7 +137,7 @@ def main():
             case['run_id']=matched[0]['id']
         preferred=[c['run_id'] for c in f.get('cases',[]) if c['run_id'] in {x['id'] for x in candidates}]
         f['examples']=list(dict.fromkeys(preferred+f['examples']))[:12]
-    manifest=dict(version='2026-09-29.paper11',catalogs=partitions,total=len(all_items),studies=studies,
+    manifest=dict(version='2026-10-01.fse2027',catalogs=partitions,total=len(all_items),studies=studies,
                   detailed=sum(bool(x['trace_path']) for x in all_items),sources=provenance,
                   limitations=['Historical replay, not live experimental execution.',
                   'Summary-only records do not include a bundled detailed trace.',

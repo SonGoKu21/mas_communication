@@ -3,9 +3,9 @@
     "id": "finding-1",
     "number": 1,
     "rq": 1,
-    "title": "Lower-stack fault sources do not map one-to-one to agent-visible faults or task outcomes.",
-    "tag": "RQ1 \u00b7 FINDING 1",
-    "text": "In 3,780 mapping executions, 36.0% have no recorded consumption symptom. Among 15,882 applied MAS faults, 89.4% have a recorded consequence and 80.2% fail the task. The 1,457 successful runs with a recorded consequence separate propagation from final failure.",
+    "title": "Lower-stack fault sources do not map one-to-one to agent-visible faults or final outcomes.",
+    "tag": "RQ1 · FINDING 1",
+    "text": "The source-mapping study contains 3,600 faulted and 180 clean executions. Of the 3,600 faulted executions, 36.0% have no recorded consumption symptom. Among 15,882 applied MAS faults, 89.4% have a recorded consequence and 80.2% fail the task. The 1,457 successful runs with a recorded consequence separate propagation from final failure.",
     "caveat": "Source-mapping fixtures and MAS task executions are distinct studies. A, M and O measure exposure, propagation and outcome separately.",
     "filters": {
       "study": "bridge"
@@ -17,7 +17,7 @@
     "number": 2,
     "rq": 1,
     "title": "Silent failures concentrate in faults that preserve a processable message.",
-    "tag": "RQ1 \u00b7 FINDING 2",
+    "tag": "RQ1 · FINDING 2",
     "text": "There are 1,722 silent failures among 8,335 detection-complete failures (20.7%). The silent-failure rate is 76.2% for partial-content faults and 26.3% for semantic corruption. Partial-content faults account for 69.6% of all silent failures.",
     "caveat": "The denominator is detection-complete failures. The same 1,722 events are 15.6% of 11,022 detection-complete injected executions. A correct answer string alone may not satisfy the evidence contract.",
     "filters": {
@@ -26,7 +26,7 @@
     },
     "cases": [
       {
-        "label": "Fig. 5 \u00b7 Silent partial-content failure",
+        "label": "Fig. 5 · Silent partial-content failure",
         "query": {
           "study": "rq123",
           "domain": "WebArena Reddit",
@@ -44,7 +44,7 @@
     "number": 3,
     "rq": 2,
     "title": "Fault impact depends on whether the affected information remains recoverable.",
-    "tag": "RQ2 \u00b7 FINDING 3",
+    "tag": "RQ2 · FINDING 3",
     "text": "I2 requests, I3 observations and I4 evidence handoffs expose different recovery opportunities. In the matched Admin Sequential/Hierarchical DeepSeek cohort, 82 of 110 I3-loss runs obtain a later table and 74 succeed; all 28 without a later table fail.",
     "caveat": "Position comparisons use matched tasks, models, topologies and repetitions with actual exposure. An intact direct edge can forward the same pre-interception evidence; it is not a new observation.",
     "filters": {
@@ -56,7 +56,7 @@
     },
     "cases": [
       {
-        "label": "Fig. 6 \u00b7 I2 request loss",
+        "label": "Fig. 6 · I2 request loss",
         "query": {
           "study": "rq123",
           "domain": "WebArena Reddit",
@@ -69,7 +69,7 @@
         "run_id": "e40233038e7b57469e32a4c9"
       },
       {
-        "label": "Fig. 6 \u00b7 I4 handoff loss",
+        "label": "Fig. 6 · I4 handoff loss",
         "query": {
           "study": "rq123",
           "domain": "WebArena Reddit",
@@ -88,7 +88,7 @@
     "number": 4,
     "rq": 2,
     "title": "The most harmful communication fault changes with task context.",
-    "tag": "RQ2 \u00b7 FINDING 4",
+    "tag": "RQ2 · FINDING 4",
     "text": "Under Flat, Shopping fails in 99.6% of semantic-corruption runs versus 53.0% of partial-content runs. SWE shows 3.1% versus 100.0%, TAC 33.3% versus 100.0%, and Reddit 66.7% versus 97.7%.",
     "caveat": "These descriptive profiles reflect information dependencies and task-specific evaluation contracts. They do not establish a universal task-complexity ranking.",
     "filters": {
@@ -102,8 +102,8 @@
     "number": 5,
     "rq": 3,
     "title": "Flat improves fault tolerance when its additional path still carries the required evidence.",
-    "tag": "RQ3 \u00b7 FINDING 5",
-    "text": "Matched I4 non-delivery comparisons show a 66.5\u201366.6 percentage-point gain for Flat; evidence-handoff corruption shows 41.3\u201342.3 points. Gains are small at I2 and I3, before the alternate path has obtained the required evidence.",
+    "tag": "RQ3 · FINDING 5",
+    "text": "Matched I4 non-delivery comparisons show a 66.5–66.6 percentage-point gain for Flat; evidence-handoff corruption shows 41.3–42.3 points. Gains are small at I2 and I3, before the alternate path has obtained the required evidence.",
     "caveat": "Paired effects use both-applied, known-outcome comparisons within the position-extension study. The case links below illustrate I4 non-delivery in the common matrix.",
     "filters": {
       "study": "rq123",
@@ -112,7 +112,7 @@
     },
     "cases": [
       {
-        "label": "Fig. 9 \u00b7 Sequential",
+        "label": "Fig. 9 · Sequential",
         "query": {
           "study": "rq123",
           "domain": "WebArena Reddit",
@@ -125,7 +125,7 @@
         "run_id": "83d707c5dcd97f49baaf0b2f"
       },
       {
-        "label": "Fig. 9 \u00b7 Hierarchical",
+        "label": "Fig. 9 · Hierarchical",
         "query": {
           "study": "rq123",
           "domain": "WebArena Reddit",
@@ -138,7 +138,7 @@
         "run_id": "b17cf5aadaedcc88b8b8c174"
       },
       {
-        "label": "Fig. 9 \u00b7 Flat",
+        "label": "Fig. 9 · Flat",
         "query": {
           "study": "rq123",
           "domain": "WebArena Reddit",
@@ -157,15 +157,15 @@
     "number": 6,
     "rq": 3,
     "title": "Changing the LLM provides limited recovery from communication faults.",
-    "tag": "RQ3 \u00b7 FINDING 6",
-    "text": "Across 1,408 common faulted units, model switching rescues 0.2\u20134.5% of baseline failures, compared with 19.3\u201327.0% for switching to Flat. Rescue-set overlap is low (Jaccard 0\u20130.047).",
-    "caveat": "All nine model\u2013topology configurations share the matched cohort. These are deployed configurations, not a controlled model-size ablation; individual replay cases do not estimate the paired effect.",
+    "tag": "RQ3 · FINDING 6",
+    "text": "Across 1,408 common faulted units, model switching rescues 0.2–4.5% of baseline failures, compared with 19.3–27.0% for switching to Flat. Rescue-set overlap is low (Jaccard 0–0.047).",
+    "caveat": "All nine model–topology configurations share the matched cohort. These are deployed configurations, not a controlled model-size ablation; individual replay cases do not estimate the paired effect.",
     "filters": {
       "study": "rq123"
     },
     "cases": [
       {
-        "label": "SWE example \u00b7 Flash",
+        "label": "SWE example · Flash",
         "query": {
           "study": "rq123",
           "task_id": "pydata__xarray-2905",
@@ -177,7 +177,7 @@
         "run_id": "a8071587a0fd8cde25081adb"
       },
       {
-        "label": "SWE example \u00b7 Qwen 27B",
+        "label": "SWE example · Qwen 27B",
         "query": {
           "study": "rq123",
           "task_id": "pydata__xarray-2905",
@@ -194,8 +194,8 @@
     "id": "finding-7",
     "number": 7,
     "rq": 4,
-    "title": "Effective protection must match the failed dependency and retain access to usable recovery evidence.",
-    "tag": "RQ4 \u00b7 FINDING 7",
+    "title": "Effective protection must match the failed dependency and retain access to trustworthy evidence.",
+    "tag": "RQ4 · FINDING 7",
     "text": "Of 106 baseline failures in the main mechanism comparison, execution protection uniquely rescues 67.9% and evidence protection 32.1%, with no overlap. Targeted checks remove incorrect intermediate acceptance; persistent recovery faults or shared-scope exposure can defeat combined protection.",
     "caveat": "The historical protection study (1,098 executions), targeted Shopping checks (432), Reddit recovery (162), and recovery-boundary study (288) have separate denominators. Fresh evidence acquisition still shares the underlying backend.",
     "filters": {
@@ -203,7 +203,7 @@
     },
     "cases": [
       {
-        "label": "Main study \u00b7 Duplicate delivery / Baseline",
+        "label": "Main study · Duplicate delivery / Baseline",
         "query": {
           "study": "rq4-main",
           "task_id": "shopping-001-q1to2",
@@ -215,7 +215,7 @@
         "run_id": "be6676e0fee03e76f74c1858"
       },
       {
-        "label": "Main study \u00b7 Duplicate delivery / Action-only",
+        "label": "Main study · Duplicate delivery / Action-only",
         "query": {
           "study": "rq4-main",
           "task_id": "shopping-001-q1to2",
@@ -227,7 +227,7 @@
         "run_id": "bf8e5a0e13a49c9e2d789793"
       },
       {
-        "label": "Main study \u00b7 Partial evidence / Semantic-only",
+        "label": "Main study · Partial evidence / Semantic-only",
         "query": {
           "study": "rq4-main",
           "task_id": "shopping-001-q1to2",

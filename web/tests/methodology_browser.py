@@ -11,7 +11,7 @@ with sync_playwright() as p:
   expect(page.locator('#'+section)).to_be_visible()
  assert page.locator('#taxonomy tbody tr').count()==29
  expect(page.locator('#references h2')).to_have_text('References')
- assert page.locator('#references li').count()==34
+ assert page.locator('#references li').count()==30
  page.locator('#taxonomy summary').click()
  citation=page.locator('#taxonomy tbody a').first
  target=citation.get_attribute('href');citation.click()

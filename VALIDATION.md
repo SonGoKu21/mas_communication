@@ -23,3 +23,9 @@ Offline analyses reproduced the 1,408-unit common fault cohort, independently re
 Figures 2–11 were extracted from the bound manuscript digest and visually checked. Source links in the methodology resolve to files in this release. A separate code review checked portability, dependency closure and evidence references.
 
 Full live reproduction requires external benchmark assets and configured services. Historical gate fixtures are offline test data, not current service admission. The original local experiment sources and previous staging checkout were not edited by release curation.
+
+## Manuscript content synchronization — 2026-10-01
+
+Updated the title, findings, taxonomy citations, statistical protocol and Figures 1–11 against the latest manuscript digest recorded in `web/site/data/paper-alignment.json`. The source-mapping percentage uses 3,600 faulted executions, separate from 180 clean controls. The manuscript PDF is not distributed.
+
+Fresh checks: 10 static-export tests; catalog uniqueness, case links and task mapping; anonymous archive loader; all 6,832 archive scripts byte-verified against JSON; home, methodology and paper-case browser checks including mobile layout; private-path audit with zero findings. All passed. Figure crops were visually inspected. Experiment implementations and archived execution records were unchanged; no new experiment results are claimed.

@@ -15,3 +15,7 @@ Open `http://localhost:8000/`. Browser interaction tests under `web/tests/` use 
 `paper-findings.json` is the canonical finding content. The generated catalog keeps historical task/run identities. `site/data/paper-alignment.json` and `site/figures/source.json` bind content and figure crops to the manuscript digest without distributing the manuscript.
 
 `tools/export.py` ingests original archives and requires those raw files. Browsing and the separate root-level statistical analyses use the committed public data and do not need original machine paths.
+
+## Anonymous Pages compatibility
+
+The service uses an opaque-origin sandbox, so JSON fetches are blocked by its response policy. `archive-loader.js` loads generated public data scripts in that environment. Run `python3 web/tools/build_archive_scripts.py` after changing `web/site/data`; each compressed payload decompresses byte-for-byte to its source JSON. Standard hosting continues to load JSON directly.
