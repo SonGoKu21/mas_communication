@@ -3,7 +3,7 @@
   "files": {
     ".gitignore": "0f783e44292d127755380320a164b9146966726a854225e5595304b4113b55cf",
     "PUBLIC_CONFIGURATION.md": "30a278ed6b7e4ceb877deadde6a7a64e7808030971faeec832ee18fc9ddb65bf",
-    "README.md": "f5a650b5a2c90d338dc8b7a917daa9bdcae0694d0b9d5049dc83c63a76a571ea",
+    "README.md": "826131b7a6025ab4f20995f14b5c75dbb8c26cad115bd384495fffbe315f4993",
     "VALIDATION.md": "3e01d7f9a3cfbf70742217d032463bb87f173afedd80d1771d0c16509bfb9d10",
     "analysis/model_topology/analyze.py": "d0cc46fc5627148efab6b61d6395e7894bfaeb07bd8e3543106beb4e696a292a",
     "analysis/model_topology/core.py": "e01eae87d41c69f73aea161913496728be9dc88c3d2ee9baa73938107ed18346",
@@ -14022,7 +14022,7 @@
     "web/site/figures/fig-8.png": "04e2becf0ed0b08d73965af1c9fbc904d510d21d68d59fad11eb6cdf45cdeeb4",
     "web/site/figures/fig-9.png": "b704d2666626131a76b81fa22ef86fa25e8618319aa670239594f5c667c8f86e",
     "web/site/figures/source.json": "25b012b158482b2a05ed7ed9fb4454292c8cb63865cb40772b03619b6ae71ae8",
-    "web/site/index.html": "a200918fb7b8f6c63bd40b4d4dbb44327ec0f32d717b8ea77cd8c55a36d406eb",
+    "web/site/index.html": "81a945642261d0d9ab6251dcd6d8c762253841b6da5ec4bb44fbaa7a0eec2952",
     "web/site/mark.svg": "529785bcb31a78473b17958178e6c245e0bf38c25ee5f0d2d6d607c4051569ca",
     "web/site/methodology.html": "f5a9346dad2d35b6cefee67d1c95e58f2d6a4830b1cca1d8a9d6c47d9765592b",
     "web/site/styles.css": "c16d29ecf1ccb82f9f2de0d380e3be672c68caf78f66a580bf8052f94d628f6b",
