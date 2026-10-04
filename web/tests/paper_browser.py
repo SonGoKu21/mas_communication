@@ -7,7 +7,7 @@ with sync_playwright() as p:
     page=browser.new_page(viewport={'width':1440,'height':1000})
     errors=[]
     page.on('pageerror',lambda e:errors.append(str(e)))
-    page.goto(BASE)
+    page.goto(BASE+"results.html")
     expect(page.locator('.finding')).to_have_count(7,timeout=30000)
     page.locator('[data-view=findings]').click()
     expected={1:[1,2],2:[3,4],3:[5,6],4:[7]}
