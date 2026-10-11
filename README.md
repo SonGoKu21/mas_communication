@@ -42,6 +42,7 @@ python3 analysis/topology/analyze.py
 python3 analysis/model_topology/analyze.py
 python3 analysis/model_topology/verify.py
 python3 analysis/silent/analyze.py
+python3 analysis/confirmation/analyze.py
 python3 analysis/protection/analyze_protection.py
 ```
 

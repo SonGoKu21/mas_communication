@@ -16,7 +16,7 @@ from typing import Any, Protocol
 DEFAULT_PROVIDER = "deepseek"
 DEFAULT_BASE_URL = "https://api.deepseek.com"
 DEFAULT_MODEL = "deepseek-chat"
-DEFAULT_API_KEY = "sk-9d1670f917fc4687afc7bc430fdb7ef4"
+DEFAULT_API_KEY = None  # Configure LLM_API_KEY or DEEPSEEK_API_KEY in the environment.
 
 class ChatClient(Protocol):
     @property

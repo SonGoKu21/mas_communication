@@ -3,10 +3,11 @@ import os,re,json,subprocess
 from pathlib import Path
 from playwright.sync_api import sync_playwright,expect
 BASE=os.environ.get('REPLAY_URL','http://127.0.0.1:8767/')
-previous=subprocess.check_output(['git','show','HEAD:web/site/results.html']).decode()
 results=Path('web/site/results.html').read_text()
-for section in re.findall(r'<section class="home-section home-rq".*?</section>',previous):
- assert section in results,'An RQ section lost content during relocation'
+assert results.count('class="home-section home-rq"') == 4
+for n in range(1,5):
+ assert 'id="home-rq-'+str(n)+'"' in results
+assert results.count('class="case-explanation"') == 4
 findings=json.loads(Path('web/paper-findings.json').read_text())
 with sync_playwright() as p:
  b=p.chromium.launch();page=b.new_page(viewport={'width':1440,'height':1000});errors=[];page.on('pageerror',lambda e:errors.append(str(e)))

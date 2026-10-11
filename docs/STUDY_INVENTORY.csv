@@ -1,0 +1,10 @@
+Study,RQ,Tasks,Domains,Topology,Models,Injection Stage,Fault Type,Repetitions,Arms or exposure settings,Planned cells or fixture runs
+Confirmation matrix,RQ1-RQ3,100,5,Sequential/Flat/Hierarchical,3,I2/I4,clean + six condition-position cells,3,1,18900
+Position-comparison follow-up,RQ2-RQ3,100,5,Sequential/Flat/Hierarchical,3,I2/I3/I4,clean + non-delivery at I2/I3/I4 + corruption at I3/I4,3,1,16200
+Protection factorial,RQ4,6,Shopping,Sequential/Flat,1,request/action delivery and evidence handoff,clean + five fault conditions,3,4 protection arms,864
+Information-path diagnostic,RQ4,5,Shopping,Sequential,1,evidence handoff,identity corruption / stale replay,3,3 path settings,90
+Finite repeated exposure,RQ4,3,Shopping,Sequential/Flat,1,request and evidence delivery,non-delivery / identity corruption,3,4 protection arms,144
+Targeted evidence checks,RQ4,6,Shopping,Sequential/Flat,1,evidence handoff,clean / partial / identity corruption,3,4 protection arms,432
+Reddit evidence recovery,RQ4,9,Reddit,Sequential,1,evidence handoff,clean / partial / semantic corruption,3,2 protection arms,162
+Recovery-boundary follow-up,RQ4,6,Shopping,Sequential/Flat,1,initial handoff / recovery path / all evidence paths,clean + 3 corruption exposure schemes,3,2 protection arms,288
+Source mapping,RQ1,Not MAS tasks,communication fixtures,Not MAS topology,No LLM,lower stack,3600 faulted + 180 clean,protocol-specific,fixture-specific,3780
