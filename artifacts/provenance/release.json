@@ -8,5 +8,5 @@
   ],
   "fixture_provenance": "Donor manifests retain source data hashes; entry digests are recomputed after replacing private paths. Offline gate fixtures are not live-execution admission.",
   "figure7": "Published plot values transcribed from the manuscript figure; not recomputed from a newly inferred cohort.",
-  "paper_binding_scope": "Final supplied manuscript figure extraction, study definitions and reported results. Candidate-level taxonomy labels are not included; see docs/ANNOTATION_MATERIALS.md. Confirmation statistics are recomputed from the published projection with a documented protocol."
+  "paper_binding_scope": "Final supplied manuscript figure extraction, taxonomy construction protocol, study definitions and reported results. Confirmation statistics are recomputed from the published projection with a documented protocol."
 }
