@@ -10,7 +10,7 @@ for section in re.findall(r'<section class="home-section home-rq".*?</section>',
 findings=json.loads(Path('web/paper-findings.json').read_text())
 with sync_playwright() as p:
  b=p.chromium.launch();page=b.new_page(viewport={'width':1440,'height':1000});errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
- page.goto(BASE);expect(page.locator('#homeView h1')).to_have_text('Broken Telephone');expect(page.locator('#homeView img')).to_have_count(0)
+ page.goto(BASE);expect(page.locator('#homeView h1')).to_have_text('When Messages Go Wrong');expect(page.locator('#homeView img')).to_have_count(0)
  expect(page.locator('#abstract')).to_contain_text('20.7%');expect(page.locator('.overview-rq')).to_have_count(4);expect(page.locator('.overview-finding')).to_have_count(7)
  for f in findings:expect(page.locator('#overview-rq-'+str(f['rq']))).to_contain_text(f['title'])
  page.get_by_role('link',name='Experimental details for RQ3 →',exact=True).click();expect(page).to_have_url(re.compile('results.html#home-rq-3'));expect(page.locator('#homeView .home-finding')).to_have_count(7,timeout=30000);expect(page.locator('#homeView img')).to_have_count(11)
