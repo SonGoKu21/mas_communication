@@ -18,7 +18,15 @@ def build():
         target.write_text(f'MASArchive.receive({json.dumps(key)},{json.dumps(payload)});\n')
         assert gzip.decompress(base64.b64decode(payload)) == raw
         count += 1
-    print(f'Generated and byte-verified {count} archive scripts')
+    # One startup request avoids anonymous-host rate limits across catalog shards.
+    names = ['manifest.json', 'findings.json', 'task-map.json']
+    names += [Path(n).name for n in json.loads((ROOT / 'data/manifest.json').read_text())['catalogs']]
+    bootstrap = {'data/' + n: json.loads((ROOT / 'data' / n).read_text()) for n in names}
+    raw = json.dumps(bootstrap, separators=(',', ':')).encode()
+    payload = base64.b64encode(gzip.compress(raw, mtime=0)).decode('ascii')
+    (ROOT / 'archive/bootstrap.js').write_text(f'MASArchive.receive("data/bootstrap.json",{json.dumps(payload)});\n')
+    assert json.loads(gzip.decompress(base64.b64decode(payload))) == bootstrap
+    print(f'Generated and byte-verified {count} archive scripts plus startup bundle')
 
 if __name__ == '__main__':
     build()
