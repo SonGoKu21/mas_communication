@@ -5,7 +5,7 @@ BASE=os.environ.get('REPLAY_URL','http://127.0.0.1:8767/')
 with sync_playwright() as p:
  b=p.chromium.launch();page=b.new_page(viewport={'width':1440,'height':1000});errors=[]
  page.on('pageerror',lambda e:errors.append(str(e)));page.goto(BASE)
- page.get_by_role('link',name='Methodology',exact=True).click()
+ page.get_by_role('navigation',name='Primary').get_by_role('link',name='Methodology',exact=True).click()
  expect(page.locator('h1')).to_have_text('Extended methodology')
  for section in ['taxonomy','boundaries','operators','evaluation','walkthrough','protocol']:
   expect(page.locator('#'+section)).to_be_visible()
