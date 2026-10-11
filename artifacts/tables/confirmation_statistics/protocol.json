@@ -1,0 +1,16 @@
+{
+  "input": "artifacts/tables/confirmation_records.json",
+  "input_sha256": "8bdfa5b712c438405347b64d4027b491073cecc9a12ab4b2e55ee116f1a2a6c3",
+  "scheduled_records": 18900,
+  "resamples": 10000,
+  "seed": 20260825,
+  "algorithm": "NumPy default_rng; deterministic row-order seed offsets",
+  "effect": "Right minus left, equal weight per task after averaging eligible repeated condition pairs within task",
+  "pairing": "domain/task/condition/repetition plus topology for model comparisons; fixed model for topology comparisons",
+  "eligibility": "Clean success uses known clean outcomes; other metrics require both faults applied and both metric fields present. Recovery missingness is not treated as false.",
+  "ci": "Task-cluster percentile bootstrap, 95%; repeated conditions remain together within each task.",
+  "p_value": "Two-sided task sign-flip, exact at <=12 tasks, otherwise 10,000 Monte Carlo samples with plus-one correction.",
+  "holm": "Separate model and topology families, each within domain and metric. Topology family pools the three fixed-model strata.",
+  "scope": "Recomputed supplement for the published confirmation projection. Does not include position-extension records, A-label contrasts absent from the projection, or unrecorded detection/recovery information.",
+  "causal_boundary": "Deployed model and workflow comparisons are configuration-level associations. MAS consequence labels are post-exposure and do not establish causal effects on failure."
+}

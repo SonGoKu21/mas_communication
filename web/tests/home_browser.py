@@ -8,9 +8,9 @@ with sync_playwright() as p:
  expect(page.locator('#homeView .home-finding')).to_have_count(7,timeout=30000)
  assert page.locator('#homeView img').count()>=7
  expect(page.locator('.case-explanation')).to_have_count(4)
- expect(page.locator('img[src="figures/fig-2.png?v=20261001"]')).to_have_count(1)
- expect(page.locator('[aria-label="Figure 11 case explanation"]')).to_contain_text('cart action')
- expect(page.locator('#home-rq-3 img[src="figures/fig-9.png?v=20261001"]')).to_be_visible()
+ expect(page.locator('img[src="figures/fig-2.png?v=20261011"]')).to_have_count(1)
+ expect(page.locator('[aria-label="Figure 10 case explanation"]')).to_contain_text('cart action')
+ expect(page.locator('#home-rq-3 img[src="figures/fig-9.png?v=20261011"]')).to_be_visible()
  expect(page.locator('[aria-label="Figure 9 case explanation"]')).to_be_visible()
  for d in page.locator('#homeView details').all():d.evaluate('(d)=>d.open=true')
  for img in page.locator('#homeView img').all():

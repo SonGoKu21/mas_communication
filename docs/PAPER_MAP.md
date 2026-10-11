@@ -13,3 +13,7 @@
 The main confirmation matrix is 100 tasks × 3 models × 3 topologies × 7 condition-position cells × 3 repetitions = 18,900. Of 16,200 scheduled faults, 15,882 were applied and 318 did not reach the target. The six faulted cells include two positions for non-delivery; they are not six distinct fault families.
 
 The position-extension study contains 16,200 scheduled records. The historical protection study contains 864 factorial, 90 information-path and 144 finite-exposure runs. Targeted evidence checks, Reddit recovery and persistent/shared recovery-boundary trials are separate studies. The website’s browsable-record counts describe artifact coverage, not statistical sample sizes for individual findings.
+
+See [complete study inventory](STUDY_INVENTORY.csv). The confirmation and position studies share 10,800 design keys, not verified identical executions: 482 shared keys differ in success or application. The 16,200-record position batch retains three unknown outcomes. Total scheduled MAS records in these separate batches are 37,080, with another 3,780 source-mapping fixtures. Do not equate scheduled records with distinct successfully completed executions.
+
+The confirmation paired statistical supplement is in `artifacts/tables/confirmation_statistics/`, reproduced with `python3 analysis/confirmation/analyze.py`. The final manuscript Figure 10 is the guarded-recheck case and Figure 11 is the protection heatmap.

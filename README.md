@@ -4,8 +4,8 @@ Research artifact for **A Large-Scale Empirical Study of Communication Faults in
 
 The artifact connects seven findings to experiment implementations, de-identified analysis inputs, and a static historical evidence explorer. The manuscript is not included.
 
-- [Evidence website](./web/site/)
-- [Extended methodology](./web/site/methodology.html)
+- [Evidence website](https://anonymous.4open.science/w/MAS-Communication-Website/web/site/)
+- [Extended methodology](https://anonymous.4open.science/w/MAS-Communication-Website/web/site/methodology.html)
 - [Reproduction guide](docs/REPRODUCTION.md)
 - [Paper-to-artifact map](docs/PAPER_MAP.md)
 - [Configuration](PUBLIC_CONFIGURATION.md)
@@ -42,6 +42,7 @@ python3 analysis/topology/analyze.py
 python3 analysis/model_topology/analyze.py
 python3 analysis/model_topology/verify.py
 python3 analysis/silent/analyze.py
+python3 analysis/confirmation/analyze.py
 python3 analysis/protection/analyze_protection.py
 ```
 
